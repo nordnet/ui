@@ -1,13 +1,12 @@
 import React from 'react';
-import styled, { ThemedStyledProps } from 'styled-components';
+import styled, { ExecutionContext } from 'styled-components';
 
 import { Props, CircleProps } from './RoundedPill.types';
-import { Theme } from '../../../../theme/theme.types';
 import { isFunction, isNumber } from '../../../../common/utils';
 import { Flexbox, Icon, Button, Development } from '../../../..';
 
 // TODO: move this into a shared utils file
-const getColor = (props: ThemedStyledProps<CircleProps, Theme>) => {
+const getColor = (props: CircleProps & ExecutionContext) => {
   const { $color, theme } = props;
 
   if (isFunction($color)) {

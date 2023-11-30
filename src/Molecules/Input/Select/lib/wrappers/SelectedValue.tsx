@@ -11,11 +11,7 @@ const FullWidthFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
-const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
-  <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
-));
-
-const StyledA11yButton = styled(CleanNormalizedButton)`
+const StyledA11yButton = styled(NormalizedElements.Button)<{ $absolutePositioning?: boolean }>`
   background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
@@ -25,7 +21,7 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
   border: 0;
   color: inherit;
   ${(p) =>
-    !p.absolutePositioning
+    !p.$absolutePositioning
       ? ''
       : `
       position: absolute;
@@ -73,7 +69,7 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
           type="button"
           /** need to exclude this button from document.forms */
           form=""
-          absolutePositioning={!noFormField}
+          $absolutePositioning={!noFormField}
           ref={ref}
           aria-haspopup="listbox"
           aria-expanded={open ? 'true' : 'false'}

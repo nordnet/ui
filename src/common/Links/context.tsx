@@ -1,7 +1,7 @@
-import React, { createContext, FC } from 'react';
+import React, { createContext } from 'react';
 import { LinkProps } from './types';
 
-export const DefaultLink: FC<LinkProps> = ({ to, children, innerRef, ...rest }) => {
+export const DefaultLink = ({ to, children, innerRef, ...rest }: LinkProps) => {
   return (
     <a ref={innerRef} {...rest} href={to}>
       {children}

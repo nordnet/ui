@@ -1,11 +1,10 @@
 import React from 'react';
 import R from 'ramda';
-import styled, { css, ThemedStyledProps } from 'styled-components';
-import { Theme } from '../../theme/theme.types';
+import styled, { css, ExecutionContext } from 'styled-components';
 import { Props } from './Card.types';
 import { isFunction } from '../../common/utils';
 
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

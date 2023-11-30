@@ -10,7 +10,7 @@ type Option = {
 
 export type Props = {
   loading?: boolean;
-  onClose: Function;
+  onClose: (confirmed?: any) => void;
   options: Option;
   id: string;
   fixedBottomMobile?: boolean;

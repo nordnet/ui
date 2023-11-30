@@ -1,9 +1,8 @@
 import React from 'react';
-import styled, { css, ThemedStyledProps } from 'styled-components';
+import styled, { css, ExecutionContext } from 'styled-components';
 import R from 'ramda';
 
 import { Props } from './Pill.types';
-import { Theme } from '../../../../theme/theme.types';
 import { isFunction } from '../../../../common/utils';
 
 const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
@@ -11,7 +10,7 @@ const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
 ));
 
 // TODO: move this into a shared utils file
-const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+const getColor = (props: Props & ExecutionContext) => {
   const { barColor, theme } = props;
 
   if (isFunction(barColor)) {

@@ -4,6 +4,7 @@ import * as R from 'ramda';
 import { Props, Size, Variant } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
+import { getAriaProps, getDataProps } from '../../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -177,9 +178,6 @@ const components = {
   Input,
   AddonBox,
 };
-
-const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
-const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
 const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {

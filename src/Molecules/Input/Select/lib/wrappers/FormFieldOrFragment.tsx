@@ -55,7 +55,7 @@ const focusBorderStyles = css`
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled'>>`
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -67,7 +67,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
-const SelectWrapper = styled.div`
+const SelectWrapper = styled.div<Pick<Props, 'error' | 'success' | 'disabled' | 'height' | 'size'>>`
   ${height}
   ${borderStyles}
   background: ${(p) => p.theme.color.inputBackground};
