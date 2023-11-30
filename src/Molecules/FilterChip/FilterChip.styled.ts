@@ -9,6 +9,9 @@ const variantStyles = (theme: Theme, variant: string, $selected: boolean) =>
       `
       color: ${theme.colorTokens.action.text_default};
       background: ${theme.colorTokens.action.background_weak};
+      &:hover {
+        color: ${theme.colorTokens.action.text_hover};
+      }
       &:focus-visible {
         outline: 1px solid ${theme.colorTokens.action.border_default};
       }
