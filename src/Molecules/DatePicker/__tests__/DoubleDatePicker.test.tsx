@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, fireEvent, render } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { advanceTo, clear } from 'jest-date-mock';
 import { format } from 'date-fns';
 import { DoubleDatePicker } from '../../..';
@@ -29,7 +29,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -58,7 +63,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -87,7 +97,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -118,7 +133,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -147,7 +167,12 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -168,6 +193,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('select a range by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
@@ -177,7 +203,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -225,7 +256,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-errors
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -243,6 +279,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
@@ -252,7 +289,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -293,7 +335,12 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -329,6 +376,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />
@@ -349,6 +397,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('not select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
@@ -361,6 +410,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />
@@ -407,6 +457,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />

@@ -1,5 +1,5 @@
 export const KNOB_BIG_PX = 30;
-export const KNOB_SMALL_PX = 20;
+export const KNOB_SMALL_PX = 16;
 export const KNOB_PLAYER_PX = 8;
 
 export const TRACK_HEIGHT_BIG_PX = 12;

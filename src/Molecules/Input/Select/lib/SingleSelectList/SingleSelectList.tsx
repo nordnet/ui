@@ -46,7 +46,6 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   flex-shrink: 1;
   flex-basis: auto;
   width: 100%;
-
   padding-top: 4px;
   display: flex;
   flex-direction: column;
@@ -101,7 +100,6 @@ type OptionProps = {
   selected?: boolean;
   disabled?: boolean;
   label: React.ReactNode;
-  value: any;
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
   fullscreenOnMobile?: boolean;
@@ -121,7 +119,6 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
-
   ${(p) =>
     !p.fullscreenOnMobile
       ? `
@@ -168,7 +165,7 @@ const EllipsizingText = styled.span`
   overflow: hidden;
 `;
 
-export const Option: React.FC<OptionProps> = ({
+export const Option = ({
   label,
   disabled,
   selected,
@@ -176,7 +173,7 @@ export const Option: React.FC<OptionProps> = ({
   onClick,
   isKeyboardNavigation,
   fullscreenOnMobile,
-}) => (
+}: OptionProps) => (
   <StyledOption
     selected={selected}
     disabled={disabled}

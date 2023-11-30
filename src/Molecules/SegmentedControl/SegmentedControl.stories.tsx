@@ -44,7 +44,7 @@ export const LastItemSelected = () => (
   </div>
 );
 
-export const controlledBehaviour = () => {
+export const ControlledBehaviour = () => {
   const ControlledExample = () => {
     const [selected, setSelected] = useState(0);
 
@@ -61,7 +61,7 @@ export const controlledBehaviour = () => {
   return <ControlledExample />;
 };
 
-export const disabled = () => (
+export const Disabled = () => (
   <div style={{ backgroundColor: 'green', width: '50%', margin: '50px', height: '100%' }}>
     <SegmentedControl disabled>
       <SegmentedControl.Item itemId={0} onItemClick={action('clicked item 0')}>
@@ -74,7 +74,7 @@ export const disabled = () => (
   </div>
 );
 
-export const controlledDisabled = () => {
+export const ControlledDisabled = () => {
   const ControlledExample = () => {
     const [selected, setSelected] = useState(0);
 

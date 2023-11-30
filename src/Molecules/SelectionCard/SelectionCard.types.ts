@@ -25,6 +25,8 @@ export type SelectionCard = {
   outline?: boolean;
   /** @default false */
   selectedInitially?: boolean;
+  /** @default false */
+  alignLeft?: boolean;
 };
 
 export type SelectionCardComponent = React.FC<SelectionCard>;

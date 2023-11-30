@@ -181,7 +181,12 @@ const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
 ));
 
 const StyledTypography = styled(CleanSpan)<Props>`
-  font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family:
+    'Nordnet Sans Mono',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
     sans-serif;
   color: ${(p) => getColor(p)};
   margin: 0;

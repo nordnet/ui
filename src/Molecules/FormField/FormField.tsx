@@ -18,6 +18,7 @@ const hasError = (error?: Props['error']) => error && error !== '';
 
 const Wrapper = styled.div<{ $width?: string | number }>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
+  max-width: 100%;
   display: inline-block;
 `;
 

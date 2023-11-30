@@ -27,9 +27,11 @@ const Button = styled.button`
   position: relative;
   align-items: center;
   justify-content: center;
+
   &[aria-checked='true'] {
     pointer-events: none;
   }
+
   width: 100%;
   height: 100%;
   border: none;

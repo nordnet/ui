@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Theme } from 'theme/theme.types';
+import { IntlProvider } from 'react-intl';
 import docs from './AllocationBar.mdx';
 import AllocationBar from './AllocationBar';
 
@@ -21,27 +22,29 @@ export default {
   },
 };
 
-export const basicAllocationBar = () => {
-  const mockedAllocations = [
-    {
-      label: 'ETFs',
-      color: (t: Theme) => t.color.allocationBarLightBlue,
-      weight: 20,
-    },
-    {
-      label: 'Funds',
-      color: (t: Theme) => t.color.allocationBarDarkBlue,
-      weight: 80,
-    },
-  ];
+export const BasicAllocationBar = {
+  render: () => {
+    const mockedAllocations = [
+      {
+        label: 'ETFs',
+        color: (t: Theme) => t.color.allocationBarLightBlue,
+        weight: 20,
+      },
+      {
+        label: 'Funds',
+        color: (t: Theme) => t.color.allocationBarDarkBlue,
+        weight: 80,
+      },
+    ];
 
-  return (
-    <StyledContainer>
-      <AllocationBar allocations={mockedAllocations} />
-    </StyledContainer>
-  );
-};
+    return (
+      <IntlProvider locale="en">
+        <StyledContainer>
+          <AllocationBar allocations={mockedAllocations} />
+        </StyledContainer>
+      </IntlProvider>
+    );
+  },
 
-basicAllocationBar.story = {
   name: 'Basic usage',
 };

@@ -60,12 +60,7 @@ const getColorTokens = (theme: ThemeConfig['tokensTheme']) => {
 const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const {
-    a11yColors = false,
-    darkColors = false,
-    tokensTheme = 'light',
-    featureToggles = {},
-  } = config;
+  const { a11yColors = false, darkColors = false, tokensTheme = 'light' } = config;
   const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
@@ -88,13 +83,12 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
   const RADIUS_LARGE: BORDER_RADIUS = 20;
   const RADIUS_100: BORDER_RADIUS = 100;
 
-  const borderRadius: Theme['borderRadius'] = (x) =>
-    featureToggles?.roundedCorners ? `${x.toString()}px` : '';
-  const borderRadius2 = featureToggles?.roundedCorners ? `${RADIUS_XSMALL}px` : '0';
-  const borderRadius4 = featureToggles?.roundedCorners ? `${RADIUS_SMALL}px` : '0';
-  const borderRadius8 = featureToggles?.roundedCorners ? `${RADIUS_MEDIUM}px` : '0';
-  const borderRadius20 = featureToggles?.roundedCorners ? `${RADIUS_LARGE}px` : '0';
-  const borderRadius100 = featureToggles?.roundedCorners ? `${RADIUS_100}px` : '0';
+  const borderRadius: Theme['borderRadius'] = (x) => `${x.toString()}px`;
+  const borderRadius2 = `${RADIUS_XSMALL}px`;
+  const borderRadius4 = `${RADIUS_SMALL}px`;
+  const borderRadius8 = `${RADIUS_MEDIUM}px`;
+  const borderRadius20 = `${RADIUS_LARGE}px`;
+  const borderRadius100 = `${RADIUS_100}px`;
 
   return {
     animation: {
@@ -135,6 +129,5 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     borderRadius8,
     borderRadius20,
     borderRadius100,
-    isFeatureEnabled: (feature) => featureToggles?.[feature] === true,
   };
 };

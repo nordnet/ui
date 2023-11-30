@@ -62,9 +62,11 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
     return p.theme.color.inputBorder;
   }};
   border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+
   &:focus {
     border-width: 1px;
   }
+
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
@@ -83,6 +85,7 @@ export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>
     line-height: inherit;
     opacity: 1;
   }
+
   ${(p) =>
     p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
   &:disabled::placeholder {

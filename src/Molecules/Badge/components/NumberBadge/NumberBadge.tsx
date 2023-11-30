@@ -23,13 +23,16 @@ const animation = css`
     0% {
       transform: scale(1);
     }
+
     1% {
       transform: scale(1.4);
     }
+
     100% {
       transform: scale(1);
     }
   }
+
   animation: scale 0.5s ease-out;
 `;
 

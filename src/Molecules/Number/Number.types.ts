@@ -9,7 +9,7 @@ export type Props = {
   maximumDecimals?: number;
   ticks?: Ticks;
   percentage?: boolean;
-  currency?: string;
+  currency?: string | null;
   /** Show the currency part as a different typography size, normally used to make it one step smaller. If not present the currency will have the same size */
   currencySize?: TypographyTypes;
   /**
@@ -17,6 +17,7 @@ export type Props = {
    * @default false
    * */
   sign?: boolean;
+  maskValue?: boolean;
 };
 
 export type NumberComponent = React.FunctionComponent<Props>;

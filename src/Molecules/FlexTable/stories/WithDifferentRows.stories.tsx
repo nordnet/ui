@@ -1,7 +1,7 @@
 import React from 'react';
-import FlexTable from '../FlexTable';
 import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
+import { FlexTable } from '../../..';
 
 export default {
   title: 'Molecules / FlexTable / With Different Rows',
