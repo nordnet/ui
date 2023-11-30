@@ -65,7 +65,7 @@ export const ContainerLabel = styled.label<{
   }
 
   &:focus-visible {
-    outline: 1px solid ${(p) => p.theme.color.quickFilterFocusOutline};
+    outline: 1px solid ${(p) => p.theme.colorTokens.neutral.border_focus};
   }
 
   transition:
@@ -89,14 +89,14 @@ export const ContainerLabel = styled.label<{
   ${(p) =>
     p.$disabled &&
     `
-      background: ${p.theme.color.disabledBackground};
-      color: ${p.theme.color.disabledText};
+      background: ${p.theme.colorTokens.neutral.background_disabled};
+      color: ${p.theme.colorTokens.neutral.text_disabled};
       cursor: not-allowed;
       &:focus-visible {
         outline: none;
       }
       &:hover {
-        color: ${p.theme.color.disabledText};
+        color: ${p.theme.colorTokens.neutral.text_disabled};
       }
     `};
 `;
