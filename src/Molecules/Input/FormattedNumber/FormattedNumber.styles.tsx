@@ -127,9 +127,7 @@ const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
   }
 `;
 
-const Input = styled(FormattedInput).attrs(() => ({
-  type: 'text',
-}))<Partial<Props> & { showSteppers: boolean }>`
+const Input = styled(FormattedInput)<Partial<Props> & { showSteppers: boolean }>`
   ${background}
   ${borderStyles}
   ${height}

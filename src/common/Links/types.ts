@@ -1,4 +1,4 @@
-import { FC, HTMLProps, ReactNode, Ref } from 'react';
+import { HTMLProps, ReactNode, Ref } from 'react';
 
 export type LinkProps = Partial<HTMLProps<HTMLAnchorElement>> & {
   to: any;
@@ -11,7 +11,7 @@ export type LinkProps = Partial<HTMLProps<HTMLAnchorElement>> & {
 };
 
 export type LinkProviderProps = {
-  link: FC<LinkProps>;
+  link: any; // TODO find what type this is
   children: ReactNode;
 };
 
