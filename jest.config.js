@@ -1,7 +1,7 @@
 module.exports = {
   testMatch: ['**/*.test.ts', '**/*.test.tsx'],
-  setupFilesAfterEnv: ['<rootDir>/jest.mocks.js'],
-  setupFiles: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.mocks.ts'],
+  setupFiles: ['./jest.setup.ts'],
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'md', 'mdx'],
