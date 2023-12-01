@@ -136,7 +136,6 @@ export const CoachMarks: Component = ({
       handleClose();
     }
   });
-
   return referenceElementRect || feedbackWidgetMode ? (
     <Portal>
       <StyledBubble
@@ -145,7 +144,7 @@ export const CoachMarks: Component = ({
         {...attributes.popper}
         barColor={barColor}
         bottomSheet={bottomSheet}
-        $feedbackWidgetMode={feedbackWidgetMode}
+        feedbackWidgetMode={feedbackWidgetMode}
       >
         {!feedbackWidgetMode && (
           <BubbleArrow

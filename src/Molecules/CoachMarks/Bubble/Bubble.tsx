@@ -82,13 +82,14 @@ const Card = styled.div<CardProps>`
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ children, className, style, barColor, bottomSheet }, ref) => (
+  ({ children, className, style, barColor, bottomSheet, feedbackWidgetMode }, ref) => (
     <Card
       className={className}
       style={style}
       ref={ref}
       barColor={barColor}
       bottomSheet={bottomSheet}
+      feedbackWidgetMode={feedbackWidgetMode}
     >
       {children}
     </Card>
