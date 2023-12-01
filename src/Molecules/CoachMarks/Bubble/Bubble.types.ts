@@ -15,6 +15,7 @@ export type Props = {
 export type CardProps = {
   barColor?: ColorFn;
   bottomSheet?: boolean;
+  feedbackWidgetMode?: boolean;
 };
 
 export type Component = React.FC<Props>;

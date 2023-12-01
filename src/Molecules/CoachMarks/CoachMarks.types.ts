@@ -43,7 +43,7 @@ export type Props = {
   bottomSheet?: boolean;
   closeButton?: boolean;
   hidePreviousButton?: boolean;
-  feedbackWidgetOnPage?: boolean;
+  feedbackWidgetMode?: boolean;
   overrideStep?: number;
   hideMultiStepIndicatorText?: boolean;
 };
