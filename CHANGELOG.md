@@ -1,3 +1,10 @@
+## [15.0.3](https://github.com/nordnet/ui/compare/v15.0.2...v15.0.3) (2023-12-01)
+
+
+### Bug Fixes
+
+* repaired faulty prop drilling in feedback widget ([#1532](https://github.com/nordnet/ui/issues/1532)) ([d15f318](https://github.com/nordnet/ui/commit/d15f318aa43be73c81ff97715677f116c523e4d6))
+
 ## [15.0.2](https://github.com/nordnet/ui/compare/v15.0.1...v15.0.2) (2023-12-01)
 
 
