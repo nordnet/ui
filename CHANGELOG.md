@@ -1,3 +1,10 @@
+## [15.0.2](https://github.com/nordnet/ui/compare/v15.0.1...v15.0.2) (2023-12-01)
+
+
+### Bug Fixes
+
+* fixed feedback widget alignment in mobile view ([#1528](https://github.com/nordnet/ui/issues/1528)) ([a7c7105](https://github.com/nordnet/ui/commit/a7c71058d9f97eb0b900e6ccd3013018d906dca0))
+
 ## [15.0.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.0.1) (2023-11-30)
 
 
