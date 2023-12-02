@@ -1,6 +1,6 @@
 import { StepTopLevelProps } from './SubLevel/SubLevel.types';
 
-export type MultiStepProgressProps = {
+export type Props = {
   onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
   steps?: StepTopLevelProps[];
