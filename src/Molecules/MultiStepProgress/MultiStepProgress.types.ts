@@ -1,11 +1,4 @@
-import { StepTopLevelProps } from './TopLevel/TopLevel.types';
-
-export type StepBaseProps = {
-  current?: boolean;
-  done?: boolean;
-  name: string;
-  label: string;
-};
+import { StepTopLevelProps } from './SubLevel/SubLevel.types';
 
 export type MultiStepProgressProps = {
   onStepClick?: (stepName: string) => void;
@@ -21,5 +14,3 @@ export type MultiStepProgressProps = {
   closeDrawerOnStepClick?: boolean;
   sticky?: boolean;
 };
-
-export type MultiStepProgressComponent = React.FC<MultiStepProgressProps>;

@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import Card from '../../Atoms/Card';
 import { TopLevel } from './TopLevel';
-import { MultiStepProgressComponent } from './MultiStepProgress.types';
+import { MultiStepProgressProps } from './MultiStepProgress.types';
 import { useIntersect } from '../../common/Hooks';
 import { Drawer, Media, Flexbox, Typography } from '../..';
 
@@ -38,7 +38,7 @@ const IntersectionTop = styled.div`
   }
 `;
 
-export const MultiStepProgress: MultiStepProgressComponent = ({
+export const MultiStepProgress = ({
   onStepClick,
   onSubStepClick,
   steps,
@@ -48,7 +48,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
   mobileDrawerTitle = '',
   closeDrawerOnStepClick = false,
   sticky = false,
-}) => {
+}: MultiStepProgressProps) => {
   // TODO: use context to pass these lovely props down the rabbit hole
   const [open, setOpen] = useState(false);
   const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
