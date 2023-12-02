@@ -8,9 +8,7 @@ import {
   ColumnProviderProps,
 } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
-
-export const ACTION_SET_SORTING = 'SET_SORTING';
-export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
+import { ACTION_SET_INITIAL_SORTING, ACTION_SET_SORTING } from './columnProviderActions';
 
 export const ColumnDataContext = React.createContext<ColumnsDataState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
