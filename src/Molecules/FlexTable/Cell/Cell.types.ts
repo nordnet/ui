@@ -6,7 +6,7 @@ type RenderProp = {
 };
 
 export type Props = {
-  children: React.ReactNode | ((obj: RenderProp) => React.ReactNode);
+  children?: React.ReactNode | ((obj: RenderProp) => React.ReactNode);
 
   /**
    * Define which column which cell it belongs to and sets the column layout defined in the `Header`

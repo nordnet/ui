@@ -9,7 +9,7 @@ type TextWrapperProps = {
   truncate?: boolean;
   className?: string;
   weight?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export const TextWrapper = ({ className, truncate = true, weight, children }: TextWrapperProps) => {
