@@ -1,13 +1,13 @@
 import React from 'react';
-import { TextWrapperComponent } from './Footer.types';
+import { TextWrapperProps } from './Footer.types';
 import { StyledTruncateTooltip, Text } from '../shared';
 
-export const TextWrapper: TextWrapperComponent = ({
+export const TextWrapper = ({
   children,
   weight = 'bold',
   truncate = true,
   className,
-}) => {
+}: TextWrapperProps) => {
   if (!truncate) {
     return (
       <Text className={className} weight={weight} color={(t) => t.color.text}>

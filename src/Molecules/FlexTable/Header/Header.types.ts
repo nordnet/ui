@@ -1,11 +1,8 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import {
-  SortButtonComponent,
   SortButtonProps,
-  SortIconComponent,
   SortIconProps,
   SortOrder,
-  TextWrapperComponent,
   TextWrapperProps,
 } from './HeaderContent/HeaderContent.types';
 import { FlexPropsType } from '../shared/shared.types';
@@ -64,17 +61,3 @@ export type Props = {
   columnId: string;
 } & FlexPropsType &
   SortedProps;
-
-export type HeaderComponents = {
-  /**
-   * Wraps text in correct font size with truncation and tooltip
-   */
-  TextWrapper: TextWrapperComponent;
-  SortIcon: SortIconComponent;
-  /**
-   * Wraps the header with an accessible button so it's clickable anywhere to sort
-   */
-  SortButton: SortButtonComponent;
-};
-
-export type HeaderComponent = React.FC<Props> & HeaderComponents;

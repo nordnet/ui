@@ -62,7 +62,7 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
   }
 };
 
-export const ColumnProvider: React.FC<ColumnProviderProps> = ({ children }) => {
+export const ColumnProvider = ({ children }: ColumnProviderProps) => {
   const [state, dispatch] = useReducer(columnReducer, { data: {} });
   return (
     <ColumnDataContext.Provider value={state.data}>

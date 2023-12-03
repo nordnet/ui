@@ -25,8 +25,5 @@ export type TextWrapperProps = {
    */
   truncate?: boolean;
   className?: string;
+  children?: React.ReactNode;
 };
-
-export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
-
-export type FooterComponent = React.FC<Props> & { TextWrapper: TextWrapperComponent };

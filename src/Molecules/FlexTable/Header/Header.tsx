@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
-import { HeaderComponent } from './Header.types';
+import { Props } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
@@ -70,7 +70,7 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const Header: HeaderComponent = (props) => {
+const Header = (props: Props) => {
   const {
     children,
     className,

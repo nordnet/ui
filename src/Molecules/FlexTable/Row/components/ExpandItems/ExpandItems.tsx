@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flexbox, List, Media } from '../../../../..';
-import { ExpandItemsComponent } from './ExpandItems.types';
+import { ExpandItemsProps } from './ExpandItems.types';
 import { ExpandItem } from './ExpandItem';
 
-export const ExpandItems: ExpandItemsComponent = ({ items }) => {
+export const ExpandItems = ({ items }: ExpandItemsProps) => {
   return (
     <>
       <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>

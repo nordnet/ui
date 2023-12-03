@@ -3,7 +3,7 @@ import { MediaRelatedProps } from '../../../shared/shared.types';
 
 export type RenderFunc = () => ReactNode;
 
-type TextWrapperProps = {
+export type TextWrapperProps = {
   className?: string;
   /**
    * Truncate the text inside and a tooltip on hover when truncated
@@ -18,23 +18,17 @@ type TextWrapperProps = {
   children?: React.ReactNode;
 };
 
-export type TextWrapperComponent = React.FC<TextWrapperProps>;
-
-export type ExpandItemProps = {
+export type ItemProps = {
   label: ReactNode | RenderFunc;
   value: ReactNode | RenderFunc;
   hidden?: boolean;
 } & MediaRelatedProps<{ hidden?: boolean }>;
 
-export type ExpandItems = Array<ExpandItemProps>;
+export type ExpandItems = Array<ItemProps>;
 
-type Items = {
-  TextWrapper: TextWrapperComponent;
-};
+export type ExpandItemProps = { item: ItemProps; mobileItem?: boolean };
 
-export type ExpandItemComponent = React.FC<{ item: ExpandItemProps; mobileItem?: boolean }> & Items;
-
-export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
+export type ExpandItemsProps = { items: ExpandItems };
 
 export type ExpandItemMediaProps = {
   xs: { hidden?: boolean };

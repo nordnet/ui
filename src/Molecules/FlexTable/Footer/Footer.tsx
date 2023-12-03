@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { useFlexCellProps } from '../shared/ColumnProvider';
-import { FooterComponent } from './Footer.types';
+import { Props } from './Footer.types';
 import { TextWrapper } from './TextWrapper';
 import { getStylesForSizes } from '../shared';
 import { useFlexTable } from '../shared/FlexTableProvider';
@@ -41,7 +41,7 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const Footer: FooterComponent = (props) => {
+const Footer = (props: Props) => {
   const { children, className, columnId } = props;
   const flexProps = useFlexCellProps(props);
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');

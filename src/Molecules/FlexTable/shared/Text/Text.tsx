@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TextComponent } from './Text.types';
+import { TextProps } from './Text.types';
 import { FontSize } from '../shared.types';
 import { Theme } from '../../../../theme/theme.types';
 import { Typography } from '../../../../index';
@@ -47,7 +47,7 @@ const StyledTypography = styled(Typography)<StyledTypographyProps>`
   )}
 `;
 
-const Text: TextComponent = ({ className, color, weight, children }) => {
+const Text = ({ className, color, weight, children }: TextProps) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'fontSize'>('fontSize');
   return (
     <StyledTypography

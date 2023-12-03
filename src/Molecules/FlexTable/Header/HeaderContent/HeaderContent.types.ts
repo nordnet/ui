@@ -10,9 +10,8 @@ export type TextWrapperProps = {
    */
   sorted?: boolean;
   truncate?: boolean;
+  children?: React.ReactNode;
 };
-
-export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
 
 export type SortOrder = 'ascending' | 'descending' | 'none' | null;
 
@@ -23,15 +22,11 @@ export type SortIconProps = {
   sortOrder: NonNullable<SortOrder>;
 };
 
-export type SortIconComponent = React.FC<SortIconProps>;
-
 export type SortButtonProps = {
   className?: string;
   onClick: () => void;
   children: React.ReactChild | React.ReactChild[];
 };
-
-export type SortButtonComponent = React.FC<SortButtonProps>;
 
 type onSortClick = () => void;
 

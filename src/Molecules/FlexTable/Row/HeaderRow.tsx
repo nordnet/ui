@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Row from './Row';
-import { HeaderRowComponent } from './Row.types';
+import { HeaderProps } from './Row.types';
 import { ColorFn } from '../../../common/Types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { getStylesForSizes } from '../shared';
@@ -64,14 +64,14 @@ const StyledHeaderRow = styled(Row)<StyledHeaderProps>`
   )}
 `;
 
-export const HeaderRow: HeaderRowComponent = ({
+export const HeaderRow = ({
   className,
   hideSeparator = false,
   separatorColor = (theme) => theme.color.text,
   children,
   stickyOffsetTop = 0,
   ...htmlProps
-}) => {
+}: HeaderProps) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
   return (
     <StyledHeaderRow

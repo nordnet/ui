@@ -1,13 +1,8 @@
 import React from 'react';
-import { TextWrapperComponent } from './HeaderContent.types';
+import { TextWrapperProps } from './HeaderContent.types';
 import { StyledTruncateTooltip, Text } from '../../shared';
 
-export const TextWrapper: TextWrapperComponent = ({
-  className,
-  sorted,
-  truncate = true,
-  children,
-}) => {
+export const TextWrapper = ({ className, sorted, truncate = true, children }: TextWrapperProps) => {
   if (!truncate) {
     return (
       <Text

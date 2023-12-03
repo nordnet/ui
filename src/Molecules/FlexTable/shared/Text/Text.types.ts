@@ -6,5 +6,3 @@ export type TextProps = {
   weight?: string;
   children?: React.ReactNode;
 };
-
-export type TextComponent = React.FC<TextProps>;

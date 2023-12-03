@@ -1,13 +1,18 @@
 import React from 'react';
-import { TextWrapperComponent } from './Cell.types';
 import { StyledTruncateTooltip, Text } from '../shared';
 
-export const TextWrapper: TextWrapperComponent = ({
-  className,
-  truncate = true,
-  weight,
-  children,
-}) => {
+type TextWrapperProps = {
+  /**
+   * Truncate the text inside and a tooltip on hover when truncated
+   * @default true
+   */
+  truncate?: boolean;
+  className?: string;
+  weight?: string;
+  children: React.ReactNode;
+};
+
+export const TextWrapper = ({ className, truncate = true, weight, children }: TextWrapperProps) => {
   if (!truncate) {
     return (
       <Text className={className} weight={weight} color={(t) => t.color.text}>

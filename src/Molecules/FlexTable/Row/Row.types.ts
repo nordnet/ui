@@ -1,9 +1,5 @@
 import React, { ReactNode } from 'react';
-import {
-  ExpandItemComponent,
-  ExpandItems,
-  ExpandItemsComponent,
-} from './components/ExpandItems/ExpandItems.types';
+import { ExpandItems } from './components/ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
@@ -44,11 +40,9 @@ export type ExpandRowProps = ExpandAreaProps & {
   separatorColor?: ColorFn;
 } & HtmlProps;
 
-export type ExpandRowComponent = React.FC<ExpandRowProps>;
-
 export type ExpandAreaProps = UncontrolledExpand | ControlledExpand;
 
-type Props = {
+export type Props = {
   /**
    * Hide row bottom border
    * @default false
@@ -74,15 +68,7 @@ type Props = {
 } & HtmlProps &
   ExpandRowProps;
 
-export type RowComponents = {
-  ExpandItem: ExpandItemComponent;
-  ExpandItems: ExpandItemsComponent;
-  ExpandRow: ExpandRowComponent;
-};
-
-export type RowComponent = React.FC<Props> & RowComponents;
-
-type HeaderProps = {
+export type HeaderProps = {
   /**
    * Hide row bottom border
    * @default false
@@ -101,8 +87,4 @@ type HeaderProps = {
   stickyOffsetTop?: number;
 } & HtmlProps;
 
-export type HeaderRowComponent = React.FC<HeaderProps>;
-
-type FooterProps = HeaderProps;
-
-export type FooterRowComponent = React.FC<FooterProps>;
+export type FooterProps = HeaderProps;

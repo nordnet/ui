@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { RowComponent } from './Row.types';
+import { Props } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types';
 import { useFlexTable } from '../shared/FlexTableProvider';
@@ -88,7 +88,7 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
   )}
 `;
 
-const Row: RowComponent = ({
+const Row = ({
   className,
   expanded,
   initiallyExpanded = false,
@@ -102,7 +102,7 @@ const Row: RowComponent = ({
   expandItems,
   children,
   ...htmlProps
-}) => {
+}: Props) => {
   if (clickRowToExpand && 'onClick' in htmlProps) {
     assert(
       false,

@@ -4,7 +4,7 @@ import { ExpandArea } from '.';
 import { ColorFn } from '../../../../common/Types';
 import { getStylesForSizes } from '../../shared';
 import { useFlexTable } from '../../shared/FlexTableProvider';
-import { ExpandRowComponent } from '../Row.types';
+import { ExpandRowProps } from '../Row.types';
 
 type ScreenSizeConfigurableProps = {
   expandable: boolean;
@@ -44,12 +44,12 @@ const StyledExpandedRow = styled('div')<StyledExpandedRowType>`
   )}
 `;
 
-export const ExpandRow: ExpandRowComponent = ({
+export const ExpandRow = ({
   expandItems,
   expandChildren,
   separatorColor = (theme) => theme.color.divider,
   ...htmlProps
-}) => {
+}: ExpandRowProps) => {
   const { xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl } = useFlexTable<'expandable'>('expandable');
   return (
     <StyledExpandedRow

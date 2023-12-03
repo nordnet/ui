@@ -13,12 +13,7 @@ const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
 `;
 
-export const HeaderContent: React.FC<Props & UIProps> = ({
-  sortable,
-  sortOrder,
-  onSortClick,
-  children,
-}) => {
+export const HeaderContent = ({ sortable, sortOrder, onSortClick, children }: Props & UIProps) => {
   if (!sortable || sortOrder === null) {
     return <TextWrapper sorted={false}>{children}</TextWrapper>;
   }

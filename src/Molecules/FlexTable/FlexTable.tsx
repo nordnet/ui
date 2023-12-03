@@ -5,7 +5,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Cell } from './Cell';
 import { CellInlineContainer, ColumnProvider, constants, getStylesForSizes } from './shared';
-import { FlexTableComponent, FlexTableComponents } from './FlexTable.types';
+import { Props } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
@@ -44,7 +44,7 @@ const StyledDiv = styled('div')<StyledDivProps>`
   )}
 `;
 
-const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...htmlDivProps }) => {
+const FlexTableContainer = ({ className, children, ...htmlDivProps }: HtmlDivProps) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
 
   return (
@@ -71,7 +71,7 @@ const StyledTypography = styled(Typography)`
   padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
-const FlexTable: FlexTableComponent & FlexTableComponents = ({
+const FlexTable = ({
   className,
   density = 'm',
   columnDistance = 2,
@@ -86,7 +86,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   lg,
   xl,
   ...htmlProps
-}) => (
+}: Props) => (
   <FlexTableProvider
     id={htmlProps.id}
     density={density}

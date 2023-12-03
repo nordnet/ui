@@ -2,12 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
-import {
-  ExpandItemComponent,
-  ExpandItemMediaProps,
-  ExpandItemProps,
-  RenderFunc,
-} from './ExpandItems.types';
+import { ExpandItemProps, ExpandItemMediaProps, ItemProps, RenderFunc } from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapper } from './TextWrapper';
 import { getStylesForSizes } from '../../../shared';
@@ -67,10 +62,13 @@ const StyledMobileItem = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const ExpandRenderer: React.FC<{
+const ExpandRenderer = ({
+  isLabel = false,
+  children,
+}: {
   children: React.ReactNode | RenderFunc;
   isLabel?: boolean;
-}> = ({ isLabel = false, children }) => (
+}) => (
   <>
     {isElement(children) && children}
     {isFunction(children)
@@ -79,12 +77,18 @@ const ExpandRenderer: React.FC<{
   </>
 );
 
-const MobileItem: React.FC<
-  {
-    label: ExpandItemProps['label'];
-    value: ExpandItemProps['value'];
-  } & ExpandItemMediaProps
-> = ({ label, value, xs, sm, md, lg, xl }) => (
+const MobileItem = ({
+  label,
+  value,
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+}: {
+  label: ItemProps['label'];
+  value: ItemProps['value'];
+} & ExpandItemMediaProps) => (
   <StyledMobileItem
     forwardedAs="li"
     container
@@ -104,12 +108,18 @@ const MobileItem: React.FC<
   </StyledMobileItem>
 );
 
-const DesktopItem: React.FC<
-  {
-    label: ExpandItemProps['label'];
-    value: ExpandItemProps['value'];
-  } & ExpandItemMediaProps
-> = ({ label, value, xs, sm, md, lg, xl }) => (
+const DesktopItem = ({
+  label,
+  value,
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+}: {
+  label: ItemProps['label'];
+  value: ItemProps['value'];
+} & ExpandItemMediaProps) => (
   <StyledDesktopItem item $xs={xs} $sm={sm} $md={md} $lg={lg} $xl={xl} forwardedAs="li">
     <LabeledValue label={<ExpandRenderer isLabel>{label}</ExpandRenderer>}>
       <ExpandRenderer>{value}</ExpandRenderer>
@@ -117,7 +127,7 @@ const DesktopItem: React.FC<
   </StyledDesktopItem>
 );
 
-export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
+export const ExpandItem = ({ item, mobileItem }: ExpandItemProps) => {
   const { label, value, hidden, sm, md, lg, xl } = item;
   return mobileItem ? (
     <MobileItem label={label} value={value} xs={{ hidden }} sm={sm} md={md} lg={lg} xl={xl} />

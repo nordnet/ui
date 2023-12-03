@@ -21,6 +21,12 @@ type StyledExpandCellProps = {
   $xl: Partial<ScreenSizeConfigurableProps>;
 };
 
+type ExpandItemsProps = ExpandAreaProps & {
+  rowType: 'header' | 'content' | 'footer';
+  disabled?: boolean;
+  setExpand: (expanded: boolean) => void;
+};
+
 const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
   if (expandable) {
     return 'display: flex;';
@@ -53,13 +59,13 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
   }
 `;
 
-export const ExpandElement: React.FC<
-  ExpandAreaProps & {
-    rowType: 'header' | 'content' | 'footer';
-    disabled?: boolean;
-    setExpand: (expanded: boolean) => void;
-  }
-> = ({ rowType, expanded = false, onExpandToggle, setExpand, disabled }) => {
+export const ExpandElement = ({
+  rowType,
+  expanded = false,
+  onExpandToggle,
+  setExpand,
+  disabled,
+}: ExpandItemsProps) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'expandable' | 'columnDistance'>(
     'expandable',
     'columnDistance',

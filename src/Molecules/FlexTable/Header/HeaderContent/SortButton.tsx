@@ -10,7 +10,7 @@ const StyledLink = styled.a`
   width: 100%;
 `;
 
-export const SortButton: React.FC<SortButtonProps> = ({ children, onClick, className }) => (
+export const SortButton = ({ children, onClick, className }: SortButtonProps) => (
   <StyledLink
     className={className}
     href="#"

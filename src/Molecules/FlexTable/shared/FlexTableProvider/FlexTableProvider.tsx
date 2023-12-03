@@ -1,9 +1,9 @@
 import React from 'react';
-import { FlexTableContextProps, FlexTableProviderComponent } from './FlexTableProvider.types';
+import { FlexTableContextProps, FlexTableProviderProps } from './FlexTableProvider.types';
 
 export const FlexTableContext = React.createContext<FlexTableContextProps>(undefined);
 
-export const FlexTableProvider: FlexTableProviderComponent = ({
+export const FlexTableProvider = ({
   children,
   id,
   density,
@@ -16,7 +16,7 @@ export const FlexTableProvider: FlexTableProviderComponent = ({
   md,
   lg,
   xl,
-}) => (
+}: FlexTableProviderProps) => (
   <FlexTableContext.Provider
     value={{
       id,

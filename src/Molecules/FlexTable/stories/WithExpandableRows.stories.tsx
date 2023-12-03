@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { RowComponent } from '../Row/Row.types';
+import { Props } from '../Row/Row.types';
 import docs from '../FlexTable.mdx';
 import { Button, Flexbox, FlexTable, Number } from '../../..';
 
@@ -397,7 +397,7 @@ export const WholeRowExpandableTable = () => {
 
 export const ControlledWholeRowExpandableTable = () => {
   // @ts-ignore
-  const ControlledRow: RowComponent = ({ children, ...rowProps }) => {
+  const ControlledRow = ({ children, ...rowProps }: Props) => {
     const [expanded, setExpanded] = useState(false);
 
     return (
