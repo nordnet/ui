@@ -20,6 +20,18 @@ export const getMinusSign = (intl: IntlShape): string => intl.formatNumberToPart
 export const formatNumber = (value: number, intl: IntlShape, minimumFractionDigits = 0) =>
   intl.formatNumber(value, { minimumFractionDigits, maximumFractionDigits: 20 });
 
+const prependWithZero = (value: string) => {
+  if (value.startsWith('.')) {
+    return value.replace('.', '0.');
+  }
+
+  if (value.startsWith('-.')) {
+    return value.replace('-.', '-0.');
+  }
+
+  return value;
+};
+
 const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlShape) => {
   const decimalSign = getDecimalSign(intl);
   const minusSign = getMinusSign(intl);
@@ -38,21 +50,23 @@ const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlS
     .replace(replaceDecimalRegExp, '.') // replace localized decimalSign
     .replace(replaceMinusSignRegExp, '-'); // replace localized minusSign
 
-  const sanitizedValue = delocalizedValue
-    .replace(/(?<=^|-)\./, '0.') // prepend 0 when integer part is missing for decimal
+  const sanitizedValue = prependWithZero(delocalizedValue) // prepend 0 when integer part is missing for decimal
     .replace(/(?<!^)-/g, replaceValue); // remove minusSign not at start of string
 
   return sanitizedValue;
 };
 
 const formatWithLeadingZeros = (integerPart: string, intl: IntlShape) => {
-  const oneAdded = integerPart.replace(/(?<=^|-)0/, '10');
+  const isNegative = integerPart.startsWith('-');
+  const positiveIntegerPart = integerPart.replace('-', '');
+
+  const oneAdded = positiveIntegerPart.replace(/^0/, '10');
   const oneAddedParsed = Number(oneAdded);
   const oneAddedFormatted = formatNumber(oneAddedParsed, intl);
 
-  const escapedMinusSign = escapeStringRegexp(getMinusSign(intl));
-  const removeOneRegexp = new RegExp(`(?<=^|${escapedMinusSign})1`, 'g');
-  return oneAddedFormatted.replace(removeOneRegexp, '');
+  const minusSign = getMinusSign(intl);
+  const formattedWithLeadingZeros = oneAddedFormatted.replace(/^1/, '');
+  return isNegative ? minusSign + formattedWithLeadingZeros : formattedWithLeadingZeros;
 };
 
 export const parseInputValue = (
@@ -80,7 +94,7 @@ export const parseInputValue = (
     return { value: null, formattedValue: minusSign };
   }
 
-  const hasLeadingZeros = /(?<=^|-)0+/g.test(sanitizedValue);
+  const hasLeadingZeros = /^((-0)|0)/g.test(sanitizedValue);
   const [integerPart, decimalPart] = sanitizedValue.split('.');
   const integerPartParsed = Number(integerPart);
   const formattedIntegerPart = hasLeadingZeros
