@@ -20,18 +20,6 @@ export const getMinusSign = (intl: IntlShape): string => intl.formatNumberToPart
 export const formatNumber = (value: number, intl: IntlShape, minimumFractionDigits = 0) =>
   intl.formatNumber(value, { minimumFractionDigits, maximumFractionDigits: 20 });
 
-const prependWithZero = (value: string) => {
-  if (value.startsWith('.')) {
-    return value.replace('.', '0.');
-  }
-
-  if (value.startsWith('-.')) {
-    return value.replace('-.', '-0.');
-  }
-
-  return value;
-};
-
 const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlShape) => {
   const decimalSign = getDecimalSign(intl);
   const minusSign = getMinusSign(intl);
@@ -50,10 +38,11 @@ const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlS
     .replace(replaceDecimalRegExp, '.') // replace localized decimalSign
     .replace(replaceMinusSignRegExp, '-'); // replace localized minusSign
 
-  const sanitizedValue = prependWithZero(delocalizedValue) // prepend 0 when integer part is missing for decimal
-    .replace(/(?<!^)-/g, replaceValue); // remove minusSign not at start of string
+  const isNegative = delocalizedValue.startsWith('-');
+  const withoutMinus = delocalizedValue.replace(/^-/, '').replace(/-/g, replaceValue); // remove minusSign
+  const sanitizedValue = withoutMinus.replace(/^\./, '0.'); // prepend 0 when integer part is missing for decimal
 
-  return sanitizedValue;
+  return isNegative ? `-${sanitizedValue}` : sanitizedValue;
 };
 
 const formatWithLeadingZeros = (integerPart: string, intl: IntlShape) => {
