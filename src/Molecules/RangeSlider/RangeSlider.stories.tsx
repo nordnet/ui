@@ -38,7 +38,6 @@ const Template = (args: Props) => {
 
 export const Default: Story = {
   render: Template,
-
   args: {
     defaultLowValue: 20,
     defaultHighValue: 40,
@@ -50,38 +49,44 @@ export const Default: Story = {
 
 export const Minimum: Story = {
   render: Template,
-
   args: {
     ...Default.args,
     defaultLowValue: 0,
     defaultHighValue: 5,
     min: 0,
     max: 10,
-    sliderColor: (t) => t.color.sliderColor,
   },
 };
 
 export const NoDefaultValues: Story = {
   render: Template,
-
   args: {
     min: 0,
     max: 10,
     step: 1,
-    sliderColor: (t) => t.color.sliderColor,
   },
 };
 
 export const Maximum: Story = {
   render: Template,
-
   args: {
     ...Default.args,
     defaultLowValue: 5,
     defaultHighValue: 10,
     min: 0,
     max: 10,
-    sliderColor: (t) => t.color.sliderColor,
+  },
+};
+
+export const ValuesOutsideRange: Story = {
+  // used to verify that the values are clamped to the min/max values and not rendered outside the range
+  render: Template,
+  args: {
+    ...Default.args,
+    defaultLowValue: -50,
+    defaultHighValue: 50,
+    min: -10,
+    max: 10,
   },
 };
 
@@ -107,7 +112,6 @@ const TemplateCustomColor = (args: Props) => {
 
 export const CustomColor: Story = {
   render: TemplateCustomColor,
-
   args: {
     defaultLowValue: -30,
     defaultHighValue: 30,
@@ -119,7 +123,6 @@ export const CustomColor: Story = {
 
 export const SmallVariant: Story = {
   render: Template,
-
   args: {
     ...Default.args,
     variant: 'small',
@@ -128,7 +131,6 @@ export const SmallVariant: Story = {
 
 export const Disabled: Story = {
   render: Template,
-
   args: {
     ...Default.args,
     disabled: true,
