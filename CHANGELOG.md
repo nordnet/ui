@@ -1,3 +1,10 @@
+## [15.0.4](https://github.com/nordnet/ui/compare/v15.0.3...v15.0.4) (2023-12-04)
+
+
+### Bug Fixes
+
+* lookbehind regexp compatibility issue ([#1536](https://github.com/nordnet/ui/issues/1536)) ([a3e0298](https://github.com/nordnet/ui/commit/a3e029824d941c2d0d639ea700d9dbd55f215834))
+
 ## [15.0.3](https://github.com/nordnet/ui/compare/v15.0.2...v15.0.3) (2023-12-01)
 
 
