@@ -42,6 +42,13 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
         background-color: ${p.theme.color.modalBackdrop};
       }`
       : `background-color: ${p.theme.color.modalBackdrop};`}
+
+  ${(p) =>
+    p.$blur &&
+    // The reason for the !important is to override $fullScreenMobile the background color
+    'backdrop-filter: blur(15px); background-color: rgba(0, 0, 0, 0.60) !important;'}
+
+}
 `;
 
 const Dialog = styled(motion.div)<DialogProps>`
@@ -173,6 +180,7 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
   backdropRef,
   onClick,
   $fullScreenMobile,
+  blurBackdrop,
 }) =>
   showBackdrop ? (
     <Backdrop
@@ -182,6 +190,7 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
       ref={backdropRef}
       onClick={onClick}
       $fullScreenMobile={$fullScreenMobile}
+      $blur={blurBackdrop}
     >
       {children}
     </Backdrop>
@@ -209,6 +218,7 @@ export const ModalInner: React.FC<Props> = ({
   isStatusModal = false,
   showBackdrop = true,
   onAnimationComplete,
+  blurBackdrop,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -272,6 +282,7 @@ export const ModalInner: React.FC<Props> = ({
             onClick={handleBackdropClick}
             backdropRef={backdropRef}
             $fullScreenMobile={fullScreenMobile}
+            blurBackdrop={blurBackdrop}
           >
             <Dialog
               onAnimationComplete={onAnimationComplete || noop}
