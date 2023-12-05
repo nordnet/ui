@@ -1,3 +1,10 @@
+## [15.0.5](https://github.com/nordnet/ui/compare/v15.0.4...v15.0.5) (2023-12-05)
+
+
+### Bug Fixes
+
+* add safety protetion to not accidentally draw the sliders outsi… ([#1537](https://github.com/nordnet/ui/issues/1537)) ([900def3](https://github.com/nordnet/ui/commit/900def35370d75d6ba3b86935c7fa9e77be3e9ee))
+
 ## [15.0.4](https://github.com/nordnet/ui/compare/v15.0.3...v15.0.4) (2023-12-04)
 
 
