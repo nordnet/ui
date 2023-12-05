@@ -47,8 +47,6 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
     p.$blur &&
     // The reason for the !important is to override $fullScreenMobile the background color
     'backdrop-filter: blur(15px); background-color: rgba(0, 0, 0, 0.6) !important;'}
-
-}
 `;
 
 const Dialog = styled(motion.div)<DialogProps>`
