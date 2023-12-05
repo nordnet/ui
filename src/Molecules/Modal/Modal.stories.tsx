@@ -1413,9 +1413,7 @@ export const ModalWithBlurBackground = {
           demand immediate attention (while also blocking all other actions on the site). Always
           consider if you can solve a problem in another way first before you choose to go with the
           modal. Modals should be used with care as they are quite intrusive on the user experience
-          and demand immediate attention (while also blocking all other actions on the site). Always
-          consider if you can solve a problem in another way first before you choose to go with the
-          modal.
+          and demand immediate attention (while also blocking all other actions on the site).
         </Typography>
         <Illustration.AppropriatenessTest375 />
         <Illustration.InvestForLongTerm375 />
