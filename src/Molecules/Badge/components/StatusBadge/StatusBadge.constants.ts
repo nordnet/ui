@@ -10,7 +10,7 @@ export const VARIANT_INFORMATION = 'information';
 export const MAP_BADGE_AND_ICON_SIZES = {
   xs: { badgeSize: 6, iconSize: '16' },
   s: { badgeSize: 8, iconSize: '16' },
-  l: { badgeSize: 12, iconSize: '32' },
+  l: { badgeSize: 12, iconSize: '24' },
   // TODO: increase iconSize according to design when the corresponding icon sizes exist
   xl: { badgeSize: 20, iconSize: '32' },
 };
@@ -23,4 +23,4 @@ export const MAP_ICON_COMPONENT_NAME = {
   [VARIANT_WARNING]: 'ExclamationMark',
   [VARIANT_INFORMATION]: 'InformationMark',
 };
-export const ICON_COLOR: ColorFn = (t) => t.color.badgeIconColor;
+export const ICON_COLOR: ColorFn = (t) => t.colorTokens.neutral.icon_medium;
