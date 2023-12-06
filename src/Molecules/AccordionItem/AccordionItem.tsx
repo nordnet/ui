@@ -15,6 +15,7 @@ const Item = styled.div<ItemProps>`
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
 
+  border-top: 1px solid transparent;
   && + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
