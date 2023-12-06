@@ -1,3 +1,10 @@
+# [15.2.0](https://github.com/nordnet/ui/compare/v15.1.0...v15.2.0) (2023-12-06)
+
+
+### Features
+
+* bump mui/base ([#1542](https://github.com/nordnet/ui/issues/1542)) ([414541f](https://github.com/nordnet/ui/commit/414541f199bd5800c00f67ceb6b382718ba7002f))
+
 # [15.1.0](https://github.com/nordnet/ui/compare/v15.0.5...v15.1.0) (2023-12-06)
 
 
