@@ -14,12 +14,10 @@ const Item = styled.div<ItemProps>`
   border-radius: ${(p) => p.theme.borderRadius4};
   background-color: ${(p) =>
     !p.disableBackgroundColor && p.hasFocus ? p.theme.color.background : 'transparent'};
-
   border-top: 1px solid transparent;
   && + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
-
   ${({ theme, p, px, py, pt, pb, pl, pr }) => `
   padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
     ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
