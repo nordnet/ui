@@ -1,3 +1,10 @@
+# [15.1.0](https://github.com/nordnet/ui/compare/v15.0.5...v15.1.0) (2023-12-06)
+
+
+### Features
+
+* trigger build ([#1539](https://github.com/nordnet/ui/issues/1539)) ([8b10359](https://github.com/nordnet/ui/commit/8b10359a608475ca19c14ea7b9ceee92b90d8509))
+
 ## [15.0.5](https://github.com/nordnet/ui/compare/v15.0.4...v15.0.5) (2023-12-05)
 
 
