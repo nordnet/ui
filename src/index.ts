@@ -14,6 +14,7 @@ import Illustration from './Atoms/Illustration';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
+import Logo from './Atoms/Logo';
 import Media, { useMedia } from './Atoms/Media';
 import OldIcon from './Atoms/OldIcon';
 import Pill from './Atoms/Pill';
@@ -193,6 +194,7 @@ export {
   List,
   ListItem,
   ListWithTitles,
+  Logo,
   Media,
   Modal,
   MultiStepProgress,

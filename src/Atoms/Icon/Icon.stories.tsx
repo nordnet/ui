@@ -52,9 +52,7 @@ export const AvailableIcons = {
           title: iconName,
           component: (
             <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
-              <IconComponent
-                {...(iconName === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
-              />
+              <IconComponent />
             </div>
           ),
         }))}
@@ -71,10 +69,7 @@ export const AllIconsColored = {
         ?.sort((a, b) => a[0].localeCompare(b[0]))
         .map(([iconName, IconComponent]: [string, React.ComponentType<any>]) => (
           <div key={iconName} style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
-            <IconComponent
-              {...(iconName === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
-              color={(t: any) => t.color.cta}
-            />
+            <IconComponent color={(t: any) => t.color.cta} />
           </div>
         ))}
     </>
