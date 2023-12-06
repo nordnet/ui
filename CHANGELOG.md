@@ -1,3 +1,10 @@
+## [15.2.1](https://github.com/nordnet/ui/compare/v15.2.0...v15.2.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* add border-top transparent to prevent item to jump 1px when sele… ([#1543](https://github.com/nordnet/ui/issues/1543)) ([3a9cee4](https://github.com/nordnet/ui/commit/3a9cee4c43d50eb3aa6aa02cacb4e341385912be))
+
 # [15.2.0](https://github.com/nordnet/ui/compare/v15.1.0...v15.2.0) (2023-12-06)
 
 
