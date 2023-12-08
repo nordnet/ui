@@ -1,3 +1,10 @@
+# [15.5.0](https://github.com/nordnet/ui/compare/v15.4.0...v15.5.0) (2023-12-08)
+
+
+### Features
+
+* chenage checklist card button width ([#1546](https://github.com/nordnet/ui/issues/1546)) ([fca4fba](https://github.com/nordnet/ui/commit/fca4fbaf2b4b5ad34bf91868c4a24990e4c62ceb))
+
 # [15.4.0](https://github.com/nordnet/ui/compare/v15.3.0...v15.4.0) (2023-12-08)
 
 
