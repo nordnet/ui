@@ -34,7 +34,7 @@ const StyledBox = styled(Box)`
 `;
 
 const StyledButtonPill = styled(Button.Pill)`
-  width: 112px;
+  width: 130px;
 `;
 
 type TextButtonCardProps = {
