@@ -1,3 +1,10 @@
+# [15.4.0](https://github.com/nordnet/ui/compare/v15.3.0...v15.4.0) (2023-12-08)
+
+
+### Features
+
+* fix checkbox alignment in selected card ([#1545](https://github.com/nordnet/ui/issues/1545)) ([c5556ea](https://github.com/nordnet/ui/commit/c5556eae0e3356fcf0098b6bbc6def2f93110713))
+
 # [15.3.0](https://github.com/nordnet/ui/compare/v15.2.1...v15.3.0) (2023-12-07)
 
 
