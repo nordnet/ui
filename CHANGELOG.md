@@ -1,3 +1,10 @@
+# [15.3.0](https://github.com/nordnet/ui/compare/v15.2.1...v15.3.0) (2023-12-07)
+
+
+### Features
+
+* Add logo components ([#1544](https://github.com/nordnet/ui/issues/1544)) ([11a9419](https://github.com/nordnet/ui/commit/11a94193ae2400ee92eb56125bcd5b93f405193a))
+
 ## [15.2.1](https://github.com/nordnet/ui/compare/v15.2.0...v15.2.1) (2023-12-06)
 
 
