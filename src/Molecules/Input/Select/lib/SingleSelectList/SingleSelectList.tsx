@@ -10,6 +10,7 @@ import {
   Separator,
   Typography,
 } from '../../../../..';
+import { isNumber } from '../../../../../common/utils';
 
 type ListProps = {
   children?: React.ReactNode;
@@ -103,6 +104,7 @@ type OptionProps = {
   isKeyboardNavigation?: boolean;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
   fullscreenOnMobile?: boolean;
+  count?: number;
 };
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
@@ -166,13 +168,14 @@ const EllipsizingText = styled.span`
 `;
 
 export const Option = ({
-  label,
+  count,
   disabled,
-  selected,
   focused,
-  onClick,
-  isKeyboardNavigation,
   fullscreenOnMobile,
+  isKeyboardNavigation,
+  label,
+  onClick,
+  selected,
 }: OptionProps) => (
   <StyledOption
     selected={selected}
@@ -185,12 +188,15 @@ export const Option = ({
     fullscreenOnMobile={fullscreenOnMobile}
   >
     <EllipsizingText>{label}</EllipsizingText>
-    {selected && (
-      <Flexbox item container alignItems="center">
-        <Box pl={2}>
-          <Icon.Check16 color={(t) => t.color.cta} />
-        </Box>
+    <Flexbox item container alignItems="center" gap={2} justifyContent="flex-start">
+      <Flexbox item>{selected && <Icon.Check16 inline color={(t) => t.color.cta} />}</Flexbox>
+      <Flexbox item>
+        {isNumber(count) && (
+          <Typography type="secondary" color={(t) => t.color.label}>
+            {count}
+          </Typography>
+        )}
       </Flexbox>
-    )}
+    </Flexbox>
   </StyledOption>
 );

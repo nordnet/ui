@@ -19,6 +19,16 @@ export const ItemSelected = {
   name: 'Item selected',
 };
 
+export const ItemCountry = {
+  render: () => <Option label="First" selected country="SE" showFlag />,
+  name: 'Item with country',
+};
+
+export const ItemCountryAndCount = {
+  render: () => <Option label="First" selected country="SE" count={123} showFlag />,
+  name: 'Item with country and count',
+};
+
 export const ItemDisabled = {
   render: () => <Option label="First" disabled />,
   name: 'Item disabled',

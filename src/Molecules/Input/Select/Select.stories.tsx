@@ -37,6 +37,9 @@ const accountOptions = [
     symbol: 'AF',
     accno: '123',
     amount: { value: 212, currency: 'SEK' },
+    count: 123,
+    showFlag: true,
+    country: 'SE',
   },
   {
     label: 'Second acc 2',

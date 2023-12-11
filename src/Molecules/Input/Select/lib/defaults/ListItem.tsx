@@ -30,6 +30,7 @@ export const ListItem: React.FC<{
       focused={focused}
       isKeyboardNavigation={isKeyboardNavigation}
       fullscreenOnMobile={fullscreenOnMobile}
+      count={option.count}
     />
   );
 };

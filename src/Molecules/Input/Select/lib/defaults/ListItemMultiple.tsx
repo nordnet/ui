@@ -32,6 +32,9 @@ export const ListItem = ({ index }: { index: number }) => {
       selectAll={selectAll}
       isKeyboardNavigation={isKeyboardNavigation}
       fullscreenOnMobile={fullscreenOnMobile}
+      showFlag={option.showFlag}
+      count={option.count}
+      country={option.country}
     />
   );
 };

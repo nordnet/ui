@@ -19,6 +19,11 @@ export const ItemSelected = {
   name: 'Item selected',
 };
 
+export const ItemWithCount = {
+  render: () => <Option label="First" selected count={123} />,
+  name: 'Item with count',
+};
+
 export const ItemDisabled = {
   render: () => <Option label="First" disabled />,
   name: 'Item disabled',

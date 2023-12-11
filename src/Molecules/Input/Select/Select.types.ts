@@ -134,6 +134,9 @@ export type OptionItem = {
   label: string | JSX.Element;
   value: any;
   disabled?: boolean;
+  count?: number;
+  country?: string;
+  showFlag?: boolean;
   [SYMBOL_ALL]?: boolean;
 };
 
@@ -141,6 +144,9 @@ type GroupOptionItem = {
   label: string;
   value?: never;
   disabled?: boolean;
+  count?: number;
+  country?: string;
+  showFlag?: boolean;
   options?: Array<OptionItem>;
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography } from '../../../../..';
+import { Box, Flag, Flexbox, Typography } from '../../../../..';
+import { isNumber } from '../../../../../common/utils';
+
 // Need to import it directly
 // Otherwise causes circular deps problems
 import { Checkbox } from '../../../Checkbox';
@@ -10,13 +12,16 @@ const FullHeightFlexbox = styled(Flexbox)`
 `;
 
 type OptionProps = {
-  selected?: boolean;
+  count?: number;
+  country?: string;
   disabled?: boolean;
-  label: React.ReactNode;
   focused?: boolean;
-  selectAll?: boolean;
-  isKeyboardNavigation?: boolean;
   fullscreenOnMobile?: boolean;
+  isKeyboardNavigation?: boolean;
+  label: React.ReactNode;
+  selectAll?: boolean;
+  selected?: boolean;
+  showFlag?: boolean;
 };
 
 const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: boolean }>`
@@ -92,13 +97,16 @@ const EllipsizingText = styled(Typography)`
 `;
 
 export const Option = ({
-  label,
+  count,
+  country,
   disabled,
-  selected,
   focused,
-  selectAll,
-  isKeyboardNavigation,
   fullscreenOnMobile,
+  isKeyboardNavigation,
+  label,
+  selectAll,
+  selected,
+  showFlag,
 }: OptionProps) => (
   <StyledOption
     selected={selected}
@@ -109,8 +117,7 @@ export const Option = ({
     fullscreenOnMobile={fullscreenOnMobile}
   >
     <FullHeightFlexbox container alignItems="center" gap={2}>
-      <Flexbox item container alignItems="center" flex="0 0 auto">
-        {/** TODO: revisit a11y here */}
+      <Flexbox item container alignItems="center" flex="0 0 auto" gap={2}>
         <Checkbox16px
           width="16px"
           name="example"
@@ -119,6 +126,7 @@ export const Option = ({
           readOnly
           visuallyFocused={!disabled && isKeyboardNavigation ? focused : false}
         />
+        {showFlag && (country ? <Flag size="m" country={country} /> : <Box p={1} />)}
       </Flexbox>
       <FlexboxWidth item container justifyContent="space-between" alignItems="center">
         <EllipsizingText
@@ -127,6 +135,11 @@ export const Option = ({
         >
           {label}
         </EllipsizingText>
+        {isNumber(count) && (
+          <Typography type="secondary" color={(t) => t.color.label}>
+            {count}
+          </Typography>
+        )}
       </FlexboxWidth>
     </FullHeightFlexbox>
   </StyledOption>
