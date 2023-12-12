@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { StoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { Badge, Typography } from '../../../..';
 import { AccountBadgeStack } from './AccountBadgeStack';
 import { AccountBadgeStackProps, Item } from './AccountBadgeStack.types';
 import { Display } from '../../../../common/Display';
 import Button from '../../../Button';
-import { Badge, Typography } from '../../../..';
 import ChevronDown8 from '../../../../Atoms/Icon/action/chevronDown/ChevronDown8';
 
 export default {
