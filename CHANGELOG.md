@@ -1,3 +1,59 @@
+# [15.5.0](https://github.com/nordnet/ui/compare/v15.4.0...v15.5.0) (2023-12-08)
+
+
+### Features
+
+* chenage checklist card button width ([#1546](https://github.com/nordnet/ui/issues/1546)) ([fca4fba](https://github.com/nordnet/ui/commit/fca4fbaf2b4b5ad34bf91868c4a24990e4c62ceb))
+
+# [15.4.0](https://github.com/nordnet/ui/compare/v15.3.0...v15.4.0) (2023-12-08)
+
+
+### Features
+
+* fix checkbox alignment in selected card ([#1545](https://github.com/nordnet/ui/issues/1545)) ([c5556ea](https://github.com/nordnet/ui/commit/c5556eae0e3356fcf0098b6bbc6def2f93110713))
+
+# [15.3.0](https://github.com/nordnet/ui/compare/v15.2.1...v15.3.0) (2023-12-07)
+
+
+### Features
+
+* Add logo components ([#1544](https://github.com/nordnet/ui/issues/1544)) ([11a9419](https://github.com/nordnet/ui/commit/11a94193ae2400ee92eb56125bcd5b93f405193a))
+
+## [15.2.1](https://github.com/nordnet/ui/compare/v15.2.0...v15.2.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* add border-top transparent to prevent item to jump 1px when sele… ([#1543](https://github.com/nordnet/ui/issues/1543)) ([3a9cee4](https://github.com/nordnet/ui/commit/3a9cee4c43d50eb3aa6aa02cacb4e341385912be))
+
+# [15.2.0](https://github.com/nordnet/ui/compare/v15.1.0...v15.2.0) (2023-12-06)
+
+
+### Features
+
+* bump mui/base ([#1542](https://github.com/nordnet/ui/issues/1542)) ([414541f](https://github.com/nordnet/ui/commit/414541f199bd5800c00f67ceb6b382718ba7002f))
+
+# [15.1.0](https://github.com/nordnet/ui/compare/v15.0.5...v15.1.0) (2023-12-06)
+
+
+### Features
+
+* trigger build ([#1539](https://github.com/nordnet/ui/issues/1539)) ([8b10359](https://github.com/nordnet/ui/commit/8b10359a608475ca19c14ea7b9ceee92b90d8509))
+
+## [15.0.5](https://github.com/nordnet/ui/compare/v15.0.4...v15.0.5) (2023-12-05)
+
+
+### Bug Fixes
+
+* add safety protetion to not accidentally draw the sliders outsi… ([#1537](https://github.com/nordnet/ui/issues/1537)) ([900def3](https://github.com/nordnet/ui/commit/900def35370d75d6ba3b86935c7fa9e77be3e9ee))
+
+## [15.0.4](https://github.com/nordnet/ui/compare/v15.0.3...v15.0.4) (2023-12-04)
+
+
+### Bug Fixes
+
+* lookbehind regexp compatibility issue ([#1536](https://github.com/nordnet/ui/issues/1536)) ([a3e0298](https://github.com/nordnet/ui/commit/a3e029824d941c2d0d639ea700d9dbd55f215834))
+
 ## [15.0.3](https://github.com/nordnet/ui/compare/v15.0.2...v15.0.3) (2023-12-01)
 
 

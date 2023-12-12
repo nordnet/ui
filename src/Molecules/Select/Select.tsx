@@ -1,5 +1,8 @@
 import React, { ForwardedRef, forwardRef, useEffect } from 'react';
-import useMuiSelect, { SelectProvider as MuiSelectProvider } from '@mui/base/useSelect';
+import {
+  useSelect as useMuiSelect,
+  SelectProvider as MuiSelectProvider,
+} from '@mui/base/useSelect';
 import { FadedScroll } from '../..';
 import { HiddenSelect } from './HiddenSelect';
 import { ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
