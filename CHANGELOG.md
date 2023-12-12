@@ -1,3 +1,10 @@
+## [15.5.1](https://github.com/nordnet/ui/compare/v15.5.0...v15.5.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* import order of broken stories ([#1548](https://github.com/nordnet/ui/issues/1548)) ([d2757a0](https://github.com/nordnet/ui/commit/d2757a06b4353ab31db92421be7db24648ee2567))
+
 # [15.5.0](https://github.com/nordnet/ui/compare/v15.4.0...v15.5.0) (2023-12-08)
 
 
