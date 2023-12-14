@@ -1,6 +1,5 @@
 import React from 'react';
 import { FlexPropsType } from '../shared/shared.types';
-import { TextWrapper } from './TextWrapper';
 
 type RenderProp = {
   columnId: string;
@@ -13,10 +12,6 @@ export type Props = {
    */
   columnId: string;
 } & FlexPropsType;
-
-export type CellComponents = { TextWrapper: typeof TextWrapper };
-
-export type CellComponent = React.FC<Props> & CellComponents;
 
 type ExpandCellProps = {
   /**
