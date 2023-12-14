@@ -1,13 +1,6 @@
-import { StepBaseProps } from '../MultiStepProgress.types';
+import { A11yProps, StepBaseProps } from '../shared.types';
 
 type InheritedProps = Pick<StepBaseProps, 'current' | 'done'>;
-
-export type A11yProps = {
-  /** Visible on completed steps */
-  titleDone: string;
-  /** Visible on non completed steps */
-  titleNotDone: string;
-};
 
 export type InternalProps = {
   $current?: boolean;

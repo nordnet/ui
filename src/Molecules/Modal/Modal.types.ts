@@ -22,11 +22,13 @@ export type InnerProps = {
   onAnimationComplete?: () => void;
   showBackdrop?: boolean;
   children?: React.ReactNode;
+  blurBackdrop?: boolean;
 };
 
 export type BackdropProps = {
   onClick: (e: React.ChangeEvent<HTMLElement>) => void;
   $fullScreenMobile?: boolean;
+  $blur?: boolean;
 };
 
 export type DialogProps = {
@@ -47,4 +49,5 @@ export type BackdropWrapperProps = BackdropProps & {
   showBackdrop: boolean;
   backdropRef: React.RefObject<HTMLDivElement>;
   children?: React.ReactNode;
+  blurBackdrop?: boolean;
 };

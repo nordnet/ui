@@ -1,17 +1,86 @@
-# [15.1.0-beta.2](https://github.com/nordnet/ui/compare/v15.1.0-beta.1...v15.1.0-beta.2) (2023-11-30)
+## [15.5.1](https://github.com/nordnet/ui/compare/v15.5.0...v15.5.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* import order of broken stories ([#1548](https://github.com/nordnet/ui/issues/1548)) ([d2757a0](https://github.com/nordnet/ui/commit/d2757a06b4353ab31db92421be7db24648ee2567))
+
+# [15.5.0](https://github.com/nordnet/ui/compare/v15.4.0...v15.5.0) (2023-12-08)
+
+
+### Features
+
+* chenage checklist card button width ([#1546](https://github.com/nordnet/ui/issues/1546)) ([fca4fba](https://github.com/nordnet/ui/commit/fca4fbaf2b4b5ad34bf91868c4a24990e4c62ceb))
+
+# [15.4.0](https://github.com/nordnet/ui/compare/v15.3.0...v15.4.0) (2023-12-08)
+
+
+### Features
+
+* fix checkbox alignment in selected card ([#1545](https://github.com/nordnet/ui/issues/1545)) ([c5556ea](https://github.com/nordnet/ui/commit/c5556eae0e3356fcf0098b6bbc6def2f93110713))
+
+# [15.3.0](https://github.com/nordnet/ui/compare/v15.2.1...v15.3.0) (2023-12-07)
+
+
+### Features
+
+* Add logo components ([#1544](https://github.com/nordnet/ui/issues/1544)) ([11a9419](https://github.com/nordnet/ui/commit/11a94193ae2400ee92eb56125bcd5b93f405193a))
+
+## [15.2.1](https://github.com/nordnet/ui/compare/v15.2.0...v15.2.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* add border-top transparent to prevent item to jump 1px when sele… ([#1543](https://github.com/nordnet/ui/issues/1543)) ([3a9cee4](https://github.com/nordnet/ui/commit/3a9cee4c43d50eb3aa6aa02cacb4e341385912be))
+
+# [15.2.0](https://github.com/nordnet/ui/compare/v15.1.0...v15.2.0) (2023-12-06)
+
+
+### Features
+
+* bump mui/base ([#1542](https://github.com/nordnet/ui/issues/1542)) ([414541f](https://github.com/nordnet/ui/commit/414541f199bd5800c00f67ceb6b382718ba7002f))
+
+# [15.1.0](https://github.com/nordnet/ui/compare/v15.0.5...v15.1.0) (2023-12-06)
+
+
+### Features
+
+* trigger build ([#1539](https://github.com/nordnet/ui/issues/1539)) ([8b10359](https://github.com/nordnet/ui/commit/8b10359a608475ca19c14ea7b9ceee92b90d8509))
+
+## [15.0.5](https://github.com/nordnet/ui/compare/v15.0.4...v15.0.5) (2023-12-05)
+
+
+### Bug Fixes
+
+* add safety protetion to not accidentally draw the sliders outsi… ([#1537](https://github.com/nordnet/ui/issues/1537)) ([900def3](https://github.com/nordnet/ui/commit/900def35370d75d6ba3b86935c7fa9e77be3e9ee))
+
+## [15.0.4](https://github.com/nordnet/ui/compare/v15.0.3...v15.0.4) (2023-12-04)
+
+
+### Bug Fixes
+
+* lookbehind regexp compatibility issue ([#1536](https://github.com/nordnet/ui/issues/1536)) ([a3e0298](https://github.com/nordnet/ui/commit/a3e029824d941c2d0d639ea700d9dbd55f215834))
+
+## [15.0.3](https://github.com/nordnet/ui/compare/v15.0.2...v15.0.3) (2023-12-01)
+
+
+### Bug Fixes
+
+* repaired faulty prop drilling in feedback widget ([#1532](https://github.com/nordnet/ui/issues/1532)) ([d15f318](https://github.com/nordnet/ui/commit/d15f318aa43be73c81ff97715677f116c523e4d6))
+
+## [15.0.2](https://github.com/nordnet/ui/compare/v15.0.1...v15.0.2) (2023-12-01)
+
+
+### Bug Fixes
+
+* fixed feedback widget alignment in mobile view ([#1528](https://github.com/nordnet/ui/issues/1528)) ([a7c7105](https://github.com/nordnet/ui/commit/a7c71058d9f97eb0b900e6ccd3013018d906dca0))
+
+## [15.0.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.0.1) (2023-11-30)
 
 
 ### Bug Fixes
 
 * remove package.json resolutions ([#1530](https://github.com/nordnet/ui/issues/1530)) ([b55c25a](https://github.com/nordnet/ui/commit/b55c25afa221d4f2d7c82cba3f55ddbccb1f3245))
-* trigger build after removing resolutions ([ac4df6f](https://github.com/nordnet/ui/commit/ac4df6f4c4d79ca22c0a4c76b4a06b877532591a))
-
-# [15.1.0-beta.1](https://github.com/nordnet/ui/compare/v15.0.0...v15.1.0-beta.1) (2023-11-30)
-
-
-### Features
-
-* upgrade to styled-components v6 ([#1519](https://github.com/nordnet/ui/issues/1519)) ([4a1f83f](https://github.com/nordnet/ui/commit/4a1f83fb4008d5ad9d0e054a236c34f9979d5878))
 
 # [15.0.0](https://github.com/nordnet/ui/compare/v14.4.0...v15.0.0) (2023-11-30)
 
