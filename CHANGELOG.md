@@ -1,3 +1,15 @@
+# [15.6.0-beta.1](https://github.com/nordnet/ui/compare/v15.5.1...v15.6.0-beta.1) (2023-12-14)
+
+
+### Bug Fixes
+
+* trigger build after removing resolutions ([ac4df6f](https://github.com/nordnet/ui/commit/ac4df6f4c4d79ca22c0a4c76b4a06b877532591a))
+
+
+### Features
+
+* upgrade to styled-components v6 ([#1519](https://github.com/nordnet/ui/issues/1519)) ([4a1f83f](https://github.com/nordnet/ui/commit/4a1f83fb4008d5ad9d0e054a236c34f9979d5878))
+
 ## [15.5.1](https://github.com/nordnet/ui/compare/v15.5.0...v15.5.1) (2023-12-12)
 
 
