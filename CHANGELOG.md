@@ -1,3 +1,10 @@
+# [15.6.0-beta.2](https://github.com/nordnet/ui/compare/v15.6.0-beta.1...v15.6.0-beta.2) (2023-12-14)
+
+
+### Bug Fixes
+
+* update styled-components ([111b4c6](https://github.com/nordnet/ui/commit/111b4c6e54af50f224952055832ab1e9677da947))
+
 # [15.6.0-beta.1](https://github.com/nordnet/ui/compare/v15.5.1...v15.6.0-beta.1) (2023-12-14)
 
 
