@@ -14,6 +14,7 @@ import Illustration from './Atoms/Illustration';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
+import Logo from './Atoms/Logo';
 import Media, { useMedia } from './Atoms/Media';
 import OldIcon from './Atoms/OldIcon';
 import Pill from './Atoms/Pill';
@@ -88,6 +89,7 @@ import { Select } from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import ShowMoreButton from './Molecules/ShowMoreButton';
 import Slider from './Molecules/Slider';
+import RangeSlider from './Molecules/RangeSlider';
 import Switch, { SwitchToggle } from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
@@ -192,6 +194,7 @@ export {
   List,
   ListItem,
   ListWithTitles,
+  Logo,
   Media,
   Modal,
   MultiStepProgress,
@@ -210,6 +213,7 @@ export {
   PromotionBanner,
   /** @deprecated use FilterChip instead */ QuickFilter,
   Rating,
+  RangeSlider,
   SegmentedControl,
   SelectionCard,
   Separator,

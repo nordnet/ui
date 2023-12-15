@@ -1,6 +1,17 @@
 import React from 'react';
+import { BasePlacement, Rect } from '@popperjs/core';
 import { ColorFn } from 'common/Types';
-import { OffsetArg } from '../../Molecules/Tooltip/Tooltip.types';
+
+type OffsetFunctionArg = {
+  popper: Rect;
+  reference: Rect;
+  placement: BasePlacement;
+};
+
+type BareOffset = [number, number];
+type EmptyOffset = [];
+type Offset = BareOffset | EmptyOffset;
+export type OffsetArg = Offset | ((arg: OffsetFunctionArg) => Offset);
 
 export type InModal = boolean;
 export type Position =

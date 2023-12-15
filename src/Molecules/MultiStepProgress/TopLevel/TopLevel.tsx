@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Box from '../../../Atoms/Box';
 import Button from '../../Button';
 import Typography from '../../../Atoms/Typography';
-import { InternalProps, TopLevelComponent, ProgressLevelsComponent } from './TopLevel.types';
+import { InternalProps, Props as TopLevelProps } from './TopLevel.types';
 import { SubLevel } from '../SubLevel';
 import Status from '../Status';
 import {
@@ -76,7 +76,7 @@ const ListItem = styled.li<InternalProps>`
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
     & + & ${Wrapper} {
-      margin-top: ${(p) => p.theme.spacing.unit(2)}px;
+      margin-top: ${(p) => p.theme.spacing.unit(3)}px;
     }
   }
 `;
@@ -95,14 +95,14 @@ const StyledMobileButton = styled(StyledButton)`
   }
 `;
 
-const ProgressLevels: ProgressLevelsComponent = ({
+const ProgressLevels = ({
   steps,
   onStepClick,
   onSubStepClick,
   titleDone,
   titleNotDone,
   isInDrawer,
-}) => {
+}: TopLevelProps) => {
   return (
     <StyledOrderedList>
       {steps &&
@@ -174,7 +174,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
   );
 };
 
-export const TopLevel: TopLevelComponent = ({
+export const TopLevel = ({
   drawerOpen,
   onStepClick,
   onSubStepClick,
@@ -183,7 +183,7 @@ export const TopLevel: TopLevelComponent = ({
   titleDone,
   titleNotDone,
   isInDrawer = false,
-}) => {
+}: TopLevelProps) => {
   if (isInDrawer) {
     return (
       <ProgressLevels

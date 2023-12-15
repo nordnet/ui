@@ -14,6 +14,7 @@ export type Props = {
   style: {};
   value: number;
   variant: Variant;
+  zIndex?: number;
 };
 
 export type Component = React.FC<Props>;

@@ -1,4 +1,4 @@
-import { ACTION_SET_INITIAL_SORTING, ACTION_SET_SORTING } from './ColumnProvider';
+import { ACTION_SET_INITIAL_SORTING, ACTION_SET_SORTING } from './columnProviderActions';
 import { SortOrder } from '../../Header/HeaderContent/HeaderContent.types';
 
 export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean };

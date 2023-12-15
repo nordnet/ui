@@ -42,7 +42,16 @@ const percentToValue = (percent: number, min: number, max: number) => {
 };
 
 const valueToPercent = (value: number, min: number, max: number) => {
-  return ((value - min) * 100) / (max - min);
+  const percent = ((value - min) * 100) / (max - min);
+
+  if (percent < 0) {
+    return 0;
+  }
+  if (percent > 100) {
+    return 100;
+  }
+
+  return percent;
 };
 
 const getNewValue = (
@@ -233,16 +242,22 @@ const Slider: Component = ({
       tabIndex={-1}
     >
       <SliderTrack
-        variant={variant}
-        sliderColor={sliderColor}
-        readOnly={readOnly}
+        disabled={disabled}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseHover}
         onMouseUp={handleMouseUp}
         onTouchStart={handleTouchStart}
+        readOnly={readOnly}
+        sliderColor={sliderColor}
+        variant={variant}
       >
-        <SliderTrackHighlight sliderColor={sliderColor} value={trackPercent} variant={variant} />
+        <SliderTrackHighlight
+          disabled={disabled}
+          sliderColor={sliderColor}
+          value={trackPercent}
+          variant={variant}
+        />
         {!readOnly && (
           <AnimatePresence>
             {showTooltip && hoverVisible && (

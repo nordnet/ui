@@ -33,6 +33,10 @@ const StyledBox = styled(Box)`
   position: relative;
 `;
 
+const StyledButtonPill = styled(Button.Pill)`
+  width: 130px;
+`;
+
 type TextButtonCardProps = {
   title: string;
   description: string;
@@ -88,9 +92,9 @@ const TextButtonCard: FC<React.PropsWithChildren<TextButtonCardProps>> = ({
         {/* Button */}
         {buttonText && action && (
           <Flexbox item shrink={0}>
-            <Button.Pill variant="secondary" size="m" {...action}>
+            <StyledButtonPill variant="secondary" size="m" {...action}>
               {buttonText}
-            </Button.Pill>
+            </StyledButtonPill>
           </Flexbox>
         )}
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import useOption from '@mui/base/useOption';
+import { useOption } from '@mui/base/useOption';
 import styled from 'styled-components';
 import { Flexbox, Icon, Typography } from '../../..';
 import { Props } from './Option.types';

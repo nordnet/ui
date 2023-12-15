@@ -24,7 +24,7 @@ const AbsoluteFlexbox = styled(Flexbox)`
   color: inherit;
   width: 100%;
   position: absolute;
-  ${(p) => `top: ${p.theme.spacing.unit(1)}px`};
+  ${(p) => `top: ${p.theme.spacing.unit(3)}px`};
 `;
 
 const Tag = styled(Typography)`
@@ -95,10 +95,11 @@ const StyledDiv = styled('div')<{
   $feature: boolean;
   $tag: boolean;
   $text: boolean;
+  $textAlignLeft: boolean;
 }>`
   ${(p) => `
-    text-align: ${p.$text ? 'left' : 'center'};
-    padding: ${p.theme.spacing.unit(4)}px;
+    text-align: ${p.$text || p.$textAlignLeft ? 'left' : 'center'};
+    padding: ${p.theme.spacing.unit(3)}px;
   `}
 
   ${(p) =>
@@ -131,6 +132,7 @@ export const SelectionCard: SelectionCardComponent = ({
   outline = false,
   selected: controlledSelected,
   selectedInitially = false,
+  alignLeft = false,
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -175,7 +177,7 @@ export const SelectionCard: SelectionCardComponent = ({
 
         <AbsoluteFlexbox container justifyContent="space-between" direction="row">
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
-          <Box pt={4} pr={5}>
+          <Box pr={2}>
             {!disabled && !selected && outline && <CircleOutline />}
             {!disabled && selected && <Icon.CheckCircleFill16 color={(t) => t.color.cta} />}
 
@@ -188,7 +190,12 @@ export const SelectionCard: SelectionCardComponent = ({
           </Box>
         </AbsoluteFlexbox>
 
-        <StyledDiv $feature={hasFeature} $tag={Boolean(tag)} $text={Boolean(text)}>
+        <StyledDiv
+          $feature={hasFeature}
+          $tag={Boolean(tag)}
+          $text={Boolean(text)}
+          $textAlignLeft={alignLeft}
+        >
           {horizontal && (
             <Flexbox container direction="row" gap={5} alignContent="center">
               {hasIcon && (
@@ -205,7 +212,12 @@ export const SelectionCard: SelectionCardComponent = ({
           )}
 
           {!horizontal && (
-            <Flexbox container direction="column" alignItems="center" gap={1}>
+            <Flexbox
+              container
+              direction="column"
+              alignItems={alignLeft ? 'flex-start' : 'center'}
+              gap={3}
+            >
               {hasIcon && (
                 <Flexbox item {...(text && { alignSelf: 'flex-start' })}>
                   {icon}

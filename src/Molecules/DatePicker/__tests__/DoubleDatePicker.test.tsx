@@ -29,7 +29,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -58,7 +63,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -87,7 +97,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -118,7 +133,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -147,7 +167,12 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -178,7 +203,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -226,7 +256,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-errors
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -254,7 +289,12 @@ describe('Double date picker', () => {
 
     const { getByTestId, findByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -295,7 +335,12 @@ describe('Double date picker', () => {
 
     const { getByTestId } = render(
       <PageProviders>
-        <DoubleDatePicker id={ID} labelFrom="Label" onChange={onChange} />
+        <DoubleDatePicker
+          id={ID}
+          labelFrom="Label"
+          // @ts-expect-error
+          onChange={onChange}
+        />
       </PageProviders>,
     );
 
@@ -331,6 +376,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />
@@ -364,6 +410,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />
@@ -410,6 +457,7 @@ describe('Double date picker', () => {
         <DoubleDatePicker
           id={ID}
           labelFrom="Label"
+          // @ts-expect-error
           onChange={onChange}
           allowSingleDayRange={false}
         />

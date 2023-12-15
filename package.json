@@ -10,7 +10,8 @@
   "sideEffects": false,
   "license": "MIT",
   "engines": {
-    "node": "16.x || 18.x || 20.x"
+    "node": "18.x || 20.x",
+    "npm": "9 || 10"
   },
   "scripts": {
     "test": "TZ=UTC jest",
@@ -39,7 +40,7 @@
     }
   },
   "dependencies": {
-    "@mui/base": "5.0.0-beta.2",
+    "@mui/base": "5.0.0-beta.26",
     "@nordnet/design-tokens": "2.0.1",
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^3.2.2",
@@ -78,6 +79,7 @@
     "@storybook/react-webpack5": "7.5.3",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "14.5.1",
     "@types/color": "3.0.6",
     "@types/jest": "29.5.9",
     "@types/lodash": "^4.14.172",
@@ -89,7 +91,6 @@
     "@types/styled-components": "5.1.31",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "6.12.0",
-    "babel-loader": "8.3.0",
     "babel-plugin-ramda": "2.1.1",
     "babel-plugin-react-remove-properties": "^0.3.0",
     "babel-plugin-styled-components": "2.1.4",
@@ -129,10 +130,5 @@
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
     "typescript": "^5.2.2"
-  },
-  "resolutions": {
-    "@types/react": "18.2.38",
-    "strip-ansi": "6.0.0",
-    "string-width": "4.1.0"
   }
 }

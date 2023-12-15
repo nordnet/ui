@@ -1,6 +1,6 @@
 import React from 'react';
-import Color from 'color';
 import styled from 'styled-components';
+import Color from 'color';
 
 import { Component, Props } from './SliderKnob.types';
 import { InternalProps } from '../Slider.types';
@@ -15,25 +15,56 @@ const Handle = styled('div')<InternalProps>`
   top: 50%;
   border-radius: 50%;
   transform: translateY(-50%);
-  background: ${(p) =>
-    p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : p.theme.color.sliderKnobBackground};
+  background: ${(p) => {
+    const getKnobColor = () => {
+      if (p.$disabled) {
+        return p.theme.color.sliderDisabled;
+      }
+      if (p.$sliderColor) {
+        return p.$sliderColor(p.theme);
+      }
+      return p.theme.colorTokens.action.background_default;
+    };
+    return p.$variant === VARIANT_TYPES.PLAYER ? 'transparent' : `${getKnobColor()}`;
+  }};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   border-width: ${(p) => p.theme.spacing.unit(1)}px;
   border-style: solid;
-  border-color: ${(p) => (p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)};
+  border-color: ${(p) =>
+    p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.colorTokens.action.background_default};
   ${(p) => (p.$disabled ? `border-color: ${p.theme.color.sliderDisabled};` : '')};
   ${(p) => (p.$variant === VARIANT_TYPES.PLAYER ? 'border-color: transparent' : '')};
   transition: transform 0.16s ease-out;
+  z-index: ${(p) => p.$zIndex};
 
   &:active {
     background: ${(p) => {
-      const knobColor = p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderColor;
-      return !p.$disabled && `${knobColor ? Color(knobColor).darken(0.1) : ''}`;
+      const knobColor = p.$sliderColor
+        ? Color(p.$sliderColor(p.theme)).darken(0.1)
+        : p.theme.colorTokens.action.background_hover;
+      return !p.$disabled ? `${knobColor}  ` : '';
     }};
     transform: ${(p) => {
-      return p.$variant === VARIANT_TYPES.PLAYER
+      return p.$variant === VARIANT_TYPES.PLAYER || p.$disabled
         ? 'translateY(-50%)'
         : 'translateY(-50%) scale3d(0.85, 0.85, 0.85)';
+    }};
+  }
+
+  &:hover {
+    border: ${(p) => {
+      const knobColor = p.$sliderColor
+        ? Color(p.$sliderColor(p.theme)).darken(0.1)
+        : p.theme.colorTokens.action.background_hover;
+      return (
+        !p.$disabled && `${knobColor ? `${p.theme.spacing.unit(1)}px solid ${knobColor}` : ''}`
+      );
+    }};
+    background: ${(p) => {
+      const knobColor = p.$sliderColor
+        ? Color(p.$sliderColor(p.theme)).darken(0.1)
+        : p.theme.colorTokens.action.background_hover;
+      return !p.$disabled ? `${knobColor}  ` : '';
     }};
   }
 `;
@@ -53,6 +84,7 @@ const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(
       style,
       value,
       variant,
+      zIndex,
     },
     ref,
   ) => {
@@ -74,6 +106,7 @@ const SliderKnob: Component = React.forwardRef<HTMLDivElement, Props>(
         tabIndex={0}
         role="slider"
         style={style}
+        $zIndex={zIndex}
       />
     );
   },
