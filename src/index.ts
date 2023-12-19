@@ -35,6 +35,7 @@ import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
 import BarScale from './Molecules/BarScale';
+import BottomSheet from './Molecules/BottomSheet';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
@@ -150,6 +151,7 @@ export {
   Badge,
   BarScale,
   Box,
+  BottomSheet,
   BottomWizardBar,
   Button,
   Card,
