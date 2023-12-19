@@ -89,56 +89,6 @@ export const Default = {
       return (
         <>
           <Button type="button" onClick={onOpen}>
-            Show BottomSheet [fullscreen]
-          </Button>
-
-          <BottomSheet
-            onClose={onClose}
-            fullScreenMobile
-            open={open}
-            title={
-              <Typography type="primary" weight="extrabold">
-                Filters
-              </Typography>
-            }
-            maxHeight="calc(100dvh - 60px);"
-          >
-            <Box mb={2}>
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
-            </Box>
-          </BottomSheet>
-        </>
-      );
-    };
-
-    return <Example />;
-  },
-
-  parameters: {
-    viewport: {
-      defaultViewport: 'iphone12',
-    },
-  },
-};
-
-export const NotFullScreenMobile = {
-  render: () => {
-    const Example = () => {
-      const [open, setOpen] = useState(true);
-
-      const onOpen = () => {
-        setOpen(true);
-      };
-
-      const onClose = () => {
-        setOpen(false);
-      };
-
-      return (
-        <>
-          <Button type="button" onClick={onOpen}>
             Show BottomSheet [not fullscreen]
           </Button>
           <Box p={2}>
@@ -180,6 +130,56 @@ export const NotFullScreenMobile = {
         </>
       );
     };
+    return <Example />;
+  },
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone12',
+    },
+  },
+};
+
+export const FullscreenMobile = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <Button type="button" onClick={onOpen}>
+            Show BottomSheet [fullscreen]
+          </Button>
+
+          <BottomSheet
+            onClose={onClose}
+            fullScreenMobile
+            open={open}
+            title={
+              <Typography type="primary" weight="extrabold">
+                Filters
+              </Typography>
+            }
+            maxHeight="calc(100dvh - 60px);"
+          >
+            <Box mb={2}>
+              <AccordionComponent />
+              <AccordionComponent />
+              <AccordionComponent />
+            </Box>
+          </BottomSheet>
+        </>
+      );
+    };
+
     return <Example />;
   },
 
