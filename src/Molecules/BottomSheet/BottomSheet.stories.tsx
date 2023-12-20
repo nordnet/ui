@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, BottomSheet, Button, Typography, Accordion, AccordionItem } from '../..';
+import { Box, BottomSheet, Button, Typography, Accordion, AccordionItem, FadedScroll } from '../..';
 
 export default {
   title: 'Molecules / BottomSheet',
@@ -8,7 +8,7 @@ export default {
   },
 };
 
-const AccordionComponent = () => (
+const AccordionComponent: React.FC = () => (
   <Accordion>
     <AccordionItem title="Accordion 1" withChevron disableFocusOutline>
       <Typography type="primary" as="p">
@@ -113,7 +113,6 @@ export const Default = {
           </Box>
           <BottomSheet
             closeOnClickOutside
-            maxHeight="calc(33dvh);"
             onClose={onClose}
             open={open}
             title={
@@ -123,8 +122,89 @@ export const Default = {
             }
           >
             <Box mb={2}>
-              <AccordionComponent />
-              <AccordionComponent />
+              <FadedScroll enableMobileFade maxHeight="calc(33dvh);">
+                <AccordionComponent />
+                <AccordionComponent />
+              </FadedScroll>
+            </Box>
+          </BottomSheet>
+        </>
+      );
+    };
+    return <Example />;
+  },
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone12',
+    },
+  },
+};
+
+export const LargerVariant = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <Button type="button" onClick={onOpen}>
+            Show BottomSheet [not fullscreen]
+          </Button>
+          <Box p={2}>
+            <Typography type="primary" as="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+              libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+              imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+              porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+              ligula in libero. Sed dignissim lacinia nunc.
+            </Typography>
+          </Box>
+          <Box p={2}>
+            <Typography type="primary" as="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+              libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+              imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+              porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+              ligula in libero. Sed dignissim lacinia nunc.
+            </Typography>
+          </Box>
+          <BottomSheet
+            closeOnClickOutside
+            height="600px"
+            onClose={onClose}
+            open={open}
+            title={
+              <Typography type="primary" weight="extrabold">
+                Filters
+              </Typography>
+            }
+          >
+            <Box mb={2}>
+              <Box p={2}>
+                <Typography type="primary" as="p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+                  Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                  elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                  augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+                </Typography>
+              </Box>
+              <FadedScroll enableMobileFade maxHeight="calc(36dvh);">
+                <AccordionComponent />
+                <AccordionComponent />
+              </FadedScroll>
             </Box>
           </BottomSheet>
         </>
@@ -168,12 +248,13 @@ export const FullscreenMobile = {
                 Filters
               </Typography>
             }
-            maxHeight="calc(100dvh - 60px);"
           >
             <Box mb={2}>
-              <AccordionComponent />
-              <AccordionComponent />
-              <AccordionComponent />
+              <FadedScroll enableMobileFade maxHeight="calc(100dvh - 60px);">
+                <AccordionComponent />
+                <AccordionComponent />
+                <AccordionComponent />
+              </FadedScroll>
             </Box>
           </BottomSheet>
         </>

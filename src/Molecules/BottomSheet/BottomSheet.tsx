@@ -3,7 +3,7 @@ import FocusLock from 'react-focus-lock';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import { Button, FadedScroll, Flexbox, Icon, useOnClickOutside } from '../..';
+import { Button, Flexbox, Icon, useOnClickOutside } from '../..';
 import { Backdrop, StyledBottomSheet } from './BottomSheet.styles';
 import { BackdropWrapperProps, Props } from './BottomSheet.types';
 
@@ -21,7 +21,7 @@ const BottomSheet: React.FC<Props> = ({
   className,
   closeOnClickOutside,
   fullScreenMobile,
-  maxHeight,
+  height = '40%',
   onClose,
   open,
   showBackdrop = true,
@@ -59,6 +59,7 @@ const BottomSheet: React.FC<Props> = ({
                   <StyledBottomSheet
                     className={className}
                     fullScreenMobile={fullScreenMobile}
+                    height={height}
                     ref={internalRef}
                   >
                     <Flexbox container direction="column" gap={2}>
@@ -72,11 +73,7 @@ const BottomSheet: React.FC<Props> = ({
                           </Flexbox>
                         )}
                       </Flexbox>
-                      <Flexbox item>
-                        <FadedScroll enableMobileFade maxHeight={maxHeight}>
-                          {children}
-                        </FadedScroll>
-                      </Flexbox>
+                      <Flexbox item>{children}</Flexbox>
                     </Flexbox>
                   </StyledBottomSheet>
                 </motion.div>

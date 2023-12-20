@@ -26,5 +26,5 @@ export const StyledBottomSheet = styled(Flexbox)<{
   position: absolute;
   width: 100%;
   z-index: ${(p) => p.theme.zIndex.overlayInModal};
-  height: ${(p) => (p.fullScreenMobile ? '100%' : '40%')};
+  height: ${(p) => (p.fullScreenMobile ? '100%' : p.height)};
 `;
