@@ -1,3 +1,13 @@
+# [16.0.0-beta.1](https://github.com/nordnet/ui/compare/v15.6.0...v16.0.0-beta.1) (2023-12-21)
+
+
+* update design tokens (#1557) ([19e9f43](https://github.com/nordnet/ui/commit/19e9f43a6b3753495348903b031e532cd521372b)), closes [#1557](https://github.com/nordnet/ui/issues/1557)
+
+
+### BREAKING CHANGES
+
+* few color tokens removed
+
 # [15.6.0](https://github.com/nordnet/ui/compare/v15.5.1...v15.6.0) (2023-12-20)
 
 
