@@ -15,8 +15,8 @@ export const Backdrop = styled(Flexbox)`
 export const StyledBottomSheet = styled(Flexbox)<{
   fullScreenMobile?: boolean;
 }>`
-  background-color: ${({ theme }) => theme.colorTokens.neutral.background_content};
-  border-color: ${({ theme }) => theme.colorTokens.neutral.background_content};
+  background-color: ${({ theme }) => theme.colorTokens.neutral.background_default};
+  border-color: ${({ theme }) => theme.colorTokens.neutral.background_default};
   border-radius: ${({ theme }) => `${theme.borderRadius20} ${theme.borderRadius20} 0 0`};
   bottom: 0;
   box-sizing: border-box;
