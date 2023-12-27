@@ -111,6 +111,7 @@ const DoubleCalendar: React.FC<Props> = ({
             </StyledCalendarContainer>
           ))}
         </Flexbox>
+        {/* eslint-disable-next-line default-param-last */}
         {calendar?.dates?.map((week = [], weekIndex) => (
           <Flexbox container justifyContent="flex-start" key={week.toString()}>
             {week?.map((day, dayIndex) => {
