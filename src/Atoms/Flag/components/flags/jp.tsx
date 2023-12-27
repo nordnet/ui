@@ -14,7 +14,7 @@ export default function FlagJp({ borderColor, title }: FlagPathProps) {
           fill="#CC3929"
         />
         {borderColor ? (
-          <circle cx="7" cy="7" r="6.5" stroke={borderColor} strokeWidth="1" fill="none"></circle>
+          <circle cx="7" cy="7" r="6.5" stroke={borderColor} strokeWidth="1" fill="none" />
         ) : null}
       </g>
       <defs>
