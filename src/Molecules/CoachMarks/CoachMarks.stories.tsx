@@ -256,101 +256,101 @@ export const WithCircularHighlightSurroundingLongElement = {
   name: 'With long element and circular highlight',
 };
 
-export const MultpipleSteps = () => {
-  const Example = () => {
-    const [activeGuide, setActiveGuide] = useState(true);
-    const [referenceElement1, setReferenceElement1] = useState<HTMLElement | null>(null);
-    const [referenceElement2, setReferenceElement2] = useState<HTMLElement | null>(null);
-    const [referenceElement3, setReferenceElement3] = useState<HTMLElement | null>(null);
-    const [referenceElement4, setReferenceElement4] = useState<HTMLElement | null>(null);
+const MultpipleStepsExample = () => {
+  const [activeGuide, setActiveGuide] = useState(true);
+  const [referenceElement1, setReferenceElement1] = useState<HTMLElement | null>(null);
+  const [referenceElement2, setReferenceElement2] = useState<HTMLElement | null>(null);
+  const [referenceElement3, setReferenceElement3] = useState<HTMLElement | null>(null);
+  const [referenceElement4, setReferenceElement4] = useState<HTMLElement | null>(null);
 
-    return (
-      <>
-        <Card>
-          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
-          <Box py={5}>
-            <Flexbox container justifyContent="space-between">
-              <Flexbox item>
-                <MockItem ref={setReferenceElement1}>New feature</MockItem>
-              </Flexbox>
-              <Flexbox item>
-                <MockItem ref={setReferenceElement2}>Another new feature</MockItem>
-              </Flexbox>
+  return (
+    <>
+      <Card>
+        <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+        <Box py={5}>
+          <Flexbox container justifyContent="space-between">
+            <Flexbox item>
+              <MockItem ref={setReferenceElement1}>New feature</MockItem>
             </Flexbox>
-          </Box>
-          <Box py={5}>
-            <Flexbox container justifyContent="space-between">
-              <Flexbox item>
-                <MockItem ref={setReferenceElement3}>New feature</MockItem>
-              </Flexbox>
+            <Flexbox item>
+              <MockItem ref={setReferenceElement2}>Another new feature</MockItem>
             </Flexbox>
-          </Box>
-          <Box py={5}>
-            <Flexbox container justifyContent="space-between">
-              <Flexbox item>
-                <MockItem ref={setReferenceElement4}>Another new feature</MockItem>
-              </Flexbox>
+          </Flexbox>
+        </Box>
+        <Box py={5}>
+          <Flexbox container justifyContent="space-between">
+            <Flexbox item>
+              <MockItem ref={setReferenceElement3}>New feature</MockItem>
             </Flexbox>
-          </Box>
-        </Card>
+          </Flexbox>
+        </Box>
+        <Box py={5}>
+          <Flexbox container justifyContent="space-between">
+            <Flexbox item>
+              <MockItem ref={setReferenceElement4}>Another new feature</MockItem>
+            </Flexbox>
+          </Flexbox>
+        </Box>
+      </Card>
 
-        {referenceElement1 &&
-          referenceElement2 &&
-          referenceElement3 &&
-          referenceElement4 &&
-          activeGuide && (
-            <CoachMarks
-              bottomSheet
-              onClose={() => setActiveGuide(false)}
-              onDone={() => setActiveGuide(false)}
-              onNext={action('next')}
-              onPrev={action('previous')}
-              steps={[
-                {
-                  referenceElement: referenceElement1,
-                  icon: <Icon.Bank32 />,
-                  title: 'New feature',
-                  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  placement: 'right',
-                },
-                {
-                  referenceElement: referenceElement2,
-                  title: 'Another new feature',
-                  content: (
-                    <>
-                      <Typography as="p" type="secondary" color="inherit">
-                        Lorem ipsum dolor sit amet
-                      </Typography>
-                      <Typography as="p" type="secondary" color="inherit">
-                        Consectetur adipiscing elit
-                      </Typography>
-                    </>
-                  ),
-                  placement: 'left',
-                },
-                {
-                  referenceElement: referenceElement3,
-                  title: 'New feature',
-                  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                  placement: 'bottom',
-                  isCircular: true,
-                  backdropPadding: '30',
-                },
-                {
-                  referenceElement: referenceElement4,
-                  title: 'New feature',
-                  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-                  placement: 'top',
-                  backdropPadding: '30',
-                },
-              ]}
-            />
-          )}
-      </>
-    );
-  };
+      {referenceElement1 &&
+        referenceElement2 &&
+        referenceElement3 &&
+        referenceElement4 &&
+        activeGuide && (
+          <CoachMarks
+            bottomSheet
+            onClose={() => setActiveGuide(false)}
+            onDone={() => setActiveGuide(false)}
+            onNext={action('next')}
+            onPrev={action('previous')}
+            steps={[
+              {
+                referenceElement: referenceElement1,
+                icon: <Icon.Bank32 />,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'right',
+              },
+              {
+                referenceElement: referenceElement2,
+                title: 'Another new feature',
+                content: (
+                  <>
+                    <Typography as="p" type="secondary" color="inherit">
+                      Lorem ipsum dolor sit amet
+                    </Typography>
+                    <Typography as="p" type="secondary" color="inherit">
+                      Consectetur adipiscing elit
+                    </Typography>
+                  </>
+                ),
+                placement: 'left',
+              },
+              {
+                referenceElement: referenceElement3,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                placement: 'bottom',
+                isCircular: true,
+                backdropPadding: '30',
+              },
+              {
+                referenceElement: referenceElement4,
+                title: 'New feature',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                placement: 'top',
+                backdropPadding: '30',
+              },
+            ]}
+          />
+        )}
+    </>
+  );
+};
 
-  return <Example />;
+export const MultpipleSteps = {
+  render: () => <MultpipleStepsExample />,
 };
 
 export const WithBarColor = {
@@ -400,131 +400,127 @@ export const WithBarColor = {
   name: 'With bar color',
 };
 
-export const MobileBottomSheet = () => {
-  const Example = () => {
-    const [activeGuide, setActiveGuide] = useState(true);
-    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+const MobileBottomSheetExample = () => {
+  const [activeGuide, setActiveGuide] = useState(true);
+  const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
 
-    return (
-      <>
-        <Card>
-          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
-          <Box py={5}>
-            <Flexbox container justifyContent="space-between">
-              <Flexbox item>
-                <MockItem ref={setReferenceElement}>New feature</MockItem>
-              </Flexbox>
+  return (
+    <>
+      <Card>
+        <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+        <Box py={5}>
+          <Flexbox container justifyContent="space-between">
+            <Flexbox item>
+              <MockItem ref={setReferenceElement}>New feature</MockItem>
             </Flexbox>
-          </Box>
-        </Card>
+          </Flexbox>
+        </Box>
+      </Card>
 
-        {referenceElement && activeGuide && (
-          <CoachMarks
-            bottomSheet
-            onClose={() => setActiveGuide(false)}
-            onDone={() => setActiveGuide(false)}
-            onNext={action('next')}
-            onPrev={action('previous')}
-            steps={[
-              {
-                referenceElement,
-                icon: <Icon.Bank32 />,
-                title: 'New feature',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                placement: 'bottom',
-              },
-            ]}
-          />
-        )}
-      </>
-    );
-  };
-
-  return <Example />;
+      {referenceElement && activeGuide && (
+        <CoachMarks
+          bottomSheet
+          onClose={() => setActiveGuide(false)}
+          onDone={() => setActiveGuide(false)}
+          onNext={action('next')}
+          onPrev={action('previous')}
+          steps={[
+            {
+              referenceElement,
+              icon: <Icon.Bank32 />,
+              title: 'New feature',
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              placement: 'bottom',
+            },
+          ]}
+        />
+      )}
+    </>
+  );
 };
 
-export const OverrideStep = () => {
-  const Example = () => {
-    const [currentStep, setCurrentStep] = useState(0);
-    const [activeGuide, setActiveGuide] = useState(true);
-    const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
-
-    const handleNext = (step: number) => {
-      setCurrentStep(step + 1);
-    };
-
-    const handlePrev = (step: number) => {
-      setCurrentStep(step - 1);
-    };
-
-    return (
-      <>
-        <Card>
-          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
-          <Box py={5}>
-            <Flexbox container justifyContent="space-between">
-              <Flexbox item>
-                <MockItem ref={setReferenceElement}>New feature</MockItem>
-              </Flexbox>
-            </Flexbox>
-          </Box>
-        </Card>
-
-        {referenceElement && activeGuide && (
-          <CoachMarks
-            bottomSheet
-            overrideStep={currentStep}
-            onNext={handleNext}
-            onPrev={handlePrev}
-            steps={[
-              {
-                referenceElement,
-                icon: <Icon.Bank32 />,
-                title: 'Step 1',
-                content: (
-                  <div>
-                    Click the button if youre too smart for steps 1-3.
-                    <Button onClick={() => setCurrentStep(3)}>Skip</Button>
-                  </div>
-                ),
-                placement: 'bottom',
-              },
-              {
-                referenceElement,
-                icon: <Icon.Bank32 />,
-                title: 'Step 2',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                placement: 'bottom',
-              },
-              {
-                referenceElement,
-                icon: <Icon.Bank32 />,
-                title: 'Step 3',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                placement: 'bottom',
-              },
-              {
-                referenceElement,
-                icon: <Icon.Bank32 />,
-                title: 'Step 4',
-                content: (
-                  <div>
-                    Click the button to go to step 2
-                    <Button onClick={() => setCurrentStep(1)}>Go back</Button>
-                  </div>
-                ),
-                placement: 'bottom',
-              },
-            ]}
-          />
-        )}
-      </>
-    );
-  };
-
-  return <Example />;
+export const MobileBottomSheet = {
+  render: () => <MobileBottomSheetExample />,
 };
 
-OverrideStep.story = {
-  name: 'Override step',
+const OverrideStepExample = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+  const [activeGuide, setActiveGuide] = useState(true);
+  const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+
+  const handleNext = (step: number) => {
+    setCurrentStep(step + 1);
+  };
+
+  const handlePrev = (step: number) => {
+    setCurrentStep(step - 1);
+  };
+
+  return (
+    <>
+      <Card>
+        <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
+        <Box py={5}>
+          <Flexbox container justifyContent="space-between">
+            <Flexbox item>
+              <MockItem ref={setReferenceElement}>New feature</MockItem>
+            </Flexbox>
+          </Flexbox>
+        </Box>
+      </Card>
+
+      {referenceElement && activeGuide && (
+        <CoachMarks
+          bottomSheet
+          overrideStep={currentStep}
+          onNext={handleNext}
+          onPrev={handlePrev}
+          steps={[
+            {
+              referenceElement,
+              icon: <Icon.Bank32 />,
+              title: 'Step 1',
+              content: (
+                <div>
+                  Click the button if youre too smart for steps 1-3.
+                  <Button onClick={() => setCurrentStep(3)}>Skip</Button>
+                </div>
+              ),
+              placement: 'bottom',
+            },
+            {
+              referenceElement,
+              icon: <Icon.Bank32 />,
+              title: 'Step 2',
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              placement: 'bottom',
+            },
+            {
+              referenceElement,
+              icon: <Icon.Bank32 />,
+              title: 'Step 3',
+              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              placement: 'bottom',
+            },
+            {
+              referenceElement,
+              icon: <Icon.Bank32 />,
+              title: 'Step 4',
+              content: (
+                <div>
+                  Click the button to go to step 2
+                  <Button onClick={() => setCurrentStep(1)}>Go back</Button>
+                </div>
+              ),
+              placement: 'bottom',
+            },
+          ]}
+        />
+      )}
+    </>
+  );
+};
+
+export const OverrideStep = {
+  render: () => <OverrideStepExample />,
 };

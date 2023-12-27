@@ -41,54 +41,54 @@ export const WithStyledContent = () => (
   </StyledAccordionItem>
 );
 
-export const Controlled = () => {
-  const ControlledExample = () => {
-    const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
+const ControlledExample = () => {
+  const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
 
-    const clickHandler = (id: string) => {
-      if (expandedAreas.includes(id)) {
-        const removed = expandedAreas.filter((x) => x !== id);
-        setExpandedAreas([...removed]);
-      } else {
-        setExpandedAreas([...expandedAreas, id]);
-      }
-    };
-
-    return (
-      <>
-        <Box mb={4}>
-          <Flexbox container gap={4}>
-            <Flexbox item>
-              <Button variant="primary" onClick={() => clickHandler('first')}>
-                Toggle first
-              </Button>
-            </Flexbox>
-            <Flexbox item>
-              <Button variant="primary" onClick={() => clickHandler('second')}>
-                Toggle second
-              </Button>
-            </Flexbox>
-          </Flexbox>
-        </Box>
-        <AccordionItem
-          title="Låg CO₂ risk"
-          expanded={expandedAreas.includes('first')}
-          onClick={() => clickHandler('first')}
-        >
-          <ExampleContent />
-        </AccordionItem>
-        <AccordionItem
-          title="Sustainability score"
-          expanded={expandedAreas.includes('second')}
-          onClick={() => clickHandler('second')}
-        >
-          <ExampleContent />
-        </AccordionItem>
-      </>
-    );
+  const clickHandler = (id: string) => {
+    if (expandedAreas.includes(id)) {
+      const removed = expandedAreas.filter((x) => x !== id);
+      setExpandedAreas([...removed]);
+    } else {
+      setExpandedAreas([...expandedAreas, id]);
+    }
   };
 
-  return <ControlledExample />;
+  return (
+    <>
+      <Box mb={4}>
+        <Flexbox container gap={4}>
+          <Flexbox item>
+            <Button variant="primary" onClick={() => clickHandler('first')}>
+              Toggle first
+            </Button>
+          </Flexbox>
+          <Flexbox item>
+            <Button variant="primary" onClick={() => clickHandler('second')}>
+              Toggle second
+            </Button>
+          </Flexbox>
+        </Flexbox>
+      </Box>
+      <AccordionItem
+        title="Låg CO₂ risk"
+        expanded={expandedAreas.includes('first')}
+        onClick={() => clickHandler('first')}
+      >
+        <ExampleContent />
+      </AccordionItem>
+      <AccordionItem
+        title="Sustainability score"
+        expanded={expandedAreas.includes('second')}
+        onClick={() => clickHandler('second')}
+      >
+        <ExampleContent />
+      </AccordionItem>
+    </>
+  );
+};
+
+export const Controlled = {
+  render: () => <ControlledExample />,
 };
 
 export const TextOnlyContentIsFormattedCorrect = () => (

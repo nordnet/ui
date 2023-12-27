@@ -51,6 +51,7 @@ const SelectMonth: React.FC<Props> = ({
 
   const components = useMemo(
     () => ({
+      // eslint-disable-next-line react/no-unstable-nested-components
       SelectedValue: () => {
         const [state] = useSelectMachineFromContext();
         let icon = null;

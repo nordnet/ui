@@ -44,21 +44,22 @@ export const LastItemSelected = () => (
   </div>
 );
 
-export const ControlledBehaviour = () => {
-  const ControlledExample = () => {
-    const [selected, setSelected] = useState(0);
+const ControlledBehaviourExample = () => {
+  const [selected, setSelected] = useState(0);
 
-    return (
-      <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
-        <SegmentedControl selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
-          <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
-          <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>
-          <SegmentedControl.Item itemId={2}>Option 3</SegmentedControl.Item>
-        </SegmentedControl>
-      </div>
-    );
-  };
-  return <ControlledExample />;
+  return (
+    <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
+      <SegmentedControl selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
+        <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
+        <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>
+        <SegmentedControl.Item itemId={2}>Option 3</SegmentedControl.Item>
+      </SegmentedControl>
+    </div>
+  );
+};
+
+export const ControlledBehaviour = {
+  render: () => <ControlledBehaviourExample />,
 };
 
 export const Disabled = () => (
@@ -74,22 +75,23 @@ export const Disabled = () => (
   </div>
 );
 
-export const ControlledDisabled = () => {
-  const ControlledExample = () => {
-    const [selected, setSelected] = useState(0);
+const ControlledDisabledExample = () => {
+  const [selected, setSelected] = useState(0);
 
-    return (
-      <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
-        <SegmentedControl disabled selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
-          <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
-          <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>
-          <SegmentedControl.Item itemId={2}>Option 3</SegmentedControl.Item>
-        </SegmentedControl>
-        <Box mt={4}>
-          <Button onClick={() => setSelected((selected + 1) % 3)}>Next</Button>
-        </Box>
-      </div>
-    );
-  };
-  return <ControlledExample />;
+  return (
+    <div style={{ backgroundColor: 'green', width: '250px', margin: '50px', height: '100%' }}>
+      <SegmentedControl disabled selected={selected} onClick={(_, itemId) => setSelected(itemId)}>
+        <SegmentedControl.Item itemId={0}>Option 1</SegmentedControl.Item>
+        <SegmentedControl.Item itemId={1}>Option 2</SegmentedControl.Item>
+        <SegmentedControl.Item itemId={2}>Option 3</SegmentedControl.Item>
+      </SegmentedControl>
+      <Box mt={4}>
+        <Button onClick={() => setSelected((selected + 1) % 3)}>Next</Button>
+      </Box>
+    </div>
+  );
+};
+
+export const ControlledDisabled = {
+  render: () => <ControlledDisabledExample />,
 };
