@@ -1,3 +1,10 @@
+# [15.6.0](https://github.com/nordnet/ui/compare/v15.5.1...v15.6.0) (2023-12-20)
+
+
+### Features
+
+* add bottomsheet component for mobiles ([#1556](https://github.com/nordnet/ui/issues/1556)) ([7080948](https://github.com/nordnet/ui/commit/7080948a111254dadd0e2beb1691e09529ecc691))
+
 ## [15.5.1](https://github.com/nordnet/ui/compare/v15.5.0...v15.5.1) (2023-12-12)
 
 
