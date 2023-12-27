@@ -14,6 +14,7 @@ import Illustration from './Atoms/Illustration';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
+import Logo from './Atoms/Logo';
 import Media, { useMedia } from './Atoms/Media';
 import OldIcon from './Atoms/OldIcon';
 import Pill from './Atoms/Pill';
@@ -34,6 +35,7 @@ import Badge from './Molecules/Badge';
 import Accordion from './Molecules/Accordion';
 import AccordionItem from './Molecules/AccordionItem';
 import BarScale from './Molecules/BarScale';
+import BottomSheet from './Molecules/BottomSheet';
 import BottomWizardBar from './Molecules/BottomWizardBar';
 import Button, { PillButton } from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
@@ -149,6 +151,7 @@ export {
   Badge,
   BarScale,
   Box,
+  BottomSheet,
   BottomWizardBar,
   Button,
   Card,
@@ -193,6 +196,7 @@ export {
   List,
   ListItem,
   ListWithTitles,
+  Logo,
   Media,
   Modal,
   MultiStepProgress,

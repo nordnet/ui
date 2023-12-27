@@ -50,9 +50,9 @@ export const CloseButton = styled(Button)`
   }
 `;
 
-export const StyledBubble = styled(Bubble)<{ $feedbackWidgetOnPage?: boolean }>`
+export const StyledBubble = styled(Bubble)<{ feedbackWidgetMode?: boolean }>`
   ${(p) =>
-    p.$feedbackWidgetOnPage &&
+    p.feedbackWidgetMode &&
     `
       position: fixed;
       bottom: 40px;

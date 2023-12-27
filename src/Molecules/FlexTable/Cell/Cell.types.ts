@@ -1,6 +1,5 @@
 import React from 'react';
 import { FlexPropsType } from '../shared/shared.types';
-import { TextWrapper } from './TextWrapper';
 
 type RenderProp = {
   columnId: string;
@@ -13,10 +12,6 @@ export type Props = {
    */
   columnId: string;
 } & FlexPropsType;
-
-export type CellComponents = { TextWrapper: typeof TextWrapper };
-
-export type CellComponent = React.FC<Props> & CellComponents;
 
 type ExpandCellProps = {
   /**
@@ -33,17 +28,5 @@ type ExpandCellProps = {
    */
   columnId: string;
 };
-
-type TextWrapperProps = {
-  /**
-   * Truncate the text inside and a tooltip on hover when truncated
-   * @default true
-   */
-  truncate?: boolean;
-  className?: string;
-  weight?: string;
-};
-
-export type TextWrapperComponent = React.FC<TextWrapperProps & { children?: React.ReactNode }>;
 
 export type ExpandCellComponent = React.FC<ExpandCellProps & FlexPropsType>;

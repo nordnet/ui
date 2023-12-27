@@ -48,9 +48,22 @@ const Card = styled.div<CardProps>`
   ${(p) => (p.barColor ? barStyles : ``)}
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
-    ${(p) =>
-      p.bottomSheet
-        ? `
+    ${(p) => {
+      if (p.feedbackWidgetMode) {
+        return `
+        // !important to override popper inline styles
+        width: 94.5% !important;
+        transform: none !important;
+        inset: auto auto 0px 0px !important;
+        position: fixed !important;
+        margin: 0 ${p.theme.spacing.unit(3)}px ${p.theme.spacing.unit(3)}px
+        ${p.theme.spacing.unit(3)}px !important;
+        border: 1px ${p.theme.colorTokens.neutral.border_medium} solid !important;
+        border-radius: ${p.theme.borderRadius8} !important; 
+        `;
+      }
+      if (p.bottomSheet) {
+        return `
           // !important to override popper inline styles
           width: 100% !important;
           transform: none !important;
@@ -60,19 +73,23 @@ const Card = styled.div<CardProps>`
           ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
           ${p.barColor ? p.theme.borderRadius8 : p.theme.borderRadius20} 
           0 0 !important; 
-        `
-        : ''}
+          `;
+      }
+
+      return '';
+    }}
   }
 `;
 
 export const Bubble: Component = React.forwardRef<HTMLDivElement, Props>(
-  ({ children, className, style, barColor, bottomSheet }, ref) => (
+  ({ children, className, style, barColor, bottomSheet, feedbackWidgetMode }, ref) => (
     <Card
       className={className}
       style={style}
       ref={ref}
       barColor={barColor}
       bottomSheet={bottomSheet}
+      feedbackWidgetMode={feedbackWidgetMode}
     >
       {children}
     </Card>

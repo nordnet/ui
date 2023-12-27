@@ -11,6 +11,7 @@ import {
   SelectionCard,
   Icon,
   useMedia,
+  Illustration,
 } from '../..';
 
 const ScrollMaker = styled.div`
@@ -1399,6 +1400,44 @@ export const ModalWithDisabledEscapePress = {
   },
 
   name: 'Modal with disabled escape-key press',
+};
+
+export const ModalWithBlurBackground = {
+  render: () => {
+    return (
+      <>
+        <Typography type="title1">BLUR TITLE ONE</Typography>
+        <Icon.Book32 />
+        <Typography type="primary" as="p">
+          Modals should be used with care as they are quite intrusive on the user experience and
+          demand immediate attention (while also blocking all other actions on the site). Always
+          consider if you can solve a problem in another way first before you choose to go with the
+          modal. Modals should be used with care as they are quite intrusive on the user experience
+          and demand immediate attention (while also blocking all other actions on the site).
+        </Typography>
+        <Illustration.AppropriatenessTest375 />
+        <Illustration.InvestForLongTerm375 />
+        <Modal
+          onClose={() => {
+            // eslint-disable-next-line no-alert
+            alert('This should never be called when pressing the escape-key');
+          }}
+          title="Dialog information"
+          open
+          closeOnEscapePress={false}
+          blurBackdrop
+        >
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              This text should be sharp
+            </Typography>
+          </Box>
+        </Modal>
+      </>
+    );
+  },
+
+  name: 'Modal With blur background',
 };
 
 export const ModalWithProgressIndicator = {
