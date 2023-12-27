@@ -56,10 +56,7 @@ const StyledButton = styled(CleanNormalizedButton)<{
   }
 `;
 
-export const Trigger = forwardRef<HTMLButtonElement, Props>(function TriggerComponent(
-  props: Props,
-  ref,
-) {
+export const Trigger = forwardRef<HTMLButtonElement, Props>((props: Props, ref) => {
   const { children, size, hasError } = props;
   const { getButtonProps, value } = useSelect();
 
