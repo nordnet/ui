@@ -15,76 +15,75 @@ import { Trigger } from './Trigger';
 import { ValueDisplay } from './ValueDisplay';
 import { ValueDisplayMultiSelect } from './ValueDisplayMultiSelect';
 
-const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(function SelectComponent(
-  props: Props,
-  ref: ForwardedRef<HTMLButtonElement>,
-) {
-  const {
-    children,
-    disabled,
-    hasError = false,
-    multiple,
-    name,
-    onChange,
-    placeholder,
-    size = 'm',
-    value: valueFromProps,
-    valueDisplay: valueDisplayFromProps,
-    trigger: triggerFromProps,
-    width = 50,
-    fullWidth,
-    id,
-    defaultValue,
-  } = props;
-  const listboxRef = React.useRef<HTMLUListElement>(null);
-  const [isOpen, setIsOpen] = React.useState(false);
-  const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
-    useMuiSelect<string, boolean>({
-      listboxRef,
+const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
+  (props: Props, ref: ForwardedRef<HTMLButtonElement>) => {
+    const {
+      children,
       disabled,
+      hasError = false,
       multiple,
-      open: isOpen,
+      name,
       onChange,
-      onOpenChange: setIsOpen,
+      placeholder,
+      size = 'm',
       value: valueFromProps,
+      valueDisplay: valueDisplayFromProps,
+      trigger: triggerFromProps,
+      width = 50,
+      fullWidth,
+      id,
       defaultValue,
-    });
+    } = props;
+    const listboxRef = React.useRef<HTMLUListElement>(null);
+    const [isOpen, setIsOpen] = React.useState(false);
+    const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
+      useMuiSelect<string, boolean>({
+        listboxRef,
+        disabled,
+        multiple,
+        open: isOpen,
+        onChange,
+        onOpenChange: setIsOpen,
+        value: valueFromProps,
+        defaultValue,
+      });
 
-  useEffect(() => {
-    if (isOpen) {
-      listboxRef.current?.focus();
-    }
-  }, [isOpen]);
+    useEffect(() => {
+      if (isOpen) {
+        listboxRef.current?.focus();
+      }
+    }, [isOpen]);
 
-  return (
-    <SelectProvider
-      getButtonProps={getButtonProps}
-      getOptionMetadata={getOptionMetadata}
-      value={value}
-    >
-      <Root $width={width} $fullWidth={fullWidth} data-testid={id}>
-        {triggerFromProps || (
-          <Trigger size={size} hasError={hasError} ref={ref}>
-            {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}
-            <Arrow />
-          </Trigger>
-        )}
-        <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
-          <ListboxContainer>
-            <FadedScroll maxHeight={50}>
-              <Listbox {...getListboxProps()}>
-                <MuiSelectProvider value={contextValue}>{children}</MuiSelectProvider>
-              </Listbox>
-            </FadedScroll>
-          </ListboxContainer>
-        </ListContainer>
-      </Root>
-      {name && value ? (
-        <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
-      ) : null}
-    </SelectProvider>
-  );
-});
+    return (
+      <SelectProvider
+        getButtonProps={getButtonProps}
+        getOptionMetadata={getOptionMetadata}
+        value={value}
+      >
+        <Root $width={width} $fullWidth={fullWidth} data-testid={id}>
+          {triggerFromProps || (
+            <Trigger size={size} hasError={hasError} ref={ref}>
+              {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}
+              <Arrow />
+            </Trigger>
+          )}
+          <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
+            <ListboxContainer>
+              <FadedScroll maxHeight={50}>
+                <Listbox {...getListboxProps()}>
+                  <MuiSelectProvider value={contextValue}>{children}</MuiSelectProvider>
+                </Listbox>
+              </FadedScroll>
+            </ListboxContainer>
+          </ListContainer>
+        </Root>
+        {name && value ? (
+          <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
+        ) : null}
+      </SelectProvider>
+    );
+  },
+);
 
 type Components = {
   Arrow: typeof Arrow;

@@ -1,11 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react',
-    'plugin:jest/recommended',
-    'plugin:storybook/recommended',
-  ],
+  extends: ['airbnb', 'prettier', 'plugin:jest/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
@@ -29,12 +23,13 @@ module.exports = {
     es6: true,
   },
   rules: {
+    'arrow-body-style': 0,
     'no-use-before-define': 'off',
+    'no-unused-vars': 'off',
+    'prefer-destructuring': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
-    'no-unused-vars': 'off',
-    'prefer-destructuring': 0,
     'react-hooks/exhaustive-deps': 1,
     'react-hooks/rules-of-hooks': 2,
     'react/destructuring-assignment': 0,
