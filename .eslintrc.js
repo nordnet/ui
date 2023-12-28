@@ -33,6 +33,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 1,
     'react-hooks/rules-of-hooks': 2,
     'react/destructuring-assignment': 0,
+    'react/function-component-definition': 0,
+    'react/jsx-no-useless-fragment': 0,
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
     'react/prop-types': 0,
