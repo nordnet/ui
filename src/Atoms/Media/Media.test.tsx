@@ -130,7 +130,9 @@ test('Hydration', async () => {
   const htmlBeforeEffect = main.innerHTML;
 
   await act(async () => {
-    await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
+    await new Promise((res) => {
+      setTimeout(res, 0);
+    }); // wait for effect to be invoked
   });
 
   const htmlAfterEffect = main.innerHTML;
