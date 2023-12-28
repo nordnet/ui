@@ -1,3 +1,10 @@
+## [15.6.1](https://github.com/nordnet/ui/compare/v15.6.0...v15.6.1) (2023-12-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ramda to v0.29.1 ([#1559](https://github.com/nordnet/ui/issues/1559)) ([71787ac](https://github.com/nordnet/ui/commit/71787acf4b6b40af29a2d7aa214b9d2f28297e47))
+
 # [15.6.0](https://github.com/nordnet/ui/compare/v15.5.1...v15.6.0) (2023-12-20)
 
 
