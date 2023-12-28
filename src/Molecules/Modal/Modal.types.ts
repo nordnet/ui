@@ -4,7 +4,7 @@ import { Props as ProgressProps } from '../ProgressIndicator/ProgressIndicator.t
 export type InnerProps = {
   className?: string;
   closeTitle?: string;
-  onClose?: Function;
+  onClose?: () => void;
   progressIndicator?: ProgressProps;
   progressIndicatorDescription?: string;
   title?: React.ReactNode;

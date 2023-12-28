@@ -144,7 +144,7 @@ export const Button: BaseButtonComponent = React.forwardRef<
       <StyledLink
         {...sharedProps}
         rel={rel}
-        innerRef={ref as React.Ref<HTMLAnchorElement>}
+        ref={ref as React.Ref<HTMLAnchorElement>}
         external={external}
         cms={cms}
         fullServerRedirect={fullServerRedirect}

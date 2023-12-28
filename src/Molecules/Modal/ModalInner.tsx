@@ -5,7 +5,6 @@ import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
-import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
 import { Box, Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
@@ -111,7 +110,7 @@ const Dialog = styled(motion.div)<DialogProps>`
       }`}
 `;
 
-const CloseButton = styled(NormalizedElements.Button)`
+const CloseButton = styled.button<{$fullScreenMobile: boolean; $hasProgressIndicator?: boolean;}>`
   display: block;
   background: none;
   padding: 0;
@@ -127,13 +126,13 @@ const CloseButton = styled(NormalizedElements.Button)`
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     top: ${(p) =>
-      p.$progressIndicator
+      p.$hasProgressIndicator
         ? `${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR)}px`
         : `${p.theme.spacing.unit(PADDING_DESKTOP)}px`};
     right: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
   }
   ${(p) =>
-    p.$progressIndicator
+    p.$hasProgressIndicator
       ? `top: ${p.theme.spacing.unit(PADDING_PROGRESS_INDICATOR_MOBILE)}px;`
       : `top:${p.theme.spacing.unit(PADDING_MOBILE)}px;`}
 `;
@@ -332,7 +331,7 @@ export const ModalInner: React.FC<Props> = ({
                   type="button"
                   onClick={onClose}
                   $fullScreenMobile={fullScreenMobile}
-                  $progressIndicator={progressIndicator}
+                  $hasProgressIndicator={Boolean(progressIndicator)}
                 >
                   <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
