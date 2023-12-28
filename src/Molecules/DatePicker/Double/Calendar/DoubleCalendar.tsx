@@ -70,10 +70,10 @@ const DoubleCalendar: React.FC<Props> = ({
       locale: localeObj,
     });
     return {
-      weekDays: [...leftCalendar?.weekDays, ...rightCalendar?.weekDays],
+      weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
       dates: leftCalendar?.dates?.map((leftWeek, index) => [
         ...leftWeek,
-        ...rightCalendar?.dates[index],
+        ...rightCalendar.dates[index],
       ]),
     };
   }, [localeObj, viewedDate]);
@@ -166,7 +166,7 @@ const DoubleCalendar: React.FC<Props> = ({
                     (isFirstDayOfMonth(day) && isSameMonth(rightViewedDate, day))
                   }
                   isLastDay={
-                    (weekIndex === calendar?.dates?.length - 1 && dayIndex === week.length - 1) ||
+                    (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1) ||
                     (isLastDayOfMonth(day) && isSameMonth(leftViewedDate, day))
                   }
                 />
