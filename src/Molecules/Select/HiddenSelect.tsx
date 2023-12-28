@@ -19,10 +19,17 @@ export function HiddenSelect(props: Props) {
    * This component is only used to be able to include values from select in a form submit.
    */
 
-  const { name, value, multiple, options } = props;
+  const { name, value, multiple, options, ...rest } = props;
 
   return (
-    <StyledSelect name={name} multiple={multiple} aria-hidden="true" value={value} onChange={NOOP}>
+    <StyledSelect
+      name={name}
+      multiple={multiple}
+      aria-hidden="true"
+      value={value}
+      onChange={NOOP}
+      {...rest}
+    >
       {options.map((option) => (
         <option key={option} value={option}>
           {option}

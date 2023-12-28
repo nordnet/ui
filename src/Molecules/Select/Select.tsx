@@ -33,6 +33,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
       fullWidth,
       id,
       defaultValue,
+      ...rest
     } = props;
     const listboxRef = React.useRef<HTMLUListElement>(null);
     const [isOpen, setIsOpen] = React.useState(false);
@@ -60,7 +61,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
         getOptionMetadata={getOptionMetadata}
         value={value}
       >
-        <Root $width={width} $fullWidth={fullWidth} data-testid={id}>
+        <Root $width={width} $fullWidth={fullWidth} id={id} {...rest}>
           {triggerFromProps || (
             <Trigger size={size} hasError={hasError} ref={ref}>
               {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}

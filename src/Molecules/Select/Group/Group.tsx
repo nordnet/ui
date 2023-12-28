@@ -21,10 +21,10 @@ const StyledTypography = styled(Typography)`
 `;
 
 export function Group(props: Props) {
-  const { label, children } = props;
+  const { label, children, ...rest } = props;
 
   return (
-    <li>
+    <li {...rest}>
       <StyledTypography type="tertiary" color={(t) => t.colorTokens.neutral.text_weak}>
         {label}
       </StyledTypography>
