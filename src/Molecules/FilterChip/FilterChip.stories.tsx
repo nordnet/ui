@@ -117,27 +117,28 @@ export const WithFourFilterChips = () => (
   </Card>
 );
 
-export const WithValueControlledBehavior = () => {
-  const Component = () => {
-    const [isChecked, setIsChecked] = useState(false);
+const WithValueControlledBehaviorExample = () => {
+  const [isChecked, setIsChecked] = useState(false);
 
-    return (
-      <Card>
-        <FilterChip
-          label="Controlled selection card"
-          value="This component is controlled"
-          selected={isChecked}
-          onChange={onChange}
-        />
-        <button type="button" onClick={() => setIsChecked(true)}>
-          Selected
-        </button>
-        <button type="button" onClick={() => setIsChecked(false)}>
-          Not selected
-        </button>
-        value: {isChecked.toString()}
-      </Card>
-    );
-  };
-  return <Component />;
+  return (
+    <Card>
+      <FilterChip
+        label="Controlled selection card"
+        value="This component is controlled"
+        selected={isChecked}
+        onChange={onChange}
+      />
+      <button type="button" onClick={() => setIsChecked(true)}>
+        Selected
+      </button>
+      <button type="button" onClick={() => setIsChecked(false)}>
+        Not selected
+      </button>
+      value: {isChecked.toString()}
+    </Card>
+  );
+};
+
+export const WithValueControlledBehavior = {
+  render: () => <WithValueControlledBehaviorExample />,
 };

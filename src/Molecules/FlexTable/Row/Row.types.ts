@@ -48,7 +48,7 @@ export type ExpandRowComponent = React.FC<ExpandRowProps>;
 
 export type ExpandAreaProps = UncontrolledExpand | ControlledExpand;
 
-type Props = {
+export type Props = {
   /**
    * Hide row bottom border
    * @default false

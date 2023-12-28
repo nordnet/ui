@@ -1,1 +1,3 @@
-export { default } from './DoubleCalendar';
+import DoubleCalendar from './DoubleCalendar';
+
+export default DoubleCalendar;

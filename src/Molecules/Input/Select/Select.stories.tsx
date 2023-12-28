@@ -693,25 +693,25 @@ export const multiselect = () =>
     );
   });
 
+// This component you need to redefine for your particular case
+// Consider translations and a11y!
+const MultiselectColumnsExampleCustomSelectedValue = () => {
+  const [machineState] = useSelectMachineFromContext();
+  const selectedCount = machineState.context.selectedItems.length;
+  return (
+    <FlexedBox px={2}>
+      <Typography
+        type="secondary"
+        color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+      >
+        {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+      </Typography>
+    </FlexedBox>
+  );
+};
+
 const MultiselectColumnsExample = () => {
   const [value, setValue] = useState([]);
-
-  // This component you need to redefine for your particular case
-  // Consider translations and a11y!
-  const CustomSelectedValue = () => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
-    return (
-      <FlexedBox px={2}>
-        <Typography
-          type="secondary"
-          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
-        >
-          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-        </Typography>
-      </FlexedBox>
-    );
-  };
 
   return (
     <Input.Select
@@ -720,7 +720,7 @@ const MultiselectColumnsExample = () => {
       value={value}
       // @ts-ignore
       onChange={setValue}
-      components={{ SelectedValue: CustomSelectedValue }}
+      components={{ SelectedValue: MultiselectColumnsExampleCustomSelectedValue }}
       multiselect
       label="User account"
       placeholder="Select account"
@@ -1737,6 +1737,22 @@ export const GroupedOptions = () => {
   );
 };
 
+const GroupedOptionsMultiselectCustomSelectedValue = () => {
+  const [machineState] = useSelectMachineFromContext();
+  const selectedCount = machineState.context.selectedItems.length;
+
+  return (
+    <FlexedBox px={2}>
+      <Typography
+        type="secondary"
+        color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+      >
+        {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+      </Typography>
+    </FlexedBox>
+  );
+};
+
 export const GroupedOptionsMultiselect = () => {
   const options = [
     {
@@ -1755,31 +1771,42 @@ export const GroupedOptionsMultiselect = () => {
     },
   ];
 
-  const CustomSelectedValue = () => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
-
-    return (
-      <FlexedBox px={2}>
-        <Typography
-          type="secondary"
-          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
-        >
-          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-        </Typography>
-      </FlexedBox>
-    );
-  };
-
   return (
     <Input.Select
       id="grouped-options-multiselect"
       options={options}
       label="Grouped options multiselect"
       placeholder="Select options"
-      components={{ SelectedValue: CustomSelectedValue }}
+      components={{ SelectedValue: GroupedOptionsMultiselectCustomSelectedValue }}
       multiselect
     />
+  );
+};
+
+const GroupedOptionsMultiselectControlledCustomSelectedValue = () => {
+  const [machineState] = useSelectMachineFromContext();
+  const selectedCount = machineState.context.selectedItems.length;
+  const allSelected = machineState.context.selectedItems.some((x) => x[Input.Select.SYMBOL_ALL]);
+
+  const label = (() => {
+    if (allSelected) {
+      return 'All selected';
+    }
+    if (selectedCount === 0) {
+      return machineState.context.placeholder;
+    }
+    return `${selectedCount} selected`;
+  })();
+
+  return (
+    <FlexedBox px={2}>
+      <Typography
+        type="secondary"
+        color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
+      >
+        {label}
+      </Typography>
+    </FlexedBox>
   );
 };
 
@@ -1807,33 +1834,6 @@ export const GroupedOptionsMultiselectControlled = () => {
     },
   ];
 
-  const CustomSelectedValue = () => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
-    const allSelected = machineState.context.selectedItems.some((x) => x[Input.Select.SYMBOL_ALL]);
-
-    const label = (() => {
-      if (allSelected) {
-        return 'All selected';
-      }
-      if (selectedCount === 0) {
-        return machineState.context.placeholder;
-      }
-      return `${selectedCount} selected`;
-    })();
-
-    return (
-      <FlexedBox px={2}>
-        <Typography
-          type="secondary"
-          color={selectedCount === 0 ? (t) => t.color.placeholderText : undefined}
-        >
-          {label}
-        </Typography>
-      </FlexedBox>
-    );
-  };
-
   return (
     <Input.Select
       id="grouped-options-multiselect-test"
@@ -1842,7 +1842,7 @@ export const GroupedOptionsMultiselectControlled = () => {
       // @ts-ignore
       onChange={setValue}
       components={{
-        SelectedValue: CustomSelectedValue,
+        SelectedValue: GroupedOptionsMultiselectControlledCustomSelectedValue,
       }}
       multiselect
       label="User account"

@@ -481,7 +481,9 @@ test('onBlur, onChange, onFocus', async () => {
   await act(async () => {
     getByTestId('other-tabbable').focus();
     // Giving tick to update activeElement
-    await new Promise((res) => setTimeout(res, 1));
+    await new Promise((res) => {
+      setTimeout(res, 1);
+    });
   });
 
   expect(handleBlur).toHaveBeenCalledTimes(1);

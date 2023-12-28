@@ -1,1 +1,3 @@
-export { default } from './BottomWizardBar';
+import BottomWizardBar from './BottomWizardBar';
+
+export default BottomWizardBar;

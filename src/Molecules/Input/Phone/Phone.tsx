@@ -24,6 +24,37 @@ const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
 const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 const doNothing = () => {};
 
+// @ts-ignore
+const CountryCodeListItem = ({ index }) => {
+  const [state] = useSelectMachineFromContext();
+  const option = state.context.options[index];
+  const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
+  const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
+
+  return (
+    <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
+      <Flexbox container width="100%">
+        {option.label}
+      </Flexbox>
+    </StyledBox>
+  );
+};
+
+const CountryCodeValue = () => {
+  const [state] = useSelectMachineFromContext();
+
+  const selectedOption =
+    state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
+
+  return (
+    selectedOption && (
+      <Flexbox container alignItems="center" justifyContent="center">
+        <Box pl={2}>{selectedOption.flag}</Box>
+      </Flexbox>
+    )
+  );
+};
+
 const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     autoComplete,
@@ -119,37 +150,6 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
 
     return sortByCountry ? [sortedOptions[0]] : [options[0]];
   }, [defaultValue, options, sortByCountry, sortedOptions]);
-
-  // @ts-ignore
-  const CountryCodeListItem = ({ index }) => {
-    const [state] = useSelectMachineFromContext();
-    const option = state.context.options[index];
-    const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
-    const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
-
-    return (
-      <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
-        <Flexbox container width="100%">
-          {option.label}
-        </Flexbox>
-      </StyledBox>
-    );
-  };
-
-  const CountryCodeValue = () => {
-    const [state] = useSelectMachineFromContext();
-
-    const selectedOption =
-      state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
-
-    return (
-      selectedOption && (
-        <Flexbox container alignItems="center" justifyContent="center">
-          <Box pl={2}>{selectedOption.flag}</Box>
-        </Flexbox>
-      )
-    );
-  };
 
   const [countryCode, setCountryCode] = useState<OptionItem[]>(getInitialCountryCodeValue());
   const [phoneNumber, setPhoneNumber] = useState<string>(defaultValue?.phoneNumber ?? '');

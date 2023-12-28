@@ -193,30 +193,31 @@ export const WithNoTitle = {
   name: 'With no title',
 };
 
-export const WithCloseButtonTitle = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
+const WithCloseButtonTitleExample = () => {
+  const [open, setOpen] = useState(true);
 
-    const toggle = () => {
-      setOpen(!open);
-    };
-
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={toggle}>
-          Toggle drawer
-        </button>
-        <Drawer onClose={onClose} title="Drawer title" closeButtonTitle="Close" open={open}>
-          {contentLarge}
-        </Drawer>
-      </>
-    );
+  const toggle = () => {
+    setOpen(!open);
   };
-  return <Example />;
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <button type="button" onClick={toggle}>
+        Toggle drawer
+      </button>
+      <Drawer onClose={onClose} title="Drawer title" closeButtonTitle="Close" open={open}>
+        {contentLarge}
+      </Drawer>
+    </>
+  );
+};
+
+export const WithCloseButtonTitle = {
+  render: () => <WithCloseButtonTitleExample />,
 };
 
 export const IntegrationWithFadedScroll = {

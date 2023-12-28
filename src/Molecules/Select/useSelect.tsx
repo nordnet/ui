@@ -23,6 +23,7 @@ const SelectContext = createContext<
 
 function SelectProvider({ children, getButtonProps, getOptionMetadata, value }: UseSelectProps) {
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <SelectContext.Provider value={{ getButtonProps, getOptionMetadata, value }}>
       {children}
     </SelectContext.Provider>

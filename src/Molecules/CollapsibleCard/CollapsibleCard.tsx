@@ -106,6 +106,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     </StyledButton>
   );
 
+  // eslint-disable-next-line react/no-unstable-nested-components
   const CardHeaderTop = () =>
     ActionComponent ? (
       <StyledFlexbox container $px={titleRowPaddingX}>

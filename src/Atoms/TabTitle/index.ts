@@ -1,1 +1,3 @@
-export { TabTitle as default } from './TabTitle';
+import { TabTitle } from './TabTitle';
+
+export default TabTitle;
