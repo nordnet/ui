@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { clear } from 'jest-date-mock';
 import { PageProviders } from '../../../common/testUtils';
 import { Select } from '..';
@@ -35,7 +35,7 @@ const SUBMIT_BUTTON_ID = 'submit-button';
 test('submitting a form with Select', async () => {
   const onSubmit = jest.fn();
 
-  const { getByTestId } = render(
+  render(
     <PageProviders>
       <form onSubmit={onSubmit}>
         <FormField label="Label" required extraInfo="Extra info">
@@ -57,13 +57,13 @@ test('submitting a form with Select', async () => {
     </PageProviders>,
   );
 
-  const input = getByTestId(SELECT_ID);
+  const input = screen.getByTestId(SELECT_ID);
   fireEvent.focus(input);
 
-  const optionElement = getByTestId(options[0].value);
+  const optionElement = screen.getByTestId(options[0].value);
   fireEvent.click(optionElement);
 
-  const submitButtonElement = getByTestId(SUBMIT_BUTTON_ID);
+  const submitButtonElement = screen.getByTestId(SUBMIT_BUTTON_ID);
   fireEvent.click(submitButtonElement);
 
   const submittedEvent = onSubmit.mock.calls[0][0];
@@ -81,7 +81,7 @@ test('submitting a form with Select', async () => {
 test('submitting a form with multi Select', async () => {
   const onSubmit = jest.fn();
 
-  const { getByTestId } = render(
+  render(
     <PageProviders>
       <form onSubmit={onSubmit}>
         <FormField label="Label" required extraInfo="Extra info">
@@ -104,16 +104,16 @@ test('submitting a form with multi Select', async () => {
     </PageProviders>,
   );
 
-  const input = getByTestId(SELECT_ID);
+  const input = screen.getByTestId(SELECT_ID);
   fireEvent.focus(input);
 
-  const optionElementOne = getByTestId(options[0].value);
+  const optionElementOne = screen.getByTestId(options[0].value);
   fireEvent.click(optionElementOne);
 
-  const optionElementTwo = getByTestId(options[1].value);
+  const optionElementTwo = screen.getByTestId(options[1].value);
   fireEvent.click(optionElementTwo);
 
-  const submitButtonElement = getByTestId(SUBMIT_BUTTON_ID);
+  const submitButtonElement = screen.getByTestId(SUBMIT_BUTTON_ID);
   fireEvent.click(submitButtonElement);
 
   const submittedEvent = onSubmit.mock.calls[0][0];
