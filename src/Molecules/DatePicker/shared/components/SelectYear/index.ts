@@ -1,1 +1,3 @@
-export { default } from './SelectYear';
+import SelectYear from './SelectYear';
+
+export default SelectYear;

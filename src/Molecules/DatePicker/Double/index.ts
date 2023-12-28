@@ -1,1 +1,3 @@
-export { default } from './DoubleDatePicker';
+import DoubleDatePicker from './DoubleDatePicker';
+
+export default DoubleDatePicker;
