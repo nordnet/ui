@@ -28,6 +28,7 @@ export function HiddenSelect(props: Props) {
       aria-hidden="true"
       value={value}
       onChange={NOOP}
+      data-testid="hidden-native-select"
       {...rest}
     >
       {options.map((option) => (
