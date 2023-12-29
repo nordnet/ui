@@ -1,22 +1,28 @@
 import React from 'react';
 import { SelectProps } from '@mui/base';
 
+type MuiProps = Pick<
+  SelectProps<string, boolean>,
+  'disabled' | 'multiple' | 'onChange' | 'defaultValue'
+>;
+
 export type Props = {
   children: React.ReactNode;
+  className?: string;
+  fullWidth?: boolean;
   hasError?: boolean;
-  placeholder?: string;
-  size?: 's' | 'm';
+  id?: string;
   /**
    * required if select lives in a form
    */
   name?: string;
+  placeholder?: string;
+  size?: 's' | 'm';
   /**
    * width in units
    */
   width?: number;
-  fullWidth?: boolean;
   value?: string | string[];
   valueDisplay?: React.ReactNode;
   trigger?: React.ReactNode;
-} & SelectProps<string, boolean>;
-// TODO: will we really expose all props from SelectProps?
+} & MuiProps;

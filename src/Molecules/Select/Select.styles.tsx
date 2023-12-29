@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Props } from './Select.types';
 
 export const ellipsis = `
   white-space: nowrap;
@@ -14,7 +13,7 @@ export const Root = styled.div<{ $width: number; $fullWidth?: boolean }>`
     $fullWidth ? '100%' : `${theme.spacing.unit($width)}px`};
 `;
 
-export const ListContainer = styled.div<{ $hidden: Props['hidden'] }>`
+export const ListContainer = styled.div<{ $hidden: boolean }>`
   position: absolute;
   width: 100%;
   cursor: pointer;

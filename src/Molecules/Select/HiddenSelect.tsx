@@ -22,7 +22,14 @@ export function HiddenSelect(props: Props) {
   const { name, value, multiple, options } = props;
 
   return (
-    <StyledSelect name={name} multiple={multiple} aria-hidden="true" value={value} onChange={NOOP}>
+    <StyledSelect
+      name={name}
+      multiple={multiple}
+      aria-hidden="true"
+      value={value}
+      onChange={NOOP}
+      data-testid="hidden-native-select"
+    >
       {options.map((option) => (
         <option key={option} value={option}>
           {option}

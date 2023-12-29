@@ -52,7 +52,7 @@ const CheckmarkBox = styled.div<{ $selected?: boolean }>`
 `;
 
 export function Option(props: Props) {
-  const { children, className, disabled = false, label, value, multiple } = props;
+  const { children, className, disabled = false, label, value, multiple, ...rest } = props;
   const { getRootProps, highlighted, selected } = useOption({
     value,
     disabled,
@@ -60,7 +60,13 @@ export function Option(props: Props) {
   });
 
   return (
-    <Item {...getRootProps()} $highlighted={highlighted} className={className} data-testid={value}>
+    <Item
+      {...getRootProps()}
+      $highlighted={highlighted}
+      className={className}
+      data-testid={value}
+      {...rest}
+    >
       <Flexbox
         container
         alignItems="center"

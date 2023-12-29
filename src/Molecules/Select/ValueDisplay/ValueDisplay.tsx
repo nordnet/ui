@@ -44,13 +44,13 @@ export const StyledTypography = styled(Typography)`
   ${ellipsis}
 `;
 
-export function ValueDisplay({ placeholder }: Props) {
+export function ValueDisplay({ placeholder, ...rest }: Props) {
   const { value, getOptionMetadata } = useSelect();
   const selectedOptionsLabel = value ? getSelectedOptionsLabel(getOptionMetadata, value) : null;
 
   return (
-    <>
-      <StyledTypography type="secondary">{selectedOptionsLabel || placeholder}</StyledTypography>
-    </>
+    <StyledTypography type="secondary" {...rest}>
+      {selectedOptionsLabel || placeholder}
+    </StyledTypography>
   );
 }
