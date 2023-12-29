@@ -19,7 +19,7 @@ export function HiddenSelect(props: Props) {
    * This component is only used to be able to include values from select in a form submit.
    */
 
-  const { name, value, multiple, options, ...rest } = props;
+  const { name, value, multiple, options } = props;
 
   return (
     <StyledSelect
@@ -29,7 +29,6 @@ export function HiddenSelect(props: Props) {
       value={value}
       onChange={NOOP}
       data-testid="hidden-native-select"
-      {...rest}
     >
       {options.map((option) => (
         <option key={option} value={option}>
