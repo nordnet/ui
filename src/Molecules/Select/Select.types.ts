@@ -8,7 +8,7 @@ type MuiProps = Pick<
 
 export type Props = {
   children: React.ReactNode;
-  dataTestId?: string;
+  className?: string;
   fullWidth?: boolean;
   hasError?: boolean;
   id?: string;

@@ -19,6 +19,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
   (props: Props, ref: ForwardedRef<HTMLButtonElement>) => {
     const {
       children,
+      className,
       disabled,
       hasError = false,
       multiple,
@@ -61,7 +62,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
         getOptionMetadata={getOptionMetadata}
         value={value}
       >
-        <Root $width={width} $fullWidth={fullWidth} id={id} {...rest}>
+        <Root className={className} $width={width} $fullWidth={fullWidth} id={id} {...rest}>
           {triggerFromProps || (
             <Trigger size={size} hasError={hasError} ref={ref}>
               {valueDisplayFromProps || <ValueDisplay placeholder={placeholder} />}
