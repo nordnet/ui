@@ -1,3 +1,10 @@
+## [15.6.2](https://github.com/nordnet/ui/compare/v15.6.1...v15.6.2) (2023-12-29)
+
+
+### Bug Fixes
+
+* trigger build for prev commit ([22a2f2f](https://github.com/nordnet/ui/commit/22a2f2f001b4d63c8f2d3de76d7093c048a166af))
+
 ## [15.6.1](https://github.com/nordnet/ui/compare/v15.6.0...v15.6.1) (2023-12-28)
 
 
