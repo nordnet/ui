@@ -1,3 +1,10 @@
+## [15.6.3](https://github.com/nordnet/ui/compare/v15.6.2...v15.6.3) (2024-01-02)
+
+
+### Bug Fixes
+
+* rework backdrop a little to make it work above position static elements ([#1565](https://github.com/nordnet/ui/issues/1565)) ([406ef87](https://github.com/nordnet/ui/commit/406ef87628143f21ade45586a7d815dd18a5cc40))
+
 ## [15.6.2](https://github.com/nordnet/ui/compare/v15.6.1...v15.6.2) (2023-12-29)
 
 
