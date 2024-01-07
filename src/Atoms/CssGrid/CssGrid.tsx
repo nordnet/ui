@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
+import { motion } from 'framer-motion';
 import { Theme } from '../../theme/theme.types';
 import {
   AreaInfo,
@@ -113,15 +114,15 @@ const generateMSGridStyles = ({
     const rowGutter = isNumber(gutter)
       ? `${theme.spacing.unit(gutter)}px`
       : isNumber(gutter.row)
-      ? `${theme.spacing.unit(gutter.row)}px`
-      : gutter.row;
+        ? `${theme.spacing.unit(gutter.row)}px`
+        : gutter.row;
 
     // eslint-disable-next-line no-nested-ternary
     const colGutter = isNumber(gutter)
       ? `${theme.spacing.unit(gutter)}px`
       : isNumber(gutter.col)
-      ? `${theme.spacing.unit(gutter.col)}px`
-      : gutter.col;
+        ? `${theme.spacing.unit(gutter.col)}px`
+        : gutter.col;
 
     if (isRowsPresented) {
       const rawTemplateRowsStyles = templateRowsStyles
@@ -167,7 +168,7 @@ const generateMSGridStyles = ({
   return styles.join('\n');
 };
 
-const StyledDiv = styled.div<Props>`
+const styledDivCss = css<Props>`
   display: grid;
   box-sizing: border-box;
 
@@ -224,7 +225,15 @@ const StyledDiv = styled.div<Props>`
     styles.unshift(createStyles(props, undefined));
     return styles.join('\n');
   }}
-` as React.FC<Props>;
+`;
+
+const StyledMotionDiv = styled(motion.div)`
+  ${styledDivCss}
+`;
+
+const StyledDiv = styled.div`
+  ${styledDivCss}
+`;
 
 const getMsJustifySelfStyles = (justify: ItemProps['justify']) =>
   `-ms-grid-column-align: ${justify};`;
@@ -268,7 +277,7 @@ const getCssGridItemStylesFromProps = ({
   ${getPlaceSelfStyles(place)}
 `;
 
-const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
+const GridItemCss = css<ItemProps & { css?: any }>`
   box-sizing: border-box;
   min-width: 0; /* prevents grid blowout */
   ${(p) => getCssGridItemStylesFromProps(p)}
@@ -284,31 +293,68 @@ const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
       .join('\n')}
 `;
 
+const RawCssGridItemMotion = styled(motion.div)`
+  ${GridItemCss}
+`;
+
+const RawCssGridItemDiv = styled.div`
+  ${GridItemCss}
+`;
+
 export const CssGridItem: React.FC<ItemProps> = ({
   align,
   area,
   children,
+  duration,
   justify,
+  isAnimated,
   place,
   sm,
   md,
   lg,
   xl,
-}) => (
-  <RawCssGridItem
-    {...{
-      align,
-      area,
-      children,
-      justify,
-      place,
-      sm,
-      md,
-      lg,
-      xl,
-    }}
-  />
-);
+}) => {
+  const itemVariants = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration } },
+  };
+
+  return isAnimated ? (
+    <RawCssGridItemMotion
+      variants={itemVariants}
+      {...{
+        align,
+        area,
+        children,
+        justify,
+        place,
+        sm,
+        md,
+        lg,
+        xl,
+      }}
+    >
+      {children}
+    </RawCssGridItemMotion>
+  ) : (
+    <RawCssGridItemDiv
+      {...{
+        align,
+        area,
+        children,
+        justify,
+        place,
+        sm,
+        md,
+        lg,
+        xl,
+      }}
+    >
+      {children}
+    </RawCssGridItemDiv>
+  );
+};
+
 CssGridItem.displayName = 'CssGrid.Item';
 
 const generateChildStyles =
@@ -335,8 +381,14 @@ const generateChildStyles =
     : styles.join('\n');
   };
 
-const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, children, ...props }) => {
+const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({
+  staggerChildren,
+  theme,
+  children,
+  ...props
+}) => {
   const { sm, md, lg, xl } = props;
+  const hasStaggeredValue = staggerChildren !== undefined;
 
   type SizeAreaTuple = [undefined | Size, { areas: Props['areas'] }];
   const stylesFnsForChild = useMemo(
@@ -369,10 +421,33 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   const stylesFnForChild = (areaName: string) =>
     stylesFnsForChild?.map((f) => f(areaName)).join('\n');
 
-  const renderedChildren = React.Children?.map<JSX.Element | null, React.ReactElement<ItemProps>>(
-    children as any,
+  const staggeredChildrenVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren,
+      },
+    },
+  };
+
+  // Flatten the props.areas array into a 1D array
+  const areaOrder = props.areas.flat();
+
+  const sortedChildren = hasStaggeredValue
+    ? React.Children.toArray(children).sort((a, b) => {
+        if (React.isValidElement(a) && React.isValidElement(b)) {
+          const aIndex = areaOrder.indexOf(a.props.area);
+          const bIndex = areaOrder.indexOf(b.props.area);
+          return aIndex - bIndex;
+        }
+        return 0;
+      })
+    : React.Children.toArray(children);
+
+  const renderedChildren = sortedChildren.map<React.ReactElement<ItemProps> | null>(
     (child, childIndex) => {
-      if (!child) {
+      if (!React.isValidElement(child)) {
         assert(
           false,
           `CssGrid: It seems like you have null-ish children[${childIndex}]. \nIf you wanted to do a conditional rendering, do so with areas prop on CssGrid.Container`,
@@ -381,9 +456,24 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
         return null;
       }
 
-      return (
-        // @ts-ignore
-        <RawCssGridItem
+      const itemVariants = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1, transition: { duration: child.props.duration } },
+      };
+
+      return hasStaggeredValue ? (
+        <RawCssGridItemMotion
+          {...child.props}
+          variants={itemVariants}
+          isAnimated={hasStaggeredValue}
+          css={
+            css`
+              ${stylesFnForChild(child.props.area)}
+            ` as any
+          }
+        />
+      ) : (
+        <RawCssGridItemDiv
           {...child.props}
           css={
             css`
@@ -395,7 +485,18 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
     },
   );
 
-  return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
+  return hasStaggeredValue ? (
+    <StyledMotionDiv
+      variants={staggeredChildrenVariants}
+      initial="hidden"
+      animate="show"
+      {...props}
+    >
+      {renderedChildren}
+    </StyledMotionDiv>
+  ) : (
+    <StyledDiv {...props}>{renderedChildren}</StyledDiv>
+  );
 };
 
 export const CssGridContainer: React.FC<Props> = withTheme(RawCSSGridContainer);

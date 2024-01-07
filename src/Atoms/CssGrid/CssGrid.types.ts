@@ -1,3 +1,5 @@
+import { MotionProps } from 'framer-motion';
+
 export type Areas = AreasRow[];
 type AreasRow = AreaName[];
 export type AreaInfo = {
@@ -56,9 +58,14 @@ type BaseItemProps = {
   children?: React.ReactNode;
 };
 
-export type ItemProps = SizeAwareProps<BaseItemProps>;
-export type Props = SizeAwareProps<BaseProps>;
-
+export type ItemProps = {
+  duration?: number;
+  isAnimated?: boolean;
+} & SizeAwareProps<BaseItemProps> &
+  MotionProps;
+export type Props = {
+  staggerChildren?: number;
+} & SizeAwareProps<BaseProps>;
 export type Size = 'sm' | 'md' | 'lg' | 'xl' | undefined;
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

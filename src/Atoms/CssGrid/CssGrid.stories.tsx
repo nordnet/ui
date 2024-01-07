@@ -47,11 +47,12 @@ export const SimpleCssGrid = {
       ]}
       templateColumns={['1fr', '1fr', '1fr']}
       templateRows={['1fr', '1fr', '1fr']}
+      staggerChildren={1}
     >
       <Grid.Item area="header">
-        <Content>Header</Content>
+        <Content>asdasd</Content>
       </Grid.Item>
-      <Grid.Item area="content">
+      <Grid.Item area="content" duration={3}>
         <Content>Content</Content>
       </Grid.Item>
       <Grid.Item area="menu">
