@@ -193,13 +193,13 @@ export const StaggeredGrid = {
         <Grid.Item area="header">
           <Content>Header</Content>
         </Grid.Item>
-        <Grid.Item area="content" duration={5}>
+        <Grid.Item area="content" duration={10}>
           <Content>Content</Content>
         </Grid.Item>
-        <Grid.Item area="menu" duration={5}>
+        <Grid.Item area="menu" duration={10}>
           <Content>Menu</Content>
         </Grid.Item>
-        <Grid.Item area="ads" duration={5}>
+        <Grid.Item area="ads" duration={10}>
           <Content>Ads</Content>
         </Grid.Item>
         <Grid.Item area="footer">
@@ -232,7 +232,7 @@ export const StaggeredGrid = {
           area="header"
           variants={{
             hidden: { opacity: 0 },
-            show: { opacity: 1, scale: 1.2, transition: { duration: 10 } },
+            show: { opacity: 1, scale: 1.2, transition: { duration: 15 } },
           }}
         >
           <Content>Header</Content>
@@ -242,7 +242,7 @@ export const StaggeredGrid = {
           animate="show"
           variants={{
             hidden: { opacity: 0 },
-            show: { scale: 0.8, transition: { duration: 10 } },
+            show: { scale: 0.8, transition: { duration: 15 } },
           }}
         >
           <Content>Content</Content>
@@ -252,7 +252,7 @@ export const StaggeredGrid = {
           animate="show"
           variants={{
             hidden: { opacity: 0 },
-            show: { scale: 1.2, rotateZ: -4, transition: { duration: 10 } },
+            show: { scale: 1.2, rotateZ: -4, transition: { duration: 15 } },
           }}
         >
           <Content>Menu</Content>
