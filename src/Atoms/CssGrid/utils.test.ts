@@ -1,4 +1,4 @@
-import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
+import { getAreasInfo, getMsRawTemplateColumnOrRowStyles, getPosition } from './utils';
 
 describe('getAreasInfo', () => {
   test('Areas #1 w/gap', () => {
@@ -108,5 +108,29 @@ describe('getMsRawTemplateColumnOrRowStyles', () => {
 
     const result = getMsRawTemplateColumnOrRowStyles(raw, gutter);
     expect(result).toEqual('10ch 30px 412px 30px 50% 30px 1fr');
+  });
+});
+
+describe('getPosition', () => {
+  test('should return correct position', () => {
+    const areas = [
+      ['header', 'header', 'header'],
+      ['menu', 'content', 'content'],
+      ['footer', 'content', 'content'],
+    ];
+
+    const result = getPosition('content', areas);
+    expect(result).toEqual({ row: 1, column: 1 });
+  });
+
+  test('should return null for non-existing area', () => {
+    const areas = [
+      ['header', 'header', 'header'],
+      ['menu', 'content', 'content'],
+      ['footer', 'content', 'content'],
+    ];
+
+    const result = getPosition('nonExistingArea', areas);
+    expect(result).toBeNull();
   });
 });

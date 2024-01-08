@@ -81,3 +81,13 @@ export const getAreasInfo = (
 export const getMsRawTemplateColumnOrRowStyles = (raw: string, gutter: string) => {
   return raw.replace(spacesNotInsideParentheses, ` ${gutter} `);
 };
+
+export const getPosition = (area: string, areas: string[][]) => {
+  for (let column = 0; column < areas[0].length; column += 1) {
+    const row = areas.findIndex((r: any) => r[column] === area);
+    if (row !== -1) {
+      return { row, column };
+    }
+  }
+  return null;
+};

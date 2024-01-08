@@ -58,14 +58,38 @@ type BaseItemProps = {
   children?: React.ReactNode;
 };
 
-export type ItemProps = {
+type GridItemAnimationProps = {
+  /**
+   * @default 0.5s
+   * @description Duration for fade-in animation if staggerChildren is provided to GridContainer.
+   */
   duration?: number;
-  isAnimated?: boolean;
-} & SizeAwareProps<BaseItemProps> &
-  MotionProps;
-export type Props = {
+  /**
+   * @default false
+   * @description Only true when staggerChildren is provided to GridContainer
+   */
+  isStaggered?: boolean;
+} & MotionProps;
+
+export type GridItemProps = SizeAwareProps<BaseItemProps>;
+export type GridItemAnimatedProps = GridItemAnimationProps & GridItemProps;
+
+type GridContainerAnimationProps = {
+  /**
+   * @default 0
+   * @description Duration of stagger animation. If provided then all children will be animated
+   */
   staggerChildren?: number;
-} & SizeAwareProps<BaseProps>;
+  /**
+   * @default 'row'
+   * @description Direction of stagger animation. Only works if staggerChildren is provided
+   */
+  staggerDirection?: 'column' | 'row';
+} & MotionProps;
+
+export type GridContainerAnimatedProps = GridContainerAnimationProps & SizeAwareProps<BaseProps>;
+export type GridContainerProps = SizeAwareProps<BaseProps>;
+
 export type Size = 'sm' | 'md' | 'lg' | 'xl' | undefined;
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
