@@ -60,7 +60,7 @@ type BaseItemProps = {
 
 type GridItemAnimationProps = {
   /**
-   * @default 0.5s
+   * @default 0.2s
    * @description Duration for fade-in animation if staggerChildren is provided to GridContainer.
    */
   duration?: number;

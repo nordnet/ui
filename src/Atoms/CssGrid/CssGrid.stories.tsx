@@ -84,13 +84,12 @@ export const StaggeredGrid = {
         <Flexbox container gap={1} direction="column">
           <Typography type="title3">Staggered grid - row animation</Typography>
           <Typography type="tertiary">
-            By utilizing the <code>staggeredChildren</code> prop, you can animate grid items
+            By setting the <code>staggeredChildren</code> prop, you can animate grid items
             sequentially.
           </Typography>
           <Typography type="tertiary">
-            The default animation is a fade-in effect over 0.5 seconds. The animation proceeds from
-            left to right, referencing the <code>areas</code> prop. The order of{' '}
-            <code>Grid.Item</code> children does not affect this process.
+            The animation proceeds from left to right, referencing the <code>areas</code> prop. The
+            order of <code>Grid.Item</code> children does not affect the order of the animation.
           </Typography>
         </Flexbox>
       </Box>
@@ -171,7 +170,7 @@ export const StaggeredGrid = {
           <Typography type="title3">Staggered grid - child durations</Typography>
           <Typography type="tertiary">
             Each child also has a duration prop that can be used to set the duration of the default
-            fade-in animation.
+            fade-in animation. The default duration is 0.2s.
           </Typography>
         </Flexbox>
       </Box>

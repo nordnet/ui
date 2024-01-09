@@ -336,7 +336,7 @@ export const CssGridItem: React.FC<GridItemAnimatedProps> = ({
   if (isStaggered && !variants) {
     itemVariants = {
       hidden: { opacity: 0 },
-      show: { opacity: 1, transition: { duration: duration ?? 0.5 } },
+      show: { opacity: 1, transition: { duration: duration ?? 0.2 } },
     };
   }
 
