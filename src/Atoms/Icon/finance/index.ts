@@ -6,6 +6,7 @@ import bankId from './bankId';
 import controls from './controls';
 import fee from './fee';
 import feeNone from './feeNone';
+import freja from './freja';
 import fund from './fund';
 import fundVariety from './fundVariety';
 import global from './global';
@@ -47,6 +48,7 @@ export default {
   ...controls,
   ...fee,
   ...feeNone,
+  ...freja,
   ...fund,
   ...fundVariety,
   ...global,
