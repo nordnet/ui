@@ -1,3 +1,10 @@
+# [15.7.0](https://github.com/nordnet/ui/compare/v15.6.3...v15.7.0) (2024-01-09)
+
+
+### Features
+
+* trigger build with new icons ([#1568](https://github.com/nordnet/ui/issues/1568)) ([3c4e055](https://github.com/nordnet/ui/commit/3c4e0553c041d6f0586bc9e8db20bcf81fccfaf9))
+
 ## [15.6.3](https://github.com/nordnet/ui/compare/v15.6.2...v15.6.3) (2024-01-02)
 
 
