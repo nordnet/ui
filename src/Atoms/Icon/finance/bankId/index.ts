@@ -3,7 +3,7 @@ import BankId24 from './BankId24';
 import BankId32 from './BankId32';
 
 export default {
-  BankId24,
   BankId16,
+  BankId24,
   BankId32,
 };
