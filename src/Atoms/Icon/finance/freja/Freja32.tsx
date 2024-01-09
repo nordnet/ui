@@ -13,6 +13,6 @@ const Freja32: React.FC<IconProps> = (props) => {
     );
 };
 
-Freja32.displayName = 'Icon.BankId';
+Freja32.displayName = 'Icon.Freja';
 
 export default Freja32;
