@@ -1,3 +1,10 @@
+## [15.7.1](https://github.com/nordnet/ui/compare/v15.7.0...v15.7.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* add number type to allow custom spinner delay on buttons too ([#1569](https://github.com/nordnet/ui/issues/1569)) ([65431b0](https://github.com/nordnet/ui/commit/65431b05c40cec395d91cb86ad3082fe32e56646))
+
 # [15.7.0](https://github.com/nordnet/ui/compare/v15.6.3...v15.7.0) (2024-01-09)
 
 
