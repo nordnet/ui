@@ -10,7 +10,7 @@ export type IconButtonProps = {
   children: React.ReactChild | React.ReactChild[];
   className?: string;
   /** @default true */
-  delayLoadingSpinnerAnimation?: boolean;
+  delayLoadingSpinnerAnimation?: boolean | number;
   disabled?: boolean;
   external?: boolean;
   form?: string;
