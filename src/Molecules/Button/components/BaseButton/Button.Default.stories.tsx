@@ -406,6 +406,16 @@ export const ButtonWithLoadingState = {
   name: 'Button with loading state',
 };
 
+export const ButtonWithLoadingStateWithCustomSpinnerAnimationDelay = {
+  render: () => (
+    <Button onClick={action('clicked')} loading delayLoadingSpinnerAnimation={400}>
+      Button
+    </Button>
+  ),
+
+  name: 'Button with loading state with custom spinner animation delay',
+};
+
 export const ButtonWithLoadingStateWithoutTheSpinnerAnimationDelay = {
   render: () => (
     <Button onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>

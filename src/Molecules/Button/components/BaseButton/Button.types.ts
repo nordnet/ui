@@ -37,7 +37,7 @@ export type ButtonProps = {
   loading?: boolean;
   form?: string;
   /** @default true */
-  delayLoadingSpinnerAnimation?: boolean;
+  delayLoadingSpinnerAnimation?: boolean | number;
   icon?: React.ReactNode;
   /** @default left */
   iconPlacement?: 'left' | 'right';
