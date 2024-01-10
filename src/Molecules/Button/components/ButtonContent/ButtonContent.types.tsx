@@ -6,7 +6,7 @@ type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type ButtonContentProps = {
   colorFn?: ColorFn;
   /** @default true */
-  delayLoadingSpinnerAnimation?: boolean;
+  delayLoadingSpinnerAnimation?: boolean | number;
   icon?: React.ReactNode;
   /** @default left */
   iconPlacement?: 'left' | 'right';
