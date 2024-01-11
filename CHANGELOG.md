@@ -1,3 +1,18 @@
+# [16.0.0-beta.2](https://github.com/nordnet/ui/compare/v16.0.0-beta.1...v16.0.0-beta.2) (2024-01-11)
+
+
+### Bug Fixes
+
+* add number type to allow custom spinner delay on buttons too ([#1569](https://github.com/nordnet/ui/issues/1569)) ([65431b0](https://github.com/nordnet/ui/commit/65431b05c40cec395d91cb86ad3082fe32e56646))
+* **deps:** update dependency ramda to v0.29.1 ([#1559](https://github.com/nordnet/ui/issues/1559)) ([71787ac](https://github.com/nordnet/ui/commit/71787acf4b6b40af29a2d7aa214b9d2f28297e47))
+* rework backdrop a little to make it work above position static elements ([#1565](https://github.com/nordnet/ui/issues/1565)) ([406ef87](https://github.com/nordnet/ui/commit/406ef87628143f21ade45586a7d815dd18a5cc40))
+* trigger build for prev commit ([22a2f2f](https://github.com/nordnet/ui/commit/22a2f2f001b4d63c8f2d3de76d7093c048a166af))
+
+
+### Features
+
+* trigger build with new icons ([#1568](https://github.com/nordnet/ui/issues/1568)) ([3c4e055](https://github.com/nordnet/ui/commit/3c4e0553c041d6f0586bc9e8db20bcf81fccfaf9))
+
 ## [15.7.1](https://github.com/nordnet/ui/compare/v15.7.0...v15.7.1) (2024-01-10)
 
 
