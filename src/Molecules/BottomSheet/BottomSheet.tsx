@@ -3,18 +3,9 @@ import FocusLock from 'react-focus-lock';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import { Button, Flexbox, Icon, useOnClickOutside } from '../..';
+import { Button, Flexbox, Icon, Portal, theme, useOnClickOutside } from '../..';
 import { Backdrop, StyledBottomSheet } from './BottomSheet.styles';
-import { BackdropWrapperProps, Props } from './BottomSheet.types';
-
-const BackdropWrapper: React.FC<BackdropWrapperProps> = ({ children, showBackdrop }) =>
-  showBackdrop ? (
-    <Backdrop container alignItems="center" justifyContent="center">
-      {children}
-    </Backdrop>
-  ) : (
-    <>{children}</>
-  );
+import { Props } from './BottomSheet.types';
 
 const BottomSheet: React.FC<Props> = ({
   children,
@@ -36,53 +27,60 @@ const BottomSheet: React.FC<Props> = ({
   });
 
   return (
-    <AnimatePresence>
-      {open ? (
-        <FocusLock disabled={fullScreenMobile}>
-          <RemoveScroll enabled={!fullScreenMobile}>
-            <motion.div
-              key="backdrop"
-              initial={{ opacity: 0 }}
-              exit={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ type: 'ease', duration: 0.2 }}
-            >
-              <BackdropWrapper showBackdrop={showBackdrop}>
+    <Portal>
+      <AnimatePresence>
+        {open ? (
+          <FocusLock disabled={fullScreenMobile}>
+            <RemoveScroll enabled={!fullScreenMobile}>
+              {showBackdrop && (
                 <motion.div
-                  key="bottomsheet"
-                  initial={{ y: '100%', opacity: 1 }}
-                  exit={{ y: '100%', opacity: 1 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ type: 'ease', duration: 0.3 }}
-                  style={{ width: '100%', height: '100%' }}
+                  key="backdrop"
+                  initial={{ opacity: 0, zIndex: theme.zIndex.overlay, position: 'fixed' }}
+                  exit={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ type: 'ease', duration: 0.2 }}
                 >
-                  <StyledBottomSheet
-                    className={className}
-                    fullScreenMobile={fullScreenMobile}
-                    height={height}
-                    ref={internalRef}
-                  >
-                    <Flexbox container direction="column" gap={2}>
-                      <Flexbox container item justifyContent="space-between" alignItems="center">
-                        <Flexbox item>{title}</Flexbox>
-                        {typeof onClose === 'function' && (
-                          <Flexbox item>
-                            <Button.Icon variant="primary" onClick={onClose} size="s">
-                              <Icon.Cross16 color="currentColor" />
-                            </Button.Icon>
-                          </Flexbox>
-                        )}
-                      </Flexbox>
-                      <Flexbox item>{children}</Flexbox>
-                    </Flexbox>
-                  </StyledBottomSheet>
+                  <Backdrop container alignItems="center" justifyContent="center" />
                 </motion.div>
-              </BackdropWrapper>
-            </motion.div>
-          </RemoveScroll>
-        </FocusLock>
-      ) : null}
-    </AnimatePresence>
+              )}
+              <motion.div
+                key="bottomsheet"
+                initial={{
+                  bottom: '-100%',
+                  position: 'fixed',
+                  zIndex: theme.zIndex.modal,
+                }}
+                exit={{ bottom: '-100%' }}
+                animate={{ bottom: 0 }}
+                transition={{ type: 'ease', duration: 0.2 }}
+                style={{ width: '100%', height: '100%' }}
+              >
+                <StyledBottomSheet
+                  className={className}
+                  fullScreenMobile={fullScreenMobile}
+                  height={height}
+                  ref={internalRef}
+                >
+                  <Flexbox container direction="column" gap={2}>
+                    <Flexbox container item justifyContent="space-between" alignItems="center">
+                      <Flexbox item>{title}</Flexbox>
+                      {typeof onClose === 'function' && (
+                        <Flexbox item>
+                          <Button.Icon variant="primary" onClick={onClose} size="s">
+                            <Icon.Cross16 color="currentColor" />
+                          </Button.Icon>
+                        </Flexbox>
+                      )}
+                    </Flexbox>
+                    <Flexbox item>{children}</Flexbox>
+                  </Flexbox>
+                </StyledBottomSheet>
+              </motion.div>
+            </RemoveScroll>
+          </FocusLock>
+        ) : null}
+      </AnimatePresence>
+    </Portal>
   );
 };
 

@@ -42,35 +42,32 @@ export const DefaultStoryWithAutoCompleteOff = () => (
 DefaultStoryWithAutoCompleteOff.story = {
   name: 'Default with Auto Complete off',
 };
-
-export const WithValueControlledBehaviour = () => {
-  const Component = () => {
-    const [value, setValue] = useState<number | null>(10);
-    const changeHandler = (v: number | null) => {
-      setValue(v);
-    };
-
-    return (
-      <>
-        <Input.FormattedNumber
-          id="formatted-number-id"
-          label="Label"
-          value={value}
-          onChange={changeHandler}
-        />
-        <button type="button" onClick={() => setValue((value ?? 0) - 1)}>
-          Decrease
-        </button>
-        <button type="button" onClick={() => setValue((value ?? 0) + 1)}>
-          Increase
-        </button>
-      </>
-    );
+const WithValueControlledBehaviourExample = () => {
+  const [value, setValue] = useState<number | null>(10);
+  const changeHandler = (v: number | null) => {
+    setValue(v);
   };
-  return <Component />;
+
+  return (
+    <>
+      <Input.FormattedNumber
+        id="formatted-number-id"
+        label="Label"
+        value={value}
+        onChange={changeHandler}
+      />
+      <button type="button" onClick={() => setValue((value ?? 0) - 1)}>
+        Decrease
+      </button>
+      <button type="button" onClick={() => setValue((value ?? 0) + 1)}>
+        Increase
+      </button>
+    </>
+  );
 };
 
-WithValueControlledBehaviour.story = {
+export const WithValueControlledBehaviour = {
+  render: () => <WithValueControlledBehaviourExample />,
   name: 'With value (Controlled behaviour)',
 };
 
@@ -175,27 +172,25 @@ WithAllActions.story = {
   name: 'With all actions',
 };
 
-export const WithErrorIfValueIsLessThan1 = () => {
-  const Component = () => {
-    const defaultValue = 0;
-    const [value, setValue] = useState<number | null>(defaultValue);
-    const showError = value === null || value < 1;
+const WithErrorIfValueIsLessThan1Example = () => {
+  const defaultValue = 0;
+  const [value, setValue] = useState<number | null>(defaultValue);
+  const showError = value === null || value < 1;
 
-    return (
-      <Input.FormattedNumber
-        id="formatted-number-id"
-        label="Label"
-        step={1}
-        defaultValue={defaultValue}
-        onChange={setValue}
-        {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
-      />
-    );
-  };
-  return <Component />;
+  return (
+    <Input.FormattedNumber
+      id="formatted-number-id"
+      label="Label"
+      step={1}
+      defaultValue={defaultValue}
+      onChange={setValue}
+      {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
+    />
+  );
 };
 
-WithErrorIfValueIsLessThan1.story = {
+export const WithErrorIfValueIsLessThan1 = {
+  render: () => <WithErrorIfValueIsLessThan1Example />,
   name: 'With error if value is less than 1',
 };
 
@@ -215,28 +210,25 @@ WithExtraInfoBelow.story = {
   name: 'With extra info below',
 };
 
-export const WithExtraInfoAndError = () => {
-  const Component = () => {
-    const defaultValue = 0;
-    const [value, setValue] = useState(defaultValue);
-    const showError = value < 1;
+const WithExtraInfoAndErrorExample = () => {
+  const defaultValue = 0;
+  const [value, setValue] = useState(defaultValue);
+  const showError = value < 1;
 
-    return (
-      <Input.FormattedNumber
-        id="formatted-number-id"
-        label="Label"
-        defaultValue={defaultValue}
-        onChange={(x: number) => x && setValue(x)}
-        extraInfo="Use this space wisely"
-        {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
-      />
-    );
-  };
-  return <Component />;
+  return (
+    <Input.FormattedNumber
+      id="formatted-number-id"
+      label="Label"
+      defaultValue={defaultValue}
+      onChange={(x: number) => x && setValue(x)}
+      extraInfo="Use this space wisely"
+      {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
+    />
+  );
 };
 
-WithExtraInfoAndError.story = {
-  name: 'With extra info and error',
+export const WithExtraInfoAndError = {
+  render: () => <WithExtraInfoAndErrorExample />,
 };
 
 export const WithNoSteppers = () => (
@@ -540,41 +532,36 @@ export const OnAColouredBackground = () => (
 OnAColouredBackground.story = {
   name: 'On a coloured background',
 };
+const WithLabelTooltipInsideModalExample = () => {
+  const [open, setOpen] = useState(true);
 
-export const WithLabelTooltipInsideModal = () => {
-  const Example = () => {
-    const [open, setOpen] = useState(true);
-
-    const onOpen = () => {
-      setOpen(true);
-    };
-
-    const onClose = () => {
-      setOpen(false);
-    };
-
-    return (
-      <>
-        <button type="button" onClick={onOpen}>
-          Open modal
-        </button>
-        <Modal onClose={onClose} title="Dialog information" open={open}>
-          <Box mb={2}>
-            <Input.FormattedNumber
-              id="unique-id"
-              label="Label"
-              placeholder="Placeholder"
-              labelTooltip="Tooltip content"
-              labelTooltipInModal
-            />
-          </Box>
-        </Modal>
-      </>
-    );
+  const onOpen = () => {
+    setOpen(true);
   };
-  return <Example />;
-};
 
-WithLabelTooltipInsideModal.story = {
-  name: 'With label tooltip inside modal',
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <button type="button" onClick={onOpen}>
+        Open modal
+      </button>
+      <Modal onClose={onClose} title="Dialog information" open={open}>
+        <Box mb={2}>
+          <Input.FormattedNumber
+            id="unique-id"
+            label="Label"
+            placeholder="Placeholder"
+            labelTooltip="Tooltip content"
+            labelTooltipInModal
+          />
+        </Box>
+      </Modal>
+    </>
+  );
+};
+export const WithLabelTooltipInsideModal = {
+  render: () => <WithLabelTooltipInsideModalExample />,
 };

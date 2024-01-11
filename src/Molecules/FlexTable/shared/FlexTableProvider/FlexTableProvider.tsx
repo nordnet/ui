@@ -18,6 +18,7 @@ export const FlexTableProvider: FlexTableProviderComponent = ({
   xl,
 }) => (
   <FlexTableContext.Provider
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     value={{
       id,
       density,

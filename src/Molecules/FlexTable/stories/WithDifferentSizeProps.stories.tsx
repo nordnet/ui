@@ -97,53 +97,11 @@ export const TablesWithDifferentDensities = () => (
   </StyledBackground>
 );
 
-export const TablesWithDifferentFontSizes = () => {
-  const TablesWithDifferentFontSizesExample = () => (
-    <StyledBackground>
-      <Box mb={10}>
-        <Typography type="primary">Default (Medium)</Typography>
-        <FlexTable>
-          <FlexTable.HeaderRow>
-            <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-            <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-            <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          </FlexTable.HeaderRow>
-          <FlexTable.Row>
-            <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-            <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-            <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-          </FlexTable.Row>
-          <FlexTable.Row>
-            <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-            <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-            <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-          </FlexTable.Row>
-        </FlexTable>
-      </Box>
-
-      <Box mb={10}>
-        <Typography type="primary">Small</Typography>
-        <FlexTable fontSize="s">
-          <FlexTable.HeaderRow>
-            <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-            <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-            <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          </FlexTable.HeaderRow>
-          <FlexTable.Row>
-            <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-            <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-            <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-          </FlexTable.Row>
-          <FlexTable.Row>
-            <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-            <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-            <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-          </FlexTable.Row>
-        </FlexTable>
-      </Box>
-
-      <Typography type="primary">Medium</Typography>
-      <FlexTable fontSize="m">
+const TablesWithDifferentFontSizesExample = () => (
+  <StyledBackground>
+    <Box mb={10}>
+      <Typography type="primary">Default (Medium)</Typography>
+      <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -160,9 +118,51 @@ export const TablesWithDifferentFontSizes = () => {
           <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
         </FlexTable.Row>
       </FlexTable>
-    </StyledBackground>
-  );
+    </Box>
 
+    <Box mb={10}>
+      <Typography type="primary">Small</Typography>
+      <FlexTable fontSize="s">
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    </Box>
+
+    <Typography type="primary">Medium</Typography>
+    <FlexTable fontSize="m">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  </StyledBackground>
+);
+
+export const TablesWithDifferentFontSizes = () => {
   return (
     <StyledBackground>
       <Typography type="title3">Tables With Different Font Sizes</Typography>

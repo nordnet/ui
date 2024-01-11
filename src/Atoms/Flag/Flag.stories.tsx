@@ -45,7 +45,7 @@ export const AvailableFlags = {
             </div>
           ),
         },
-        ...Object.keys(flags)?.map((flagName) => ({
+        ...Object.keys(flags).map((flagName) => ({
           title: flagName,
           component: (
             <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>

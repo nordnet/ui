@@ -1,1 +1,3 @@
-export { default } from './DatePickerClearable';
+import DatePickerClearable from './DatePickerClearable';
+
+export default DatePickerClearable;

@@ -1,5 +1,12 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import {
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { clear } from 'jest-date-mock';
 import { PageProviders } from '../../../common/testUtils';
 import { Select } from '..';
@@ -28,104 +35,180 @@ const options = [
   },
 ];
 
-const SELECT_ID = 'select-inside-a-form';
 const SELECT_NAME = 'select-name';
-const SUBMIT_BUTTON_ID = 'submit-button';
 
-test('submitting a form with Select', async () => {
-  const onSubmit = jest.fn();
+describe('Select', () => {
+  it('should render with default value selected', () => {
+    const testOption = options[2];
 
-  const { getByTestId } = render(
-    <PageProviders>
-      <form onSubmit={onSubmit}>
-        <FormField label="Label" required extraInfo="Extra info">
-          <Select
-            id={SELECT_ID}
-            data-testid={SELECT_ID}
-            name={SELECT_NAME}
-            placeholder="Select a option..."
-          >
-            {options.map((option) => (
-              <Select.Option key={option.value} value={option.value} label={option.label} />
-            ))}
-          </Select>
-        </FormField>
-        <button type="submit" id={SUBMIT_BUTTON_ID} data-testid={SUBMIT_BUTTON_ID}>
-          Submit
-        </button>
-      </form>
-    </PageProviders>,
-  );
+    render(
+      <PageProviders>
+        <Select defaultValue={testOption.value}>
+          {options.map((option) => (
+            <Select.Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </PageProviders>,
+    );
 
-  const input = getByTestId(SELECT_ID);
-  fireEvent.focus(input);
+    expect(screen.getByRole('combobox')).toHaveTextContent(testOption.label);
+  });
 
-  const optionElement = getByTestId(options[0].value);
-  fireEvent.click(optionElement);
+  it('should open and close listbox', async () => {
+    const user = userEvent.setup();
+    const testOption = options[2];
 
-  const submitButtonElement = getByTestId(SUBMIT_BUTTON_ID);
-  fireEvent.click(submitButtonElement);
+    render(
+      <PageProviders>
+        <Select defaultValue={testOption.value}>
+          {options.map((option) => (
+            <Select.Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </PageProviders>,
+    );
 
-  const submittedEvent = onSubmit.mock.calls[0][0];
+    const select = screen.getByRole('combobox');
+    user.click(select);
 
-  expect(submittedEvent.target).toBeDefined();
+    const listBox = await screen.findByRole('listbox');
+    expect(listBox).toBeVisible();
 
-  // Access the form data from the event object
-  const formData = new FormData(submittedEvent.target);
+    const option = await screen.findByRole('option', { name: testOption.label });
+    user.click(option);
 
-  // Access specific form field values and make assertions
-  const selectValue = formData.get(SELECT_NAME);
-  expect(selectValue).toBe(options[0].value);
+    await waitForElementToBeRemoved(() => screen.queryByRole('listbox'));
+
+    expect(listBox).not.toBeVisible();
+  });
+
+  it('should select an option', async () => {
+    const user = userEvent.setup();
+    const testOption = options[2];
+
+    render(
+      <PageProviders>
+        <Select>
+          {options.map((option) => (
+            <Select.Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </PageProviders>,
+    );
+
+    const select = screen.getByRole('combobox');
+    user.click(select);
+
+    const option = await screen.findByRole('option', { name: testOption.label });
+    user.click(option);
+
+    user.click(select);
+    const selectedOption = await screen.findByRole('option', { selected: true });
+    expect(selectedOption).toHaveTextContent(testOption.label);
+  });
+
+  it('should select multiple options', async () => {
+    const user = userEvent.setup();
+    const testOption1 = options[1];
+    const testOption2 = options[2];
+
+    render(
+      <PageProviders>
+        <Select multiple>
+          {options.map((option) => (
+            <Select.Option key={option.value} value={option.value} label={option.label} />
+          ))}
+        </Select>
+      </PageProviders>,
+    );
+
+    const select = screen.getByRole('combobox');
+    user.click(select);
+
+    const option1 = await screen.findByRole('option', { name: testOption1.label });
+    user.click(option1);
+
+    const option2 = await screen.findByRole('option', { name: testOption2.label });
+    user.click(option2);
+
+    user.click(select);
+
+    const selectedOption1 = await screen.findByRole('option', {
+      selected: true,
+      name: testOption1.label,
+    });
+
+    const selectedOption2 = await screen.findByRole('option', {
+      selected: true,
+      name: testOption2.label,
+    });
+
+    expect(selectedOption1).toHaveTextContent(testOption1.label);
+    expect(selectedOption2).toHaveTextContent(testOption2.label);
+  });
 });
 
-test('submitting a form with multi Select', async () => {
-  const onSubmit = jest.fn();
+describe('Select in forms', () => {
+  it('should submit with name and value', async () => {
+    const onSubmit = jest.fn();
+    const testOption = options[1];
 
-  const { getByTestId } = render(
-    <PageProviders>
-      <form onSubmit={onSubmit}>
-        <FormField label="Label" required extraInfo="Extra info">
-          <Select
-            id={SELECT_ID}
-            data-testid={SELECT_ID}
-            name={SELECT_NAME}
-            placeholder="Select a option..."
-            multiple
-          >
-            {options.map((option) => (
-              <Select.Option key={option.value} value={option.value} label={option.label} />
-            ))}
-          </Select>
-        </FormField>
-        <button type="submit" id={SUBMIT_BUTTON_ID} data-testid={SUBMIT_BUTTON_ID}>
-          Submit
-        </button>
-      </form>
-    </PageProviders>,
-  );
+    render(
+      <PageProviders>
+        <form onSubmit={onSubmit}>
+          <FormField label="Label" required extraInfo="Extra info">
+            <Select name={SELECT_NAME} defaultValue={testOption.value}>
+              {options.map((option) => (
+                <Select.Option key={option.value} value={option.value} label={option.label} />
+              ))}
+            </Select>
+          </FormField>
+          <button type="submit">Submit</button>
+        </form>
+      </PageProviders>,
+    );
 
-  const input = getByTestId(SELECT_ID);
-  fireEvent.focus(input);
+    // hiddenSelect is a hidden native html select
+    const hiddenSelect = screen.getByTestId('hidden-native-select');
+    expect(hiddenSelect).toHaveValue(testOption.value);
 
-  const optionElementOne = getByTestId(options[0].value);
-  fireEvent.click(optionElementOne);
+    fireEvent.submit(hiddenSelect);
+    expect(onSubmit).toHaveBeenCalledTimes(1);
 
-  const optionElementTwo = getByTestId(options[1].value);
-  fireEvent.click(optionElementTwo);
+    // we dont need to test submit data, it's native functionality and not something we built
+  });
 
-  const submitButtonElement = getByTestId(SUBMIT_BUTTON_ID);
-  fireEvent.click(submitButtonElement);
+  it('should be able to submit multi select with name and value', async () => {
+    const onSubmit = jest.fn();
+    const testOption1 = options[1];
+    const testOption2 = options[2];
 
-  const submittedEvent = onSubmit.mock.calls[0][0];
+    render(
+      <PageProviders>
+        <form onSubmit={onSubmit}>
+          <FormField label="Label" required extraInfo="Extra info">
+            <Select
+              name={SELECT_NAME}
+              defaultValue={[testOption1.value, testOption2.value]}
+              multiple
+            >
+              {options.map((option) => (
+                <Select.Option key={option.value} value={option.value} label={option.label} />
+              ))}
+            </Select>
+          </FormField>
+          <button type="submit">Submit</button>
+        </form>
+      </PageProviders>,
+    );
 
-  expect(submittedEvent.target).toBeDefined();
+    // hiddenSelect is a hidden native html select
+    const hiddenSelect = screen.getByTestId('hidden-native-select');
+    expect(hiddenSelect).toHaveValue([testOption1.value, testOption2.value]);
 
-  // Access the form data from the event object
-  const formData = new FormData(submittedEvent.target);
+    fireEvent.submit(hiddenSelect);
+    expect(onSubmit).toHaveBeenCalledTimes(1);
 
-  // Access specific form field values and make assertions
-  const selectValues = formData.getAll(SELECT_NAME);
-  const expectedValues = [options[0].value, options[1].value];
-
-  expect(selectValues).toEqual(expectedValues);
+    // we dont need to test submit data, it's native functionality and not something we built
+  });
 });

@@ -63,9 +63,9 @@ const ProgressDonutChart: FC<ProgressDonutChartProps> = ({
           : undefined
       }
     >
-      <circle {...CIRCLE_PROPS}></circle>
+      <circle {...CIRCLE_PROPS} />
       {completed > 0 && total > 0 && (
-        <circle {...CIRCLE_PROPS} strokeDasharray={strokeDasharray}></circle>
+        <circle {...CIRCLE_PROPS} strokeDasharray={strokeDasharray} />
       )}
     </StyledSvg>
   );

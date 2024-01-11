@@ -55,61 +55,54 @@ const BigTableRow = ({ data }: any) => {
 };
 
 const BigTableTemplate = ({ columns, rows }: { columns: number; rows: number }) => {
-  const BigTableExample = () => {
-    const ReactComponent = () => {
-      const rowsLength = rows;
-      const columnsLength = columns;
-      const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(
-        () => generateTableData(rowsLength, columnsLength),
-        [rowsLength, columnsLength],
-      );
-      const sortedData = useMemo(() => {
-        if (sort.sortOrder === 'none') {
-          return tableData;
-        }
-        const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-        return tableData.slice(0).sort((rowA, rowB) => {
-          if (sort.sortOrder === 'ascending') {
-            return getValue(rowB).localeCompare(getValue(rowA));
-          }
+  const rowsLength = rows;
+  const columnsLength = columns;
+  const [sort, setSort] = useState<any>({});
+  const tableData = useMemo(
+    () => generateTableData(rowsLength, columnsLength),
+    [rowsLength, columnsLength],
+  );
+  const sortedData = useMemo(() => {
+    if (sort.sortOrder === 'none') {
+      return tableData;
+    }
+    const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+    return tableData.slice(0).sort((rowA, rowB) => {
+      if (sort.sortOrder === 'ascending') {
+        return getValue(rowB).localeCompare(getValue(rowA));
+      }
 
-          if (sort.sortOrder === 'descending') {
-            return getValue(rowA).localeCompare(getValue(rowB));
-          }
+      if (sort.sortOrder === 'descending') {
+        return getValue(rowA).localeCompare(getValue(rowB));
+      }
 
-          return 0;
-        });
-      }, [tableData, sort]);
+      return 0;
+    });
+  }, [tableData, sort]);
 
-      return (
-        <FlexTable expandable md={{ expandable: false }}>
-          <FlexTable.HeaderRow>
-            {[...Array(columnsLength)]?.map((_, index) => (
-              <FlexTable.Header
-                columnId={`column${index + 1}`}
-                key={`column${index + 1}`}
-                sortable
-                onSort={(columnId, nextSortOrder) => {
-                  setSort({ columnId, sortOrder: nextSortOrder });
-                }}
-                hidden={Boolean(index % 2)}
-                md={{ hidden: false }}
-              >
-                Header {index + 1}
-              </FlexTable.Header>
-            ))}
-          </FlexTable.HeaderRow>
-          {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
-        </FlexTable>
-      );
-    };
-    return <ReactComponent />;
-  };
   return (
     <StyledBackground>
       <Typography type="title3">Big FlexTable</Typography>
-      <BigTableExample />
+
+      <FlexTable expandable md={{ expandable: false }}>
+        <FlexTable.HeaderRow>
+          {[...Array(columnsLength)]?.map((_, index) => (
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              key={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+              hidden={Boolean(index % 2)}
+              md={{ hidden: false }}
+            >
+              Header {index + 1}
+            </FlexTable.Header>
+          ))}
+        </FlexTable.HeaderRow>
+        {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
+      </FlexTable>
     </StyledBackground>
   );
 };
@@ -125,56 +118,48 @@ const BigTableWithoutStickyHeaderTemplate = ({
   columns: number;
   rows: number;
 }) => {
-  const BigTableWithoutStickyHeaderExample = () => {
-    const ReactComponent = () => {
-      const rowsLength = rows;
-      const columnsLength = columns;
-      const [sort, setSort] = useState<any>({});
-      const tableData = useMemo(
-        () => generateTableData(rowsLength, columnsLength),
-        [rowsLength, columnsLength],
-      );
-      const sortedData = useMemo(() => {
-        const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-        return tableData.sort((rowA, rowB) => {
-          if (sort.sortOrder === 'ascending') {
-            return getValue(rowB).localeCompare(getValue(rowA));
-          }
+  const rowsLength = rows;
+  const columnsLength = columns;
+  const [sort, setSort] = useState<any>({});
+  const tableData = useMemo(
+    () => generateTableData(rowsLength, columnsLength),
+    [rowsLength, columnsLength],
+  );
+  const sortedData = useMemo(() => {
+    const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+    return tableData.sort((rowA, rowB) => {
+      if (sort.sortOrder === 'ascending') {
+        return getValue(rowB).localeCompare(getValue(rowA));
+      }
 
-          if (sort.sortOrder === 'descending') {
-            return getValue(rowA).localeCompare(getValue(rowB));
-          }
+      if (sort.sortOrder === 'descending') {
+        return getValue(rowA).localeCompare(getValue(rowB));
+      }
 
-          return 0;
-        });
-      }, [tableData, sort]);
+      return 0;
+    });
+  }, [tableData, sort]);
 
-      return (
-        <FlexTable stickyHeader={false}>
-          <FlexTable.HeaderRow>
-            {[...Array(columnsLength)]?.map((_, index) => (
-              <FlexTable.Header
-                columnId={`column${index + 1}`}
-                key={`column${index + 1}`}
-                sortable
-                onSort={(columnId, nextSortOrder) => {
-                  setSort({ columnId, sortOrder: nextSortOrder });
-                }}
-              >
-                Header {index + 1}
-              </FlexTable.Header>
-            ))}
-          </FlexTable.HeaderRow>
-          {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
-        </FlexTable>
-      );
-    };
-    return <ReactComponent />;
-  };
   return (
     <StyledBackground>
       <Typography type="title3">Big FlexTable Without Sticky Header</Typography>
-      <BigTableWithoutStickyHeaderExample />
+      <FlexTable stickyHeader={false}>
+        <FlexTable.HeaderRow>
+          {[...Array(columnsLength)]?.map((_, index) => (
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              key={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+            >
+              Header {index + 1}
+            </FlexTable.Header>
+          ))}
+        </FlexTable.HeaderRow>
+        {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
+      </FlexTable>
     </StyledBackground>
   );
 };
@@ -190,56 +175,34 @@ const MultipleBigTablesWithStickyHeadersTemplate = ({
   columns: number;
   rows: number;
 }) => {
-  const ReactComponent = () => {
-    const rowsLength = rows;
-    const columnsLength = columns;
-    const [sort, setSort] = useState<any>({});
-    const tableData = useMemo(
-      () => generateTableData(rowsLength, columnsLength),
-      [rowsLength, columnsLength],
-    );
-    const sortedData = useMemo(() => {
-      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-      return tableData.sort((rowA, rowB) => {
-        if (sort.sortOrder === 'ascending') {
-          return getValue(rowB).localeCompare(getValue(rowA));
-        }
+  const rowsLength = rows;
+  const columnsLength = columns;
+  const [sort, setSort] = useState<any>({});
+  const tableData = useMemo(
+    () => generateTableData(rowsLength, columnsLength),
+    [rowsLength, columnsLength],
+  );
+  const sortedData = useMemo(() => {
+    const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+    return tableData.sort((rowA, rowB) => {
+      if (sort.sortOrder === 'ascending') {
+        return getValue(rowB).localeCompare(getValue(rowA));
+      }
 
-        if (sort.sortOrder === 'descending') {
-          return getValue(rowA).localeCompare(getValue(rowB));
-        }
+      if (sort.sortOrder === 'descending') {
+        return getValue(rowA).localeCompare(getValue(rowB));
+      }
 
-        return 0;
-      });
-    }, [tableData, sort]);
+      return 0;
+    });
+  }, [tableData, sort]);
 
-    return (
-      <StyledBackground>
-        <Typography type="title3">
-          Table 1 - Multiple Big Tables Demonstrating Proper Sticky Header
-        </Typography>
-        <Box mb={10}>
-          <FlexTable>
-            <FlexTable.HeaderRow>
-              {[...Array(columnsLength)]?.map((_, index) => (
-                <FlexTable.Header
-                  columnId={`column${index + 1}`}
-                  key={`column${index + 1}`}
-                  sortable
-                  onSort={(columnId, nextSortOrder) => {
-                    setSort({ columnId, sortOrder: nextSortOrder });
-                  }}
-                >
-                  Table 1 Header {index + 1}
-                </FlexTable.Header>
-              ))}
-            </FlexTable.HeaderRow>
-            {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
-          </FlexTable>
-        </Box>
-        <Typography type="title3">
-          Table 2 - Multiple Big Tables Demonstrating Proper Sticky Header
-        </Typography>
+  return (
+    <StyledBackground>
+      <Typography type="title3">
+        Table 1 - Multiple Big Tables Demonstrating Proper Sticky Header
+      </Typography>
+      <Box mb={10}>
         <FlexTable>
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)]?.map((_, index) => (
@@ -251,16 +214,35 @@ const MultipleBigTablesWithStickyHeadersTemplate = ({
                   setSort({ columnId, sortOrder: nextSortOrder });
                 }}
               >
-                Table 2 Header {index + 1}
+                Table 1 Header {index + 1}
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
           {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
         </FlexTable>
-      </StyledBackground>
-    );
-  };
-  return <ReactComponent />;
+      </Box>
+      <Typography type="title3">
+        Table 2 - Multiple Big Tables Demonstrating Proper Sticky Header
+      </Typography>
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          {[...Array(columnsLength)]?.map((_, index) => (
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              key={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+            >
+              Table 2 Header {index + 1}
+            </FlexTable.Header>
+          ))}
+        </FlexTable.HeaderRow>
+        {sortedData?.map((data) => <BigTableRow key={data.rowId} data={data} />)}
+      </FlexTable>
+    </StyledBackground>
+  );
 };
 
 export const MultipleBigTablesWithStickyHeaders: Story = {

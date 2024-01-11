@@ -12,18 +12,18 @@ const StyledTypography = styled(Typography)`
 `;
 
 export function ValueDisplayMultiSelect(props: Props) {
-  const { label, placeholder, selectedCount } = props;
+  const { label, placeholder, selectedCount, ...rest } = props;
 
   if (selectedCount === 0) {
     return (
-      <StyledTypography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
+      <StyledTypography type="secondary" color={(t) => t.colorTokens.neutral.text_weak} {...rest}>
         {placeholder}
       </StyledTypography>
     );
   }
 
   return (
-    <Flexbox container alignItems="center" gap={1}>
+    <Flexbox container alignItems="center" gap={1} {...rest}>
       <Flexbox item>
         <Badge.Number size={4}>{selectedCount}</Badge.Number>
       </Flexbox>

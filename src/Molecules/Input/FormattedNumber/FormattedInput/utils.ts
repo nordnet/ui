@@ -129,10 +129,10 @@ export const calculateCaretPosition = (
 
   const beforeCaret = sanitizedValue.substring(0, caretPosition);
 
-  const allowedSymbolsRegExp = new RegExp(`[^-.\\d]`, 'g');
+  const allowedSymbolsRegExp = /[^-.\d]/g;
   const numberOfAllowedSymbolsBeforeCaret = beforeCaret.replace(allowedSymbolsRegExp, '').length;
 
-  const isAllowedSymbolRegExp = new RegExp(`-|\\.|\\d`);
+  const isAllowedSymbolRegExp = /-|\.|\d/;
   const indexOfLastDigit = findNthDigitIndex(
     getSanitizedValue(inputValue.formattedValue, '_', intl),
     numberOfAllowedSymbolsBeforeCaret,

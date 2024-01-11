@@ -9,7 +9,7 @@ export const Backdrop = styled(Flexbox)`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: ${({ theme }) => theme.zIndex.modal};
+  z-index: ${({ theme }) => theme.zIndex.overlay};
 `;
 
 export const StyledBottomSheet = styled(Flexbox)<{

@@ -31,12 +31,6 @@ const toTitle = (str: string | undefined = '-') => str.charAt(0).toUpperCase() +
 
 const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
   switch (buttonComponent) {
-    default:
-      return {
-        buttonVariants: [PRIMARY, SECONDARY, NEUTRAL, NEGATIVE],
-        buttonSizes: [LARGE, MEDIUM, SMALL],
-        iconPlacements: [undefined, LEFT, RIGHT],
-      };
     case Button.Icon:
       return {
         buttonVariants: [PRIMARY],
@@ -47,6 +41,12 @@ const getButtonSettings = (buttonComponent: ButtonComponentValueType) => {
       return {
         buttonVariants: [PRIMARY, SECONDARY, NEGATIVE, TERTIARY],
         buttonSizes: [MEDIUM, SMALL],
+        iconPlacements: [undefined, LEFT, RIGHT],
+      };
+    default:
+      return {
+        buttonVariants: [PRIMARY, SECONDARY, NEUTRAL, NEGATIVE],
+        buttonSizes: [LARGE, MEDIUM, SMALL],
         iconPlacements: [undefined, LEFT, RIGHT],
       };
   }

@@ -87,7 +87,7 @@ export const Showcase = () => {
 
         <Flexbox item>
           <Typography>Custom icon</Typography>
-          <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />}></DistributionBar>
+          <DistributionBar label="Label" weight={10} icon={<Icon.Global16 />} />
         </Flexbox>
         <Flexbox item container gap={2} direction="column">
           <Typography>Custom large image with adjusted padding</Typography>
@@ -103,7 +103,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-          ></DistributionBar>
+           />
           <DistributionBar
             label="Tesla"
             weight={100}
@@ -116,7 +116,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-          ></DistributionBar>
+           />
           <DistributionBar
             label="Apple"
             weight={0}
@@ -129,7 +129,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-          ></DistributionBar>
+           />
         </Flexbox>
 
         <Flexbox item>
@@ -142,7 +142,7 @@ export const Showcase = () => {
             }
             weight={0}
             icon={<Flag size="m" country="SE" />}
-          ></DistributionBar>
+           />
         </Flexbox>
 
         <Flexbox item>
