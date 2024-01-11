@@ -1,3 +1,13 @@
+# [16.0.0](https://github.com/nordnet/ui/compare/v15.7.1...v16.0.0) (2024-01-11)
+
+
+* update color tokens (#1570) ([7a249fa](https://github.com/nordnet/ui/commit/7a249fab99421bc93517db3de78a3ed2637cb3dd)), closes [#1570](https://github.com/nordnet/ui/issues/1570)
+
+
+### BREAKING CHANGES
+
+* color.neutral.background_content was removed from design-tokens. Also all mobile app specific color tokens was removed
+
 # [16.0.0-beta.2](https://github.com/nordnet/ui/compare/v16.0.0-beta.1...v16.0.0-beta.2) (2024-01-11)
 
 
