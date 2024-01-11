@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { Box, TruncateWithTooltip, Flexbox } from '../../index';
+import { Box, TruncateWithTooltip } from '../../index';
 import { Props } from './DistributionBar.types';
-import { Bar, Item, StyledDot } from './DistributionBar.styled';
+import { Bar, Item, StyledDot, StyledFlexBox } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
@@ -12,10 +12,12 @@ export const DistributionBar: React.FC<Props> = ({
   labelProps,
   weight,
   children,
+  hoverEffect,
   delay = 0,
 }) => {
   return (
-    <Flexbox
+    <StyledFlexBox
+      $hoverEffect={hoverEffect}
       container
       alignItems="center"
       justifyContent="space-between"
@@ -29,6 +31,7 @@ export const DistributionBar: React.FC<Props> = ({
         </Box>
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar
+          $hoverEffect={hoverEffect}
           as={motion.div}
           initial={{ width: '0' }}
           animate={{ width: `calc(${weight}% - 32px)` }}
@@ -36,6 +39,6 @@ export const DistributionBar: React.FC<Props> = ({
         />
       </Item>
       {children}
-    </Flexbox>
+    </StyledFlexBox>
   );
 };

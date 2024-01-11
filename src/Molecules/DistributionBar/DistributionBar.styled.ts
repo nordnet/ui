@@ -7,7 +7,15 @@ export const Item = styled(Flexbox)`
   min-width: 0;
 `;
 
-export const Bar = styled.div`
+export const StyledFlexBox = styled(Flexbox)<{ $hoverEffect?: boolean }>`
+  border-radius: 50px;
+  &:hover {
+    background-color: ${({ theme, $hoverEffect }) =>
+      $hoverEffect ? theme.colorTokens.neutral.background_hover : 'transparent'};
+  }
+`;
+
+export const Bar = styled.div<{ $hoverEffect?: boolean }>`
   position: absolute;
   top: 0;
   left: 0;
@@ -33,6 +41,17 @@ export const Bar = styled.div`
     border-radius: 0 100px 100px 0;
     left: initial;
     right: -${(p) => p.theme.spacing.unit(4)}px;
+  }
+
+  ${StyledFlexBox}:hover & {
+    border: 1px solid black;
+    border-radius: 0px;
+    &::before {
+      border-left: 1px solid black;
+    }
+    &::after {
+      border-right: 1px solid black;
+    }
   }
 `;
 
