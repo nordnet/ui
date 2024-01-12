@@ -1,3 +1,10 @@
+## [16.0.1](https://github.com/nordnet/ui/compare/v16.0.0...v16.0.1) (2024-01-12)
+
+
+### Bug Fixes
+
+* the not:empty css query messes up how flex box are applies … ([#1572](https://github.com/nordnet/ui/issues/1572)) ([856c345](https://github.com/nordnet/ui/commit/856c34520df7c3193e8c841e574a0bfbdb6dcac2))
+
 # [16.0.0](https://github.com/nordnet/ui/compare/v15.7.1...v16.0.0) (2024-01-11)
 
 
