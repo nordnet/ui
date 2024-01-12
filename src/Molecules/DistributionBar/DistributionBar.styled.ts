@@ -10,7 +10,6 @@ export const Item = styled(Flexbox)`
 export const StyledFlexBox = styled(Flexbox)`
   border-radius: 50px;
   padding-right: ${({ theme }) => theme.spacing.unit(2)}px;
-  height: 100%;
 
   &:hover {
     background-color: ${({ theme }) => theme.colorTokens.neutral.background_hover};
