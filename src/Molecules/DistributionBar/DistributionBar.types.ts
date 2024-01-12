@@ -17,5 +17,4 @@ export type Props = {
   children?: React.ReactNode;
   delay?: number;
   labelProps?: FlexboxProps;
-  hoverEffect?: boolean;
 };

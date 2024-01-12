@@ -12,12 +12,10 @@ export const DistributionBar: React.FC<Props> = ({
   labelProps,
   weight,
   children,
-  hoverEffect,
   delay = 0,
 }) => {
   return (
     <StyledFlexBox
-      $hoverEffect={hoverEffect}
       container
       alignItems="center"
       justifyContent="space-between"
@@ -31,7 +29,6 @@ export const DistributionBar: React.FC<Props> = ({
         </Box>
         <TruncateWithTooltip label={label}>{label}</TruncateWithTooltip>
         <Bar
-          $hoverEffect={hoverEffect}
           as={motion.div}
           initial={{ width: '0' }}
           animate={{ width: `calc(${weight}% - 32px)` }}

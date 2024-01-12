@@ -222,29 +222,6 @@ export const Showcase = () => {
             ))}
           </Flexbox>
         </Flexbox>
-
-        <Flexbox item>
-          <Typography>Hover Effect</Typography>
-          <Flexbox container direction="column" gap={2}>
-            {Array.from(Array(10).keys()).map((item, i) => (
-              <DistributionBar
-                hoverEffect
-                key={`Instrument name ${i + 1}`}
-                label={`Instrument name ${i + 1}`}
-                weight={Math.floor(Math.random() * 101)}
-                delay={0 + i / 5}
-                icon={<Flag size="m" country="SE" />}
-              >
-                <Flexbox container width="81px" justifyContent="flex-end">
-                  <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
-                </Flexbox>
-                <Flexbox container width="81px" justifyContent="flex-end">
-                  <Number value={Math.floor(Math.random() * 101)} percentage decimals={2} />
-                </Flexbox>
-              </DistributionBar>
-            ))}
-          </Flexbox>
-        </Flexbox>
       </Flexbox>
     </IntlProvider>
   );

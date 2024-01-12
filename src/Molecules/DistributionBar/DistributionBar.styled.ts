@@ -7,15 +7,14 @@ export const Item = styled(Flexbox)`
   min-width: 0;
 `;
 
-export const StyledFlexBox = styled(Flexbox)<{ $hoverEffect?: boolean }>`
+export const StyledFlexBox = styled(Flexbox)`
   border-radius: 50px;
   &:hover {
-    background-color: ${({ theme, $hoverEffect }) =>
-      $hoverEffect ? theme.colorTokens.neutral.background_hover : 'transparent'};
+    background-color: ${({ theme }) => theme.colorTokens.neutral.background_hover};
   }
 `;
 
-export const Bar = styled.div<{ $hoverEffect?: boolean }>`
+export const Bar = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -44,17 +43,12 @@ export const Bar = styled.div<{ $hoverEffect?: boolean }>`
   }
 
   ${StyledFlexBox}:hover & {
-    border: 1px solid ${({ theme, $hoverEffect }) =>
-          $hoverEffect ? theme.colorTokens.action.border_weak : 'transparent'};
+    border: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
     &::before {
-      box-shadow: -1px 0px 0px 1px
-        ${({ theme, $hoverEffect }) =>
-          $hoverEffect ? theme.colorTokens.action.border_weak : 'transparent'};
+      box-shadow: -1px 0px 0px 1px ${(p) => p.theme.colorTokens.action.border_weak};
     }
     &::after {
-      box-shadow: 1px 0px 0px 1px
-        ${({ theme, $hoverEffect }) =>
-          $hoverEffect ? theme.colorTokens.action.border_weak : 'transparent'};
+      box-shadow: 1px 0px 0px 1px ${(p) => p.theme.colorTokens.action.border_weak};
     }
   }
 `;
