@@ -27,6 +27,8 @@ export const Bar = styled.div`
 
   &::before,
   &::after {
+    margin: 0;
+    padding: 0;
     position: absolute;
     content: '';
     display: block;
@@ -49,13 +51,17 @@ export const Bar = styled.div`
     border: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
 
     &::before {
-      box-sizing: border-box;
-      box-shadow: -1px 0 0 1px ${(p) => p.theme.colorTokens.action.border_weak};
+      margin-top: -1px;
+      border-left: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
+      border-top: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
+      border-bottom: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
     }
 
     &::after {
-      box-sizing: border-box;
-      box-shadow: 1px 0 0 1px ${(p) => p.theme.colorTokens.action.border_weak};
+      margin-top: -1px;
+      border-right: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
+      border-top: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
+      border-bottom: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
     }
   }
 `;
