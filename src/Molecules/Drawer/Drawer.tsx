@@ -77,9 +77,10 @@ const H2 = styled.h2`
 
 const TitleWrapper = styled.div`
   padding: ${(p) =>
-    `${p.theme.spacing.unit(PADDING_Y)}px ${p.theme.spacing.unit(
-      PADDING_X,
-    )}px 0 ${p.theme.spacing.unit(PADDING_Y)}px`};
+    `${p.theme.spacing.unit(PADDING_Y)}px 
+     ${p.theme.spacing.unit(PADDING_X)}px 
+     0 
+     ${p.theme.spacing.unit(PADDING_X)}px`};
 
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     padding: ${(p) =>

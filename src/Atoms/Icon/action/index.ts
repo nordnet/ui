@@ -44,6 +44,7 @@ import progress from './progress';
 import refresh from './refresh';
 import repeat from './repeat';
 import save from './save';
+import saveFill from './saveFill';
 import search from './search';
 import share from './share';
 import sortAscending from './sortAscending';
@@ -108,6 +109,7 @@ export default {
   ...refresh,
   ...repeat,
   ...save,
+  ...saveFill,
   ...search,
   ...share,
   ...sortAscending,
