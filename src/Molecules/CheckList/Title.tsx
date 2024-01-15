@@ -61,9 +61,9 @@ const Title: FC<TitleProps> = ({
         </Flexbox>
       )}
       {percentageCompleted === maxPercentage && onClose && (
-        <Button variant="neutral" onClick={onClose}>
+        <Button.Icon onClick={onClose}>
           <Icon.Cross16 />
-        </Button>
+        </Button.Icon>
       )}
     </Flexbox>
   );
