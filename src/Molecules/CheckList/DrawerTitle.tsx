@@ -18,9 +18,9 @@ const DrawerTitle: FC<DrawerTitleProps> = ({
     <Flexbox container gap={2} alignItems="center">
       {showHelpTitle && (
         <Flexbox item>
-          <Button variant="neutral" onClick={onHelpClick}>
+          <Button.Icon onClick={onHelpClick}>
             <Icon.ChevronLeft16 />
-          </Button>
+          </Button.Icon>
         </Flexbox>
       )}
       <Flexbox item grow={1}>
@@ -31,9 +31,9 @@ const DrawerTitle: FC<DrawerTitleProps> = ({
       {!showHelpTitle && (
         <Flexbox item>
           <Box pr={8} pb={3}>
-            <Button variant="neutral" onClick={onHelpClick}>
+            <Button.Icon onClick={onHelpClick}>
               <Icon.Settings16 />
-            </Button>
+            </Button.Icon>
           </Box>
         </Flexbox>
       )}

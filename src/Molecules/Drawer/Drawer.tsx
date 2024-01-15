@@ -7,11 +7,12 @@ import { AnimatePresence, motion, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Button, OldIcon, Portal, Typography, useKeyPress, useMedia } from '../..';
+import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
 
 const CROSS_SIZE = 5;
 const PADDING_MOBILE = 3;
-const PADDING = 5;
+const PADDING_Y = 4;
+const PADDING_X = 5;
 const displayName = 'Drawer';
 const PREVENT_CLICK_OUTSIDE_ATTRIBUTE = 'drawerPreventClickOutside';
 
@@ -37,17 +38,22 @@ const Container = styled(motion.div)`
   }
 `;
 
-const CloseButton = styled(Button)`
+const CloseButton = styled(Button.Icon)`
   position: absolute;
-  top: ${(p) => p.theme.spacing.unit(PADDING)}px;
-  right: ${(p) => p.theme.spacing.unit(PADDING)}px;
+  top: ${(p) => p.theme.spacing.unit(PADDING_Y - 1)}px;
+  right: ${(p) => p.theme.spacing.unit(PADDING_X)}px;
+
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
+    top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE - 0.5)}px;
+    right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  }
 `;
 
 const Content = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: ${(p) => p.theme.spacing.unit(PADDING)}px;
-  padding: 1px ${(p) => p.theme.spacing.unit(PADDING)}px;
+  margin-bottom: ${(p) => p.theme.spacing.unit(PADDING_Y)}px;
+  padding: 1px ${(p) => p.theme.spacing.unit(PADDING_X)}px;
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     padding: 1px ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
   }
@@ -55,8 +61,8 @@ const Content = styled.div`
 
 const Footer = styled.div`
   margin-top: auto;
-  padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px ${(p) => p.theme.spacing.unit(PADDING)}px
-    ${(p) => p.theme.spacing.unit(PADDING)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(PADDING_X)}px ${(p) => p.theme.spacing.unit(PADDING_Y)}px
+    ${(p) => p.theme.spacing.unit(PADDING_X)}px;
 
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
@@ -71,13 +77,13 @@ const H2 = styled.h2`
 
 const TitleWrapper = styled.div`
   padding: ${(p) =>
-    `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
-      PADDING,
-    )}px`};
+    `${p.theme.spacing.unit(PADDING_Y)}px ${p.theme.spacing.unit(
+      PADDING_X,
+    )}px 0 ${p.theme.spacing.unit(PADDING_Y)}px`};
 
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
     padding: ${(p) =>
-      `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(
+      `${p.theme.spacing.unit(PADDING_MOBILE)}px ${p.theme.spacing.unit(
         PADDING_MOBILE,
       )}px 0 ${p.theme.spacing.unit(PADDING_MOBILE)}px`};
   }
@@ -242,8 +248,8 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
                 >
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
-                    <CloseButton type="button" variant="neutral" onClick={handleClose}>
-                      <OldIcon.CrossMedium size={4} title={closeButtonTitle} />
+                    <CloseButton onClick={handleClose}>
+                      <Icon.Cross16 title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
