@@ -59,6 +59,7 @@ import watchlist from './watchlist';
 import watchlistFill from './watchlistFill';
 import windowCollapse from './windowCollapse';
 import windowExpand from './windowExpand';
+import write from './write';
 
 export default {
   ...add,
@@ -122,4 +123,5 @@ export default {
   ...watchlistFill,
   ...windowCollapse,
   ...windowExpand,
+  ...write,
 };
