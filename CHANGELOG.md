@@ -1,3 +1,10 @@
+# [16.2.0](https://github.com/nordnet/ui/compare/v16.1.0...v16.2.0) (2024-01-15)
+
+
+### Features
+
+* add save icons ([#1575](https://github.com/nordnet/ui/issues/1575)) ([12b6056](https://github.com/nordnet/ui/commit/12b6056962503694a3c4c8abec6263c5e39a36ca))
+
 # [16.1.0](https://github.com/nordnet/ui/compare/v16.0.2...v16.1.0) (2024-01-15)
 
 
