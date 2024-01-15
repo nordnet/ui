@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { Box, TruncateWithTooltip } from '../../index';
 import { Props } from './DistributionBar.types';
-import { Bar, Item, StyledDot, StyledFlexBox } from './DistributionBar.styled';
+import { Bar, Item, StyledDot, StyledFlexbox } from './DistributionBar.styled';
 
 export const DistributionBar: React.FC<Props> = ({
   icon: iconFromProps,
@@ -15,7 +15,7 @@ export const DistributionBar: React.FC<Props> = ({
   delay = 0,
 }) => {
   return (
-    <StyledFlexBox
+    <StyledFlexbox
       container
       alignItems="center"
       justifyContent="space-between"
@@ -36,6 +36,6 @@ export const DistributionBar: React.FC<Props> = ({
         />
       </Item>
       {children}
-    </StyledFlexBox>
+    </StyledFlexbox>
   );
 };

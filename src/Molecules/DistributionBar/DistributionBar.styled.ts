@@ -7,8 +7,8 @@ export const Item = styled(Flexbox)`
   min-width: 0;
 `;
 
-export const StyledFlexBox = styled(Flexbox)`
-  border-radius: 50px;
+export const StyledFlexbox = styled(Flexbox)`
+  border-radius: ${({ theme }) => theme.borderRadius100};
   padding-right: ${({ theme }) => theme.spacing.unit(2)}px;
 
   &:hover {
@@ -32,7 +32,8 @@ export const Bar = styled.div`
     position: absolute;
     content: '';
     display: block;
-    border-radius: 100px 0 0 100px;
+    border-radius: ${({ theme }) => theme.borderRadius100} 0 0
+      ${({ theme }) => theme.borderRadius100};
     background-color: ${(p) => p.theme.colorTokens.action.background_weak};
     height: 100%;
     width: ${(p) => p.theme.spacing.unit(4)}px;
@@ -41,12 +42,13 @@ export const Bar = styled.div`
   }
 
   &::after {
-    border-radius: 0 100px 100px 0;
+    border-radius: 0 ${({ theme }) => theme.borderRadius100} ${({ theme }) => theme.borderRadius100}
+      0;
     left: initial;
     right: -${(p) => p.theme.spacing.unit(4)}px;
   }
 
-  ${StyledFlexBox}:hover & {
+  ${StyledFlexbox}:hover & {
     box-sizing: border-box;
     border: 1px solid ${(p) => p.theme.colorTokens.action.border_weak};
 
