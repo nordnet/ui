@@ -1,3 +1,10 @@
+## [16.0.2](https://github.com/nordnet/ui/compare/v16.0.1...v16.0.2) (2024-01-15)
+
+
+### Bug Fixes
+
+* replace close button in drawer to new buttonicon ([#1573](https://github.com/nordnet/ui/issues/1573)) ([c0a46d2](https://github.com/nordnet/ui/commit/c0a46d279d6663a46e533202df0ef4c881f2f802))
+
 ## [16.0.1](https://github.com/nordnet/ui/compare/v16.0.0...v16.0.1) (2024-01-12)
 
 
