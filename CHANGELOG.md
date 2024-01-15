@@ -1,3 +1,10 @@
+# [16.1.0](https://github.com/nordnet/ui/compare/v16.0.2...v16.1.0) (2024-01-15)
+
+
+### Features
+
+* add write icons ([#1574](https://github.com/nordnet/ui/issues/1574)) ([00ad0df](https://github.com/nordnet/ui/commit/00ad0df906f9a7fe08514cea6fce0bf836a31e47))
+
 ## [16.0.2](https://github.com/nordnet/ui/compare/v16.0.1...v16.0.2) (2024-01-15)
 
 
