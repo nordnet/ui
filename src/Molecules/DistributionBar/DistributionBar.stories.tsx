@@ -103,7 +103,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-           />
+          />
           <DistributionBar
             label="Tesla"
             weight={100}
@@ -116,7 +116,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-           />
+          />
           <DistributionBar
             label="Apple"
             weight={0}
@@ -129,7 +129,7 @@ export const Showcase = () => {
                 />
               </Flexbox>
             }
-           />
+          />
         </Flexbox>
 
         <Flexbox item>
@@ -142,7 +142,7 @@ export const Showcase = () => {
             }
             weight={0}
             icon={<Flag size="m" country="SE" />}
-           />
+          />
         </Flexbox>
 
         <Flexbox item>
