@@ -1,3 +1,10 @@
+# [16.3.0](https://github.com/nordnet/ui/compare/v16.2.0...v16.3.0) (2024-01-16)
+
+
+### Features
+
+* **selectioncard:** add animation to hover effect and refactor use of colorTokens ([#1576](https://github.com/nordnet/ui/issues/1576)) ([a0239dd](https://github.com/nordnet/ui/commit/a0239dd8f78b7d10726fcc556fb8b6066bec7103))
+
 # [16.2.0](https://github.com/nordnet/ui/compare/v16.1.0...v16.2.0) (2024-01-15)
 
 
