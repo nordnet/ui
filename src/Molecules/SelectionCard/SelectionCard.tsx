@@ -77,16 +77,14 @@ const StyledCard = styled(Card)<{
         ? p.theme.colorTokens.neutral.background_disabled
         : p.theme.colorTokens.neutral.background_default
     };
+    outline: ${p.$border ? `1px solid transparent` : `2px solid transparent`};
     `}
-
   ${(p) =>
     p.$error && !p.$disabled && `border: 1px solid ${p.theme.colorTokens.error.border_default}`};
   ${(p) => !p.$disabled && p.$selected && overlayStyles};
   border-radius: ${({ theme }) => theme.borderRadius8};
   overflow: hidden;
-
   outline-offset: -2px;
-  ${(p) => (p.$border ? `outline: 1px solid transparent` : `outline: 2px solid transparent`)};
   ${(p) => p.$border && `border: 1px solid ${p.theme.colorTokens.neutral.border_default}`};
   transition-duration: 0.2s;
   transition-timing-function: ease;
