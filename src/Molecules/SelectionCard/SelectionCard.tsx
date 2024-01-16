@@ -30,29 +30,29 @@ const AbsoluteFlexbox = styled(Flexbox)`
 const Tag = styled(Typography)`
   box-sizing: border-box;
   ${(p) => `
-    padding: 0px ${p.theme.spacing.unit(1)}px;
-    background: ${p.theme.color.cta};
-    color: ${p.theme.color.textLight};
+    padding: ${p.theme.spacing.unit(1)}px;
+    background: ${p.theme.colorTokens.action.background_default};
+    color: ${p.theme.colorTokens.neutral.text_strong};
   `}
 `;
 
 const CircleOutline = styled.div`
   border-radius: 100%;
   ${(p) => `
-    border: 1px solid ${p.theme.color.selectionCardBorder};
+    border: 1px solid ${p.theme.colorTokens.neutral.border_default};
     height: ${p.theme.spacing.unit(4)}px;
     width: ${p.theme.spacing.unit(4)}px;
   `}
 `;
 
 const outlineStyles = css`
-  ${(p) => `outline: 2px solid ${p.theme.color.cta}`};
-  outline-offset: -2px;
+  ${(p) => `outline-color: ${p.theme.colorTokens.action.border_default}`};
+  ${(p) => `border-color: ${p.theme.colorTokens.action.border_default}`};
   vertical-align: top;
 `;
 
 const overlayStyles = css`
-  ${(p) => `background: ${Color(p.theme.color.cta).alpha(0.1).string()}`};
+  ${(p) => `background: ${Color(p.theme.colorTokens.action.background_weak).string()}`};
   ${outlineStyles}
 `;
 
@@ -67,14 +67,30 @@ const StyledCard = styled(Card)<{
   box-sizing: border-box;
   ${(p) => `
     cursor: ${p.$disabled ? 'not-allowed' : 'pointer'};
-    color: ${p.$disabled ? p.theme.color.disabledText : p.theme.color.text};
-    background: ${p.$disabled ? p.theme.color.disabledBackground : p.theme.color.card};
-  `}
-  ${(p) => p.$border && `border: 1px solid ${p.theme.color.inputBorder}`};
-  ${(p) => p.$error && !p.$disabled && `border: 1px solid ${p.theme.color.functionRed}`};
+    color: ${
+      p.$disabled
+        ? p.theme.colorTokens.neutral.text_disabled
+        : p.theme.colorTokens.neutral.text_default
+    };
+    background: ${
+      p.$disabled
+        ? p.theme.colorTokens.neutral.background_disabled
+        : p.theme.colorTokens.neutral.background_default
+    };
+    `}
+
+  ${(p) =>
+    p.$error && !p.$disabled && `border: 1px solid ${p.theme.colorTokens.error.border_default}`};
   ${(p) => !p.$disabled && p.$selected && overlayStyles};
   border-radius: ${({ theme }) => theme.borderRadius8};
   overflow: hidden;
+
+  outline-offset: -2px;
+  ${(p) => (p.$border ? `outline: 1px solid transparent` : `outline: 2px solid transparent`)};
+  ${(p) => p.$border && `border: 1px solid ${p.theme.colorTokens.neutral.border_default}`};
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-property: background-color, outline-color, border-color;
 
   &:hover {
     ${(p) => !p.$disabled && overlayStyles};
@@ -117,6 +133,12 @@ const StyledDiv = styled('div')<{
   `}
 `;
 
+const StyledItem = styled(Typography)<{ $disabled: boolean }>`
+  ${(p) => `
+    color: ${p.$disabled ? p.theme.colorTokens.neutral.text_disabled : ''};
+  `}
+`;
+
 export const SelectionCard: SelectionCardComponent = ({
   title,
   onChange = () => {},
@@ -151,9 +173,9 @@ export const SelectionCard: SelectionCardComponent = ({
     title
   ) : (
     <StyledFlexbox item>
-      <Typography type="primary" weight="bold">
+      <StyledItem type="primary" weight="bold" $disabled={disabled}>
         {title}
-      </Typography>
+      </StyledItem>
     </StyledFlexbox>
   );
 
@@ -161,9 +183,13 @@ export const SelectionCard: SelectionCardComponent = ({
     text
   ) : (
     <StyledFlexbox item>
-      <Typography type="secondary" color={(t) => t.colorTokens.neutral.text_weak}>
+      <StyledItem
+        type="secondary"
+        color={(t) => t.colorTokens.neutral.text_weak}
+        $disabled={disabled}
+      >
         {text}
-      </Typography>
+      </StyledItem>
     </StyledFlexbox>
   );
 
@@ -179,7 +205,9 @@ export const SelectionCard: SelectionCardComponent = ({
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pr={2}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <Icon.CheckCircleFill16 color={(t) => t.color.cta} />}
+            {!disabled && selected && (
+              <Icon.CheckCircleFill16 color={(t) => t.colorTokens.action.background_default} />
+            )}
 
             <StyledInput
               type="checkbox"
