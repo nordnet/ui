@@ -1,11 +1,12 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import styled from 'styled-components';
+import Color from 'color';
 
 import { Flexbox, Typography } from '../..';
 
 const Content = styled.div`
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border: 1px solid black;
   background-color: #eee;
   height: 100%;
@@ -54,6 +55,40 @@ export const ColumnSizedFlexboxes = () => (
 const tenTimes = [...Array(10)].map((_, i) => {
   return i + 1;
 });
+
+const Outer = styled.div`
+  display: inline-block;
+  ${(p) => {
+    const stripes = p.theme.color.warning;
+    const stripesDark = Color(stripes).lighten(0.5);
+
+    return `
+      background: repeating-linear-gradient(
+        -45deg,
+        ${stripes},
+        ${stripes} ${p.theme.spacing.unit(2)}px,
+        ${stripesDark} ${p.theme.spacing.unit(2)}px,
+        ${stripesDark} ${p.theme.spacing.unit(4)}px
+      );
+    `;
+  }}
+`;
+
+export const WithPadding = {
+  render: () => (
+    <Outer>
+      <Flexbox container direction="column" p={8}>
+        {tenTimes.map((i) => (
+          <Content key={`unit-${i}`} style={{ width: '200px' }}>
+            {i}
+          </Content>
+        ))}
+      </Flexbox>
+    </Outer>
+  ),
+
+  name: 'Padding ',
+};
 
 export const WithCustomGap = () => (
   <>

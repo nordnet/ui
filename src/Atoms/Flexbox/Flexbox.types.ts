@@ -4,58 +4,59 @@ import React from 'react';
 export type Width = number | string;
 export type Height = number | string;
 
-export type ContainerProps = {
-  children?: React.ReactNode;
-  container?: boolean;
-  width?: Width;
-  height?: Height;
-  as?: any;
-  /** flexbox direction */
-  direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-  wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
-  /** @deprecated use gap instead */
-  gutter?: number;
-  hidden?: boolean;
-  justifyContent?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'space-between'
-    | 'space-around'
-    | 'space-evenly';
-  /** TODO: alignItems values feels wrong */
-  alignItems?:
-    | 'normal'
-    | 'stretch'
-    | 'center'
-    | 'start'
-    | 'end'
-    | 'flex-start'
-    | 'flex-end'
-    | 'self-start'
-    | 'self-end'
-    | 'baseline';
-  /** TODO: alignContent values feels wrong */
-  alignContent?:
-    | 'center'
-    | 'start'
-    | 'end'
-    | 'flex-start'
-    | 'flex-end'
-    | 'normal'
-    | 'baseline'
-    | 'first baseline'
-    | 'last baseline'
-    | 'space-between'
-    | 'space-around'
-    | 'space-evenly'
-    | 'stretch';
+export type ContainerProps = Paddings &
+  Margins & {
+    children?: React.ReactNode;
+    container?: boolean;
+    width?: Width;
+    height?: Height;
+    as?: any;
+    /** flexbox direction */
+    direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+    wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+    /** @deprecated use gap instead */
+    gutter?: number;
+    hidden?: boolean;
+    justifyContent?:
+      | 'flex-start'
+      | 'flex-end'
+      | 'center'
+      | 'space-between'
+      | 'space-around'
+      | 'space-evenly';
+    /** TODO: alignItems values feels wrong */
+    alignItems?:
+      | 'normal'
+      | 'stretch'
+      | 'center'
+      | 'start'
+      | 'end'
+      | 'flex-start'
+      | 'flex-end'
+      | 'self-start'
+      | 'self-end'
+      | 'baseline';
+    /** TODO: alignContent values feels wrong */
+    alignContent?:
+      | 'center'
+      | 'start'
+      | 'end'
+      | 'flex-start'
+      | 'flex-end'
+      | 'normal'
+      | 'baseline'
+      | 'first baseline'
+      | 'last baseline'
+      | 'space-between'
+      | 'space-around'
+      | 'space-evenly'
+      | 'stretch';
 
-  /** a11y */
-  role?: string;
-  title?: string;
-  gap?: number | string | { column: number; row: number };
-};
+    /** a11y */
+    role?: string;
+    title?: string;
+    gap?: number | string | { column: number; row: number };
+  };
 
 export type ItemProps = {
   item?: boolean;
@@ -90,4 +91,30 @@ export type Props = MediaRelatedProps<FlexProps> &
 export type StoryTemplateProps = {
   cols: { children: React.ReactNode; itemArgs?: ItemProps }[];
   containerArgs?: ContainerProps;
+};
+
+export type Spacings = {
+  margin: number | string | undefined;
+  padding: number | string | undefined;
+  margins: (number | string | undefined)[];
+  paddings: (number | string | undefined)[];
+};
+
+type Margins = {
+  mt?: number | string;
+  mb?: number | string;
+  ml?: number | string;
+  mr?: number | string;
+  mx?: number | string;
+  my?: number | string;
+  m?: number | string;
+};
+export type Paddings = {
+  pt?: number | string;
+  pb?: number | string;
+  pl?: number | string;
+  pr?: number | string;
+  px?: number | string;
+  py?: number | string;
+  p?: number | string;
 };

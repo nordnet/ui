@@ -2,15 +2,31 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import R from 'ramda';
 import { Theme } from '../../theme/theme.types';
-import { Props } from './Flexbox.types';
-import { isUndefined } from '../../common/utils';
+import { Props, Spacings } from './Flexbox.types';
+import { isString, isUndefined } from '../../common/utils';
+
+const getCssString = (property: string, value: string | number) => {
+  if (isString(value)) {
+    return css`
+      ${property}: ${value};
+    `;
+  }
+
+  if (isNumber(value)) {
+    return css`
+      ${property}: ${(p) => p.theme.spacing.unit(value)}px;
+    `;
+  }
+
+  return '';
+};
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 
 const getSizeStyles = (size: Props['size']) => {
   const oneCol = 100 / 12;
 
-  if (isUndefined(size)) {
+  if (!isUndefined(size)) {
     return null;
   }
 
@@ -82,6 +98,77 @@ const getGapStyles = (theme: Theme, gap: Props['gap']) => {
   return `gap: ${gapStyle};`;
 };
 
+const getPaddingMarginStyles = (props: Props) => {
+  const left = 0;
+  const top = 1;
+  const right = 2;
+  const bottom = 3;
+
+  const DIRECTION = {
+    0: 'left',
+    1: 'top',
+    2: 'right',
+    3: 'bottom',
+  };
+
+  const spacings: Spacings = {
+    margin: undefined,
+    padding: undefined,
+    margins: [undefined, undefined, undefined, undefined],
+    paddings: [undefined, undefined, undefined, undefined],
+  };
+
+  if (!isUndefined(props.m)) spacings.margin = props.m;
+
+  if (!isUndefined(props.mx)) {
+    spacings.margins[right] = props.mx;
+    spacings.margins[left] = props.mx;
+  }
+
+  if (!isUndefined(props.my)) {
+    spacings.margins[top] = props.my;
+    spacings.margins[bottom] = props.my;
+  }
+
+  if (!isUndefined(props.mt)) spacings.margins[top] = props.mt;
+  if (!isUndefined(props.mb)) spacings.margins[bottom] = props.mb;
+  if (!isUndefined(props.ml)) spacings.margins[left] = props.ml;
+  if (!isUndefined(props.mr)) spacings.margins[right] = props.mr;
+
+  if (!isUndefined(props.p)) spacings.padding = props.p;
+
+  if (!isUndefined(props.px)) {
+    spacings.paddings[right] = props.px;
+    spacings.paddings[left] = props.px;
+  }
+
+  if (!isUndefined(props.py)) {
+    spacings.paddings[top] = props.py;
+    spacings.paddings[bottom] = props.py;
+  }
+
+  if (!isUndefined(props.pt)) spacings.paddings[top] = props.pt;
+  if (!isUndefined(props.pb)) spacings.paddings[bottom] = props.pb;
+  if (!isUndefined(props.pl)) spacings.paddings[left] = props.pl;
+  if (!isUndefined(props.pr)) spacings.paddings[right] = props.pr;
+
+  const marginsStyles = spacings.margins?.map(
+    (v, idx) => v !== undefined && getCssString(`margin-${DIRECTION[idx]}`, v),
+  );
+  const paddingsStyles = spacings.paddings?.map(
+    (v, idx) => v !== undefined && getCssString(`padding-${DIRECTION[idx]}`, v),
+  );
+
+  const marginStyles = [spacings.margin && getCssString('margin', spacings.margin)];
+  const paddingStyles = [spacings.padding && getCssString('padding', spacings.padding)];
+
+  return marginStyles
+    .concat(marginsStyles)
+    .concat(paddingStyles)
+    .concat(paddingsStyles)
+    .filter(Boolean);
+};
+
 const getContainerStyles = (p: Props & { theme: Theme }) => `
   display: ${p.hidden ? 'none' : 'flex'};
   ${p.width ? `width: ${isNumber(p.width) ? `${p.theme.spacing.unit(p.width)}px` : p.width}` : ''};
@@ -97,6 +184,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
   ${p.gutter ? getGutterStyles(p.theme, p.gutter, p.direction) : ''}
   ${getGapStyles(p.theme, p.gap)}
+  ${getPaddingMarginStyles(p)}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
