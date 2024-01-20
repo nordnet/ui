@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Button, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
 
-const getColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
+const getNeutralColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
   if (invertedColors) {
     return theme.isDarkMode
       ? lightTheme.color.neutral[colorToken]
@@ -13,14 +13,36 @@ const getColor = (colorToken: string, theme: Theme, invertedColors?: boolean) =>
   return theme.colorTokens.neutral[colorToken];
 };
 
+const getActionColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
+  if (invertedColors) {
+    return theme.isDarkMode
+      ? lightTheme.color.action[colorToken]
+      : darkTheme.color.action[colorToken];
+  }
+  return theme.colorTokens.action[colorToken];
+};
+
 export const StyledIconButton = styled(Button.Icon)<{
   $fullScreenMobile?: boolean;
   $invertedColors?: boolean;
 }>`
-  background-color: ${(p) => getColor('background_strong', p.theme, p.$invertedColors)};
-  color: ${(p) => getColor('icon_default', p.theme, p.$invertedColors)};
+  background-color: ${(p) => getNeutralColor('background_strong', p.theme, p.$invertedColors)};
+  color: ${(p) => getNeutralColor('icon_default', p.theme, p.$invertedColors)};
   svg {
-    color: ${(p) => getColor('icon_default', p.theme, p.$invertedColors)};
+    color: ${(p) => getNeutralColor('icon_default', p.theme, p.$invertedColors)};
+  }
+
+  &:hover {
+    background-color: ${(p) => getNeutralColor('background_strong', p.theme, p.$invertedColors)};
+    svg {
+      color: ${(p) => getActionColor('icon_hover', p.theme, p.$invertedColors)};
+    }
+  }
+  &:active {
+    background-color: ${(p) => getNeutralColor('background_weak', p.theme, p.$invertedColors)};
+    svg {
+      color: ${(p) => getActionColor('icon_pressed', p.theme, p.$invertedColors)};
+    }
   }
 `;
 
@@ -38,12 +60,12 @@ export const StyledBottomSheet = styled(Flexbox)<{
   $fullScreenMobile?: boolean;
   $invertedColors?: boolean;
 }>`
-  background-color: ${(p) => getColor('background_default', p.theme, p.$invertedColors)};
-  border-color: ${(p) => getColor('background_default', p.theme, p.$invertedColors)};
+  background-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
+  border-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
   border-radius: ${({ theme }) => `${theme.borderRadius20} ${theme.borderRadius20} 0 0`};
   bottom: 0;
   box-sizing: border-box;
-  color: ${(p) => getColor('text_default', p.theme, p.$invertedColors)};
+  color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
   display: block;
   height: ${(p) => (p.$fullScreenMobile ? '100%' : `${p.height}px`)};
   left: 0;
