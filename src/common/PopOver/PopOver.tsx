@@ -1,16 +1,10 @@
-import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
+import React, { MutableRefObject, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
-import { motion } from 'framer-motion';
 import { mergeRefs } from '../utils';
 import { Portal } from '../..';
 import { TooltipArrow } from './TooltipArrow';
 import { Props } from './PopOver.types';
-import {
-  StyledSpan,
-  StyledTooltipContent,
-  bottomSheetStyles,
-  hideArrowStyles,
-} from './PopOver.styles';
+import { StyledSpan, StyledTooltipContent } from './PopOver.styles';
 import { useMouseEvents } from './hooks/useMouseEvents';
 
 const displayName = 'Tooltip Popup';
@@ -38,32 +32,11 @@ const PopOver: React.FC<Props> & {
   handleMouseLeave,
   customBoundary,
   pointerArrow = true,
-  bottomSheet = false,
-  bottomSheetTitle,
-  onBottomSheetClose = () => {},
   invertedColors,
-  setPopoverElement,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
-
-  const overrideStyles = useCallback(
-    (args: any) => {
-      const { state } = args;
-
-      const popperStyles = bottomSheet ? bottomSheetStyles : state.styles.popper;
-      return {
-        ...state,
-        styles: {
-          ...state.styles,
-          popper: popperStyles,
-          arrow: bottomSheet ? hideArrowStyles : state.styles.arrow,
-        },
-      };
-    },
-    [bottomSheet],
-  );
 
   const flipMods = customBoundary
     ? [
@@ -79,12 +52,6 @@ const PopOver: React.FC<Props> & {
     : [];
 
   const modifiers = [
-    {
-      name: 'overrideMobileStyles',
-      enabled: bottomSheet,
-      phase: 'write' as any,
-      fn: overrideStyles,
-    },
     { name: 'offset', options: { offset }, enabled: !!offset },
     ...flipMods,
     {
@@ -96,12 +63,6 @@ const PopOver: React.FC<Props> & {
   ];
 
   const ref = useRef() as MutableRefObject<HTMLElement>;
-
-  useEffect(() => {
-    if (setPopoverElement && ref && bottomSheet && pointerEvents) {
-      setPopoverElement(ref);
-    }
-  }, [setPopoverElement, ref, bottomSheet, pointerEvents]);
 
   const popper = usePopper(triggerElement, popperElement, {
     modifiers,
@@ -129,41 +90,30 @@ const PopOver: React.FC<Props> & {
       className={className}
       id={id}
       ref={mergeRefs([setPopperElement, ref])}
-      $inModal={inModal || bottomSheet}
+      $inModal={inModal}
       style={styles.popper}
       $pointerEvents={pointerEvents}
       {...htmlSpanProps}
       {...attributes.popper}
     >
-      <motion.div
-        key="bottomsheet"
-        initial={bottomSheet ? { y: 100, opacity: 0 } : { opacity: 0 }}
-        exit={bottomSheet ? { y: 100, opacity: 0 } : { opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
-        transition={{ type: 'ease', duration: 0.2 }}
-      >
-        {pointerArrow && (
-          <TooltipArrow
-            ref={setArrowElement as any}
-            position={state?.placement as any}
-            style={styles.arrow}
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
-          />
-        )}
-
-        <StyledTooltipContent
-          label={label}
-          bottomSheet={bottomSheet}
-          bottomSheetTitle={bottomSheetTitle}
-          onBottomSheetClose={onBottomSheetClose}
-          ariaLabel={ariaLabel}
-          maxWidth={maxWidth}
+      {pointerArrow && (
+        <TooltipArrow
+          ref={setArrowElement as any}
+          position={state?.placement as any}
+          style={styles.arrow}
           backgroundColor={backgroundColor}
           borderColor={borderColor}
-          invertedColors={invertedColors}
         />
-      </motion.div>
+      )}
+
+      <StyledTooltipContent
+        label={label}
+        ariaLabel={ariaLabel}
+        maxWidth={maxWidth}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+        invertedColors={invertedColors}
+      />
     </StyledSpan>
   );
 

@@ -31,16 +31,6 @@ export const StyledSpan = styled.span<StyledSpanProps>`
 // styled to allow consumers to use it as styling-identifier directly from PopOver.components.TooltipContent
 export const StyledTooltipContent = styled(TooltipContent)``;
 
-export const bottomSheetStyles = {
-  left: 0,
-  bottom: 0,
-  width: '100%',
-  position: 'fixed',
-  padding: 0,
-  transform: 'none',
-  display: 'block',
-};
-
 export const hideArrowStyles = {
   display: 'none',
 };

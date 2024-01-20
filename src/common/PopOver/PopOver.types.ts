@@ -45,10 +45,6 @@ export type Props = {
   handleMouseEnter?: (e: any) => void;
   handleMouseLeave?: (e: any) => void;
   customBoundary?: HTMLElement | Array<HTMLElement>;
-  bottomSheet?: boolean;
-  bottomSheetTitle?: string;
-  onBottomSheetClose?: () => void;
   pointerArrow?: boolean;
   invertedColors?: boolean;
-  setPopoverElement?: (r: any) => void;
 };
