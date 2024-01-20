@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+
 import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
 import { Backdrop, Footer, Header, ModalInner } from './ModalInner';
@@ -36,11 +38,15 @@ export const Modal: React.FC<Props> & {
 
   const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
-  return shouldRender ? (
-    <Portal>
-      <ModalInner {...rest} onClose={onClose} />
-    </Portal>
-  ) : null;
+  return (
+    <AnimatePresence>
+      {shouldRender ? (
+        <Portal>
+          <ModalInner {...rest} onClose={onClose} />
+        </Portal>
+      ) : null}
+    </AnimatePresence>
+  );
 };
 
 Modal.components = components;
