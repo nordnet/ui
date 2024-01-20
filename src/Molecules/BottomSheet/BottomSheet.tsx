@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import FocusLock from 'react-focus-lock';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import { Flexbox, Icon, Portal, theme, useOnClickOutside } from '../..';
 import { Backdrop, StyledBottomSheet, StyledIconButton } from './BottomSheet.styles';
+import { isBoolean } from '../../common/utils';
 import { Props } from './BottomSheet.types';
 
 const BottomSheet: React.FC<Props> = ({
@@ -14,25 +15,37 @@ const BottomSheet: React.FC<Props> = ({
   fullScreenMobile,
   height = 400,
   invertedColors,
-  onClose,
-  open,
+  onClose: onCloseExternal,
+  open: isOpenExternal,
   showBackdrop = true,
   title,
 }) => {
   const internalRef = useRef<HTMLDivElement>(null);
+  const isControlled = isBoolean(isOpenExternal);
+  const [isOpenInternal, setIsOpenInternal] = useState(true);
 
   const TRANSITION_DURATION = 0.16;
 
+  const onClose = () => {
+    setIsOpenInternal(false);
+
+    if (typeof onCloseExternal === 'function') {
+      onCloseExternal();
+    }
+  };
+
   useOnClickOutside(internalRef, () => {
-    if (closeOnClickOutside && typeof onClose === 'function') {
+    if (closeOnClickOutside) {
       onClose();
     }
   });
 
+  const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
+
   return (
     <Portal>
       <AnimatePresence>
-        {open ? (
+        {shouldRender ? (
           <FocusLock disabled={fullScreenMobile}>
             <RemoveScroll enabled={!fullScreenMobile}>
               {showBackdrop && (

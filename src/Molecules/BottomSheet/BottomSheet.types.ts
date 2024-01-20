@@ -8,7 +8,7 @@ export type Props = {
   height?: number;
   invertedColors?: boolean;
   onClose?: () => void;
-  open: boolean;
+  open?: boolean;
   showBackdrop?: boolean;
   title: React.ReactNode;
 };

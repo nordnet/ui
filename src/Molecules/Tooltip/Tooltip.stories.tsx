@@ -455,6 +455,30 @@ export const BottomSheet = () => {
   );
 };
 
+export const BottomSheetNotControlled = () => {
+  return (
+    <Box py={20}>
+      <Tooltip
+        label={
+          <>
+            popover content <Button onClick={() => alert('You clicked me!')}>click</Button>
+          </>
+        }
+        position="bottom"
+        wrapChild
+        pointerEvents
+        bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
+        bottomSheetTitle="BottomSheet Title"
+        bottomSheetHeight={300}
+      >
+        <UIButton variant="neutral">
+          <Typography type="primary">CLICK ME</Typography>
+        </UIButton>
+      </Tooltip>
+    </Box>
+  );
+};
+
 export const BottomSheetInvertedColors = () => {
   const [open, setOpen] = useState(false);
   return (
