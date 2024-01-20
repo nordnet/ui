@@ -150,6 +150,84 @@ export const Default = {
   },
 };
 
+export const InvertedColors = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <Button type="button" onClick={onOpen}>
+            Show BottomSheet [not fullscreen]
+          </Button>
+          <Box p={2}>
+            <Typography type="primary" as="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+              libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+              imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+              porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+              ligula in libero. Sed dignissim lacinia nunc.
+            </Typography>
+          </Box>
+          <Box p={2}>
+            <Typography type="primary" as="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+              libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+              imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+              porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+              ligula in libero. Sed dignissim lacinia nunc.
+            </Typography>
+          </Box>
+          <BottomSheet
+            closeOnClickOutside
+            invertedColors
+            onClose={onClose}
+            open={open}
+            title={
+              <Typography type="primary" weight="extrabold" color="inherit">
+                Lorem ipsum
+              </Typography>
+            }
+          >
+            <Box mb={2}>
+              <Typography type="primary" as="p" color="inherit">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+                imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+                porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+              </Typography>
+            </Box>
+            <Box mb={2}>
+              <Typography type="primary" as="p" color="inherit">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+                imperdiet. Duis sagittis ipsum. Praesent mauris.
+              </Typography>
+            </Box>
+          </BottomSheet>
+        </>
+      );
+    };
+    return <Example />;
+  },
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone12',
+    },
+  },
+};
+
 export const LargerVariant = {
   render: () => {
     const Example = () => {
@@ -190,7 +268,7 @@ export const LargerVariant = {
           </Box>
           <BottomSheet
             closeOnClickOutside
-            height="600px"
+            height={600}
             onClose={onClose}
             open={open}
             title={
@@ -311,7 +389,7 @@ export const LargerVariantAboveFlexTable = {
           </Box>
           <BottomSheet
             closeOnClickOutside
-            height="600px"
+            height={600}
             onClose={onClose}
             open={open}
             title={
