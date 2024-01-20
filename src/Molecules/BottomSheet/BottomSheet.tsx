@@ -13,7 +13,7 @@ const BottomSheet: React.FC<Props> = ({
   className,
   closeOnClickOutside,
   fullScreenMobile,
-  height = 400,
+  height,
   invertedColors,
   onClose: onCloseExternal,
   open: isOpenExternal,

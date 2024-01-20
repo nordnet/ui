@@ -56,7 +56,18 @@ export const Backdrop = styled(Flexbox)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
 `;
 
+const getHeight = (height?: number, fullScreenMobile?: boolean) => {
+  if (fullScreenMobile) {
+    return 'height: 100%';
+  }
+  if (height) {
+    return `height: ${height}px`;
+  }
+  return '';
+};
+
 export const StyledBottomSheet = styled(Flexbox)<{
+  height?: number;
   $fullScreenMobile?: boolean;
   $invertedColors?: boolean;
 }>`
@@ -67,7 +78,7 @@ export const StyledBottomSheet = styled(Flexbox)<{
   box-sizing: border-box;
   color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
   display: block;
-  height: ${(p) => (p.$fullScreenMobile ? '100%' : `${p.height}px`)};
+  height: ${(p) => getHeight(p.height, p.$fullScreenMobile)};
   left: 0;
   padding: ${(p) => p.theme.spacing.unit(4)}px ${(p) => p.theme.spacing.unit(3)}px;
   position: absolute;
