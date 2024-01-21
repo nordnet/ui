@@ -56,18 +56,21 @@ export const Backdrop = styled(Flexbox)`
   z-index: ${({ theme }) => theme.zIndex.overlay};
 `;
 
-const getHeight = (height?: number, fullScreenMobile?: boolean) => {
+const getHeight = (height?: number | string, fullScreenMobile?: boolean) => {
   if (fullScreenMobile) {
     return 'height: 100%';
   }
-  if (height) {
+  if (height && typeof height === 'number') {
     return `height: ${height}px`;
+  }
+  if (height && typeof height === 'string') {
+    return `height: ${height}`;
   }
   return '';
 };
 
 export const StyledBottomSheet = styled(Flexbox)<{
-  height?: number;
+  height?: number | string;
   $fullScreenMobile?: boolean;
   $invertedColors?: boolean;
 }>`

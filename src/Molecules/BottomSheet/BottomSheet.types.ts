@@ -5,7 +5,7 @@ export type Props = {
   className?: string;
   closeOnClickOutside?: boolean;
   fullScreenMobile?: boolean;
-  height?: number;
+  height?: number | string;
   invertedColors?: boolean;
   onClose?: () => void;
   open?: boolean;
