@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Box,
   BottomSheet,
@@ -260,6 +260,78 @@ export const SmallerVariant = {
             closeOnClickOutside
             onClose={onClose}
             open={open}
+            title={
+              <Typography type="primary" weight="extrabold">
+                Filters
+              </Typography>
+            }
+          >
+            <Box p={2}>
+              <Typography type="primary" as="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+                imperdiet.
+              </Typography>
+            </Box>
+          </BottomSheet>
+        </>
+      );
+    };
+    return <Example />;
+  },
+
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone12',
+    },
+  },
+};
+
+export const VaryingHeightVariant = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+      const [height, setHeight] = useState(600);
+
+      const onOpen = () => {
+        setOpen(true);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      useEffect(() => {
+        const timeout = setTimeout(() => {
+          // Change the height to a new value
+          setHeight(Math.random() * 500 + 300);
+        }, 5000); // Change height every 5 seconds
+
+        return () => {
+          clearTimeout(timeout);
+        };
+      }, [height]);
+
+      return (
+        <>
+          <Button type="button" onClick={onOpen}>
+            Show BottomSheet [not fullscreen]
+          </Button>
+          <Box p={2}>
+            <Typography type="primary" as="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+              libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+              imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+              porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
+              ligula in libero. Sed dignissim lacinia nunc.
+            </Typography>
+          </Box>
+          <BottomSheet
+            closeOnClickOutside
+            onClose={onClose}
+            open={open}
+            height={height}
             title={
               <Typography type="primary" weight="extrabold">
                 Filters

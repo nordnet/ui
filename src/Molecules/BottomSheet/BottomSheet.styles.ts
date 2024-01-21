@@ -81,7 +81,8 @@ export const StyledBottomSheet = styled(Flexbox)<{
   box-sizing: border-box;
   color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
   display: block;
-  height: ${(p) => getHeight(p.height, p.$fullScreenMobile)};
+  ${(p) => getHeight(p.height, p.$fullScreenMobile)};
+  transition: height 0.16s ease-out;
   left: 0;
   padding: ${(p) => p.theme.spacing.unit(4)}px ${(p) => p.theme.spacing.unit(3)}px;
   position: absolute;
