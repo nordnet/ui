@@ -228,13 +228,12 @@ export const ModalInner: React.FC<Props> = ({
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const TRANSITION_DURATION = 0.16;
   const animationProps = {
     initial: {
-      opacity: 0,
       y: 70,
     },
     animate: {
-      opacity: 1,
       y: 0,
     },
     transition: {
@@ -282,70 +281,78 @@ export const ModalInner: React.FC<Props> = ({
     <>
       <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
-          <BackdropWrapper
-            showBackdrop={showBackdrop}
-            onClick={handleBackdropClick}
-            backdropRef={backdropRef}
-            $fullScreenMobile={fullScreenMobile}
-            blurBackdrop={blurBackdrop}
+          <motion.div
+            key="backdrop"
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ type: 'ease', duration: TRANSITION_DURATION }}
           >
-            <Dialog
-              onAnimationComplete={onAnimationComplete || noop}
-              aria-labelledby={titleId}
-              className={className}
-              role="dialog"
-              {...animationProps}
-              ref={dialogRef}
-              onClick={handleDialogClick}
-              $show={show}
+            <BackdropWrapper
+              showBackdrop={showBackdrop}
+              onClick={handleBackdropClick}
+              backdropRef={backdropRef}
               $fullScreenMobile={fullScreenMobile}
-              $fixedBottomMobile={fixedBottomMobile}
-              $isStatusModal={isStatusModal}
+              blurBackdrop={blurBackdrop}
             >
-              {progressIndicator && (
-                <StyledProgressIndicator>
-                  <ProgressIndicator {...progressIndicator} />
-                </StyledProgressIndicator>
-              )}
+              <Dialog
+                onAnimationComplete={onAnimationComplete || noop}
+                aria-labelledby={titleId}
+                className={className}
+                role="dialog"
+                ref={dialogRef}
+                onClick={handleDialogClick}
+                $show={show}
+                $fullScreenMobile={fullScreenMobile}
+                $fixedBottomMobile={fixedBottomMobile}
+                $isStatusModal={isStatusModal}
+                {...animationProps}
+              >
+                {progressIndicator && (
+                  <StyledProgressIndicator>
+                    <ProgressIndicator {...progressIndicator} />
+                  </StyledProgressIndicator>
+                )}
 
-              {hasHeader && (
-                <Header $flexTitle={progressIndicatorDescription !== undefined}>
-                  {title && progressIndicatorDescription ? (
-                    <StyledBoxTitle>
-                      <Typography
-                        type="secondary"
-                        weight="bold"
-                        color={(t) => t.colorTokens.neutral.text_weak}
-                      >
-                        {progressIndicatorDescription}
-                      </Typography>
-                      <Typography
-                        type={isMobile ? 'primary' : 'title2'}
-                        weight="extrabold"
-                        color={(t) => t.colorTokens.neutral.text_default}
-                      >
-                        {title}
-                      </Typography>
-                    </StyledBoxTitle>
-                  ) : (
-                    <Title title={title} uid={titleId} />
-                  )}
-                </Header>
-              )}
-              {children}
-              {footer && <Footer>{footer}</Footer>}
-              {!hideClose && (
-                <CloseButton
-                  variant="secondary"
-                  onClick={onClose as any}
-                  $fullScreenMobile={fullScreenMobile}
-                  $progressIndicator={!!progressIndicator}
-                >
-                  <Icon.Cross16 title={closeTitle} color="inherit" />
-                </CloseButton>
-              )}
-            </Dialog>
-          </BackdropWrapper>
+                {hasHeader && (
+                  <Header $flexTitle={progressIndicatorDescription !== undefined}>
+                    {title && progressIndicatorDescription ? (
+                      <StyledBoxTitle>
+                        <Typography
+                          type="secondary"
+                          weight="bold"
+                          color={(t) => t.colorTokens.neutral.text_weak}
+                        >
+                          {progressIndicatorDescription}
+                        </Typography>
+                        <Typography
+                          type={isMobile ? 'primary' : 'title2'}
+                          weight="extrabold"
+                          color={(t) => t.colorTokens.neutral.text_default}
+                        >
+                          {title}
+                        </Typography>
+                      </StyledBoxTitle>
+                    ) : (
+                      <Title title={title} uid={titleId} />
+                    )}
+                  </Header>
+                )}
+                {children}
+                {footer && <Footer>{footer}</Footer>}
+                {!hideClose && (
+                  <CloseButton
+                    variant="secondary"
+                    onClick={onClose as any}
+                    $fullScreenMobile={fullScreenMobile}
+                    $progressIndicator={!!progressIndicator}
+                  >
+                    <Icon.Cross16 title={closeTitle} color="inherit" />
+                  </CloseButton>
+                )}
+              </Dialog>
+            </BackdropWrapper>
+          </motion.div>
         </RemoveScroll>
       </FocusLock>
     </>
