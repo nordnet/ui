@@ -1,3 +1,10 @@
+## [16.3.1](https://github.com/nordnet/ui/compare/v16.3.0...v16.3.1) (2024-01-22)
+
+
+### Bug Fixes
+
+* wrap modal with animatepresence and add fade ([#1577](https://github.com/nordnet/ui/issues/1577)) ([405b835](https://github.com/nordnet/ui/commit/405b835f8f0bb9b847d7d94d7c505a14e9a67c9d))
+
 # [16.3.0](https://github.com/nordnet/ui/compare/v16.2.0...v16.3.0) (2024-01-16)
 
 
