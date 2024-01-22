@@ -117,10 +117,10 @@ const PopOver: React.FC<Props> & {
 
   const backgroundColor =
     backgroundColorProp ||
-    ((t) => (invertedColors ? t.color.bubbleBackgroundInverted : t.color.bubbleBackground));
+    (t => (invertedColors ? t.color.bubbleBackgroundInverted : t.color.bubbleBackground));
   const borderColor =
     borderColorProp ||
-    ((t) => (invertedColors ? t.color.bubbleBorderInverted : t.color.bubbleBorder));
+    (t => (invertedColors ? t.color.bubbleBorderInverted : t.color.bubbleBorder));
 
   useMouseEvents(ref, pointerEvents, handleMouseEnter, handleMouseLeave);
 
