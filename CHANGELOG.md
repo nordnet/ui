@@ -1,3 +1,10 @@
+# [16.4.0](https://github.com/nordnet/ui/compare/v16.3.1...v16.4.0) (2024-01-22)
+
+
+### Features
+
+* add support for inverted colors ([#1578](https://github.com/nordnet/ui/issues/1578)) ([a2ea3da](https://github.com/nordnet/ui/commit/a2ea3da6742b14c3fdf079438713b48cad873731))
+
 ## [16.3.1](https://github.com/nordnet/ui/compare/v16.3.0...v16.3.1) (2024-01-22)
 
 
