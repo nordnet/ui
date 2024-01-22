@@ -443,7 +443,6 @@ export const BottomSheet = () => {
         pointerEvents
         bottomSheetQuery={(t) => t.media.lessThan(t.breakpoints.sm)}
         bottomSheetTitle="BottomSheet Title"
-        bottomSheetHeight={300}
         isOpen={open}
         onBottomSheetClose={() => setOpen(false)}
       >

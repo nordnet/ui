@@ -38,7 +38,7 @@ export const Tooltip: FC<Props> = (props) => {
     customBoundary,
     pointerArrow = true,
     bottomSheetQuery,
-    bottomSheetHeight = 200,
+    bottomSheetHeight,
     bottomSheetTitle,
     onBottomSheetClose,
     invertedColors,
