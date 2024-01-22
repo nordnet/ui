@@ -5,18 +5,26 @@ import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
-import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Box, Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
+import {
+  Box,
+  Button,
+  Flexbox,
+  Icon,
+  ProgressIndicator,
+  Typography,
+  useKeyPress,
+  useMedia,
+} from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_PROGRESS_INDICATOR = 14;
 const PADDING_PROGRESS_INDICATOR_MOBILE = 10;
 const PADDING_MOBILE = 3;
-const PADDING_TOP_MOBILE = 4;
-const PADDING_TOP_MOBILE_FULLSCREEN = 5;
-const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
+const PADDING_TOP_MOBILE = 3;
+const PADDING_TOP_MOBILE_FULLSCREEN = 3;
+const PADDING_BOTTOM_MOBILE_FULLSCREEN = 3;
 const CLOSE_ICON_SIZE = 5;
 
 export const FixedDrop = styled(Flexbox)`
@@ -111,14 +119,13 @@ const Dialog = styled(motion.div)<DialogProps>`
       }`}
 `;
 
-const CloseButton = styled(NormalizedElements.Button)`
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
+const CloseButton = styled(Button.Icon)<{
+  $fullScreenMobile?: boolean;
+  $progressIndicator?: boolean;
+}>`
   cursor: pointer;
   position: absolute;
-  transform: translateY(3px); /* to align with header */
+  transform: translateY(-2px); /* to align with header */
   top: ${(p) =>
     p.$fullScreenMobile
       ? p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)
@@ -335,12 +342,12 @@ export const ModalInner: React.FC<Props> = ({
                 {footer && <Footer>{footer}</Footer>}
                 {!hideClose && (
                   <CloseButton
-                    type="button"
-                    onClick={onClose}
+                    variant="secondary"
+                    onClick={onClose as any}
                     $fullScreenMobile={fullScreenMobile}
-                    $progressIndicator={progressIndicator}
+                    $progressIndicator={!!progressIndicator}
                   >
-                    <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
+                    <Icon.Cross16 title={closeTitle} color="inherit" />
                   </CloseButton>
                 )}
               </Dialog>

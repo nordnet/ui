@@ -35,7 +35,8 @@ export type Props = {
    * Used to determine when to display a bottom-sheet instead of a tooltip
    */
   bottomSheetQuery?: (t: Theme) => string;
-  bottomSheetTitle?: string;
+  bottomSheetHeight?: number;
+  bottomSheetTitle?: string | React.ReactNode;
   /**
    * @onBottomSheetClose
    * Needed if you provide bottomSheetTitle
