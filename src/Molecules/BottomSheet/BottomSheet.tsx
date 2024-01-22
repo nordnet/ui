@@ -7,6 +7,7 @@ import { Flexbox, Icon, Portal, theme, useOnClickOutside } from '../..';
 import { Backdrop, StyledBottomSheet, StyledIconButton } from './BottomSheet.styles';
 import { isBoolean } from '../../common/utils';
 import { Props } from './BottomSheet.types';
+import { TRANSITION_DURATION } from './constants';
 
 const BottomSheet: React.FC<Props> = ({
   children,
@@ -23,8 +24,6 @@ const BottomSheet: React.FC<Props> = ({
   const internalRef = useRef<HTMLDivElement>(null);
   const isControlled = isBoolean(isOpenExternal);
   const [isOpenInternal, setIsOpenInternal] = useState(true);
-
-  const TRANSITION_DURATION = 0.16;
 
   const onClose = () => {
     setIsOpenInternal(false);

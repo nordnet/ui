@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Button, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
+import { TRANSITION_DURATION } from './constants';
 
 const getNeutralColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
   if (invertedColors) {
@@ -86,7 +87,7 @@ export const StyledBottomSheet = styled(Flexbox)<{
   color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
   display: block;
   ${(p) => getHeight(p.height, p.$fullScreenMobile)};
-  transition: height 0.16s ease-out;
+  transition: height ${TRANSITION_DURATION}s ease-out;
   left: 0;
   padding: ${(p) => p.theme.spacing.unit(4)}px ${(p) => p.theme.spacing.unit(3)}px;
   position: absolute;
