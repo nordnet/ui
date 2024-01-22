@@ -28,18 +28,22 @@ export const StyledIconButton = styled(Button.Icon)<{
 }>`
   background-color: ${(p) => getNeutralColor('background_strong', p.theme, p.$invertedColors)};
   color: ${(p) => getNeutralColor('icon_default', p.theme, p.$invertedColors)};
+
   svg {
     color: ${(p) => getNeutralColor('icon_default', p.theme, p.$invertedColors)};
   }
 
   &:hover {
     background-color: ${(p) => getNeutralColor('background_strong', p.theme, p.$invertedColors)};
+
     svg {
       color: ${(p) => getActionColor('icon_hover', p.theme, p.$invertedColors)};
     }
   }
+
   &:active {
     background-color: ${(p) => getNeutralColor('background_weak', p.theme, p.$invertedColors)};
+
     svg {
       color: ${(p) => getActionColor('icon_pressed', p.theme, p.$invertedColors)};
     }
