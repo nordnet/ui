@@ -5,7 +5,6 @@ import {
   Button,
   FadedScroll,
   Flexbox,
-  OldIcon,
   Modal,
   Typography,
   SelectionCard,
@@ -326,11 +325,11 @@ export const NodeAsTitle = {
   render: () => {
     const Title = (
       <Flexbox container gap={2} alignItems="center">
-        <OldIcon.Bolt />
+        <Icon.Bolt16 />
         <Typography type="title2" as="h2">
           React Node Title
         </Typography>
-        <OldIcon.Bolt />
+        <Icon.Bolt16 />
       </Flexbox>
     );
     const Example = () => {
@@ -557,7 +556,7 @@ export const ModalStandardSmall = {
         <Flexbox container alignItems="center" justifyContent="space-between">
           <Flexbox container item alignItems="center">
             <Box mr={2}>
-              <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+              <Icon.ArrowLeft16 color={(t) => t.color.cta} />
             </Box>
             <Typography type="primary" weight="bold">
               Back
@@ -628,7 +627,7 @@ export const ModalStandardMedium = {
         <Flexbox container alignItems="center" justifyContent="space-between">
           <Flexbox container item alignItems="center">
             <Box mr={2}>
-              <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+              <Icon.ArrowLeft16 color={(t) => t.color.cta} />
             </Box>
             <Typography type="primary" weight="bold">
               Back
@@ -692,7 +691,7 @@ export const ModalStandardLarge = {
         <Flexbox container alignItems="center" justifyContent="space-between">
           <Flexbox container item alignItems="center">
             <Box mr={2}>
-              <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+              <Icon.ArrowLeft16 color={(t) => t.color.cta} />
             </Box>
             <Typography type="primary" weight="bold">
               Back
@@ -756,7 +755,7 @@ export const ModalStandardLargeWithScroll = {
         <Flexbox container alignItems="center" justifyContent="space-between">
           <Flexbox container item alignItems="center">
             <Box mr={2}>
-              <OldIcon.ThinArrow direction="left" size={4} color={(t) => t.color.cta} />
+              <Icon.ArrowLeft16 color={(t) => t.color.cta} />
             </Box>
             <Typography type="primary" weight="bold">
               Back

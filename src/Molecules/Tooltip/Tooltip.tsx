@@ -1,9 +1,8 @@
 import React, { cloneElement, FC, ReactElement, useState } from 'react';
-import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 
 import { Props } from './Tooltip.types';
-import { useMedia } from '../..';
+import { BottomSheet, useMedia } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
@@ -19,15 +18,6 @@ import { useTooltip } from './hooks';
 
  3. Tooltips stick around for a little bit after blur/mouseleave.
  */
-
-const Backdrop = styled.div`
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: ${(p) => p.theme.color.modalBackdrop};
-  z-index: ${({ theme }) => theme.zIndex.modal};
-`;
 
 export const Tooltip: FC<Props> = (props) => {
   const {
@@ -48,6 +38,7 @@ export const Tooltip: FC<Props> = (props) => {
     customBoundary,
     pointerArrow = true,
     bottomSheetQuery,
+    bottomSheetHeight,
     bottomSheetTitle,
     onBottomSheetClose,
     invertedColors,
@@ -55,18 +46,15 @@ export const Tooltip: FC<Props> = (props) => {
   const child = React.Children.only(children) as ReactElement;
 
   const [triggerElement, setTriggerElement] = useState(undefined);
-
-  const [popoverElement, setPopoverElement] = useState(undefined);
+  const [bottomSheetOpen, setBottomSheetOpen] = useState(false);
 
   const shouldShowBottomSheet = useMedia((t) => bottomSheetQuery?.(t) || '__false') || false;
 
   const params = {
-    mode: shouldShowBottomSheet ? 'click' : mode,
+    mode,
     controlledIsOpen,
     openDelay,
     closeDelay,
-    isBottomSheet: shouldShowBottomSheet,
-    popoverElement,
   };
 
   const {
@@ -80,14 +68,43 @@ export const Tooltip: FC<Props> = (props) => {
     handleMouseLeave,
     handleKeyDown,
     handleMouseDown,
-  } = useTooltip(
-    params.mode,
-    params.controlledIsOpen,
-    params.openDelay,
-    params.closeDelay,
-    params.isBottomSheet,
-    params.popoverElement,
-  );
+  } = useTooltip(params.mode, params.controlledIsOpen, params.openDelay, params.closeDelay);
+
+  const handleOpenBottomSheet = (e: React.MouseEvent) => {
+    if (controlledIsOpen === undefined) {
+      setBottomSheetOpen(true);
+      e.stopPropagation();
+    }
+  };
+
+  const handleCloseBottomSheet = () => {
+    if (typeof onBottomSheetClose === 'function') {
+      onBottomSheetClose();
+    }
+    setBottomSheetOpen(false);
+  };
+
+  if (shouldShowBottomSheet) {
+    return (
+      <>
+        {cloneElement(wrapChild ? <span>{child}</span> : child, {
+          'aria-describedby': isOpen ? id : undefined,
+          ref: mergeRefs([setTriggerElement, triggerElementRef]),
+          onMouseDown: wrapEvent(child.props.onMouseDown, handleOpenBottomSheet),
+        })}
+        <BottomSheet
+          closeOnClickOutside
+          height={bottomSheetHeight}
+          invertedColors={invertedColors}
+          onClose={handleCloseBottomSheet}
+          open={controlledIsOpen || bottomSheetOpen}
+          title={bottomSheetTitle}
+        >
+          {label}
+        </BottomSheet>
+      </>
+    );
+  }
 
   return (
     <>
@@ -102,11 +119,9 @@ export const Tooltip: FC<Props> = (props) => {
         onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
         onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
       })}
-      {isOpen && shouldShowBottomSheet && <Backdrop onClick={onBottomSheetClose} />}
       <AnimatePresence>
         {isOpen && (
           <PopOver
-            setPopoverElement={shouldShowBottomSheet ? setPopoverElement : undefined}
             className={className}
             id={id}
             triggerElement={triggerElement}
@@ -117,13 +132,10 @@ export const Tooltip: FC<Props> = (props) => {
             maxWidth={maxWidth}
             offset={offset}
             pointerArrow={pointerArrow}
-            pointerEvents={shouldShowBottomSheet || pointerEvents}
+            pointerEvents={pointerEvents}
             handleMouseEnter={handleMouseEnter}
             handleMouseLeave={handleMouseLeave}
             customBoundary={customBoundary}
-            bottomSheet={shouldShowBottomSheet}
-            bottomSheetTitle={bottomSheetTitle}
-            onBottomSheetClose={onBottomSheetClose}
             invertedColors={invertedColors}
           />
         )}

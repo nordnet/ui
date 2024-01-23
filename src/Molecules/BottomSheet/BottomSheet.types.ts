@@ -5,9 +5,10 @@ export type Props = {
   className?: string;
   closeOnClickOutside?: boolean;
   fullScreenMobile?: boolean;
-  height?: string;
+  height?: number | string;
+  invertedColors?: boolean;
   onClose?: () => void;
-  open: boolean;
+  open?: boolean;
   showBackdrop?: boolean;
   title: React.ReactNode;
 };

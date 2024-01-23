@@ -1,3 +1,31 @@
+## [16.4.2](https://github.com/nordnet/ui/compare/v16.4.1...v16.4.2) (2024-01-23)
+
+
+### Bug Fixes
+
+* align bottomsheet cross to top ([#1580](https://github.com/nordnet/ui/issues/1580)) ([0f1fa0b](https://github.com/nordnet/ui/commit/0f1fa0b1abfc57d035a411abf67d292ca6fc3e84))
+
+## [16.4.1](https://github.com/nordnet/ui/compare/v16.4.0...v16.4.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* adjusted exit animation for modal ([#1579](https://github.com/nordnet/ui/issues/1579)) ([5b7478e](https://github.com/nordnet/ui/commit/5b7478e81b07003eadd0370184a4bd8bfad64a27))
+
+# [16.4.0](https://github.com/nordnet/ui/compare/v16.3.1...v16.4.0) (2024-01-22)
+
+
+### Features
+
+* add support for inverted colors ([#1578](https://github.com/nordnet/ui/issues/1578)) ([a2ea3da](https://github.com/nordnet/ui/commit/a2ea3da6742b14c3fdf079438713b48cad873731))
+
+## [16.3.1](https://github.com/nordnet/ui/compare/v16.3.0...v16.3.1) (2024-01-22)
+
+
+### Bug Fixes
+
+* wrap modal with animatepresence and add fade ([#1577](https://github.com/nordnet/ui/issues/1577)) ([405b835](https://github.com/nordnet/ui/commit/405b835f8f0bb9b847d7d94d7c505a14e9a67c9d))
+
 # [16.3.0](https://github.com/nordnet/ui/compare/v16.2.0...v16.3.0) (2024-01-16)
 
 

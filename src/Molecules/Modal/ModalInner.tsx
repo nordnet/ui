@@ -5,19 +5,28 @@ import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
-import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
-import { Box, Flexbox, OldIcon, ProgressIndicator, Typography, useKeyPress, useMedia } from '../..';
+import {
+  Box,
+  Button,
+  Flexbox,
+  Icon,
+  ProgressIndicator,
+  Typography,
+  useKeyPress,
+  useMedia,
+} from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_PROGRESS_INDICATOR = 14;
 const PADDING_PROGRESS_INDICATOR_MOBILE = 10;
 const PADDING_MOBILE = 3;
-const PADDING_TOP_MOBILE = 4;
-const PADDING_TOP_MOBILE_FULLSCREEN = 5;
-const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
+const PADDING_TOP_MOBILE = 3;
+const PADDING_TOP_MOBILE_FULLSCREEN = 3;
+const PADDING_BOTTOM_MOBILE_FULLSCREEN = 3;
 const CLOSE_ICON_SIZE = 5;
+const TRANSITION_DURATION = 0.16;
 
 export const FixedDrop = styled(Flexbox)`
   position: fixed;
@@ -28,7 +37,7 @@ export const FixedDrop = styled(Flexbox)`
   z-index: ${({ theme }) => theme.zIndex.modal};
 `;
 
-export const Backdrop = styled(Flexbox)<BackdropProps>`
+export const Backdrop = styled(motion.div)<BackdropProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -111,14 +120,13 @@ const Dialog = styled(motion.div)<DialogProps>`
       }`}
 `;
 
-const CloseButton = styled(NormalizedElements.Button)`
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
+const CloseButton = styled(Button.Icon)<{
+  $fullScreenMobile?: boolean;
+  $progressIndicator?: boolean;
+}>`
   cursor: pointer;
   position: absolute;
-  transform: translateY(3px); /* to align with header */
+  transform: translateY(-2px); /* to align with header */
   top: ${(p) =>
     p.$fullScreenMobile
       ? p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)
@@ -182,15 +190,19 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
 }) =>
   showBackdrop ? (
     <Backdrop
-      container
-      alignItems="center"
-      justifyContent="center"
+      key="backdrop"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'ease', duration: TRANSITION_DURATION }}
       ref={backdropRef}
-      onClick={onClick}
+      onClick={onClick as any}
       $fullScreenMobile={$fullScreenMobile}
       $blur={blurBackdrop}
     >
-      {children}
+      <Flexbox container alignItems="center" justifyContent="center" height="100%">
+        {children}
+      </Flexbox>
     </Backdrop>
   ) : (
     <FixedDrop container alignItems="center" justifyContent="center">
@@ -223,12 +235,13 @@ export const ModalInner: React.FC<Props> = ({
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
   const animationProps = {
     initial: {
-      opacity: 0,
       y: 70,
     },
     animate: {
-      opacity: 1,
       y: 0,
+    },
+    exit: {
+      y: 70,
     },
     transition: {
       type: 'spring',
@@ -287,13 +300,13 @@ export const ModalInner: React.FC<Props> = ({
               aria-labelledby={titleId}
               className={className}
               role="dialog"
-              {...animationProps}
               ref={dialogRef}
               onClick={handleDialogClick}
               $show={show}
               $fullScreenMobile={fullScreenMobile}
               $fixedBottomMobile={fixedBottomMobile}
               $isStatusModal={isStatusModal}
+              {...animationProps}
             >
               {progressIndicator && (
                 <StyledProgressIndicator>
@@ -329,12 +342,12 @@ export const ModalInner: React.FC<Props> = ({
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton
-                  type="button"
-                  onClick={onClose}
+                  variant="secondary"
+                  onClick={onClose as any}
                   $fullScreenMobile={fullScreenMobile}
-                  $progressIndicator={progressIndicator}
+                  $progressIndicator={!!progressIndicator}
                 >
-                  <OldIcon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
+                  <Icon.Cross16 title={closeTitle} color="inherit" />
                 </CloseButton>
               )}
             </Dialog>
