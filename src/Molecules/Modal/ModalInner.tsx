@@ -26,6 +26,7 @@ const PADDING_TOP_MOBILE = 3;
 const PADDING_TOP_MOBILE_FULLSCREEN = 3;
 const PADDING_BOTTOM_MOBILE_FULLSCREEN = 3;
 const CLOSE_ICON_SIZE = 5;
+const TRANSITION_DURATION = 0.16;
 
 export const FixedDrop = styled(Flexbox)`
   position: fixed;
@@ -36,7 +37,7 @@ export const FixedDrop = styled(Flexbox)`
   z-index: ${({ theme }) => theme.zIndex.modal};
 `;
 
-export const Backdrop = styled(Flexbox)<BackdropProps>`
+export const Backdrop = styled(motion.div)<BackdropProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -189,15 +190,19 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
 }) =>
   showBackdrop ? (
     <Backdrop
-      container
-      alignItems="center"
-      justifyContent="center"
+      key="backdrop"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'ease', duration: TRANSITION_DURATION }}
       ref={backdropRef}
-      onClick={onClick}
+      onClick={onClick as any}
       $fullScreenMobile={$fullScreenMobile}
       $blur={blurBackdrop}
     >
-      {children}
+      <Flexbox container alignItems="center" justifyContent="center" height="100%">
+        {children}
+      </Flexbox>
     </Backdrop>
   ) : (
     <FixedDrop container alignItems="center" justifyContent="center">
@@ -228,13 +233,15 @@ export const ModalInner: React.FC<Props> = ({
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
-  const TRANSITION_DURATION = 0.16;
   const animationProps = {
     initial: {
       y: 70,
     },
     animate: {
       y: 0,
+    },
+    exit: {
+      y: 70,
     },
     transition: {
       type: 'spring',
@@ -281,78 +288,70 @@ export const ModalInner: React.FC<Props> = ({
     <>
       <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
-          <motion.div
-            key="backdrop"
-            initial={{ opacity: 0 }}
-            exit={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: 'ease', duration: TRANSITION_DURATION }}
+          <BackdropWrapper
+            showBackdrop={showBackdrop}
+            onClick={handleBackdropClick}
+            backdropRef={backdropRef}
+            $fullScreenMobile={fullScreenMobile}
+            blurBackdrop={blurBackdrop}
           >
-            <BackdropWrapper
-              showBackdrop={showBackdrop}
-              onClick={handleBackdropClick}
-              backdropRef={backdropRef}
+            <Dialog
+              onAnimationComplete={onAnimationComplete || noop}
+              aria-labelledby={titleId}
+              className={className}
+              role="dialog"
+              ref={dialogRef}
+              onClick={handleDialogClick}
+              $show={show}
               $fullScreenMobile={fullScreenMobile}
-              blurBackdrop={blurBackdrop}
+              $fixedBottomMobile={fixedBottomMobile}
+              $isStatusModal={isStatusModal}
+              {...animationProps}
             >
-              <Dialog
-                onAnimationComplete={onAnimationComplete || noop}
-                aria-labelledby={titleId}
-                className={className}
-                role="dialog"
-                ref={dialogRef}
-                onClick={handleDialogClick}
-                $show={show}
-                $fullScreenMobile={fullScreenMobile}
-                $fixedBottomMobile={fixedBottomMobile}
-                $isStatusModal={isStatusModal}
-                {...animationProps}
-              >
-                {progressIndicator && (
-                  <StyledProgressIndicator>
-                    <ProgressIndicator {...progressIndicator} />
-                  </StyledProgressIndicator>
-                )}
+              {progressIndicator && (
+                <StyledProgressIndicator>
+                  <ProgressIndicator {...progressIndicator} />
+                </StyledProgressIndicator>
+              )}
 
-                {hasHeader && (
-                  <Header $flexTitle={progressIndicatorDescription !== undefined}>
-                    {title && progressIndicatorDescription ? (
-                      <StyledBoxTitle>
-                        <Typography
-                          type="secondary"
-                          weight="bold"
-                          color={(t) => t.colorTokens.neutral.text_weak}
-                        >
-                          {progressIndicatorDescription}
-                        </Typography>
-                        <Typography
-                          type={isMobile ? 'primary' : 'title2'}
-                          weight="extrabold"
-                          color={(t) => t.colorTokens.neutral.text_default}
-                        >
-                          {title}
-                        </Typography>
-                      </StyledBoxTitle>
-                    ) : (
-                      <Title title={title} uid={titleId} />
-                    )}
-                  </Header>
-                )}
-                {children}
-                {footer && <Footer>{footer}</Footer>}
-                {!hideClose && (
-                  <CloseButton
-                    variant="secondary"
-                    onClick={onClose as any}
-                    $fullScreenMobile={fullScreenMobile}
-                    $progressIndicator={!!progressIndicator}
-                  >
-                    <Icon.Cross16 title={closeTitle} color="inherit" />
-                  </CloseButton>
-                )}
-              </Dialog>
-            </BackdropWrapper>
-          </motion.div>
+              {hasHeader && (
+                <Header $flexTitle={progressIndicatorDescription !== undefined}>
+                  {title && progressIndicatorDescription ? (
+                    <StyledBoxTitle>
+                      <Typography
+                        type="secondary"
+                        weight="bold"
+                        color={(t) => t.colorTokens.neutral.text_weak}
+                      >
+                        {progressIndicatorDescription}
+                      </Typography>
+                      <Typography
+                        type={isMobile ? 'primary' : 'title2'}
+                        weight="extrabold"
+                        color={(t) => t.colorTokens.neutral.text_default}
+                      >
+                        {title}
+                      </Typography>
+                    </StyledBoxTitle>
+                  ) : (
+                    <Title title={title} uid={titleId} />
+                  )}
+                </Header>
+              )}
+              {children}
+              {footer && <Footer>{footer}</Footer>}
+              {!hideClose && (
+                <CloseButton
+                  variant="secondary"
+                  onClick={onClose as any}
+                  $fullScreenMobile={fullScreenMobile}
+                  $progressIndicator={!!progressIndicator}
+                >
+                  <Icon.Cross16 title={closeTitle} color="inherit" />
+                </CloseButton>
+              )}
+            </Dialog>
+          </BackdropWrapper>
         </RemoveScroll>
       </FocusLock>
     </>
