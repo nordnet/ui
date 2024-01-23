@@ -1,3 +1,10 @@
+## [16.4.1](https://github.com/nordnet/ui/compare/v16.4.0...v16.4.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* adjusted exit animation for modal ([#1579](https://github.com/nordnet/ui/issues/1579)) ([5b7478e](https://github.com/nordnet/ui/commit/5b7478e81b07003eadd0370184a4bd8bfad64a27))
+
 # [16.4.0](https://github.com/nordnet/ui/compare/v16.3.1...v16.4.0) (2024-01-22)
 
 
