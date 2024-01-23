@@ -1,5 +1,6 @@
 import { darkTheme, lightTheme } from '@nordnet/design-tokens';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { Button, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
@@ -74,7 +75,7 @@ const getHeight = (height?: number | string, fullScreenMobile?: boolean) => {
   return '';
 };
 
-export const StyledBottomSheet = styled(Flexbox)<{
+export const StyledBottomSheet = styled(motion.div)<{
   height?: number | string;
   $fullScreenMobile?: boolean;
   $invertedColors?: boolean;
@@ -82,10 +83,8 @@ export const StyledBottomSheet = styled(Flexbox)<{
   background-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
   border-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
   border-radius: ${({ theme }) => `${theme.borderRadius20} ${theme.borderRadius20} 0 0`};
-  bottom: 0;
   box-sizing: border-box;
   color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
-  display: block;
   ${(p) => getHeight(p.height, p.$fullScreenMobile)};
   transition: height ${TRANSITION_DURATION}s ease-out;
   left: 0;

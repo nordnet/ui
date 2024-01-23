@@ -3,7 +3,7 @@ import FocusLock from 'react-focus-lock';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import { Flexbox, Icon, Portal, theme, useOnClickOutside } from '../..';
+import { Flexbox, Icon, Portal, theme, useMedia, useOnClickOutside } from '../..';
 import { Backdrop, StyledBottomSheet, StyledIconButton } from './BottomSheet.styles';
 import { isBoolean } from '../../common/utils';
 import { Props } from './BottomSheet.types';
@@ -25,6 +25,8 @@ const BottomSheet: React.FC<Props> = ({
   const isControlled = isBoolean(isOpenExternal);
   const [isOpenInternal, setIsOpenInternal] = useState(true);
 
+  const isMobile = useMedia((t) => t.media.lessThan(theme.breakpoints.sm)) || false;
+
   const onClose = () => {
     setIsOpenInternal(false);
 
@@ -45,8 +47,8 @@ const BottomSheet: React.FC<Props> = ({
     <Portal>
       <AnimatePresence>
         {shouldRender ? (
-          <FocusLock disabled={fullScreenMobile}>
-            <RemoveScroll enabled={!fullScreenMobile}>
+          <FocusLock disabled={!isMobile}>
+            <RemoveScroll enabled={isMobile}>
               {showBackdrop && (
                 <motion.div
                   key="backdrop"
@@ -58,7 +60,7 @@ const BottomSheet: React.FC<Props> = ({
                   <Backdrop container alignItems="center" justifyContent="center" />
                 </motion.div>
               )}
-              <motion.div
+              <StyledBottomSheet
                 key="bottomsheet"
                 initial={{
                   bottom: '-100%',
@@ -68,35 +70,31 @@ const BottomSheet: React.FC<Props> = ({
                 exit={{ bottom: '-100%' }}
                 animate={{ bottom: 0 }}
                 transition={{ type: 'ease', duration: TRANSITION_DURATION }}
-                style={{ width: '100%', height: '100%' }}
+                className={className}
+                $fullScreenMobile={fullScreenMobile}
+                height={height}
+                $invertedColors={invertedColors}
+                ref={internalRef}
               >
-                <StyledBottomSheet
-                  className={className}
-                  $fullScreenMobile={fullScreenMobile}
-                  height={height}
-                  $invertedColors={invertedColors}
-                  ref={internalRef}
-                >
-                  <Flexbox container direction="column" gap={2}>
-                    <Flexbox container item justifyContent="space-between" alignItems="center">
-                      <Flexbox item>{title}</Flexbox>
-                      {typeof onClose === 'function' && (
-                        <Flexbox item alignSelf="flex-start">
-                          <StyledIconButton
-                            variant="primary"
-                            onClick={onClose}
-                            size="s"
-                            $invertedColors={invertedColors}
-                          >
-                            <Icon.Cross16 />
-                          </StyledIconButton>
-                        </Flexbox>
-                      )}
-                    </Flexbox>
-                    <Flexbox item>{children}</Flexbox>
+                <Flexbox container direction="column" gap={2}>
+                  <Flexbox container item justifyContent="space-between" alignItems="center">
+                    <Flexbox item>{title}</Flexbox>
+                    {typeof onClose === 'function' && (
+                      <Flexbox item alignSelf="flex-start">
+                        <StyledIconButton
+                          variant="primary"
+                          onClick={onClose}
+                          size="s"
+                          $invertedColors={invertedColors}
+                        >
+                          <Icon.Cross16 />
+                        </StyledIconButton>
+                      </Flexbox>
+                    )}
                   </Flexbox>
-                </StyledBottomSheet>
-              </motion.div>
+                  <Flexbox item>{children}</Flexbox>
+                </Flexbox>
+              </StyledBottomSheet>
             </RemoveScroll>
           </FocusLock>
         ) : null}
