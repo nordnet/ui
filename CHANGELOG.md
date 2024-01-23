@@ -1,3 +1,10 @@
+## [16.4.3](https://github.com/nordnet/ui/compare/v16.4.2...v16.4.3) (2024-01-23)
+
+
+### Bug Fixes
+
+* remove extra flexbox around bottomsheet and adjust logic for loc… ([#1582](https://github.com/nordnet/ui/issues/1582)) ([7fc986a](https://github.com/nordnet/ui/commit/7fc986a00e669bf16ba074d4aa6cd83c375e632a))
+
 ## [16.4.2](https://github.com/nordnet/ui/compare/v16.4.1...v16.4.2) (2024-01-23)
 
 
