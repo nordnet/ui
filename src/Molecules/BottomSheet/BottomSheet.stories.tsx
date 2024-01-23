@@ -8,6 +8,7 @@ import {
   AccordionItem,
   FadedScroll,
   FlexTable,
+  Flexbox,
 } from '../..';
 
 export default {
@@ -333,9 +334,14 @@ export const VaryingHeightVariant = {
             open={open}
             height={height}
             title={
-              <Typography type="primary" weight="extrabold">
-                Filters
-              </Typography>
+              <Flexbox container direction="column">
+                <Typography type="primary" weight="extrabold">
+                  Filters
+                </Typography>
+                <Typography type="primary" weight="extrabold">
+                  Extra row
+                </Typography>
+              </Flexbox>
             }
           >
             <Box p={2}>

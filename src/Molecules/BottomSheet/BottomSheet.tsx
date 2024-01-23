@@ -81,7 +81,7 @@ const BottomSheet: React.FC<Props> = ({
                     <Flexbox container item justifyContent="space-between" alignItems="center">
                       <Flexbox item>{title}</Flexbox>
                       {typeof onClose === 'function' && (
-                        <Flexbox item>
+                        <Flexbox item alignSelf="flex-start">
                           <StyledIconButton
                             variant="primary"
                             onClick={onClose}
