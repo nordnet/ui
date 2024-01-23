@@ -1,10 +1,10 @@
 import { darkTheme, lightTheme } from '@nordnet/design-tokens';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { Button, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
 import { TRANSITION_DURATION } from './constants';
-import { motion } from 'framer-motion';
 
 const getNeutralColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
   if (invertedColors) {
