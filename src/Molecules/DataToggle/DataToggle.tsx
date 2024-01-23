@@ -61,6 +61,7 @@ const Button = styled(NormalizedElements.Button)<Pick<DataToggleProps, 'width'> 
   background: none;
   padding: 0;
   border: 0;
+  cursor: pointer;
 
   &[aria-checked='true'] {
     ${Knob} {
