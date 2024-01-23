@@ -1,3 +1,10 @@
+## [16.4.2](https://github.com/nordnet/ui/compare/v16.4.1...v16.4.2) (2024-01-23)
+
+
+### Bug Fixes
+
+* align bottomsheet cross to top ([#1580](https://github.com/nordnet/ui/issues/1580)) ([0f1fa0b](https://github.com/nordnet/ui/commit/0f1fa0b1abfc57d035a411abf67d292ca6fc3e84))
+
 ## [16.4.1](https://github.com/nordnet/ui/compare/v16.4.0...v16.4.1) (2024-01-23)
 
 
