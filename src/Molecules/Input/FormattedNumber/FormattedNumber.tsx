@@ -205,4 +205,6 @@ const FormattedNumberInput: React.FC<Props> & {
   );
 };
 FormattedNumberInput.components = FormattedNumberComponents;
-export const FormattedNumber = FormattedNumberInput as any;
+export const FormattedNumber: React.FC<Props> & {
+  components: typeof FormattedNumberComponents;
+} = FormattedNumberInput as any;
