@@ -212,15 +212,15 @@ WithExtraInfoBelow.story = {
 
 const WithExtraInfoAndErrorExample = () => {
   const defaultValue = 0;
-  const [value, setValue] = useState(defaultValue);
-  const showError = value < 1;
+  const [value, setValue] = useState<number | null>(defaultValue);
+  const showError = value !== null && value < 1;
 
   return (
     <Input.FormattedNumber
       id="formatted-number-id"
       label="Label"
       defaultValue={defaultValue}
-      onChange={(x: number) => x && setValue(x)}
+      onChange={(x) => setValue(x)}
       extraInfo="Use this space wisely"
       {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
     />
