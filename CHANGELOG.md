@@ -1,3 +1,10 @@
+## [16.4.4](https://github.com/nordnet/ui/compare/v16.4.3...v16.4.4) (2024-01-24)
+
+
+### Bug Fixes
+
+* add correct type for FormattedNumber component ([#1583](https://github.com/nordnet/ui/issues/1583)) ([7754808](https://github.com/nordnet/ui/commit/7754808f1a694debefe6bae6c3be3b60dda112c5))
+
 ## [16.4.3](https://github.com/nordnet/ui/compare/v16.4.2...v16.4.3) (2024-01-23)
 
 
