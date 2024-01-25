@@ -8,6 +8,12 @@ import { ControlsListItemSelect } from './ControlsListItemSelect.stories';
 const meta: Meta<typeof ControlsListItem.Switch> = {
   component: ControlsListItem.Switch,
   title: 'Molecules / ControlsListItem / Switch',
+  argTypes: {
+    size: {
+      options: ['s', 'm', 'l'],
+      control: { type: 'radio' },
+    },
+  },
 };
 
 export default meta;
@@ -59,6 +65,21 @@ export const ControlsListItemSwitchDisabled = () => {
       description="description is good otherwise we don't understand"
       onChange={() => setIsChecked(!isChecked)}
       disabled
+    />
+  );
+};
+
+export const ControlsListItemSwitchSmall = (args: any) => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      size={args.size}
     />
   );
 };
