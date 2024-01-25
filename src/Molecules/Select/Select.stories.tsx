@@ -1,9 +1,11 @@
 // Button.stories.ts|tsx
 import React, { useRef, useState } from 'react';
 import { Meta } from '@storybook/react';
-import { Typography, Flag, Flexbox, FormField, Button, Box } from '../..';
+import MD from 'react-markdown';
+import { Typography, Flag, Flexbox, FormField, Button, Box, BottomSheet } from '../..';
 import { Display } from '../../common/Display';
 import { Select } from '.';
+import docs from './Select.md';
 
 const options = [
   {
@@ -60,6 +62,12 @@ const meta: Meta<typeof Select> = {
 };
 
 export default meta;
+
+export const Docs = () => (
+  <Typography type="primary">
+    <MD>{docs}</MD>
+  </Typography>
+);
 
 export const Primary = () => (
   <Select name="my-select" placeholder="Select a option...">
@@ -273,5 +281,17 @@ export const WithForwardedRef = () => {
         </Select>
       </Box>
     </div>
+  );
+};
+
+export const MobileView = () => {
+  return (
+    <Box>
+      <Select name="my-select" placeholder="Select a option...">
+        {options.map((option) => (
+          <Select.Option key={option.value} value={option.value} label={option.label} />
+        ))}
+      </Select>
+    </Box>
   );
 };

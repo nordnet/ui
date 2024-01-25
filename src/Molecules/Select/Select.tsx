@@ -3,7 +3,7 @@ import {
   useSelect as useMuiSelect,
   SelectProvider as MuiSelectProvider,
 } from '@mui/base/useSelect';
-import { FadedScroll } from '../..';
+import { BottomSheet, FadedScroll, Typography, useMedia } from '../..';
 import { HiddenSelect } from './HiddenSelect';
 import { ListContainer, Listbox, ListboxContainer, Root } from './Select.styles';
 import { SelectProvider } from './useSelect';
@@ -38,6 +38,8 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
     } = props;
     const listboxRef = React.useRef<HTMLUListElement>(null);
     const [isOpen, setIsOpen] = React.useState(false);
+    console.log({ isOpen });
+    const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
     const { getButtonProps, getListboxProps, contextValue, value, getOptionMetadata, options } =
       useMuiSelect<string, boolean>({
         listboxRef,
@@ -56,6 +58,10 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
       }
     }, [isOpen]);
 
+    const lbp = getListboxProps();
+
+    console.log({ lbp });
+
     return (
       <SelectProvider
         getButtonProps={getButtonProps}
@@ -69,15 +75,31 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
               <Arrow />
             </Trigger>
           )}
-          <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
-            <ListboxContainer>
-              <FadedScroll maxHeight={50}>
-                <Listbox {...getListboxProps()}>
-                  <MuiSelectProvider value={contextValue}>{children}</MuiSelectProvider>
-                </Listbox>
-              </FadedScroll>
-            </ListboxContainer>
-          </ListContainer>
+          <MuiSelectProvider value={contextValue}>
+            {isDesktop ? (
+              <ListContainer aria-hidden={!isOpen} $hidden={!isOpen}>
+                <ListboxContainer>
+                  <FadedScroll maxHeight={50}>
+                    <Listbox {...getListboxProps()}>{children}</Listbox>
+                  </FadedScroll>
+                </ListboxContainer>
+              </ListContainer>
+            ) : (
+              <Listbox {...getListboxProps()}>
+                <BottomSheet
+                  open
+                  closeOnClickOutside
+                  title={
+                    <Typography type="primary" weight="extrabold">
+                      Filters
+                    </Typography>
+                  }
+                >
+                  {children}
+                </BottomSheet>
+              </Listbox>
+            )}
+          </MuiSelectProvider>
         </Root>
         {name && value ? (
           <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
