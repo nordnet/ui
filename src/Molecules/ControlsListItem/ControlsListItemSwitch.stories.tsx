@@ -69,7 +69,22 @@ export const ControlsListItemSwitchDisabled = () => {
   );
 };
 
-export const ControlsListItemSwitchSmall = (args: any) => {
+export const ControlsListItemSwitchSmallSize = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <ControlsListItem.Switch
+      checked={isChecked}
+      label="label"
+      Icon={<Icon.Account24 />}
+      description="description is good otherwise we don't understand"
+      onChange={() => setIsChecked(!isChecked)}
+      size="s"
+    />
+  );
+};
+
+export const ControlsListItemSwitchControlledSize = (args: any) => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
