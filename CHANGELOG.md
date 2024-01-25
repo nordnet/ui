@@ -1,3 +1,10 @@
+# [16.5.0](https://github.com/nordnet/ui/compare/v16.4.4...v16.5.0) (2024-01-25)
+
+
+### Features
+
+* Add optional size prop to ControlsListItemSwitch ([#1584](https://github.com/nordnet/ui/issues/1584)) ([f81d2b2](https://github.com/nordnet/ui/commit/f81d2b248dfcade73f1e19a10e40102b66e8ed45))
+
 ## [16.4.4](https://github.com/nordnet/ui/compare/v16.4.3...v16.4.4) (2024-01-24)
 
 
