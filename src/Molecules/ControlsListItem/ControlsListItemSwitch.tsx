@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Switch, Typography, CssGrid as Grid } from '../..';
+import { Box, Typography, CssGrid as Grid, Toggle } from '../..';
 import ControlsListItem from './ControlsListItem';
 import { ControlsListItemSwitch as Props } from './ControlsListItem.types';
 
@@ -22,6 +22,7 @@ const ControlsListItemSwitch: React.FC<Props> = ({
   onChange,
   addon,
   disabled,
+  size = 'l',
 }) => {
   const hasAddon = React.isValidElement(addon);
   return (
@@ -38,12 +39,13 @@ const ControlsListItemSwitch: React.FC<Props> = ({
         </Grid.Item>
 
         <Grid.Item area="button" justify="end" align="center">
-          <Switch
+          <Toggle
             label={label}
             hiddenLabel
             onClick={(_) => onChange()}
             checked={checked}
             disabled={disabled}
+            size={size}
           />
         </Grid.Item>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { SizeProp } from '../Toggle/Toggle.types';
 import { OptionItem } from '../Input/Select/Select.types';
 
 export type JustifyContentProp =
@@ -22,6 +23,7 @@ export type ControlsListItemSwitch = {
   onChange: (checked?: boolean) => void;
   checked?: boolean;
   addon?: React.ReactNode;
+  size?: SizeProp;
 } & Props;
 
 export type ControlsListItemButton = {
