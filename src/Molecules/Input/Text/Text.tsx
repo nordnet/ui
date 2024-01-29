@@ -28,12 +28,12 @@ const darkmodeAutocompleteStyles = css`
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) => {
     if (p.disabled && p.variant !== 'quiet') {
-      return p.theme.color.disabledBackground;
+      return p.theme.colorTokens.neutral.background_default;
     }
     if (p.variant === 'quiet') {
       return 'transparent';
     }
-    return p.theme.color.inputBackground;
+    return p.theme.colorTokens.neutral.background_medium;
   }};
 `;
 
@@ -43,39 +43,33 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
       ? ''
       : `
       &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
+        border-color: ${p.theme.colorTokens.neutral.border_strong};
       }
 `}
 `;
 
 const focusBorderStyles = css`
   &:focus {
-    border-color: ${(p) => p.theme.color.borderActive};
+    border-width: 1px;
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_default};
   }
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
   border: solid;
   border-color: ${(p) => {
-    if (hasError(p.error)) return p.theme.color.inputBorderError;
-    if (p.success) return p.theme.color.inputBorderSuccess;
-    return p.theme.color.inputBorder;
+    if (hasError(p.error)) return p.theme.colorTokens.error.border_default;
+    if (p.success) return p.theme.colorTokens.positive.border_default;
+    if (p.disabled) return p.theme.colorTokens.neutral.border_strong;
+    if (p.variant === 'quiet') return p.theme.colorTokens.neutral.border_default;
+
+    return 'transparent';
   }};
   border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
-
-  &:focus {
-    border-width: 1px;
-  }
 
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
-  ${(p) =>
-    p.disabled && p.variant === 'quiet'
-      ? `border-color: ${
-          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
-        };`
-      : ''}
 `;
 
 export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
