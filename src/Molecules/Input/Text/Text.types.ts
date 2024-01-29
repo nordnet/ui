@@ -21,6 +21,7 @@ export type Props = {
   rightAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
   disabled?: boolean;
+  /** @deprecated this is currently now showing */
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';

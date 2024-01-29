@@ -72,21 +72,6 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   ${focusBorderStyles}
 `;
 
-export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
-  &::placeholder {
-    color: ${(p) =>
-      p.variant === 'quiet' ? p.theme.color.buttonTextDisabled : p.theme.color.label};
-    line-height: inherit;
-    opacity: 1;
-  }
-
-  ${(p) =>
-    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
-  &:disabled::placeholder {
-    color: ${(p) => p.theme.color.disabledText};
-  }
-`;
-
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
   width: ${(p) => p.theme.spacing.unit(8)}px;
   top: 0;
@@ -120,11 +105,10 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  border-radius: ${(p) => (p.variant !== 'quiet' && p.theme.borderRadius8)};
+  border-radius: ${(p) => p.variant !== 'quiet' && p.theme.borderRadius8};
   ${height}
   ${borderStyles}
   ${background}
-  ${placeholderNormalization}
   ${darkmodeAutocompleteStyles}
   ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
@@ -195,7 +179,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     onKeyDown,
     onKeyPress,
     onKeyUp,
-    placeholder,
     required,
     rightAddon,
     variant = 'normal',
@@ -250,7 +233,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               onKeyDown,
               onKeyPress,
               onKeyUp,
-              placeholder,
               required,
               rightAddon,
               variant,
