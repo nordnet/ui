@@ -91,11 +91,11 @@ export const WithAutoFocus = {
 
 export const WithAutoComplete = {
   render: () => (
-    <>
+    <Flexbox container gap={2}>
       <Input.Text label="Ordinary Text" placeholder="Placeholder" autoComplete="on" />
       <Input.Text label="E-mail" placeholder="Placeholder" autoComplete="email" type="email" />
       <Input.Text label="Phone number" placeholder="Placeholder" autoComplete="tel" type="tel" />
-    </>
+    </Flexbox>
   ),
 
   name: 'With auto complete',
