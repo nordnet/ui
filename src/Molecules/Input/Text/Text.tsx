@@ -120,7 +120,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  border-radius: ${(p) => p.theme.borderRadius4};
+  border-radius: ${(p) => (p.variant !== 'quiet' && p.theme.borderRadius8)};
   ${height}
   ${borderStyles}
   ${background}
