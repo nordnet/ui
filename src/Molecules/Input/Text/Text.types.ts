@@ -24,7 +24,7 @@ export type Props = {
   /** @deprecated this is currently now showing */
   placeholder?: string;
   fullWidth?: boolean;
-  size?: 's';
+  size?: 's' | 'm';
   /** @default normal */
   variant?: Variant;
   pattern?: string;

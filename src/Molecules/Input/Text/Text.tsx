@@ -8,7 +8,15 @@ import NormalizedElements from '../../../common/NormalizedElements';
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const height = css<Size>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${(p) => {
+    if (p.size === 's') {
+      return `${p.theme.spacing.unit(8)}px`;
+    }
+    if (p.size === 'm') {
+      return `${p.theme.spacing.unit(10)}px`;
+    }
+    return `${p.theme.spacing.unit(12)}px`;
+  }};
 `;
 
 const darkmodeAutocompleteStyles = css`
@@ -119,7 +127,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
     p.variant === 'quiet'
       ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
          &:disabled {
-           color: ${p.theme.color.disabledText};
+           color: ${p.theme.colorTokens.neutral.text_disabled};
          }
          font-size: 28px;
          font-weight: bold;
@@ -127,9 +135,9 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
            border-width: 0 0 2px 0;
            outline: none;
           }`
-      : `color: ${p.theme.color.text};
+      : `color: ${p.theme.colorTokens.neutral.text_default};
          &:disabled {
-           color: ${p.theme.color.disabledText};
+           color: ${p.theme.colorTokens.neutral.text_disabled};
          }`}
 
     ${(p) =>
