@@ -1,3 +1,10 @@
+## [16.5.1](https://github.com/nordnet/ui/compare/v16.5.0...v16.5.1) (2024-01-31)
+
+
+### Bug Fixes
+
+* add overflow hidden to accordion item ([#1585](https://github.com/nordnet/ui/issues/1585)) ([708014b](https://github.com/nordnet/ui/commit/708014b5285e76a42183ab214fd168807a2fadf5))
+
 # [16.5.0](https://github.com/nordnet/ui/compare/v16.4.4...v16.5.0) (2024-01-25)
 
 
