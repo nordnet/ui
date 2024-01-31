@@ -58,11 +58,7 @@ const IconWrapper = styled.div<{ withChevron?: boolean; $expanded?: boolean }>`
 `;
 
 const LeftAddonWrapper = styled.div<{}>`
-  ${({ theme }) =>
-    `
-     
-      padding-right: ${theme.spacing.unit(2)}px;
-    `}
+  ${({ theme }) => `padding-right: ${theme.spacing.unit(2)}px;`}
 `;
 
 const StyledButton = styled(Button)`
@@ -191,7 +187,7 @@ export const AccordionItem = React.forwardRef<HTMLButtonElement, Props>(
               animate="open"
               exit="collapsed"
               variants={{
-                open: { opacity: 1, height: 'auto' },
+                open: { opacity: 1, height: 'auto', overflow: 'hidden' },
                 collapsed: { opacity: 0, height: 0 },
               }}
               transition={{ duration: TRANSITION_DURATION, ease: 'easeOut' }}
