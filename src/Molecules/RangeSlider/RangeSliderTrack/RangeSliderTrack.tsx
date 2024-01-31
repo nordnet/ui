@@ -10,6 +10,7 @@ const HoverArea = styled.div<InternalProps>`
   height: ${(p) => `${getHeight(p.$variant)}px`};
   cursor: ${(p) => (p.$disabled ? 'not-allowed' : 'pointer')};
   padding: ${(p) => `${p.theme.spacing.unit(2)}px 0`};
+  -webkit-tap-highlight-color: transparent;
 `;
 
 const Track = styled.div<InternalProps>`
