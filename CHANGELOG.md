@@ -1,3 +1,10 @@
+# [16.6.0](https://github.com/nordnet/ui/compare/v16.5.1...v16.6.0) (2024-02-05)
+
+
+### Features
+
+* add nested badge component ([#1586](https://github.com/nordnet/ui/issues/1586)) ([0dea742](https://github.com/nordnet/ui/commit/0dea7429bedbee415da67af3f39a1c250d2ad307))
+
 ## [16.5.1](https://github.com/nordnet/ui/compare/v16.5.0...v16.5.1) (2024-01-31)
 
 
