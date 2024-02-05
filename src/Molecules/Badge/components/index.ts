@@ -1,4 +1,5 @@
 export { BaseBadge } from './BaseBadge';
+export { NestedBadge } from './NestedBadge';
 export { NumberBadge } from './NumberBadge';
 export { LabelBadge } from './LabelBadge';
 export { IconBadge } from './IconBadge';

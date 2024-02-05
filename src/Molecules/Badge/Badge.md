@@ -46,6 +46,16 @@ Brings attention to a property on a page entity.
 - `weight` - sets the font weight.
 - `children` - the badge's text content.
 
+### Nested Badge (Badge.Nested)
+
+Used to display a company logo (or any 24x24px image url with an optional flag. Note that this badge is not based on BaseBadge.
+
+- `alt` - adds a custom alt prop for the logo image.
+- `badgeSize` - sets the width/height of the badge. Available sizes are: `'l'`: 28x32 px, `'m'`: 26x28 px.
+- `country` - if set and a valid county code a flag will be added in bottom right corner.
+- `fallback` - uses the first character on this string in place of the logo if missing
+- `logoUrl` - url for the image logo
+
 ### Number Badge (Badge.Number)
 
 Used to display step progress, number of orders or messages . Displays the number as a badge with numbers.
