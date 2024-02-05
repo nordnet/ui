@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flag } from '../../../../..';
+import { Flag } from '../../../..';
 
 import { BadgeSize } from './NestedBadge.types';
 
