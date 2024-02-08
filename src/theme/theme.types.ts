@@ -941,12 +941,22 @@ export type ColorSets = {
   color: ThemeColors;
 };
 
+export type ShadowTokens =
+  | LightTheme['effect']['shadow']
+  | DarkTheme['effect']['shadow']
+  | A11yTheme['effect']['shadow'];
+
+export type MassagedShadowTokens = {
+  [K in keyof ShadowTokens]: string;
+};
+
 export type Theme = {
   /** @deprecated use colorTokens instead */
   color: ThemeColors;
   colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
+  shadow: MassagedShadowTokens;
   spacing: {
     /**
      * One unit, all spacing should be handled with this
