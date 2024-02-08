@@ -1,4 +1,4 @@
-import { lightTheme, darkTheme, a11yTheme, LightTheme } from '@nordnet/design-tokens';
+import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
 
 import { deprecate, isNumber } from '../common/utils';
 import {
