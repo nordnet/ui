@@ -36,7 +36,7 @@ const barStyles = css<Props>`
 
 const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
-  box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
+  box-shadow: ${({ theme }) => theme.shadow.high};
 
   ${(p) => (p.barColor ? barStyles : ``)};
   && {

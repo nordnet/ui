@@ -1,4 +1,4 @@
-import { lightTheme, darkTheme, a11yTheme } from '@nordnet/design-tokens';
+import { lightTheme, darkTheme, a11yTheme, LightTheme } from '@nordnet/design-tokens';
 
 import { deprecate, isNumber } from '../common/utils';
 import {
@@ -7,6 +7,8 @@ import {
   Theme,
   ThemeColorsVersion,
   ThemeConfig,
+  ShadowTokens,
+  MassagedShadowTokens,
 } from './theme.types';
 import { createLightColors, getColorLightScheme } from './createLightColors';
 import { createDarkColors, getColorDarkScheme } from './createDarkColors';
@@ -51,10 +53,19 @@ const zIndex: Theme['zIndex'] = {
   overlayInModal: 600,
 };
 
-const getColorTokens = (theme: ThemeConfig['tokensTheme']) => {
+const getTokens = (theme: ThemeConfig['tokensTheme']) => {
   if (theme === 'dark') return darkTheme;
   if (theme === 'a11y') return a11yTheme;
   return lightTheme;
+};
+
+const massageShadowTokens = (shadowTokens: ShadowTokens) => {
+  const shadows = Object.entries(shadowTokens).reduce((acc, [key, value]) => {
+    acc[key] = Object.values(value).join(', ');
+    return acc;
+  }, {});
+
+  return shadows as MassagedShadowTokens;
 };
 
 const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
@@ -65,6 +76,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
     : createLightColors(getColorLightScheme(type));
+  const tokens = getTokens(tokensTheme);
 
   const GUTTER = 5;
   const UNIT = 4;
@@ -97,9 +109,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     breakpoints,
     color,
-    colorTokens: getColorTokens(tokensTheme).color,
+    colorTokens: tokens.color,
     lightColor: createLightColors(getColorLightScheme(type)),
     darkColor: createDarkColors(getColorDarkScheme(type)),
+    shadow: massageShadowTokens(tokens.effect.shadow),
     isHighContrastMode: a11yColors,
     isDarkMode: darkColors,
     media: {
