@@ -238,7 +238,7 @@ export const CoachMarks: Component = ({
         )}
         {body || getContent}
         {!closeButton && (
-          <CloseButton variant="neutral" onClick={handleClose}>
+          <CloseButton variant="secondary" onClick={handleClose}>
             <Icon.Cross16 />
           </CloseButton>
         )}
