@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
-import { Button, Flexbox, Icon, Portal, Typography } from '../..';
+import { BottomSheet, Button, Flexbox, Icon, Portal, Typography, useMedia } from '../..';
 import { Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
@@ -92,6 +92,7 @@ export const CoachMarks: Component = ({
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
     : undefined;
+  const shouldShowBottomSheet = useMedia((t) => t.media.lessThan(t.breakpoints.sm)) || false;
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {
@@ -136,15 +137,95 @@ export const CoachMarks: Component = ({
       handleClose();
     }
   });
-  return referenceElementRect || feedbackWidgetMode ? (
+
+  const getContent = (
+    <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
+      <Flexbox container direction="column" gap={1}>
+        {icon && <IconFlex item>{icon}</IconFlex>}
+        {title && (
+          <Flexbox item>
+            <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
+              <Typography as="h2" type="primary" weight="bold">
+                {title}
+              </Typography>
+            </TitleWrapper>
+          </Flexbox>
+        )}
+        {content && (
+          <Flexbox item>
+            <Content>
+              {typeof content === 'string' ? (
+                <Typography as="p" type="secondary" color="inherit">
+                  {content}
+                </Typography>
+              ) : (
+                content
+              )}
+            </Content>
+          </Flexbox>
+        )}
+      </Flexbox>
+      <FooterFlex container item alignItems="baseline" gap={5}>
+        {closeButton ? (
+          <Flexbox item>
+            <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
+              {closeText}
+            </Button>
+          </Flexbox>
+        ) : (
+          hasMultipleSteps &&
+          !hideMultiStepIndicatorText && (
+            <Flexbox item>
+              <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
+                {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+              </Typography>
+            </Flexbox>
+          )
+        )}
+        <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
+          {hasPrevStep && (
+            <Flexbox item flex="1 1 50%">
+              <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
+                {prevText}
+              </Button>
+            </Flexbox>
+          )}
+          <Flexbox item flex="1 1 50%">
+            {hasNextStep && !hideNextButton ? (
+              <Button
+                variant="primary"
+                onClick={handleStepForward}
+                fullWidth
+                disabled={nextDisabled}
+              >
+                {nextText}
+              </Button>
+            ) : (
+              !hideDoneButton && (
+                <Button variant="primary" onClick={handleDone} fullWidth>
+                  {doneText}
+                </Button>
+              )
+            )}
+          </Flexbox>
+        </NavigationButtonsContainer>
+      </FooterFlex>
+    </Flexbox>
+  );
+
+  return bottomSheet && shouldShowBottomSheet && !feedbackWidgetMode ? (
+    <BottomSheet closeOnClickOutside onClose={onClose} title="">
+      {body || getContent}
+    </BottomSheet>
+  ) : (
     <Portal>
       <StyledBubble
         ref={setPopperElement}
         style={feedbackWidgetMode ? undefined : styles.popper}
         {...attributes.popper}
         barColor={barColor}
-        bottomSheet={bottomSheet}
         feedbackWidgetMode={feedbackWidgetMode}
+        bottomSheet={bottomSheet}
       >
         {!feedbackWidgetMode && (
           <BubbleArrow
@@ -155,80 +236,7 @@ export const CoachMarks: Component = ({
             noBorder={!!barColor}
           />
         )}
-        <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
-          {body || (
-            <Flexbox container direction="column" gap={1}>
-              {icon && <IconFlex item>{icon}</IconFlex>}
-              {title && (
-                <Flexbox item>
-                  <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
-                    <Typography as="h2" type="primary" weight="bold">
-                      {title}
-                    </Typography>
-                  </TitleWrapper>
-                </Flexbox>
-              )}
-              {content && (
-                <Flexbox item>
-                  <Content>
-                    {typeof content === 'string' ? (
-                      <Typography as="p" type="secondary" color="inherit">
-                        {content}
-                      </Typography>
-                    ) : (
-                      content
-                    )}
-                  </Content>
-                </Flexbox>
-              )}
-            </Flexbox>
-          )}
-          <FooterFlex container item alignItems="baseline" gap={5}>
-            {closeButton ? (
-              <Flexbox item>
-                <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
-                  {closeText}
-                </Button>
-              </Flexbox>
-            ) : (
-              hasMultipleSteps &&
-              !hideMultiStepIndicatorText && (
-                <Flexbox item>
-                  <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                    {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                  </Typography>
-                </Flexbox>
-              )
-            )}
-            <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
-              {hasPrevStep && (
-                <Flexbox item flex="1 1 50%">
-                  <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
-                    {prevText}
-                  </Button>
-                </Flexbox>
-              )}
-              <Flexbox item flex="1 1 50%">
-                {hasNextStep && !hideNextButton ? (
-                  <Button
-                    variant="primary"
-                    onClick={handleStepForward}
-                    fullWidth
-                    disabled={nextDisabled}
-                  >
-                    {nextText}
-                  </Button>
-                ) : (
-                  !hideDoneButton && (
-                    <Button variant="primary" onClick={handleDone} fullWidth>
-                      {doneText}
-                    </Button>
-                  )
-                )}
-              </Flexbox>
-            </NavigationButtonsContainer>
-          </FooterFlex>
-        </Flexbox>
+        {body || getContent}
         {!closeButton && (
           <CloseButton variant="neutral" onClick={handleClose}>
             <Icon.Cross16 />
@@ -241,5 +249,5 @@ export const CoachMarks: Component = ({
         </SVG>
       )}
     </Portal>
-  ) : null;
+  );
 };

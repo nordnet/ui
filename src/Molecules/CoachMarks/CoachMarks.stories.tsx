@@ -400,6 +400,42 @@ export const WithBarColor = {
   name: 'With bar color',
 };
 
+export const WithFeedbackWidgetMode = {
+  render: () => {
+    const Example = () => {
+      const [activeGuide, setActiveGuide] = useState(true);
+
+      return (
+        <>
+          <Button onClick={() => setActiveGuide(!activeGuide)}>Start guide</Button>
+          {activeGuide && (
+            <CoachMarks
+              barColor={(t) => t.color.buy}
+              onClose={() => setActiveGuide(false)}
+              onDone={() => setActiveGuide(false)}
+              onNext={action('next')}
+              onPrev={action('previous')}
+              feedbackWidgetMode
+              steps={[
+                {
+                  icon: <Icon.Bank32 />,
+                  title: 'New feature',
+                  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                  placement: 'right',
+                },
+              ]}
+            />
+          )}
+        </>
+      );
+    };
+
+    return <Example />;
+  },
+
+  name: 'With feedback Widget mode',
+};
+
 const MobileBottomSheetExample = () => {
   const [activeGuide, setActiveGuide] = useState(true);
   const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
