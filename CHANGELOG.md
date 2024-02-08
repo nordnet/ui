@@ -1,3 +1,10 @@
+# [16.7.0-beta.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.7.0-beta.1) (2024-02-08)
+
+
+### Features
+
+* support shadow tokens ([a68598c](https://github.com/nordnet/ui/commit/a68598cd18a125f1b196f0ea07b3e52ffda28fcf))
+
 # [16.6.0](https://github.com/nordnet/ui/compare/v16.5.1...v16.6.0) (2024-02-05)
 
 
