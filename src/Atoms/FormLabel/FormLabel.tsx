@@ -18,6 +18,7 @@ export const FormLabel: React.FC<Props> = ({
   forId,
   hideLabel,
   disabled,
+  hej,
 }) => (
   <StyledLabel
     as={as}

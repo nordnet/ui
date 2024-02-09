@@ -72,6 +72,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       showRequired = false,
       width,
       disabled,
+      hej,
     },
     ref,
   ) => {
@@ -80,14 +81,14 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
 
     if (label) {
       field = (
-        <FormLabel disabled={disabled}>
+        <FormLabel disabled={disabled} hej={hej}>
           <WithOptionalAddon
             hideLabel={hideLabel}
             labelTooltip={labelTooltip}
             labelTooltipInModal={labelTooltipInModal}
             labelTooltipPosition={labelTooltipPosition}
           >
-            {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
+            {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText + hej}
           </WithOptionalAddon>
           {children}
         </FormLabel>

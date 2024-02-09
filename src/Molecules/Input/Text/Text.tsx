@@ -198,6 +198,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     readOnly,
     pattern,
     inputMode,
+    hej,
   } = props;
 
   return (
@@ -214,6 +215,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
           'className',
           'width',
           'disabled',
+          'hej',
         ],
         props,
       )}
