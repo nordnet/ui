@@ -1,3 +1,10 @@
+# [16.7.0-beta.2](https://github.com/nordnet/ui/compare/v16.7.0-beta.1...v16.7.0-beta.2) (2024-02-09)
+
+
+### Bug Fixes
+
+* card shadow should be medium ([#1589](https://github.com/nordnet/ui/issues/1589)) ([204e8bf](https://github.com/nordnet/ui/commit/204e8bf4e0e2a1c29d243c0b9b4babad4b5c6a4e))
+
 # [16.7.0-beta.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.7.0-beta.1) (2024-02-08)
 
 
