@@ -22,15 +22,15 @@ export const NestedBadge: NestedBadgeComponent = ({
   fallback,
   logoUrl,
 }) => (
-  <StyledNestedBadge badgeSize={badgeSize} className={className}>
+  <StyledNestedBadge $badgeSize={badgeSize} className={className}>
     {logoUrl ? (
       <StyledImg
         src={`${logoUrl}?w=48&q=90`}
         alt={alt || fallback || logoUrl}
-        badgeSize={badgeSize}
+        $badgeSize={badgeSize}
       />
     ) : (
-      <StyledFallback badgeSize={badgeSize}>
+      <StyledFallback $badgeSize={badgeSize}>
         <Typography
           type="secondary"
           weight="bold"
@@ -42,8 +42,8 @@ export const NestedBadge: NestedBadgeComponent = ({
     )}
     {country && isValidCountry(country) && (
       <>
-        <StyledFlag country={country} size="m" badgeSize={badgeSize} />
-        <StyledOverlay badgeSize={badgeSize} />
+        <StyledFlag country={country} size="m" $badgeSize={badgeSize} />
+        <StyledOverlay $badgeSize={badgeSize} />
       </>
     )}
   </StyledNestedBadge>
