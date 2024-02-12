@@ -30,7 +30,7 @@ const Wrapper = styled.div<{ $width?: string | number; $animatedLabel?: boolean 
         position: absolute;
         z-index: 1000;
         top: 0;
-        left: 0;
+        left: 12px;
         bottom: 0;
         transform: translate(0, 0);
         transition: transform 1s;
@@ -38,7 +38,7 @@ const Wrapper = styled.div<{ $width?: string | number; $animatedLabel?: boolean 
 
       &:focus-within {
         label > span > div {
-          transform: translate(12px, 4px) scale(0.9);
+          transform: translate(0, -12px) scale(0.9);
         }
       }
     `};
