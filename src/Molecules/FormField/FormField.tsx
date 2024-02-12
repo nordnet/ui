@@ -16,15 +16,32 @@ import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const Wrapper = styled.div<{ $width?: string | number }>`
+const Wrapper = styled.div<{ $width?: string | number; $animatedLabel?: boolean }>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
   max-width: 100%;
   display: inline-block;
   position: relative;
 
-  &:focus-within {
-    border: 1px solid red;
-  }
+  ${(p) =>
+    p.$animatedLabel &&
+    css`
+      label > span > div {
+        color: red;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, 0);
+        transition: transform 1s;
+      }
+
+      &:focus-within {
+        label > span > div {
+          transform: translate(12px, 4px) scale(0.9);
+        }
+      }
+    `};
 `;
 
 const TooltipIcon = styled(OldIcon.Questionmark)`
@@ -61,7 +78,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
   hideLabel ? (
     <>{children}</>
   ) : (
-    <StyledFlexbox container alignItems="center" $animatedLabel={animatedLabel}>
+    <Flexbox container alignItems="center">
       {children}
       {labelTooltip && (
         <Tooltip
@@ -73,7 +90,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
           <TooltipIcon size={4} />
         </Tooltip>
       )}
-    </StyledFlexbox>
+    </Flexbox>
   );
 
 export const FormField = React.forwardRef<HTMLDivElement, Props>(
@@ -169,7 +186,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
     }
 
     return (
-      <Wrapper $width={width} className={className} ref={ref}>
+      <Wrapper $width={width} className={className} ref={ref} $animatedLabel={animatedLabel}>
         {label ? field : children}
         <AnimatePresence>
           {hasError(error) ? (
