@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Props } from './FormLabel.types';
 import { Typography } from '../..';
 import { visuallyHiddenCss as visuallyHidden } from '../VisuallyHidden';
@@ -9,11 +9,16 @@ const StyledLabel = styled.label<{ $disabled: boolean; $animatedLabel: boolean }
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
-  
-   ${(p) => (p.$animatedLabel && (
-    css``:
-    border: 1px solid red
-   ))};
+
+  ${(p) =>
+    p.$animatedLabel &&
+    css`
+      /* position: absolute;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      transform: translate(12px, 4px); */
+    `};
 `;
 
 export const FormLabel: React.FC<Props> = ({
