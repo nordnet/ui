@@ -53,5 +53,5 @@ export type Props = {
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   readOnly?: boolean;
-  hej?: string;
+  animatedLabel?: boolean;
 };

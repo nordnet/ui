@@ -22,7 +22,7 @@ export default {
 };
 
 export const DefaultStory = {
-  render: () => <Input.Text label="Label" placeholder="Placeholder" hej="Hej Alla Glada" />,
+  render: () => <Input.Text label="Label" placeholder="Placeholder" animatedLabel />,
   name: 'Default',
 };
 

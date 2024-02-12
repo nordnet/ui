@@ -5,4 +5,5 @@ export type Props = {
   hideLabel?: boolean;
   disabled?: boolean;
   children?: React.ReactNode;
+  animatedLabel?: boolean;
 };
