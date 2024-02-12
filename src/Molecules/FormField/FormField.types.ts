@@ -32,4 +32,5 @@ export type Props = {
    * underneath
    */
   width?: string | number;
+  animatedLabel?: boolean;
 } & LabelAddonProp;

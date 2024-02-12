@@ -21,6 +21,10 @@ const Wrapper = styled.div<{ $width?: string | number }>`
   max-width: 100%;
   display: inline-block;
   position: relative;
+
+  &:focus-within {
+    border: 1px solid red;
+  }
 `;
 
 const TooltipIcon = styled(OldIcon.Questionmark)`
@@ -29,17 +33,35 @@ const TooltipIcon = styled(OldIcon.Questionmark)`
 
 const BottomWrapper = styled(motion.div)``;
 
+const StyledFlexbox = styled(Flexbox)<{ $animatedLabel?: boolean }>`
+  ${(p) =>
+    p.$animatedLabel &&
+    css`
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      transform: translate(2px, 40px);
+      transition: transform 1s;
+
+      &:focus-within {
+        transform: translate(12px, 4px);
+      }
+    `};
+`;
+
 const WithOptionalAddon: React.FC<LabelAddonProp> = ({
   children,
   labelTooltip,
   labelTooltipPosition,
   hideLabel,
   labelTooltipInModal,
+  animatedLabel,
 }) =>
   hideLabel ? (
     <>{children}</>
   ) : (
-    <Flexbox container alignItems="center">
+    <StyledFlexbox container alignItems="center" $animatedLabel={animatedLabel}>
       {children}
       {labelTooltip && (
         <Tooltip
@@ -51,7 +73,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
           <TooltipIcon size={4} />
         </Tooltip>
       )}
-    </Flexbox>
+    </StyledFlexbox>
   );
 
 export const FormField = React.forwardRef<HTMLDivElement, Props>(
