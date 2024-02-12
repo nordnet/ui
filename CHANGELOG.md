@@ -1,3 +1,10 @@
+## [16.6.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.6.1) (2024-02-12)
+
+
+### Bug Fixes
+
+* change badgeSize to transient prop ([#1590](https://github.com/nordnet/ui/issues/1590)) ([96a8d28](https://github.com/nordnet/ui/commit/96a8d284c564081b3e68db6e9892dd9ec137538f))
+
 # [16.6.0](https://github.com/nordnet/ui/compare/v16.5.1...v16.6.0) (2024-02-05)
 
 
