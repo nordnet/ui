@@ -9,16 +9,6 @@ const StyledLabel = styled.label<{ $disabled: boolean; $animatedLabel: boolean }
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
-
-  ${(p) =>
-    p.$animatedLabel &&
-    css`
-      /* position: absolute;
-      z-index: 1000;
-      top: 0;
-      left: 0;
-      transform: translate(12px, 4px); */
-    `};
 `;
 
 export const FormLabel: React.FC<Props> = ({

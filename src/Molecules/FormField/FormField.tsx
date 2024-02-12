@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LabelAddonProp, Props } from './FormField.types';
 import {
@@ -20,6 +20,7 @@ const Wrapper = styled.div<{ $width?: string | number }>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
   max-width: 100%;
   display: inline-block;
+  position: relative;
 `;
 
 const TooltipIcon = styled(OldIcon.Questionmark)`
@@ -28,17 +29,35 @@ const TooltipIcon = styled(OldIcon.Questionmark)`
 
 const BottomWrapper = styled(motion.div)``;
 
+const StyledFlexbox = styled(Flexbox)<{ $animatedLabel?: boolean }>`
+  ${(p) =>
+    p.$animatedLabel &&
+    css`
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      transform: translate(2px, 40px);
+      transition: transform 1s;
+
+      &:focus {
+        transform: translate(12px, 4px);
+      }
+    `};
+`;
+
 const WithOptionalAddon: React.FC<LabelAddonProp> = ({
   children,
   labelTooltip,
   labelTooltipPosition,
   hideLabel,
   labelTooltipInModal,
+  animatedLabel,
 }) =>
   hideLabel ? (
     <>{children}</>
   ) : (
-    <Flexbox container alignItems="center">
+    <StyledFlexbox container alignItems="center" $animatedLabel={animatedLabel}>
       {children}
       {labelTooltip && (
         <Tooltip
@@ -50,7 +69,7 @@ const WithOptionalAddon: React.FC<LabelAddonProp> = ({
           <TooltipIcon size={4} />
         </Tooltip>
       )}
-    </Flexbox>
+    </StyledFlexbox>
   );
 
 export const FormField = React.forwardRef<HTMLDivElement, Props>(
@@ -87,6 +106,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
             labelTooltip={labelTooltip}
             labelTooltipInModal={labelTooltipInModal}
             labelTooltipPosition={labelTooltipPosition}
+            animatedLabel={animatedLabel}
           >
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
@@ -102,6 +122,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
               labelTooltip={labelTooltip}
               labelTooltipInModal={labelTooltipInModal}
               labelTooltipPosition={labelTooltipPosition}
+              animatedLabel={animatedLabel}
             >
               <Legend styleType="label">{labelText}</Legend>
             </WithOptionalAddon>
@@ -117,6 +138,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
                 labelTooltip={labelTooltip}
                 labelTooltipInModal={labelTooltipInModal}
                 labelTooltipPosition={labelTooltipPosition}
+                animatedLabel={animatedLabel}
               >
                 {labelText}
               </WithOptionalAddon>
