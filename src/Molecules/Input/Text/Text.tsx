@@ -152,6 +152,23 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
     `
       cursor: not-allowed;
       `}
+     ${(p) =>
+    p.$animatedLabel &&
+    css`
+      label > span > div {
+        color: red;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        transform: translate(2px, 40px);
+        transition: transform 1s;
+      }
+
+      &:focus {
+        transform: translate(12px, 4px);
+      }
+    `};
 `;
 
 const Wrapper = styled.div<{ variant?: Variant }>`
