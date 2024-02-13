@@ -30,15 +30,15 @@ describe('FormattedInput', () => {
     {
       defaultValue?: number | null;
     } & Partial<Props>
-  > = ({ defaultValue = null, minDecimalPlaces, maxDecimalPlaces }) => {
+  > = ({ defaultValue = null, minimumDecimals, maximumDecimals }) => {
     const [value, setValue] = useState(defaultValue);
     return (
       <>
         <FormattedInput
           value={value}
           onChange={setValue}
-          minDecimalPlaces={minDecimalPlaces}
-          maxDecimalPlaces={maxDecimalPlaces}
+          minimumDecimals={minimumDecimals}
+          maximumDecimals={maximumDecimals}
         />
         <span data-testid="test-float-value">{value}</span>
       </>
@@ -354,7 +354,7 @@ describe('FormattedInput', () => {
   );
 
   test('should respect max decimal part', async () => {
-    render(<TestComponent maxDecimalPlaces={3} />, {
+    render(<TestComponent maximumDecimals={3} />, {
       wrapper: createWrapper('en-GB'),
     });
 
