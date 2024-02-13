@@ -16,7 +16,12 @@ import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const Wrapper = styled.div<{ $width?: string | number; $animate?: boolean; $disappear?: boolean }>`
+const Wrapper = styled.div<{
+  $width?: string | number;
+  $animate?: boolean;
+  $disappear?: boolean;
+  $isNew?: boolean;
+}>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
   max-width: 100%;
   display: inline-block;
@@ -43,12 +48,13 @@ const Wrapper = styled.div<{ $width?: string | number; $animate?: boolean; $disa
     p.$animate &&
     css`
       label > span > div {
-        transform: translate(-1px, -10px) scale(calc(12/14)) ;
+        transform: translate(-1px, -10px) scale(calc(12 / 14));
       }
 
       label > span > span > div > input {
         font-size: 14px;
         padding-top: 20px;
+      }
     `}
 `;
 
@@ -104,6 +110,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       disabled,
       value,
       size,
+      isNew = false,
     },
     ref,
   ) => {
@@ -112,6 +119,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
 
     const animate = Boolean(value) && Boolean(!size);
     const disappear = Boolean(value) && Boolean(size);
+    console.log(isNew);
 
     if (label) {
       field = (

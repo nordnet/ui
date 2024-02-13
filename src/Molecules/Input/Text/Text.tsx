@@ -200,6 +200,8 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     inputMode,
   } = props;
 
+  const isNew = true;
+
   return (
     <FormField
       {...R.pick(
@@ -220,6 +222,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
         props,
       )}
       required={visuallyEmphasiseRequired}
+      isNew={isNew}
     >
       <Typography type="secondary" color={(t) => t.color.text}>
         <Wrapper>
