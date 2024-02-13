@@ -1,3 +1,11 @@
+# [16.7.0-beta.3](https://github.com/nordnet/ui/compare/v16.7.0-beta.2...v16.7.0-beta.3) (2024-02-13)
+
+
+### Bug Fixes
+
+* bump tokens ([5dd128b](https://github.com/nordnet/ui/commit/5dd128b24de246af78f1a527969a935258b050a6))
+* change badgeSize to transient prop ([#1590](https://github.com/nordnet/ui/issues/1590)) ([96a8d28](https://github.com/nordnet/ui/commit/96a8d284c564081b3e68db6e9892dd9ec137538f))
+
 ## [16.6.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.6.1) (2024-02-12)
 
 
