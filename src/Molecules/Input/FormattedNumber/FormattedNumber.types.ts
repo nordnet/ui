@@ -1,7 +1,7 @@
 export type Variant = 'normal' | 'quiet';
 
 type DecimalsConfig =
-  | { minimumDecimals: number; maximumDecimals: number; decimals?: never }
+  | { minimumDecimals?: number; maximumDecimals?: number; decimals?: never }
   | { decimals: number; minimumDecimals?: never; maximumDecimals?: never }
   | { minimumDecimals?: never; maximumDecimals?: never; decimals?: never };
 
