@@ -1,16 +1,9 @@
-# [16.7.0-beta.2](https://github.com/nordnet/ui/compare/v16.7.0-beta.1...v16.7.0-beta.2) (2024-02-09)
+## [16.6.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.6.1) (2024-02-12)
 
 
 ### Bug Fixes
 
-* card shadow should be medium ([#1589](https://github.com/nordnet/ui/issues/1589)) ([204e8bf](https://github.com/nordnet/ui/commit/204e8bf4e0e2a1c29d243c0b9b4babad4b5c6a4e))
-
-# [16.7.0-beta.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.7.0-beta.1) (2024-02-08)
-
-
-### Features
-
-* support shadow tokens ([a68598c](https://github.com/nordnet/ui/commit/a68598cd18a125f1b196f0ea07b3e52ffda28fcf))
+* change badgeSize to transient prop ([#1590](https://github.com/nordnet/ui/issues/1590)) ([96a8d28](https://github.com/nordnet/ui/commit/96a8d284c564081b3e68db6e9892dd9ec137538f))
 
 # [16.6.0](https://github.com/nordnet/ui/compare/v16.5.1...v16.6.0) (2024-02-05)
 
