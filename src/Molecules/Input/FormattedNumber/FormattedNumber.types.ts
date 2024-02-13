@@ -1,5 +1,10 @@
 export type Variant = 'normal' | 'quiet';
 
+type DecimalsConfig =
+  | { minimumDecimals: number; maximumDecimals: number; decimals?: never }
+  | { decimals: number; minimumDecimals?: never; maximumDecimals?: never }
+  | { minimumDecimals?: never; maximumDecimals?: never; decimals?: never };
+
 export type Props = {
   autoFocus?: boolean;
   autoComplete?: 'on' | 'off';
@@ -42,8 +47,6 @@ export type Props = {
   value?: number | null;
   visuallyEmphasiseRequired?: boolean;
   noSteppers?: boolean;
-  minimumDecimals?: number;
-  maximumDecimals?: number;
   onStepUp?: () => void;
   onStepDown?: () => void;
   onChange?: (value: number | null) => void;
@@ -55,7 +58,7 @@ export type Props = {
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   width?: string | number;
   variant?: Variant;
-};
+} & DecimalsConfig;
 
 export type adjustValueProps = {
   step: number;
