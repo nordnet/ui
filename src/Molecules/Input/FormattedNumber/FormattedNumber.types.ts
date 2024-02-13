@@ -42,6 +42,8 @@ export type Props = {
   value?: number | null;
   visuallyEmphasiseRequired?: boolean;
   noSteppers?: boolean;
+  minDecimalPlaces?: number;
+  maxDecimalPlaces?: number;
 
   onStepUp?: () => void;
   onStepDown?: () => void;

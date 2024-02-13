@@ -23,6 +23,8 @@ export type Props = {
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   ref?: React.Ref<HTMLInputElement> | null;
   required?: boolean;
+  minDecimalPlaces?: number;
+  maxDecimalPlaces?: number;
 };
 
 export type InputValue = { value: string; formattedValue: string };

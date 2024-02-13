@@ -50,6 +50,8 @@ const FormattedNumberInput: React.FC<Props> & {
     success,
     value: controlledValue,
     variant = 'normal',
+    minDecimalPlaces,
+    maxDecimalPlaces,
   } = props;
   const [internalValue, setInternalValue] = useState<number | null>(defaultValue);
   const inputRef = useRef<HTMLInputElement>(null);

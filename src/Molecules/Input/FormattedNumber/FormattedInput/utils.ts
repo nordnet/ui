@@ -17,8 +17,12 @@ export const getThousandsSeparator = (intl: IntlShape): string =>
  */
 export const getMinusSign = (intl: IntlShape): string => intl.formatNumberToParts(-1)[0].value;
 
-export const formatNumber = (value: number, intl: IntlShape, minimumFractionDigits = 0) =>
-  intl.formatNumber(value, { minimumFractionDigits, maximumFractionDigits: 20 });
+export const formatNumber = (
+  value: number,
+  intl: IntlShape,
+  minimumFractionDigits = 0,
+  maximumFractionDigits = 20,
+) => intl.formatNumber(value, { minimumFractionDigits, maximumFractionDigits });
 
 const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlShape) => {
   const decimalSign = getDecimalSign(intl);
@@ -84,7 +88,9 @@ export const parseInputValue = (
   }
 
   const hasLeadingZeros = /^((-0)|0)/g.test(sanitizedValue);
-  const [integerPart, decimalPart] = sanitizedValue.split('.');
+  const [integerPart, decimalPartOriginal] = sanitizedValue.split('.');
+  const decimalPart = decimalPartOriginal.substring(0, max);
+
   const integerPartParsed = Number(integerPart);
   const formattedIntegerPart = hasLeadingZeros
     ? formatWithLeadingZeros(integerPart, intl)

@@ -5,6 +5,7 @@ import { IntlProvider } from 'react-intl';
 import { ThemeProvider } from 'styled-components';
 import { createTheme } from '../../../../theme';
 import FormattedInput from './FormattedInput';
+import { Props } from './FormattedInput.types';
 
 describe('FormattedInput', () => {
   const regularMinusSign = '\u2212'; // regular minus sign "−"
@@ -25,11 +26,20 @@ describe('FormattedInput', () => {
       </IntlProvider>
     );
 
-  const TestComponent: FC<{ defaultValue?: number | null }> = ({ defaultValue = null }) => {
+  const TestComponent: FC<
+    {
+      defaultValue?: number | null;
+    } & Partial<Props>
+  > = ({ defaultValue = null, minDecimalPlaces, maxDecimalPlaces }) => {
     const [value, setValue] = useState(defaultValue);
     return (
       <>
-        <FormattedInput value={value} onChange={setValue} />
+        <FormattedInput
+          value={value}
+          onChange={setValue}
+          minDecimalPlaces={minDecimalPlaces}
+          maxDecimalPlaces={maxDecimalPlaces}
+        />
         <span data-testid="test-float-value">{value}</span>
       </>
     );
@@ -342,6 +352,18 @@ describe('FormattedInput', () => {
       expect(input).toHaveValue(`${minusSign}0${decimalSign}1`);
     },
   );
+
+  test('should respect max decimal part', async () => {
+    render(<TestComponent maxDecimalPlaces={3} />, {
+      wrapper: createWrapper('en-GB'),
+    });
+
+    const input = screen.getByRole('textbox');
+    await userEvent.type(input, '0.1');
+    expect(input).toHaveValue('0.1234');
+    await userEvent.type(input, '9');
+    expect(input).toHaveValue(`0.1234`);
+  });
 
   /* Known Issues & Future Improvements... */
 

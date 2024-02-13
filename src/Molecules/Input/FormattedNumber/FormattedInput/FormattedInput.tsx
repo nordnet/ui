@@ -29,6 +29,8 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
       value,
       inputMode = 'decimal',
       required,
+      minDecimalPlaces,
+      maxDecimalPlaces,
     },
     forwardedRef,
   ) => {
@@ -49,7 +51,7 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         if (value === null || invalidNumber) {
           setFormattedValue('');
         } else {
-          setFormattedValue(formatNumber(value, intl));
+          setFormattedValue(formatNumber(value, intl, 3, 3));
         }
       }
     }, [value, lastOnChangeValue, formattedValue, intl]);
