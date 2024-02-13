@@ -2,28 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 
-const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
-  <input
-    ref={ref}
-    {...R.omit(
-      [
-        'color',
-        'colorFn',
-        'display',
-        'error',
-        'fullWidth',
-        'hasError',
-        'leftAddon',
-        'rightAddon',
-        'size',
-        'sizeProp',
-        'success',
-        'showSteppers',
-      ],
-      props,
-    )}
-  />
-));
+const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => {
+  return (
+    <input
+      ref={ref}
+      {...R.omit(
+        [
+          'color',
+          'colorFn',
+          'display',
+          'error',
+          'fullWidth',
+          'hasError',
+          'leftAddon',
+          'rightAddon',
+          'size',
+          'sizeProp',
+          'success',
+          'showSteppers',
+        ],
+        props,
+      )}
+    />
+  );
+});
 
 /** From Normalize.css v8.0.1 */
 export const Input = styled(CleanInput)`

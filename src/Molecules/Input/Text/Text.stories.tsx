@@ -22,8 +22,103 @@ export default {
 };
 
 export const DefaultStory = {
-  render: () => <Input.Text label="Label" placeholder="Placeholder" animatedLabel />,
+  render: () => <Input.Text label="Label" placeholder="Placeholder" />,
   name: 'Default',
+};
+
+export const NewDefaultStory = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState('');
+
+      return <Input.Text label="Label" onChange={(e) => setValue(e.target.value)} value={value} />;
+    };
+    return <Component />;
+  },
+  name: 'New Default',
+};
+
+export const NewMediumStory = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState('');
+
+      return (
+        <Input.Text
+          label="Label"
+          onChange={(e) => setValue(e.target.value)}
+          value={value}
+          size="m"
+        />
+      );
+    };
+    return <Component />;
+  },
+  name: 'New Medium',
+};
+
+export const NewSmallStory = {
+  render: () => {
+    const Component = () => {
+      const [value, setValue] = useState('');
+
+      return (
+        <Input.Text
+          label="Label"
+          onChange={(e) => setValue(e.target.value)}
+          value={value}
+          size="s"
+        />
+      );
+    };
+    return <Component />;
+  },
+  name: 'New Small',
+};
+
+const NewDefaultComponent = () => {
+  const [value, setValue] = useState('');
+
+  return <Input.Text label="Label" onChange={(e) => setValue(e.target.value)} value={value} />;
+};
+
+const NewMediumComponent = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input.Text label="Label" onChange={(e) => setValue(e.target.value)} value={value} size="m" />
+  );
+};
+
+const NewSmallComponent = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input.Text label="Label" onChange={(e) => setValue(e.target.value)} value={value} size="s" />
+  );
+};
+
+export const NewStory = {
+  render: () => (
+    <Display
+      title="New"
+      items={[
+        {
+          component: <NewDefaultComponent />,
+          title: 'Default',
+        },
+        {
+          component: <NewMediumComponent />,
+          title: 'Medium = "m"',
+        },
+        {
+          component: <NewSmallComponent />,
+          title: 'Small = "s"',
+        },
+      ]}
+    />
+  ),
+  name: 'New',
 };
 
 export const WithValueControlledBehaviour = {

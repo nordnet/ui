@@ -198,7 +198,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     readOnly,
     pattern,
     inputMode,
-    animatedLabel,
   } = props;
 
   return (
@@ -215,7 +214,8 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
           'className',
           'width',
           'disabled',
-          'animatedLabel',
+          'value',
+          'size',
         ],
         props,
       )}

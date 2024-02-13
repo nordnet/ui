@@ -4,7 +4,6 @@ export type LabelAddonProp = {
   hideLabel?: boolean;
   children?: React.ReactNode;
   labelTooltipInModal?: boolean;
-  animatedLabel?: boolean;
 };
 
 export type Props = {
@@ -32,5 +31,7 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-  animatedLabel?: boolean;
+  animate?: boolean;
+  value?: string;
+  size?: 's' | 'm';
 } & LabelAddonProp;

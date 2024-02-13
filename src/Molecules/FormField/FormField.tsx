@@ -16,32 +16,40 @@ import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const Wrapper = styled.div<{ $width?: string | number; $animatedLabel?: boolean }>`
+const Wrapper = styled.div<{ $width?: string | number; $animate?: boolean; $disappear?: boolean }>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
   max-width: 100%;
   display: inline-block;
   position: relative;
 
+  label > span > div {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: ${(p) => p.theme.spacing.unit(2)}px;
+    transition: transform 0.5s;
+  }
+
   ${(p) =>
-    p.$animatedLabel &&
+    p.$disappear &&
     css`
       label > span > div {
-        color: red;
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 12px;
-        bottom: 0;
-        transform: translate(0, 0);
-        transition: transform 1s;
+        display: none;
+      }
+    `}
+
+  ${(p) =>
+    p.$animate &&
+    css`
+      label > span > div {
+        transform: translate(-1px, -10px) scale(calc(12/14)) ;
       }
 
-      &:focus-within {
-        label > span > div {
-          transform: translate(0, -12px) scale(0.9);
-        }
-      }
-    `};
+      label > span > span > div > input {
+        font-size: 14px;
+        padding-top: 20px;
+    `}
 `;
 
 const TooltipIcon = styled(OldIcon.Questionmark)`
@@ -50,30 +58,12 @@ const TooltipIcon = styled(OldIcon.Questionmark)`
 
 const BottomWrapper = styled(motion.div)``;
 
-const StyledFlexbox = styled(Flexbox)<{ $animatedLabel?: boolean }>`
-  ${(p) =>
-    p.$animatedLabel &&
-    css`
-      position: absolute;
-      z-index: 1000;
-      top: 0;
-      left: 0;
-      transform: translate(2px, 40px);
-      transition: transform 1s;
-
-      &:focus-within {
-        transform: translate(12px, 4px);
-      }
-    `};
-`;
-
 const WithOptionalAddon: React.FC<LabelAddonProp> = ({
   children,
   labelTooltip,
   labelTooltipPosition,
   hideLabel,
   labelTooltipInModal,
-  animatedLabel,
 }) =>
   hideLabel ? (
     <>{children}</>
@@ -112,22 +102,25 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       showRequired = false,
       width,
       disabled,
-      animatedLabel,
+      value,
+      size,
     },
     ref,
   ) => {
     const labelText = label && `${label} ${required || showRequired ? '*' : ''}`;
     let field;
 
+    const animate = Boolean(value) && Boolean(!size);
+    const disappear = Boolean(value) && Boolean(size);
+
     if (label) {
       field = (
-        <FormLabel disabled={disabled} animatedLabel={animatedLabel}>
+        <FormLabel disabled={disabled}>
           <WithOptionalAddon
             hideLabel={hideLabel}
             labelTooltip={labelTooltip}
             labelTooltipInModal={labelTooltipInModal}
             labelTooltipPosition={labelTooltipPosition}
-            animatedLabel={animatedLabel}
           >
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
@@ -143,7 +136,6 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
               labelTooltip={labelTooltip}
               labelTooltipInModal={labelTooltipInModal}
               labelTooltipPosition={labelTooltipPosition}
-              animatedLabel={animatedLabel}
             >
               <Legend styleType="label">{labelText}</Legend>
             </WithOptionalAddon>
@@ -159,7 +151,6 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
                 labelTooltip={labelTooltip}
                 labelTooltipInModal={labelTooltipInModal}
                 labelTooltipPosition={labelTooltipPosition}
-                animatedLabel={animatedLabel}
               >
                 {labelText}
               </WithOptionalAddon>
@@ -186,7 +177,13 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
     }
 
     return (
-      <Wrapper $width={width} className={className} ref={ref} $animatedLabel={animatedLabel}>
+      <Wrapper
+        $width={width}
+        className={className}
+        ref={ref}
+        $animate={animate}
+        $disappear={disappear}
+      >
         {label ? field : children}
         <AnimatePresence>
           {hasError(error) ? (
