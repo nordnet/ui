@@ -67,6 +67,7 @@ export const parseInputValue = (
   previousFormattedValue: string,
   inputValue: string,
   intl: IntlShape,
+  maxDecimals: number = 20,
 ): { value: number | null; formattedValue: string } => {
   const decimalSign = getDecimalSign(intl);
   const minusSign = getMinusSign(intl);
@@ -89,7 +90,10 @@ export const parseInputValue = (
 
   const hasLeadingZeros = /^((-0)|0)/g.test(sanitizedValue);
   const [integerPart, decimalPartOriginal] = sanitizedValue.split('.');
-  const decimalPart = decimalPartOriginal.substring(0, max);
+  const decimalPart = decimalPartOriginal?.substring(
+    0,
+    maxDecimals > decimalPartOriginal.length ? decimalPartOriginal.length : maxDecimals,
+  );
 
   const integerPartParsed = Number(integerPart);
   const formattedIntegerPart = hasLeadingZeros

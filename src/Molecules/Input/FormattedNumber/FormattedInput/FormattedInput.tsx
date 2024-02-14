@@ -51,7 +51,7 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         if (value === null || invalidNumber) {
           setFormattedValue('');
         } else {
-          setFormattedValue(formatNumber(value, intl, 3, 3));
+          setFormattedValue(formatNumber(value, intl, minimumDecimals, maximumDecimals));
         }
       }
     }, [value, lastOnChangeValue, formattedValue, intl]);
@@ -69,6 +69,7 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         formattedValue,
         e.target.value,
         intl,
+        maximumDecimals,
       );
 
       const newCaretPosition = calculateCaretPosition(
@@ -96,7 +97,10 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         autoComplete={autoComplete}
         className={className}
         disabled={disabled}
-        onBlur={onBlur}
+        onBlur={(event) => {
+          setFormattedValue(formatNumber(value, intl, minimumDecimals, maximumDecimals));
+          onBlur?.(event);
+        }}
         onChange={onChangeHandler}
         onClick={onClick}
         onFocus={onFocus}

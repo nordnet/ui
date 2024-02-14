@@ -29,6 +29,45 @@ export const DefaultStory = () => (
 DefaultStory.story = {
   name: 'Default',
 };
+export const DefaultStoryWithMinDecimals = () => (
+  <Input.FormattedNumber
+    id="formatted-number-id"
+    label="Label"
+    onChange={action('onChange')}
+    minimumDecimals={3}
+  />
+);
+
+DefaultStoryWithMinDecimals.story = {
+  name: 'DefaultStoryWithMinDecimals',
+};
+
+export const DefaultStoryWithMaxDecimals = () => (
+  <Input.FormattedNumber
+    id="formatted-number-id"
+    label="Label"
+    onChange={action('onChange')}
+    maximumDecimals={3}
+  />
+);
+
+DefaultStoryWithMaxDecimals.story = {
+  name: 'DefaultStoryWithMaxDecimals',
+};
+
+export const DefaultStoryWithMinAndMaxDecimals = () => (
+  <Input.FormattedNumber
+    id="formatted-number-id"
+    label="Label"
+    onChange={action('onChange')}
+    minimumDecimals={4}
+    maximumDecimals={5}
+  />
+);
+
+DefaultStoryWithMinAndMaxDecimals.story = {
+  name: 'DefaultStoryWithMinAndMaxDecimals',
+};
 
 export const DefaultStoryWithAutoCompleteOff = () => (
   <Input.FormattedNumber

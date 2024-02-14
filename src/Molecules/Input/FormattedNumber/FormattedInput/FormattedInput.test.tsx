@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useState } from 'react';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { IntlProvider } from 'react-intl';
 import { ThemeProvider } from 'styled-components';
@@ -354,15 +354,52 @@ describe('FormattedInput', () => {
   );
 
   test('should respect max decimal part', async () => {
-    render(<TestComponent maximumDecimals={3} />, {
+    render(<TestComponent maximumDecimals={4} />, {
+      wrapper: createWrapper('en-GB'),
+    });
+
+    const input = screen.getByRole('textbox');
+    await userEvent.type(input, '0.123');
+    expect(input).toHaveValue('0.123');
+    await userEvent.type(input, '4');
+    expect(input).toHaveValue(`0.1234`);
+    await userEvent.type(input, '5');
+    expect(input).toHaveValue(`0.1234`);
+  });
+
+  test('should not show decimalSeparator if max decimal part is 0', async () => {
+    render(<TestComponent maximumDecimals={0} />, {
+      wrapper: createWrapper('en-GB'),
+    });
+
+    const input = screen.getByRole('textbox');
+    await userEvent.type(input, '0.123');
+    expect(input).toHaveValue('0');
+  });
+
+  test('should respect min decimal part', async () => {
+    render(<TestComponent minimumDecimals={4} />, {
       wrapper: createWrapper('en-GB'),
     });
 
     const input = screen.getByRole('textbox');
     await userEvent.type(input, '0.1');
+    await fireEvent.blur(input);
+    expect(input).toHaveValue('0.1000');
+  });
+
+  test('should respect max and min decimal parts', async () => {
+    const { container } = render(<TestComponent minimumDecimals={3} maximumDecimals={4} />, {
+      wrapper: createWrapper('en-GB'),
+    });
+
+    const input = screen.getByRole('textbox');
+    await userEvent.type(input, '0.1');
+    await userEvent.click(container); // unfocus;
+    expect(input).toHaveValue('0.100');
+
+    await userEvent.type(input, '0.12345');
     expect(input).toHaveValue('0.1234');
-    await userEvent.type(input, '9');
-    expect(input).toHaveValue(`0.1234`);
   });
 
   /* Known Issues & Future Improvements... */
