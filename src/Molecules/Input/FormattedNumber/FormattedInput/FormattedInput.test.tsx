@@ -367,14 +367,14 @@ describe('FormattedInput', () => {
     expect(input).toHaveValue(`0.1234`);
   });
 
-  test('should not show decimalSeparator if max decimal part is 0', async () => {
+  test('should not allow decimalSeparator if max decimal part is 0', async () => {
     render(<TestComponent maximumDecimals={0} />, {
       wrapper: createWrapper('en-GB'),
     });
 
     const input = screen.getByRole('textbox');
-    await userEvent.type(input, '0.123');
-    expect(input).toHaveValue('0');
+    await userEvent.type(input, '1.');
+    expect(input).toHaveValue('1');
   });
 
   test('should respect min decimal part', async () => {

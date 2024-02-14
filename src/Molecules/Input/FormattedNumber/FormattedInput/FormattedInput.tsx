@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
+import React, { FocusEvent, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 import { Input } from '../../../../common/NormalizedElements/NormalizedInput';
 import { FormattedNumberInputType } from './FormattedInput.types';
@@ -71,12 +71,12 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         intl,
         maximumDecimals,
       );
-
       const newCaretPosition = calculateCaretPosition(
         { value: e.target.value, formattedValue: newFormattedValue },
         formattedValue,
         e.target.selectionStart,
         intl,
+        maximumDecimals,
       );
 
       onChange(newValue);
@@ -97,8 +97,10 @@ const FormattedInput: FormattedNumberInputType = React.forwardRef(
         autoComplete={autoComplete}
         className={className}
         disabled={disabled}
-        onBlur={(event) => {
-          setFormattedValue(formatNumber(value, intl, minimumDecimals, maximumDecimals));
+        onBlur={(event: FocusEvent<HTMLInputElement>) => {
+          if (value) {
+            setFormattedValue(formatNumber(value, intl, minimumDecimals, maximumDecimals));
+          }
           onBlur?.(event);
         }}
         onChange={onChangeHandler}

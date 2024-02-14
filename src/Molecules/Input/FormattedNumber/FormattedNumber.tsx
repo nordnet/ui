@@ -50,8 +50,8 @@ const FormattedNumberInput: React.FC<Props> & {
     success,
     value: controlledValue,
     variant = 'normal',
-    minimumDecimals,
-    maximumDecimals,
+    minimumDecimals = 0,
+    maximumDecimals = 20,
     decimals,
   } = props;
   const [internalValue, setInternalValue] = useState<number | null>(defaultValue);
@@ -160,8 +160,8 @@ const FormattedNumberInput: React.FC<Props> & {
             showSteppers={showSteppers}
             leftAddon={leftAddon}
             rightAddon={rightAddon}
-            minimumDecimals={decimals ?? minimumDecimals}
-            maximumDecimals={decimals ?? maximumDecimals}
+            minimumDecimals={decimals ?? Math.min(minimumDecimals, maximumDecimals)}
+            maximumDecimals={decimals ?? Math.max(minimumDecimals, maximumDecimals)}
           />
           {showSteppers && (
             <>

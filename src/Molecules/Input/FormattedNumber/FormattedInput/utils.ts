@@ -24,7 +24,12 @@ export const formatNumber = (
   maximumFractionDigits = 20,
 ) => intl.formatNumber(value, { minimumFractionDigits, maximumFractionDigits });
 
-const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlShape) => {
+const getSanitizedValue = (
+  inputValue: string,
+  replaceValue: string,
+  intl: IntlShape,
+  maximumDecimals: number | undefined,
+) => {
   const decimalSign = getDecimalSign(intl);
   const minusSign = getMinusSign(intl);
 
@@ -45,8 +50,10 @@ const getSanitizedValue = (inputValue: string, replaceValue: string, intl: IntlS
   const isNegative = delocalizedValue.startsWith('-');
   const withoutMinus = delocalizedValue.replace(/^-/, '').replace(/-/g, replaceValue); // remove minusSign
   const sanitizedValue = withoutMinus.replace(/^\./, '0.'); // prepend 0 when integer part is missing for decimal
+  const withOrWithoutDecimals =
+    maximumDecimals === 0 ? sanitizedValue.split('.')[0] : sanitizedValue;
 
-  return isNegative ? `-${sanitizedValue}` : sanitizedValue;
+  return isNegative ? `-${withOrWithoutDecimals}` : withOrWithoutDecimals;
 };
 
 const formatWithLeadingZeros = (integerPart: string, intl: IntlShape) => {
@@ -67,12 +74,12 @@ export const parseInputValue = (
   previousFormattedValue: string,
   inputValue: string,
   intl: IntlShape,
-  maxDecimals: number = 20,
+  maximumDecimals: number | undefined,
 ): { value: number | null; formattedValue: string } => {
   const decimalSign = getDecimalSign(intl);
   const minusSign = getMinusSign(intl);
 
-  const sanitizedValue = getSanitizedValue(inputValue, '', intl);
+  const sanitizedValue = getSanitizedValue(inputValue, '', intl, maximumDecimals);
 
   const hasMultipleDecimals = sanitizedValue.split('.').length > 2;
 
@@ -90,10 +97,10 @@ export const parseInputValue = (
 
   const hasLeadingZeros = /^((-0)|0)/g.test(sanitizedValue);
   const [integerPart, decimalPartOriginal] = sanitizedValue.split('.');
-  const decimalPart = decimalPartOriginal?.substring(
-    0,
-    maxDecimals > decimalPartOriginal.length ? decimalPartOriginal.length : maxDecimals,
-  );
+  const decimalPart =
+    maximumDecimals !== undefined
+      ? decimalPartOriginal?.substring(0, Math.min(decimalPartOriginal.length, maximumDecimals))
+      : decimalPartOriginal;
 
   const integerPartParsed = Number(integerPart);
   const formattedIntegerPart = hasLeadingZeros
@@ -127,9 +134,10 @@ export const calculateCaretPosition = (
   previousFormattedValue: string,
   caretPosition: number | null,
   intl: IntlShape,
+  maximumDecimals: number | undefined,
 ) => {
   if (caretPosition === null) return inputValue.formattedValue.length;
-  const sanitizedValue = getSanitizedValue(inputValue.value, '_', intl);
+  const sanitizedValue = getSanitizedValue(inputValue.value, '_', intl, maximumDecimals);
 
   const hasMultipleDecimals = sanitizedValue.split('.').length > 2;
   if (hasMultipleDecimals) {
@@ -144,7 +152,7 @@ export const calculateCaretPosition = (
 
   const isAllowedSymbolRegExp = /-|\.|\d/;
   const indexOfLastDigit = findNthDigitIndex(
-    getSanitizedValue(inputValue.formattedValue, '_', intl),
+    getSanitizedValue(inputValue.formattedValue, '_', intl, maximumDecimals),
     numberOfAllowedSymbolsBeforeCaret,
     isAllowedSymbolRegExp,
   );
