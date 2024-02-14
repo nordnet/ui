@@ -132,7 +132,13 @@ WithDefaultValueUncontrolledBehaviour.story = {
 };
 
 export const WithASmallerStep = () => (
-  <Input.FormattedNumber id="formatted-number-id" label="Label" defaultValue={15.2} step={0.005} />
+  <Input.FormattedNumber
+    id="formatted-number-id"
+    label="Label"
+    defaultValue={15.2}
+    step={0.005}
+    minimumDecimals={3}
+  />
 );
 
 WithASmallerStep.story = {
