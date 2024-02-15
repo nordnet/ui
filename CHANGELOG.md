@@ -1,3 +1,10 @@
+# [16.7.0-beta.5](https://github.com/nordnet/ui/compare/v16.7.0-beta.4...v16.7.0-beta.5) (2024-02-15)
+
+
+### Bug Fixes
+
+* update design tokens package ([91abb25](https://github.com/nordnet/ui/commit/91abb25903bbfb7b15e90dbf2cdc1ec9b67d341a))
+
 # [16.7.0-beta.4](https://github.com/nordnet/ui/compare/v16.7.0-beta.3...v16.7.0-beta.4) (2024-02-15)
 
 
