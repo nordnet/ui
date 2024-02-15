@@ -24,11 +24,7 @@ export const NestedBadge: NestedBadgeComponent = ({
 }) => (
   <StyledNestedBadge $badgeSize={badgeSize} className={className}>
     {logoUrl ? (
-      <StyledImg
-        src={`${logoUrl}?w=48&q=90`}
-        alt={alt || fallback || logoUrl}
-        $badgeSize={badgeSize}
-      />
+      <StyledImg src={`${logoUrl}?w=48&q=90&fm=webp`} alt={alt} $badgeSize={badgeSize} />
     ) : (
       <StyledFallback $badgeSize={badgeSize}>
         <Typography
