@@ -1,7 +1,7 @@
 import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
 
 type FeatureToggles = {
-  shadows: boolean;
+  shadows?: boolean;
 };
 
 export type MediaQuery = string;
