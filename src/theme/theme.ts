@@ -71,7 +71,12 @@ const massageShadowTokens = (shadowTokens: ShadowTokens) => {
 const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const { a11yColors = false, darkColors = false, tokensTheme = 'light' } = config;
+  const {
+    a11yColors = false,
+    darkColors = false,
+    tokensTheme = 'light',
+    featureToggles = {},
+  } = config;
   const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
   const color = darkColors
     ? createDarkColors(getColorDarkScheme(type))
@@ -142,5 +147,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     borderRadius8,
     borderRadius20,
     borderRadius100,
+    isFeatureEnabled: (feature) => featureToggles?.[feature] === true,
   };
 };

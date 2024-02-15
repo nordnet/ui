@@ -36,7 +36,10 @@ const barStyles = css<Props>`
 
 const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
-  box-shadow: ${({ theme }) => theme.shadow.medium};
+  box-shadow: ${({ theme }) =>
+    theme.isFeatureEnabled('shadows')
+      ? theme.shadow.medium
+      : `0 2px 2px 0  ${theme.color.shadowCard}`};
 
   ${(p) => (p.barColor ? barStyles : ``)};
   && {
