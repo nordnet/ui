@@ -137,7 +137,7 @@ export const WithASmallerStep = () => (
     label="Label"
     defaultValue={15.2}
     step={0.005}
-    minimumDecimals={3}
+    minimumDecimals={3} // TODO: this should probably be removed? Feels incorrect to have to calculate this outside component...
   />
 );
 
