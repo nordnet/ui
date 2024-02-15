@@ -1,3 +1,10 @@
+# [16.7.0-beta.7](https://github.com/nordnet/ui/compare/v16.7.0-beta.6...v16.7.0-beta.7) (2024-02-15)
+
+
+### Bug Fixes
+
+* make shadows optional feature ([9fe45f9](https://github.com/nordnet/ui/commit/9fe45f95a4cd03a2e8afd6f6c01ce8f4a6ec439a))
+
 # [16.7.0-beta.6](https://github.com/nordnet/ui/compare/v16.7.0-beta.5...v16.7.0-beta.6) (2024-02-15)
 
 
