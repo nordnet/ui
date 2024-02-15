@@ -1,3 +1,10 @@
+# [16.7.0-beta.6](https://github.com/nordnet/ui/compare/v16.7.0-beta.5...v16.7.0-beta.6) (2024-02-15)
+
+
+### Bug Fixes
+
+* new version of beta ([9426ad6](https://github.com/nordnet/ui/commit/9426ad6c173b813ee6db617af0695d86d8b08e83))
+
 # [16.7.0-beta.5](https://github.com/nordnet/ui/compare/v16.7.0-beta.4...v16.7.0-beta.5) (2024-02-15)
 
 
