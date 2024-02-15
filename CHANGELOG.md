@@ -1,3 +1,10 @@
+# [16.7.0-beta.4](https://github.com/nordnet/ui/compare/v16.7.0-beta.3...v16.7.0-beta.4) (2024-02-15)
+
+
+### Features
+
+* add gray750 and update gray700 and 800 ([a63acb2](https://github.com/nordnet/ui/commit/a63acb285bcbd587f1c155d1ddfbd183dfefdee7))
+
 # [16.7.0-beta.3](https://github.com/nordnet/ui/compare/v16.7.0-beta.2...v16.7.0-beta.3) (2024-02-13)
 
 
