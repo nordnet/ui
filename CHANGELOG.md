@@ -1,3 +1,10 @@
+# [16.7.0-beta.8](https://github.com/nordnet/ui/compare/v16.7.0-beta.7...v16.7.0-beta.8) (2024-02-16)
+
+
+### Bug Fixes
+
+* bump design-tokens ([6827a2b](https://github.com/nordnet/ui/commit/6827a2b4b9e2fb8a95967da454034bfe82c7e532))
+
 # [16.7.0-beta.7](https://github.com/nordnet/ui/compare/v16.7.0-beta.6...v16.7.0-beta.7) (2024-02-15)
 
 
