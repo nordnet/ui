@@ -1,3 +1,10 @@
+# [16.7.0-beta.9](https://github.com/nordnet/ui/compare/v16.7.0-beta.8...v16.7.0-beta.9) (2024-02-16)
+
+
+### Bug Fixes
+
+* use webp for logos ([#1591](https://github.com/nordnet/ui/issues/1591)) ([4e6573a](https://github.com/nordnet/ui/commit/4e6573acc01b10f458584c8dae0b6de2265f7532))
+
 ## [16.6.2](https://github.com/nordnet/ui/compare/v16.6.1...v16.6.2) (2024-02-15)
 
 
