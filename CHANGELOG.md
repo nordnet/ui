@@ -1,3 +1,10 @@
+# [16.7.0](https://github.com/nordnet/ui/compare/v16.6.2...v16.7.0) (2024-02-16)
+
+
+### Features
+
+* add shadow tokens and update color tokens ([#1592](https://github.com/nordnet/ui/issues/1592)) ([d452f72](https://github.com/nordnet/ui/commit/d452f7288e9e23fc11f729a6fcf24b14357567d5))
+
 ## [16.6.2](https://github.com/nordnet/ui/compare/v16.6.1...v16.6.2) (2024-02-15)
 
 
