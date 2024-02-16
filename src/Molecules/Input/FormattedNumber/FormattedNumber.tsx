@@ -5,7 +5,7 @@ import { isUndefined } from '../../../common/utils';
 import adjustValue from './adjustValue';
 import { Props } from './FormattedNumber.types';
 import { FormattedNumberComponents } from './FormattedNumber.styles';
-import { hasError } from './utils';
+import { getNumberOfDecimals, hasError } from './utils';
 
 const FormattedNumberInput: React.FC<Props> & {
   /**
@@ -160,7 +160,7 @@ const FormattedNumberInput: React.FC<Props> & {
             showSteppers={showSteppers}
             leftAddon={leftAddon}
             rightAddon={rightAddon}
-            minimumDecimals={decimals ?? minimumDecimals}
+            minimumDecimals={decimals ?? minimumDecimals ?? getNumberOfDecimals(step)}
             maximumDecimals={decimals ?? maximumDecimals}
           />
           {showSteppers && (

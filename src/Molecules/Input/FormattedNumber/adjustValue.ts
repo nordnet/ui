@@ -1,12 +1,5 @@
-import * as R from 'ramda';
 import { adjustValueProps } from './FormattedNumber.types';
-
-const getNumberOfDecimals = R.pipe(
-  R.toString,
-  R.split('.'),
-  R.nth(1),
-  R.ifElse(R.isNil, R.always(0), R.length),
-);
+import { getNumberOfDecimals } from './utils';
 
 const adjustValue = ({
   originalValue,

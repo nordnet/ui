@@ -8,3 +8,12 @@ export const hasError = (error?: Props['error']): boolean | undefined => {
   const hasErrorMessage = error.length > 0;
   return hasErrorMessage;
 };
+
+export const getNumberOfDecimals = (value: number): number => {
+  const valueString = value.toString();
+  const [, decimalPart] = valueString.split('.');
+  if (decimalPart === undefined) {
+    return 0;
+  }
+  return decimalPart.length;
+};

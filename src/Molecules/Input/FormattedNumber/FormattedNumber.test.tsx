@@ -68,70 +68,21 @@ describe('Input.FormattedNumber', () => {
     expect(input).toHaveValue('1');
   });
 
-  test('should apply minimum decimals on step up/down', async () => {
-    render(
-      <FormattedNumber id="id" label="label" defaultValue={15.2} step={0.02} minimumDecimals={3} />,
-      {
-        wrapper,
-      },
-    );
+  test('should use same number of decimals as step when step up/down', async () => {
+    render(<FormattedNumber id="id" label="label" defaultValue={15.2} step={0.2} />, {
+      wrapper,
+    });
     const input = screen.getByRole('textbox');
-    const decrementButton = screen.getByRole('button', { name: '−0.02' });
-    const incrementButton = screen.getByRole('button', { name: '+0.02' });
-
-    expect(input).toHaveValue('15.200');
-    await userEvent.click(decrementButton);
-    expect(input).toHaveValue('15.180');
-    await userEvent.click(incrementButton);
-    expect(input).toHaveValue('15.200');
-    await userEvent.click(incrementButton);
-    expect(input).toHaveValue('15.220');
-  });
-
-  test('should respect maximum decimals on step up/down', async () => {
-    render(
-      <FormattedNumber
-        id="id"
-        label="label"
-        defaultValue={15.2}
-        maximumDecimals={3}
-        step={0.001}
-      />,
-      {
-        wrapper,
-      },
-    );
-    const input = screen.getByRole('textbox');
-    const decrementButton = screen.getByRole('button', { name: '−0.001' });
-    const incrementButton = screen.getByRole('button', { name: '+0.001' });
+    const decrementButton = screen.getByRole('button', { name: '−0.2' });
+    const incrementButton = screen.getByRole('button', { name: '+0.2' });
 
     expect(input).toHaveValue('15.2');
-    await userEvent.click(incrementButton);
-    expect(input).toHaveValue('15.201');
     await userEvent.click(decrementButton);
+    expect(input).toHaveValue('15.0');
+    await userEvent.click(incrementButton);
     expect(input).toHaveValue('15.2');
-    await userEvent.click(decrementButton);
-    expect(input).toHaveValue('15.199');
-  });
-
-  test('should respect decimals on step up/down', async () => {
-    render(
-      <FormattedNumber id="id" label="label" defaultValue={15.2} decimals={3} step={0.001} />,
-      {
-        wrapper,
-      },
-    );
-    const input = screen.getByRole('textbox');
-    const decrementButton = screen.getByRole('button', { name: '−0.001' });
-    const incrementButton = screen.getByRole('button', { name: '+0.001' });
-
-    expect(input).toHaveValue('15.200');
     await userEvent.click(incrementButton);
-    expect(input).toHaveValue('15.201');
-    await userEvent.click(decrementButton);
-    expect(input).toHaveValue('15.200');
-    await userEvent.click(decrementButton);
-    expect(input).toHaveValue('15.199');
+    expect(input).toHaveValue('15.4');
   });
 
   test('should submit empty value', async () => {

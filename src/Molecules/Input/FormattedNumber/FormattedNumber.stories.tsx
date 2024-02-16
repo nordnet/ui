@@ -50,7 +50,6 @@ export const WithMinDecimals = () => (
     onChange={action('onChange')}
     defaultValue={11}
     minimumDecimals={3}
-    autoComplete="off"
   />
 );
 
@@ -65,7 +64,6 @@ export const WithMaxDecimals = () => (
     onChange={action('onChange')}
     defaultValue={12}
     maximumDecimals={3}
-    autoComplete="off"
   />
 );
 
@@ -81,7 +79,6 @@ export const WithMinAndMaxDecimals = () => (
     defaultValue={13}
     minimumDecimals={3}
     maximumDecimals={4}
-    autoComplete="off"
   />
 );
 
@@ -96,7 +93,6 @@ export const WithoutDecimals = () => (
     onChange={action('onChange')}
     defaultValue={14}
     maximumDecimals={0}
-    autoComplete="off"
   />
 );
 
@@ -146,8 +142,8 @@ export const WithASmallerStep = () => (
     id="formatted-number-id"
     label="Label"
     defaultValue={15.2}
-    step={0.005}
-    minimumDecimals={3} // TODO: this should probably be removed? Feels incorrect to have to calculate this outside component...
+    step={0.035}
+    // minimumDecimals={3} // TODO: this should probably be removed? Feels incorrect to have to calculate this outside component...
   />
 );
 
