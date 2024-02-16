@@ -1,6 +1,8 @@
 import { A11yTheme, LightTheme, DarkTheme } from '@nordnet/design-tokens';
 
-type FeatureToggles = {};
+type FeatureToggles = {
+  shadows?: boolean;
+};
 
 export type MediaQuery = string;
 /** Number of pixels */
@@ -10,6 +12,8 @@ export type ThemeConfig = {
   tokensTheme?: 'dark' | 'light' | 'a11y';
   featureToggles?: FeatureToggles;
 };
+
+type FeatureToggleKeys = keyof FeatureToggles;
 
 type Unit = {
   (times: number): number;
@@ -941,12 +945,22 @@ export type ColorSets = {
   color: ThemeColors;
 };
 
+export type ShadowTokens =
+  | LightTheme['effect']['shadow']
+  | DarkTheme['effect']['shadow']
+  | A11yTheme['effect']['shadow'];
+
+export type MassagedShadowTokens = {
+  [K in keyof ShadowTokens]: string;
+};
+
 export type Theme = {
   /** @deprecated use colorTokens instead */
   color: ThemeColors;
   colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
   lightColor: ThemeColors;
   darkColor: ThemeColors;
+  shadow: MassagedShadowTokens;
   spacing: {
     /**
      * One unit, all spacing should be handled with this
@@ -1006,4 +1020,5 @@ export type Theme = {
   borderRadius8: string;
   borderRadius20: string;
   borderRadius100: string;
+  isFeatureEnabled: (feature: FeatureToggleKeys) => boolean;
 };

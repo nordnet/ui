@@ -7,8 +7,9 @@ const colorScales = {
   gray400: '#BDBDBD',
   gray500: '#9E9E9E',
   gray600: '#6E6E6E',
-  gray700: '#424242',
-  gray800: '#212121',
+  gray700: '#333333',
+  gray750: '#262626',
+  gray800: '#1C1C1C',
   gray900: '#121212',
   black: '#000000',
 
@@ -106,7 +107,7 @@ const defaultColors = {
   // GRAYSCALE PALETTE
   black: '#000000', // Included in Dark Mode
   gray100: '#F5F5F5',
-  gray800: '#212121',
+  gray800: colorScales.gray800,
   gray900: '#121212', // Included in Dark Mode
   gray0: '#282823', // Included in Dark Mode
   gray1: '#4B4B46', // Included in Dark Mode

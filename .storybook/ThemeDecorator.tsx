@@ -32,7 +32,7 @@ export const getTheme = (theme: 'light' | 'dark' | 'a11y') => {
       darkColors: theme === 'dark',
       tokensTheme: theme,
       featureToggles: {
-        roundedCorners: true,
+        shadows: true,
       },
     });
   }
