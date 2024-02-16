@@ -1,45 +1,9 @@
-# [16.7.0-beta.8](https://github.com/nordnet/ui/compare/v16.7.0-beta.7...v16.7.0-beta.8) (2024-02-16)
+## [16.6.2](https://github.com/nordnet/ui/compare/v16.6.1...v16.6.2) (2024-02-15)
 
 
 ### Bug Fixes
 
-* bump design-tokens ([6827a2b](https://github.com/nordnet/ui/commit/6827a2b4b9e2fb8a95967da454034bfe82c7e532))
-
-# [16.7.0-beta.7](https://github.com/nordnet/ui/compare/v16.7.0-beta.6...v16.7.0-beta.7) (2024-02-15)
-
-
-### Bug Fixes
-
-* make shadows optional feature ([9fe45f9](https://github.com/nordnet/ui/commit/9fe45f95a4cd03a2e8afd6f6c01ce8f4a6ec439a))
-
-# [16.7.0-beta.6](https://github.com/nordnet/ui/compare/v16.7.0-beta.5...v16.7.0-beta.6) (2024-02-15)
-
-
-### Bug Fixes
-
-* new version of beta ([9426ad6](https://github.com/nordnet/ui/commit/9426ad6c173b813ee6db617af0695d86d8b08e83))
-
-# [16.7.0-beta.5](https://github.com/nordnet/ui/compare/v16.7.0-beta.4...v16.7.0-beta.5) (2024-02-15)
-
-
-### Bug Fixes
-
-* update design tokens package ([91abb25](https://github.com/nordnet/ui/commit/91abb25903bbfb7b15e90dbf2cdc1ec9b67d341a))
-
-# [16.7.0-beta.4](https://github.com/nordnet/ui/compare/v16.7.0-beta.3...v16.7.0-beta.4) (2024-02-15)
-
-
-### Features
-
-* add gray750 and update gray700 and 800 ([a63acb2](https://github.com/nordnet/ui/commit/a63acb285bcbd587f1c155d1ddfbd183dfefdee7))
-
-# [16.7.0-beta.3](https://github.com/nordnet/ui/compare/v16.7.0-beta.2...v16.7.0-beta.3) (2024-02-13)
-
-
-### Bug Fixes
-
-* bump tokens ([5dd128b](https://github.com/nordnet/ui/commit/5dd128b24de246af78f1a527969a935258b050a6))
-* change badgeSize to transient prop ([#1590](https://github.com/nordnet/ui/issues/1590)) ([96a8d28](https://github.com/nordnet/ui/commit/96a8d284c564081b3e68db6e9892dd9ec137538f))
+* use webp for logos ([#1591](https://github.com/nordnet/ui/issues/1591)) ([4e6573a](https://github.com/nordnet/ui/commit/4e6573acc01b10f458584c8dae0b6de2265f7532))
 
 ## [16.6.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.6.1) (2024-02-12)
 
