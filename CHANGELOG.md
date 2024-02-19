@@ -1,3 +1,10 @@
+## [16.7.2](https://github.com/nordnet/ui/compare/v16.7.1...v16.7.2) (2024-02-19)
+
+
+### Bug Fixes
+
+* set default knob according to distance to min and max ([#1594](https://github.com/nordnet/ui/issues/1594)) ([1d129cf](https://github.com/nordnet/ui/commit/1d129cfd8ca443afed7b27dc135365839baf1a0c))
+
 ## [16.7.1](https://github.com/nordnet/ui/compare/v16.7.0...v16.7.1) (2024-02-19)
 
 
