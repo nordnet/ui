@@ -1,3 +1,10 @@
+## [16.7.1](https://github.com/nordnet/ui/compare/v16.7.0...v16.7.1) (2024-02-19)
+
+
+### Bug Fixes
+
+* add onEnter event to formattedNumber component ([#1593](https://github.com/nordnet/ui/issues/1593)) ([ad5f738](https://github.com/nordnet/ui/commit/ad5f738c8d4d3dc413ae012c93413374351bdb46))
+
 # [16.7.0](https://github.com/nordnet/ui/compare/v16.6.2...v16.7.0) (2024-02-16)
 
 
