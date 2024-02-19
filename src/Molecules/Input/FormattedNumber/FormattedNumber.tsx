@@ -35,6 +35,7 @@ const FormattedNumberInput: React.FC<Props> & {
     onBlur,
     onChange,
     onClick,
+    onEnter,
     onFocus,
     onKeyDown,
     onKeyPress,
@@ -93,10 +94,15 @@ const FormattedNumberInput: React.FC<Props> & {
     const { key } = e;
     const upKey = 'ArrowUp';
     const downKey = 'ArrowDown';
+    const enterKey = 'Enter';
 
     if (key === upKey || key === downKey) {
       e.preventDefault();
       onStepHandler(key === upKey);
+    }
+
+    if (key === enterKey) {
+      onEnter?.(value);
     }
 
     onKeyDown?.(e);

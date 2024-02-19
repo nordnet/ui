@@ -13,6 +13,19 @@ describe('Input.FormattedNumber', () => {
     </IntlProvider>
   );
 
+  test('should call onEnter when pressing Enter key', async () => {
+    const onEnter = jest.fn();
+    render(<FormattedNumber id="id" label="label" onEnter={onEnter} />, { wrapper });
+    const input = screen.getByRole('textbox');
+    await userEvent.click(input);
+    expect(input).toHaveValue('');
+    await userEvent.keyboard(`[Enter]`);
+    expect(onEnter).toHaveBeenCalledWith(null);
+    await userEvent.type(input, '1234.23');
+    await userEvent.keyboard(`[Enter]`);
+    expect(onEnter).toHaveBeenCalledWith(1234.23);
+  });
+
   test('should step up/down on key up/key down press', async () => {
     render(<FormattedNumber id="id" label="label" min={-1} />, { wrapper });
     const input = screen.getByRole('textbox');
