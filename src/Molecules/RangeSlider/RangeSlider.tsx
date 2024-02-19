@@ -24,8 +24,8 @@ const getDefaultKnob = (
   max: number,
 ) => {
   if (low && high && low === high) {
-    const distanceToMin = low - min;
-    const distanceToMax = max - high;
+    const distanceToMin = Math.abs(low - min);
+    const distanceToMax = Math.abs(max - high);
 
     if (distanceToMax > distanceToMin) {
       return KnobType.HIGH;
