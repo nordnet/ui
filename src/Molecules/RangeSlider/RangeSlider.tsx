@@ -17,13 +17,8 @@ const Container = styled.div<InternalProps>`
   margin: 0 ${(p) => `${getKnobSize(p.$variant) / 2}px`};
 `;
 
-const getDefaultKnob = (
-  low: number | undefined,
-  high: number | undefined,
-  min: number,
-  max: number,
-) => {
-  if (low && high && low === high) {
+const getDefaultKnob = (min: number, max: number, low?: number, high?: number) => {
+  if (isNumber(low) && isNumber(high) && low === high) {
     const distanceToMin = Math.abs(low - min);
     const distanceToMax = Math.abs(max - high);
 
@@ -50,7 +45,7 @@ const RangeSlider: Component = ({
   const [initialized, setInitialized] = useState(false); // trackRef is not set first render, need to force a re-render
 
   const [activeHandle, setActiveHandle] = useState(
-    getDefaultKnob(defaultLowValue, defaultHighValue, min, max),
+    getDefaultKnob(min, max, defaultLowValue, defaultHighValue),
   );
 
   // disable slider if min > max or step <= 0 or defaultLowValue > defaultHighValue
@@ -147,7 +142,7 @@ const RangeSlider: Component = ({
       $disabled={disabled}
       $sliderColor={sliderColor}
       $variant={variant}
-      onMouseDown={handleTrackClick}
+      onMouseDown={handleTrackClick} // onMouseDown instead of onClick here to avoid issue with onClick event triggering on wrong side of track when dragging a knob across the other
       ref={trackRef}
       tabIndex={-1}
     >
