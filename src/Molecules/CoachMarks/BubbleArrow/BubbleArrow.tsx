@@ -76,6 +76,7 @@ const arrowLeft = css<{ noBorder?: boolean }>`
 
 const Arrow = styled.div<InternalProps>`
   position: absolute;
+
   &::before,
   &::after {
     content: '';
