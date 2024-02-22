@@ -9,7 +9,6 @@ export type Props = {
   ref?: React.Ref<HTMLDivElement>;
   style?: object;
   barColor?: ColorFn;
-  bottomSheet?: boolean;
   feedbackWidgetMode?: boolean;
 };
 

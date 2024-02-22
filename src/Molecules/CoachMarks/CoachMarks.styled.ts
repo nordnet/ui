@@ -41,7 +41,7 @@ export const Content = styled.div`
   color: ${(p) => p.theme.color.bubbleSecondaryText};
 `;
 
-export const CloseButton = styled(Button)`
+export const CloseButton = styled(Button.Icon)`
   position: absolute;
   top: ${(p) => p.theme.spacing.unit(5)}px;
   right: ${(p) => p.theme.spacing.unit(5)}px;

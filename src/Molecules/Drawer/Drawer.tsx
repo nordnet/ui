@@ -40,11 +40,11 @@ const Container = styled(motion.div)`
 
 const CloseButton = styled(Button.Icon)`
   position: absolute;
-  top: ${(p) => p.theme.spacing.unit(PADDING_Y - 1)}px;
+  top: ${(p) => p.theme.spacing.unit(PADDING_Y)}px;
   right: ${(p) => p.theme.spacing.unit(PADDING_X)}px;
 
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE - 0.5)}px;
+    top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
     right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
   }
 `;

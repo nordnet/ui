@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
-import { Button, Flexbox, Icon, Portal, Typography } from '../..';
+import { BottomSheet, Button, Flexbox, Icon, Portal, Typography, useMedia } from '../..';
 import { Component } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
 import { useOnClickOutside, useWindowSize, useSafeLayoutEffect } from '../../common/Hooks';
@@ -20,27 +20,29 @@ import {
 } from './CoachMarks.styled';
 
 export const CoachMarks: Component = ({
-  steps,
+  barColor,
+  bottomSheet = false,
+  bottomSheetTitle,
+  closeButton = false,
+  closeOnClickOutside = true,
+  closeText = 'Close',
+  doneText = 'Done',
+  feedbackWidgetMode = false,
+  hideMultiStepIndicatorText = false,
+  hidePreviousButton = false,
+  multiStepIndicatorText = 'of',
+  nextText: nextTextFromProps = 'Next',
   onClose,
   onDone,
   onNext,
   onPrev,
-  prevText: prevTextFromProps = 'Previous',
-  nextText: nextTextFromProps = 'Next',
-  closeText = 'Close',
-  doneText = 'Done',
-  multiStepIndicatorText = 'of',
-  closeOnClickOutside = true,
-  barColor,
-  bottomSheet = false,
-  closeButton = false,
-  hidePreviousButton = false,
-  feedbackWidgetMode = false,
-  hideMultiStepIndicatorText = false,
   overrideStep,
+  prevText: prevTextFromProps = 'Previous',
+  steps,
 }) => {
   const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
+  const [bottomSheetOpen, setBottomSheetOpen] = useState(true);
 
   useEffect(() => {
     if (overrideStep && overrideStep !== currentStep) {
@@ -92,6 +94,8 @@ export const CoachMarks: Component = ({
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
     : undefined;
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const shouldShowBottomSheet = bottomSheet && !feedbackWidgetMode && isMobile;
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {
@@ -126,7 +130,15 @@ export const CoachMarks: Component = ({
   }, [onDone]);
 
   const handleClose = () => {
-    if (onClose) {
+    if (shouldShowBottomSheet) {
+      // This is to mitigate for the bottomSheet animation to close smoothly
+      setBottomSheetOpen(false);
+      setTimeout(() => {
+        if (typeof onClose === 'function') {
+          onClose();
+        }
+      }, 1000);
+    } else if (typeof onClose === 'function') {
       onClose();
     }
   };
@@ -136,14 +148,106 @@ export const CoachMarks: Component = ({
       handleClose();
     }
   });
-  return referenceElementRect || feedbackWidgetMode ? (
+
+  if (typeof isMobile === 'undefined' || isMobile === null) {
+    return null;
+  }
+
+  const getContent = (
+    <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
+      <Flexbox container direction="column" gap={1}>
+        {icon && <IconFlex item>{icon}</IconFlex>}
+        {title && (
+          <Flexbox item>
+            <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
+              <Typography as="h2" type="primary" weight="bold">
+                {title}
+              </Typography>
+            </TitleWrapper>
+          </Flexbox>
+        )}
+        {content && (
+          <Flexbox item>
+            <Content>
+              {typeof content === 'string' ? (
+                <Typography as="p" type="secondary" color="inherit">
+                  {content}
+                </Typography>
+              ) : (
+                content
+              )}
+            </Content>
+          </Flexbox>
+        )}
+      </Flexbox>
+      <FooterFlex container item alignItems="baseline" gap={5}>
+        {closeButton ? (
+          <Flexbox item>
+            <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
+              {closeText}
+            </Button>
+          </Flexbox>
+        ) : (
+          hasMultipleSteps &&
+          !hideMultiStepIndicatorText && (
+            <Flexbox item>
+              <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
+                {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
+              </Typography>
+            </Flexbox>
+          )
+        )}
+        <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
+          {hasPrevStep && (
+            <Flexbox item flex="1 1 50%">
+              <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
+                {prevText}
+              </Button>
+            </Flexbox>
+          )}
+          <Flexbox item flex="1 1 50%">
+            {hasNextStep && !hideNextButton ? (
+              <Button
+                variant="primary"
+                onClick={handleStepForward}
+                fullWidth
+                disabled={nextDisabled}
+              >
+                {nextText}
+              </Button>
+            ) : (
+              !hideDoneButton && (
+                <Button variant="primary" onClick={handleDone} fullWidth>
+                  {doneText}
+                </Button>
+              )
+            )}
+          </Flexbox>
+        </NavigationButtonsContainer>
+      </FooterFlex>
+    </Flexbox>
+  );
+
+  if (shouldShowBottomSheet) {
+    return (
+      <BottomSheet
+        closeOnClickOutside
+        onClose={handleClose}
+        title={bottomSheetTitle}
+        open={bottomSheetOpen}
+      >
+        {body || getContent}
+      </BottomSheet>
+    );
+  }
+
+  return (
     <Portal>
       <StyledBubble
         ref={setPopperElement}
         style={feedbackWidgetMode ? undefined : styles.popper}
         {...attributes.popper}
         barColor={barColor}
-        bottomSheet={bottomSheet}
         feedbackWidgetMode={feedbackWidgetMode}
       >
         {!feedbackWidgetMode && (
@@ -155,82 +259,9 @@ export const CoachMarks: Component = ({
             noBorder={!!barColor}
           />
         )}
-        <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
-          {body || (
-            <Flexbox container direction="column" gap={1}>
-              {icon && <IconFlex item>{icon}</IconFlex>}
-              {title && (
-                <Flexbox item>
-                  <TitleWrapper $hasIcon={Boolean(icon) || closeButton}>
-                    <Typography as="h2" type="primary" weight="bold">
-                      {title}
-                    </Typography>
-                  </TitleWrapper>
-                </Flexbox>
-              )}
-              {content && (
-                <Flexbox item>
-                  <Content>
-                    {typeof content === 'string' ? (
-                      <Typography as="p" type="secondary" color="inherit">
-                        {content}
-                      </Typography>
-                    ) : (
-                      content
-                    )}
-                  </Content>
-                </Flexbox>
-              )}
-            </Flexbox>
-          )}
-          <FooterFlex container item alignItems="baseline" gap={5}>
-            {closeButton ? (
-              <Flexbox item>
-                <Button variant="neutral" color={(t) => t.color.link} onClick={onClose}>
-                  {closeText}
-                </Button>
-              </Flexbox>
-            ) : (
-              hasMultipleSteps &&
-              !hideMultiStepIndicatorText && (
-                <Flexbox item>
-                  <Typography type="secondary" color={(t) => t.color.bubbleSecondaryText}>
-                    {`${currentStep + 1} ${multiStepIndicatorText} ${steps.length}`}
-                  </Typography>
-                </Flexbox>
-              )
-            )}
-            <NavigationButtonsContainer container gap={1} $hasSingleButton={!hasPrevStep}>
-              {hasPrevStep && (
-                <Flexbox item flex="1 1 50%">
-                  <Button variant="secondary" onClick={handleStepBackwards} fullWidth>
-                    {prevText}
-                  </Button>
-                </Flexbox>
-              )}
-              <Flexbox item flex="1 1 50%">
-                {hasNextStep && !hideNextButton ? (
-                  <Button
-                    variant="primary"
-                    onClick={handleStepForward}
-                    fullWidth
-                    disabled={nextDisabled}
-                  >
-                    {nextText}
-                  </Button>
-                ) : (
-                  !hideDoneButton && (
-                    <Button variant="primary" onClick={handleDone} fullWidth>
-                      {doneText}
-                    </Button>
-                  )
-                )}
-              </Flexbox>
-            </NavigationButtonsContainer>
-          </FooterFlex>
-        </Flexbox>
+        {body || getContent}
         {!closeButton && (
-          <CloseButton variant="neutral" onClick={handleClose}>
+          <CloseButton variant="secondary" onClick={handleClose}>
             <Icon.Cross16 />
           </CloseButton>
         )}
@@ -241,5 +272,5 @@ export const CoachMarks: Component = ({
         </SVG>
       )}
     </Portal>
-  ) : null;
+  );
 };
