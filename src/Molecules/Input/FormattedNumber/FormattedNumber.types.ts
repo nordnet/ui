@@ -48,6 +48,7 @@ export type Props = {
   onChange?: (value: number | null) => void;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: (value: number | null) => void;
+  onEnter?: (value: number | null) => void;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;

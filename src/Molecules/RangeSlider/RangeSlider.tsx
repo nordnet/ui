@@ -17,6 +17,18 @@ const Container = styled.div<InternalProps>`
   margin: 0 ${(p) => `${getKnobSize(p.$variant) / 2}px`};
 `;
 
+const getDefaultKnob = (min: number, max: number, low?: number, high?: number) => {
+  if (isNumber(low) && isNumber(high) && low === high) {
+    const distanceToMin = Math.abs(low - min);
+    const distanceToMax = Math.abs(max - high);
+
+    if (distanceToMax > distanceToMin) {
+      return KnobType.HIGH;
+    }
+  }
+  return KnobType.LOW;
+};
+
 const RangeSlider: Component = ({
   defaultHighValue,
   defaultLowValue,
@@ -31,7 +43,10 @@ const RangeSlider: Component = ({
 }) => {
   const trackRef: React.Ref<HTMLDivElement> = useRef(null);
   const [initialized, setInitialized] = useState(false); // trackRef is not set first render, need to force a re-render
-  const [activeHandle, setActiveHandle] = useState(KnobType.LOW);
+
+  const [activeHandle, setActiveHandle] = useState(
+    getDefaultKnob(min, max, defaultLowValue, defaultHighValue),
+  );
 
   // disable slider if min > max or step <= 0 or defaultLowValue > defaultHighValue
   const disabled =
@@ -110,16 +125,10 @@ const RangeSlider: Component = ({
       const clampedValue = clamp(newValueRounded, min, max);
 
       if (clampedValue !== null) {
-        if (
-          difflowValue < diffhighValue ||
-          (clampedValue < lowValue && activeHandle === KnobType.LOW)
-        ) {
+        if (difflowValue < diffhighValue || clampedValue < lowValue) {
           updateValue(clampedValue, KnobType.LOW);
           lowHandleRef.current?.focus();
-        } else if (
-          difflowValue > diffhighValue ||
-          (clampedValue > highValue && activeHandle === KnobType.HIGH)
-        ) {
+        } else if (difflowValue > diffhighValue || clampedValue > highValue) {
           updateValue(clampedValue, KnobType.HIGH);
           highHandleRef.current?.focus();
         }
@@ -133,7 +142,7 @@ const RangeSlider: Component = ({
       $disabled={disabled}
       $sliderColor={sliderColor}
       $variant={variant}
-      onClick={handleTrackClick}
+      onMouseDown={handleTrackClick} // onMouseDown instead of onClick here to avoid issue with onClick event triggering on wrong side of track when dragging a knob across the other
       ref={trackRef}
       tabIndex={-1}
     >

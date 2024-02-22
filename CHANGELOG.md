@@ -1,3 +1,38 @@
+## [16.7.2](https://github.com/nordnet/ui/compare/v16.7.1...v16.7.2) (2024-02-19)
+
+
+### Bug Fixes
+
+* set default knob according to distance to min and max ([#1594](https://github.com/nordnet/ui/issues/1594)) ([1d129cf](https://github.com/nordnet/ui/commit/1d129cfd8ca443afed7b27dc135365839baf1a0c))
+
+## [16.7.1](https://github.com/nordnet/ui/compare/v16.7.0...v16.7.1) (2024-02-19)
+
+
+### Bug Fixes
+
+* add onEnter event to formattedNumber component ([#1593](https://github.com/nordnet/ui/issues/1593)) ([ad5f738](https://github.com/nordnet/ui/commit/ad5f738c8d4d3dc413ae012c93413374351bdb46))
+
+# [16.7.0](https://github.com/nordnet/ui/compare/v16.6.2...v16.7.0) (2024-02-16)
+
+
+### Features
+
+* add shadow tokens and update color tokens ([#1592](https://github.com/nordnet/ui/issues/1592)) ([d452f72](https://github.com/nordnet/ui/commit/d452f7288e9e23fc11f729a6fcf24b14357567d5))
+
+## [16.6.2](https://github.com/nordnet/ui/compare/v16.6.1...v16.6.2) (2024-02-15)
+
+
+### Bug Fixes
+
+* use webp for logos ([#1591](https://github.com/nordnet/ui/issues/1591)) ([4e6573a](https://github.com/nordnet/ui/commit/4e6573acc01b10f458584c8dae0b6de2265f7532))
+
+## [16.6.1](https://github.com/nordnet/ui/compare/v16.6.0...v16.6.1) (2024-02-12)
+
+
+### Bug Fixes
+
+* change badgeSize to transient prop ([#1590](https://github.com/nordnet/ui/issues/1590)) ([96a8d28](https://github.com/nordnet/ui/commit/96a8d284c564081b3e68db6e9892dd9ec137538f))
+
 # [16.6.0](https://github.com/nordnet/ui/compare/v16.5.1...v16.6.0) (2024-02-05)
 
 

@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@mui/base": "5.0.0-beta.26",
-    "@nordnet/design-tokens": "3.0.0",
+    "@nordnet/design-tokens": "3.1.1",
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^3.2.2",
     "color": "^4.0.1",
