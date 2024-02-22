@@ -1,3 +1,15 @@
+# [16.8.0](https://github.com/nordnet/ui/compare/v16.7.2...v16.8.0) (2024-02-22)
+
+
+### Bug Fixes
+
+* add default value for select ([#1596](https://github.com/nordnet/ui/issues/1596)) ([0acfa35](https://github.com/nordnet/ui/commit/0acfa3519acd8c57b253c19c131e2278c0922fdf))
+
+
+### Features
+
+* **update ui kit : coachmarks:** update CoachMarks BottomSheet on mobile ([#1588](https://github.com/nordnet/ui/issues/1588)) ([1c87977](https://github.com/nordnet/ui/commit/1c879773b0356d09d09bb62b43ba93410f355f4c))
+
 ## [16.7.2](https://github.com/nordnet/ui/compare/v16.7.1...v16.7.2) (2024-02-19)
 
 
