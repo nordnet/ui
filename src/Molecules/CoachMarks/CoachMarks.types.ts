@@ -10,42 +10,43 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Step = {
   /** Replaces OldIcon, title and content props */
+  backdropPadding?: string | number;
   body?: React.ReactNode;
   content?: React.ReactNode;
+  hideDoneButton?: boolean;
+  hideNextButton?: boolean;
   icon?: React.ReactNode;
-  placement?: Placement;
-  referenceElement?: HTMLElement;
-  title?: string | React.ReactNode;
   isCircular?: boolean;
-  backdropPadding?: string | number;
+  nextDisabled?: boolean;
+  nextText?: string;
+  placement?: Placement;
+  prevText?: string;
   px?: string | number;
   py?: string | number;
-  prevText?: string;
-  nextText?: string;
-  nextDisabled?: boolean;
-  hideNextButton?: boolean;
-  hideDoneButton?: boolean;
+  referenceElement?: HTMLElement;
+  title?: string | React.ReactNode;
 };
 
 export type Props = {
+  barColor?: ColorFn;
+  bottomSheet?: boolean;
+  bottomSheetTitle?: string;
+  closeButton?: boolean;
+  closeOnClickOutside?: boolean;
+  closeText?: string;
+  doneText?: string;
+  feedbackWidgetMode?: boolean;
+  hideMultiStepIndicatorText?: boolean;
+  hidePreviousButton?: boolean;
+  multiStepIndicatorText?: string;
+  nextText?: string;
   onClose?: () => void;
   onDone?: () => void;
   onNext?: (newStep: number) => void;
   onPrev?: (newStep: number) => void;
-  steps: Step[];
-  prevText?: string;
-  nextText?: string;
-  doneText?: string;
-  closeText?: string;
-  multiStepIndicatorText?: string;
-  closeOnClickOutside?: boolean;
-  barColor?: ColorFn;
-  bottomSheet?: boolean;
-  closeButton?: boolean;
-  hidePreviousButton?: boolean;
-  feedbackWidgetMode?: boolean;
   overrideStep?: number;
-  hideMultiStepIndicatorText?: boolean;
+  prevText?: string;
+  steps: Step[];
 };
 
 export type Component = React.FC<Props>;

@@ -20,27 +20,29 @@ import {
 } from './CoachMarks.styled';
 
 export const CoachMarks: Component = ({
-  steps,
+  barColor,
+  bottomSheet = false,
+  bottomSheetTitle,
+  closeButton = false,
+  closeOnClickOutside = true,
+  closeText = 'Close',
+  doneText = 'Done',
+  feedbackWidgetMode = false,
+  hideMultiStepIndicatorText = false,
+  hidePreviousButton = false,
+  multiStepIndicatorText = 'of',
+  nextText: nextTextFromProps = 'Next',
   onClose,
   onDone,
   onNext,
   onPrev,
-  prevText: prevTextFromProps = 'Previous',
-  nextText: nextTextFromProps = 'Next',
-  closeText = 'Close',
-  doneText = 'Done',
-  multiStepIndicatorText = 'of',
-  closeOnClickOutside = true,
-  barColor,
-  bottomSheet = false,
-  closeButton = false,
-  hidePreviousButton = false,
-  feedbackWidgetMode = false,
-  hideMultiStepIndicatorText = false,
   overrideStep,
+  prevText: prevTextFromProps = 'Previous',
+  steps,
 }) => {
   const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
+  const [controlledClose, setControlledClose] = useState<boolean | Function>();
 
   useEffect(() => {
     if (overrideStep && overrideStep !== currentStep) {
@@ -92,7 +94,8 @@ export const CoachMarks: Component = ({
   const path = referenceElementRect
     ? makeBackdropPath(referenceElementRect, Number(highlightBoxPadding), isCircular, px, py)
     : undefined;
-  const shouldShowBottomSheet = useMedia((t) => t.media.lessThan(t.breakpoints.sm)) || false;
+  const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
+  const shouldShowBottomSheet = bottomSheet && !feedbackWidgetMode && isMobile;
 
   useSafeLayoutEffect(() => {
     if (referenceElement) {
@@ -127,7 +130,13 @@ export const CoachMarks: Component = ({
   }, [onDone]);
 
   const handleClose = () => {
-    if (onClose) {
+    if (onClose && shouldShowBottomSheet) {
+      setControlledClose(true);
+      // This is to mitigate for the bottomSheet animation to close smoothly
+      setTimeout(() => onClose(), 1000);
+    }
+
+    if (onClose && !shouldShowBottomSheet) {
       onClose();
     }
   };
@@ -213,11 +222,19 @@ export const CoachMarks: Component = ({
     </Flexbox>
   );
 
-  return bottomSheet && shouldShowBottomSheet && !feedbackWidgetMode ? (
-    <BottomSheet closeOnClickOutside onClose={onClose} title="">
-      {body || getContent}
-    </BottomSheet>
-  ) : (
+  if (shouldShowBottomSheet) {
+    return (
+      <BottomSheet
+        closeOnClickOutside
+        onClose={handleClose || controlledClose}
+        title={bottomSheetTitle}
+      >
+        {body || getContent}
+      </BottomSheet>
+    );
+  }
+
+  return (
     <Portal>
       <StyledBubble
         ref={setPopperElement}
@@ -225,7 +242,6 @@ export const CoachMarks: Component = ({
         {...attributes.popper}
         barColor={barColor}
         feedbackWidgetMode={feedbackWidgetMode}
-        bottomSheet={bottomSheet}
       >
         {!feedbackWidgetMode && (
           <BubbleArrow

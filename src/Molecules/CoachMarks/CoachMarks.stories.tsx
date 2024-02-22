@@ -452,7 +452,6 @@ const MobileBottomSheetExample = () => {
           </Flexbox>
         </Box>
       </Card>
-
       {referenceElement && activeGuide && (
         <CoachMarks
           bottomSheet
@@ -477,6 +476,11 @@ const MobileBottomSheetExample = () => {
 
 export const MobileBottomSheet = {
   render: () => <MobileBottomSheetExample />,
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphone12',
+    },
+  },
 };
 
 const OverrideStepExample = () => {

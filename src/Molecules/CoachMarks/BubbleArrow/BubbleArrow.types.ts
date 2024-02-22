@@ -10,7 +10,6 @@ export type Props = {
 
 export type InternalProps = {
   $bubblePlacement: Placement;
-  bottomSheet: boolean;
   noBorder?: boolean;
 };
 
