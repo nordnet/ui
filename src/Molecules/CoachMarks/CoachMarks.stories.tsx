@@ -407,7 +407,7 @@ export const WithFeedbackWidgetMode = {
 
       return (
         <>
-          <Button onClick={() => setActiveGuide(!activeGuide)}>Start guide</Button>
+          <Button onClick={() => setActiveGuide(true)}>Start guide</Button>
           {activeGuide && (
             <CoachMarks
               barColor={(t) => t.color.buy}
