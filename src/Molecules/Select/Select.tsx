@@ -50,6 +50,8 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
         defaultValue,
       });
 
+    const valueWithDefault = value ?? defaultValue;
+
     useEffect(() => {
       if (isOpen) {
         listboxRef.current?.focus();
@@ -60,7 +62,7 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
       <SelectProvider
         getButtonProps={getButtonProps}
         getOptionMetadata={getOptionMetadata}
-        value={value}
+        value={valueWithDefault}
       >
         <Root className={className} $width={width} $fullWidth={fullWidth} id={id} {...rest}>
           {triggerFromProps || (
@@ -79,8 +81,13 @@ const SelectWithForwardRef = forwardRef<HTMLButtonElement, Props>(
             </ListboxContainer>
           </ListContainer>
         </Root>
-        {name && value ? (
-          <HiddenSelect name={name} multiple={multiple} value={value} options={options} />
+        {name && valueWithDefault ? (
+          <HiddenSelect
+            name={name}
+            multiple={multiple}
+            value={valueWithDefault}
+            options={options}
+          />
         ) : null}
       </SelectProvider>
     );
