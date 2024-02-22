@@ -42,7 +42,7 @@ export const CoachMarks: Component = ({
 }) => {
   const [currentStep, setCurrentStep] = useState(overrideStep ?? 0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
-  const [controlledClose, setControlledClose] = useState<boolean | Function>();
+  const [bottomSheetOpen, setBottomSheetOpen] = useState(true);
 
   useEffect(() => {
     if (overrideStep && overrideStep !== currentStep) {
@@ -130,13 +130,15 @@ export const CoachMarks: Component = ({
   }, [onDone]);
 
   const handleClose = () => {
-    if (onClose && shouldShowBottomSheet) {
-      setControlledClose(true);
+    if (shouldShowBottomSheet) {
       // This is to mitigate for the bottomSheet animation to close smoothly
-      setTimeout(() => onClose(), 1000);
-    }
-
-    if (onClose && !shouldShowBottomSheet) {
+      setBottomSheetOpen(false);
+      setTimeout(() => {
+        if (typeof onClose === 'function') {
+          onClose();
+        }
+      }, 1000);
+    } else if (typeof onClose === 'function') {
       onClose();
     }
   };
@@ -146,6 +148,10 @@ export const CoachMarks: Component = ({
       handleClose();
     }
   });
+
+  if (typeof isMobile === 'undefined' || isMobile === null) {
+    return null;
+  }
 
   const getContent = (
     <Flexbox container item direction="column" flex="1" gap={5} ref={internalCoachMarkRef}>
@@ -226,8 +232,9 @@ export const CoachMarks: Component = ({
     return (
       <BottomSheet
         closeOnClickOutside
-        onClose={handleClose || controlledClose}
+        onClose={handleClose}
         title={bottomSheetTitle}
+        open={bottomSheetOpen}
       >
         {body || getContent}
       </BottomSheet>
