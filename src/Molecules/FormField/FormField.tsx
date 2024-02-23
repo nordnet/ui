@@ -20,7 +20,6 @@ const Wrapper = styled.div<{
   $width?: string | number;
   $animate?: boolean;
   $disappear?: boolean;
-  $isNew?: boolean;
 }>`
   ${(p) => (p.$width ? `width: ${p.$width};` : 'width: 200px;')}
   max-width: 100%;
@@ -110,7 +109,6 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       disabled,
       value,
       size,
-      isNew = false,
     },
     ref,
   ) => {
@@ -119,7 +117,6 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
 
     const animate = Boolean(value) && Boolean(!size);
     const disappear = Boolean(value) && Boolean(size);
-    console.log(isNew);
 
     if (label) {
       field = (

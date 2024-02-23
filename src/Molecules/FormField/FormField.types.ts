@@ -34,5 +34,4 @@ export type Props = {
   animate?: boolean;
   value?: string;
   size?: 's' | 'm';
-  isNew?: boolean;
 } & LabelAddonProp;
