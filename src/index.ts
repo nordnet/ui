@@ -98,6 +98,7 @@ import TagChip from './Molecules/TagChip';
 import Timeline from './Molecules/Timeline';
 import Toggle from './Molecules/Toggle';
 import Tooltip from './Molecules/Tooltip';
+import ToastMessage from './Molecules/ToastMessage';
 // export popover for styling tooltip content
 import { PopOver } from './common/PopOver';
 import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
@@ -241,6 +242,7 @@ export {
   Timeline,
   Toggle,
   Tooltip,
+  ToastMessage,
   Tr,
   TrackingContext,
   Truncate,
