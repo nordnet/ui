@@ -47,4 +47,5 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   pointerArrow?: boolean;
   invertedColors?: boolean;
+  onPopperMounted?: (popperUpdate: () => void) => void;
 };

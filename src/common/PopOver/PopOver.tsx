@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef, useState } from 'react';
+import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { usePopper } from 'react-popper';
 import { mergeRefs } from '../utils';
 import { Portal } from '../..';
@@ -33,6 +33,7 @@ const PopOver: React.FC<Props> & {
   customBoundary,
   pointerArrow = true,
   invertedColors,
+  onPopperMounted,
   ...htmlSpanProps
 }) => {
   const [popperElement, setPopperElement] = useState(null);
@@ -71,6 +72,13 @@ const PopOver: React.FC<Props> & {
 
   const { state, styles, attributes } = popper;
   const { placement } = state || {};
+
+  // exposes update function from popper to consumers, so PopOver can be repositioned properly
+  useEffect(() => {
+    if (popper?.update && typeof onPopperMounted === 'function') {
+      onPopperMounted(popper?.update);
+    }
+  }, [onPopperMounted, popper]);
 
   if (positionCallback && placement) {
     positionCallback(placement as NonNullable<Props['position']>);
@@ -120,6 +128,7 @@ const PopOver: React.FC<Props> & {
   if (!customBoundary) {
     return <Portal>{content}</Portal>;
   }
+
   return content;
 };
 
