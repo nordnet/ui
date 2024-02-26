@@ -43,8 +43,8 @@ export const MovingTooltip = () => {
     }, 160);
   }, [isAccordionExpanded]);
 
-  const updateCallback = (popperUpdate: () => void) => {
-    updateFnRef.current = popperUpdate;
+  const updateCallback = (popperUpdateFn: () => void) => {
+    updateFnRef.current = popperUpdateFn;
   };
 
   return (
