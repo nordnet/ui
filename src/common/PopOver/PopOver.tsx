@@ -35,7 +35,7 @@ const PopOver = React.forwardRef<{ update: PopperUpdate | null }, Props>(
       invertedColors,
       ...htmlSpanProps
     },
-    forwardRef,
+    ref,
   ) => {
     const [popperElement, setPopperElement] = useState(null);
     const [arrowElement, setArrowElement] = useState(null);
@@ -76,7 +76,7 @@ const PopOver = React.forwardRef<{ update: PopperUpdate | null }, Props>(
 
     // exposes update function from popper to consumers
     useImperativeHandle(
-      forwardRef,
+      ref,
       () => ({
         update: popper?.update,
       }),
