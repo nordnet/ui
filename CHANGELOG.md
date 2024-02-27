@@ -1,3 +1,10 @@
+## [16.8.1](https://github.com/nordnet/ui/compare/v16.8.0...v16.8.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* set correct type of popperUpdate ([#1598](https://github.com/nordnet/ui/issues/1598)) ([9e1538b](https://github.com/nordnet/ui/commit/9e1538be4430c821aeda996bce1e3f9dc628231b))
+
 # [16.8.0](https://github.com/nordnet/ui/compare/v16.7.2...v16.8.0) (2024-02-22)
 
 
