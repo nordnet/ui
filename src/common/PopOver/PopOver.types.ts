@@ -48,5 +48,7 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   pointerArrow?: boolean;
   invertedColors?: boolean;
-  onPopperMounted?: (popperUpdate: PopperJS.Instance['update']) => void;
+  ref?: React.Ref<any>;
 };
+
+export type PopperUpdate = PopperJS.Instance['update'];

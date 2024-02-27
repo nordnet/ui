@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { PopperUpdate } from 'common/PopOver';
 import {
   Box,
   Flexbox,
@@ -29,7 +30,7 @@ const StoryWrapper: React.FC<{ children?: React.ReactNode }> = ({ children }) =>
 export const MovingTooltip = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [isAccordionExpanded, setIsAccordionExpanded] = useState(false);
-  const updateFnRef = useRef<() => void>();
+  const updateFnRef = useRef<{ update: PopperUpdate | null }>();
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,13 +40,9 @@ export const MovingTooltip = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      updateFnRef.current?.();
+      updateFnRef.current?.update?.();
     }, 160);
   }, [isAccordionExpanded]);
-
-  const updateCallback = (popperUpdateFn: () => void) => {
-    updateFnRef.current = popperUpdateFn;
-  };
 
   return (
     <StoryWrapper>
@@ -64,7 +61,7 @@ export const MovingTooltip = () => {
         description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
         closeButtonTitle="Close by clicking X"
         onClose={() => setIsOpen(false)}
-        onPopperMounted={updateCallback}
+        ref={updateFnRef}
       >
         <Input.Text label="Label" placeholder="This is wrapped by a tooltip" />
       </PersistentTooltip>
