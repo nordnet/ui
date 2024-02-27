@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import styled from 'styled-components';
 import Tooltip from '../../../Tooltip';
 import Drawer from '../../../Drawer';
 import Badge from '../..';
 import { Display } from '../../../../common/Display';
+
+const StyledBackground = styled.div`
+  background-color: ${({ theme }) => theme.colorTokens.neutral.background_default};
+`;
 
 export default {
   title: 'Molecules / Badge / Tooltip',
@@ -25,6 +30,7 @@ const DefaultUseComponent = () => {
   };
 
   return (
+    <StyledBackground>
     <Display
       items={[
         {
@@ -76,6 +82,7 @@ const DefaultUseComponent = () => {
         },
       ]}
     />
+    </StyledBackground>
   );
 };
 

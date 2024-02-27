@@ -12,21 +12,32 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledBaseBadge = styled(BaseBadge)`
-  border: 1px solid ${(p) => p.theme.color.tooltipBadgeBorder};
+  background-color: ${({ theme }) => theme.colorTokens.neutral.background_medium};
 `;
 
 const StyledButton = styled(Button)`
-  ${(p) => `
+  ${({theme}) => `
     :hover {
       cursor: pointer;
       ${StyledTypography} {
-        color: ${p.theme.color.cta};
+        color: ${theme.colorTokens.action.text_default};
         cursor: pointer;
       }
       ${StyledBaseBadge} {
-        border-color: ${p.theme.color.cta};
+        background-color: ${theme.colorTokens.action.background_weak};
       }
-    }`}
+    }
+    :focus {
+      ${StyledBaseBadge} {
+        background-color: ${theme.colorTokens.neutral.background_medium};
+        border: 2px solid ${theme.colorTokens.action.border_focus};
+      }
+      ${StyledTypography} {
+        cursor: pointer;
+        color: ${theme.colorTokens.neutral.text_default};
+      }
+    }
+    `}
 `;
 
 const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: number }>(
@@ -37,11 +48,11 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
       <StyledBaseBadge
         {...htmlProps}
         ref={ref}
-        badgeColor={(t) => t.color.tooltipBadgeBackground}
+        badgeColor={(t) => t.colorTokens.neutral.background_medium}
         badgeSize={baseBadgeSize}
         symmetricShape
       >
-        <StyledTypography color={(t) => t.color.tooltipBadgeText} type={typographyType}>
+        <StyledTypography color={(t) => t.colorTokens.neutral.text_default} type={typographyType}>
           ?
         </StyledTypography>
       </StyledBaseBadge>
