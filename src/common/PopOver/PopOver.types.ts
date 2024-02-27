@@ -1,4 +1,5 @@
 import React from 'react';
+import * as PopperJS from '@popperjs/core';
 import { BasePlacement, Rect } from '@popperjs/core';
 import { ColorFn } from 'common/Types';
 
@@ -47,5 +48,5 @@ export type Props = {
   customBoundary?: HTMLElement | Array<HTMLElement>;
   pointerArrow?: boolean;
   invertedColors?: boolean;
-  onPopperMounted?: (popperUpdate: () => void) => void;
+  onPopperMounted?: (popperUpdate: PopperJS.Instance['update']) => void;
 };
