@@ -18,6 +18,7 @@ export type Props = {
    */
   wrapChild?: boolean;
   textColor?: ColorFn;
+  onPopperMounted?: (popperUpdate: () => void) => void;
 } & Pick<
   PopOverProps,
   | 'id'

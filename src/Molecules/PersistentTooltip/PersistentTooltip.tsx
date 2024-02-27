@@ -44,6 +44,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
   inModal,
   wrapChild,
   pointerArrow = true,
+  onPopperMounted,
   ...htmlDivProps
 }) => {
   const child = React.Children.only(children) as ReactElement;
@@ -121,6 +122,7 @@ export const PersistentTooltip: FC<PersistentTooltipProps> & {
           ariaLabel={ariaLabel}
           inModal={inModal}
           pointerArrow={pointerArrow}
+          onPopperMounted={onPopperMounted}
           {...htmlDivProps}
         />
       )}

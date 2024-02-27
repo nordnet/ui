@@ -1,6 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography, OldIcon } from '../..';
+import {
+  Box,
+  Flexbox,
+  Drawer,
+  Input,
+  PersistentTooltip,
+  Typography,
+  OldIcon,
+  AccordionItem,
+} from '../..';
 
 export default {
   title: 'Molecules / Persistent Tooltip',
@@ -17,9 +26,54 @@ const StoryWrapper: React.FC<{ children?: React.ReactNode }> = ({ children }) =>
   </div>
 );
 
+export const MovingTooltip = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const [isAccordionExpanded, setIsAccordionExpanded] = useState(false);
+  const updateFnRef = useRef<() => void>();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsAccordionExpanded(true);
+    }, 1000);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      updateFnRef.current?.();
+    }, 160);
+  }, [isAccordionExpanded]);
+
+  const updateCallback = (popperUpdateFn: () => void) => {
+    updateFnRef.current = popperUpdateFn;
+  };
+
+  return (
+    <StoryWrapper>
+      <AccordionItem
+        key={123123}
+        title="I will expand after 1500ms"
+        disableFocusOutline
+        expanded={isAccordionExpanded}
+        onClick={() => setIsAccordionExpanded(!isAccordionExpanded)}
+      >
+        This is accordion content, will this push down the Tooltip?
+      </AccordionItem>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Default persistent tooltip"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+        onPopperMounted={updateCallback}
+      >
+        <Input.Text label="Label" placeholder="This is wrapped by a tooltip" />
+      </PersistentTooltip>
+    </StoryWrapper>
+  );
+};
+
 export const DefaultStory = () => {
   const [isOpen, setIsOpen] = useState(true);
-
   return (
     <StoryWrapper>
       <PersistentTooltip
