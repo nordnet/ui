@@ -1,3 +1,10 @@
+## [16.8.2](https://github.com/nordnet/ui/compare/v16.8.1...v16.8.2) (2024-02-27)
+
+
+### Bug Fixes
+
+* use forwardRef and useImperativeHandle in PopOver and PersistentTooltip ([#1599](https://github.com/nordnet/ui/issues/1599)) ([6fdd280](https://github.com/nordnet/ui/commit/6fdd2803b5943ff32f7a17b829e6dce2df95c300))
+
 ## [16.8.1](https://github.com/nordnet/ui/compare/v16.8.0...v16.8.1) (2024-02-27)
 
 
