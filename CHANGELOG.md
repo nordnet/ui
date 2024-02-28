@@ -1,3 +1,10 @@
+# [16.9.0](https://github.com/nordnet/ui/compare/v16.8.2...v16.9.0) (2024-02-28)
+
+
+### Features
+
+* **feat: update tooltip badge in ui kit:** feat:Update tooltip badge in ui kit ([#1601](https://github.com/nordnet/ui/issues/1601)) ([08a9279](https://github.com/nordnet/ui/commit/08a9279551c021f6baaaa946fce1cac25ddcace4))
+
 ## [16.8.2](https://github.com/nordnet/ui/compare/v16.8.1...v16.8.2) (2024-02-27)
 
 
