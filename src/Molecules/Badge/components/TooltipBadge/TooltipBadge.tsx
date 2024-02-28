@@ -12,19 +12,29 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledBaseBadge = styled(BaseBadge)`
-  border: 1px solid ${(p) => p.theme.color.tooltipBadgeBorder};
+  background-color: ${({ theme }) => theme.colorTokens.neutral.background_strong};
 `;
 
 const StyledButton = styled(Button)`
-  ${(p) => `
+  ${({ theme }) => `
     :hover {
       cursor: pointer;
       ${StyledTypography} {
-        color: ${p.theme.color.cta};
+        color: ${theme.colorTokens.action.text_default};
         cursor: pointer;
       }
       ${StyledBaseBadge} {
-        border-color: ${p.theme.color.cta};
+        background-color: ${theme.colorTokens.action.background_weak};
+      }
+    }
+    :focus {
+      cursor: pointer;
+      ${StyledTypography} {
+        color: ${theme.colorTokens.neutral.text_default};
+        cursor: pointer;
+      }
+      ${StyledBaseBadge} {
+        border: 2px solid ${theme.colorTokens.action.border_focus};
       }
     }`}
 `;
@@ -34,17 +44,17 @@ const TooltipBadgeContent = React.forwardRef<HTMLSpanElement, { baseBadgeSize: n
     const typographyType = baseBadgeSize === TooltipBadgeSize.s ? 'caption' : 'secondary';
 
     return (
-      <StyledBaseBadge
-        {...htmlProps}
-        ref={ref}
-        badgeColor={(t) => t.color.tooltipBadgeBackground}
-        badgeSize={baseBadgeSize}
-        symmetricShape
-      >
-        <StyledTypography color={(t) => t.color.tooltipBadgeText} type={typographyType}>
-          ?
-        </StyledTypography>
-      </StyledBaseBadge>
+      <>
+        <StyledBaseBadge
+          {...htmlProps}
+          ref={ref}
+          badgeColor={(t) => t.colorTokens.neutral.text_default}
+          badgeSize={baseBadgeSize}
+          symmetricShape
+        >
+          <StyledTypography type={typographyType}>?</StyledTypography>
+        </StyledBaseBadge>
+      </>
     );
   },
 );
