@@ -6,6 +6,7 @@ export type Props = {
   linkButton?: ReactNode;
   isVisible?: boolean;
   timeout?: number;
-  setIsVisible?: (set: any) => void;
+  setIsVisible?: (visible: boolean) => void;
   ref?: Ref<any>;
+  key?: string;
 };

@@ -43,10 +43,11 @@ export const DifferentVariantToastMessages = {
 
   name: 'Different variants',
 };
+
 export const HoverUsage = {
   render: () => {
     const Example = () => {
-      const [visible, setVisible] = useState<boolean>(false);
+      const [visible, setVisible] = useState(false);
 
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
@@ -78,10 +79,11 @@ export const HoverUsage = {
   },
   name: 'With Hover',
 };
+
 export const WithLabelUsage = {
   render: () => {
     const Example = () => {
-      const [visible, setVisible] = useState<boolean>(false);
+      const [visible, setVisible] = useState(false);
 
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
@@ -100,10 +102,11 @@ export const WithLabelUsage = {
   },
   name: 'With label',
 };
+
 export const WithLabelUsageLink = {
   render: () => {
     const Example = () => {
-      const [visible, setVisible] = useState<boolean>(false);
+      const [visible, setVisible] = useState(false);
 
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
@@ -134,6 +137,7 @@ export const WithLabelUsageLink = {
   },
   name: 'With label and link View',
 };
+
 export const OnClickToastMessages = {
   render: () => {
     const Example = () => {
@@ -172,10 +176,11 @@ export const OnClickToastMessages = {
   },
   name: 'OnClick set ToastMessage',
 };
+
 export const ControlledTimeOut = {
   render: () => {
     const Example = () => {
-      const [visible, setVisible] = useState<boolean>(false);
+      const [visible, setVisible] = useState(false);
 
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>

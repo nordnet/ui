@@ -1,32 +1,14 @@
-import React, { useEffect, useImperativeHandle, useState } from 'react';
+import React, { useEffect, useImperativeHandle, useState, forwardRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Flexbox } from '../..';
 import { BoxContainer, StyledTypography } from './ToastMessage.styled';
 import { Props } from './ToastMessage.types';
 
-const ToastMessages: React.FC<Props> = React.forwardRef(
-  ({ label, icon, linkButton, isVisible, timeout = 6000 }, ref) => {
-    const [visible, setVisibility] = useState<boolean>(isVisible || false);
-    const [mouseEnter, setMouseEnter] = useState<boolean>(false);
-
-    const duration = 0.35;
-    const variants = {
-      initial: {
-        opacity: 0,
-      },
-      enter: {
-        opacity: 1,
-        transition: {
-          duration,
-          ease: 'easeInOut',
-        },
-      },
-      exit: {
-        opacity: 0,
-        transition: { duration },
-      },
-    };
+const ToastMessages: React.FC<Props> = forwardRef(
+  ({ label, icon, linkButton, isVisible = false, key = 'toast', timeout = 6000 }, ref) => {
+    const [visible, setVisibility] = useState(isVisible);
+    const [mouseEnter, setMouseEnter] = useState(false);
 
     useImperativeHandle(ref, () => ({
       setVisible: () => {
@@ -35,18 +17,20 @@ const ToastMessages: React.FC<Props> = React.forwardRef(
     }));
 
     useEffect(() => {
-      if (typeof ref === 'undefined' || ref === null) {
-        setVisibility(isVisible || false);
-      }
-
       if (mouseEnter) {
         setVisibility(true);
       }
-    }, [isVisible, ref, mouseEnter]);
+    }, [mouseEnter]);
+
+    useEffect(() => {
+      if (typeof ref === 'undefined' || ref === null) {
+        setVisibility((prevValue) => prevValue || isVisible);
+      }
+    }, [isVisible, ref]);
 
     useEffect(() => {
       const timer = setTimeout(() => {
-        if (visible === true && !mouseEnter) {
+        if (visible && !mouseEnter) {
           setVisibility(false);
         }
       }, timeout);
@@ -56,7 +40,13 @@ const ToastMessages: React.FC<Props> = React.forwardRef(
     return (
       <AnimatePresence mode="wait">
         {visible && (
-          <motion.div key="toast" variants={variants} initial="initial" animate="enter" exit="exit">
+          <motion.div
+            key={key}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: 'easeInOut' }}
+          >
             <BoxContainer
               onMouseEnter={() => setMouseEnter(true)}
               onMouseLeave={() => setMouseEnter(false)}
