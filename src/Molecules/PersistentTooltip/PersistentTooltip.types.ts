@@ -18,6 +18,7 @@ export type Props = {
    */
   wrapChild?: boolean;
   textColor?: ColorFn;
+  ref?: React.Ref<any>;
 } & Pick<
   PopOverProps,
   | 'id'
