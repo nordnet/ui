@@ -1,9 +1,11 @@
+import { ReactNode, Ref } from 'react';
+
 export type Props = {
-  label: string;
-  icon?: React.ReactNode;
-  linkButton?: React.ReactNode;
-  isVisible: boolean;
+  label: string | ReactNode;
+  icon?: ReactNode;
+  linkButton?: ReactNode;
+  isVisible?: boolean;
   timeout?: number;
   setIsVisible?: (set: any) => void;
-  ref?: React.SetStateAction<any>;
+  ref?: Ref<any>;
 };

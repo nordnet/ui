@@ -10,6 +10,7 @@ export const BoxContainer = styled(Box)`
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 3;
 `;
 
 export const StyledTypography = styled(Typography)`

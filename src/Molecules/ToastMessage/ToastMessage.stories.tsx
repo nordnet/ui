@@ -51,7 +51,7 @@ export const HoverUsage = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Box onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} p={4}>
+            <Box onMouseEnter={() => setVisible(true)} p={4}>
               <Badge.Status variant="create" badgeSize="xl" label="Hover me" />
             </Box>
           </Flexbox>
@@ -86,11 +86,7 @@ export const WithLabelUsage = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Button
-              variant="primary"
-              onMouseEnter={() => setVisible(true)}
-              onMouseLeave={() => setVisible(false)}
-            >
+            <Button variant="primary" onMouseEnter={() => setVisible(true)}>
               Hover me
             </Button>
           </Flexbox>
@@ -112,11 +108,7 @@ export const WithLabelUsageLink = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Button
-              variant="primary"
-              onMouseEnter={() => setVisible(true)}
-              onMouseLeave={() => setVisible(false)}
-            >
+            <Button variant="primary" onMouseEnter={() => setVisible(true)}>
               Hover me
             </Button>
           </Flexbox>
@@ -145,25 +137,24 @@ export const WithLabelUsageLink = {
 export const OnClickToastMessages = {
   render: () => {
     const Example = () => {
-      const [visible] = useState<boolean>(false);
-      const childRef = useRef<any>(); // Add type 'any' to childRef
+      const childRef = useRef<any>();
 
+      // This function is used to call the setVisible method of the child component that uses the ref and useImperativeHandle
       const handleClick = () => {
-        childRef.current.controlledVisible();
+        childRef.current.setVisible();
       };
 
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
             <Button variant="primary" onClick={() => handleClick()}>
-              Click me
+              use setVisible ref method
             </Button>
           </Flexbox>
           <ToastMessage
             ref={childRef}
             label="Link copied to clipboard"
             icon={<Icon.CheckCircleFill24 color={(t) => t.colorTokens.positive.icon_default} />}
-            isVisible={visible}
             linkButton={
               <Button
                 onClick={action('clicked')}
@@ -179,7 +170,7 @@ export const OnClickToastMessages = {
     };
     return <Example />;
   },
-  name: 'OnClick toaster',
+  name: 'OnClick set ToastMessage',
 };
 export const ControlledTimeOut = {
   render: () => {
@@ -189,7 +180,7 @@ export const ControlledTimeOut = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Button variant="primary" onClick={() => setVisible(true)}>
+            <Button variant="primary" onClick={() => setVisible(!visible)}>
               Click me
             </Button>
           </Flexbox>
@@ -213,5 +204,5 @@ export const ControlledTimeOut = {
     };
     return <Example />;
   },
-  name: 'Controlled timeout',
+  name: 'Controlled timeout ToastMessage',
 };
