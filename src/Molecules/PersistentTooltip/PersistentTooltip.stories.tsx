@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { PopperUpdate } from 'common/PopOver';
+import { PopperUpdate } from '../../common/PopOver/PopOver.types';
 import {
   Box,
   Flexbox,
@@ -48,7 +48,7 @@ export const MovingTooltip = () => {
     <StoryWrapper>
       <AccordionItem
         key={123123}
-        title="I will expand after 1500ms"
+        title="I will expand after 1000ms"
         disableFocusOutline
         expanded={isAccordionExpanded}
         onClick={() => setIsAccordionExpanded(!isAccordionExpanded)}

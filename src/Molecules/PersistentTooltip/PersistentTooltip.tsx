@@ -2,7 +2,8 @@ import React, { cloneElement, ReactElement, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { isElement, mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, OldIcon, Typography } from '../..';
-import { PopOver, PopperUpdate } from '../../common/PopOver';
+import { PopOver } from '../../common/PopOver';
+import { PopperUpdate } from '../../common/PopOver/PopOver.types';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 import { useGeneratedId } from '../../common/Hooks';
 
