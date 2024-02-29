@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { PopperUpdate } from 'common/PopOver';
+import { PopperUpdate } from '../../common/PopOver/PopOver.types';
 import {
   Box,
   Flexbox,
