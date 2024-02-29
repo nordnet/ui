@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import ToastMessage from './ToastMessage';
@@ -52,7 +52,7 @@ export const HoverUsage = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Box onMouseEnter={() => setVisible(true)} p={4}>
+            <Box onMouseEnter={() => setVisible(!visible)} p={4}>
               <Badge.Status variant="create" badgeSize="xl" label="Hover me" />
             </Box>
           </Flexbox>
@@ -88,7 +88,7 @@ export const WithLabelUsage = {
       return (
         <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
           <Flexbox>
-            <Button variant="primary" onMouseEnter={() => setVisible(true)}>
+            <Button variant="primary" onMouseEnter={() => setVisible(!visible)}>
               Hover me
             </Button>
           </Flexbox>
@@ -210,4 +210,51 @@ export const ControlledTimeOut = {
     return <Example />;
   },
   name: 'Controlled timeout ToastMessage',
+};
+
+export const OnClickToastMessages2 = {
+  render: () => {
+    const Example = () => {
+      const childRef = useRef<any>();
+      const [value, setValue] = useState(0);
+
+      useEffect(() => {
+        if (value >= 3) {
+          childRef.current.setVisible();
+        }
+      }, [value]);
+
+      return (
+        <PageWrapper background={(t) => t.colorTokens.neutral.background_brand_white}>
+          <Flexbox container direction="column" gap={3}>
+            Conditional call
+            <Flexbox container gap={3}>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <Button variant="primary" onClick={() => setValue(index + 1)}>
+                  {index + 1}
+                </Button>
+              ))}
+            </Flexbox>
+            setVisible if value is 3 or more
+          </Flexbox>
+          <ToastMessage
+            ref={childRef}
+            label="You have reached the maximum number of attempts"
+            icon={<Icon.Warning24 color={(t) => t.colorTokens.error.background_default} />}
+            linkButton={
+              <Button
+                onClick={action('clicked')}
+                variant="neutral"
+                color={(t) => t.colorTokens.action.text_focus}
+              >
+                View
+              </Button>
+            }
+          />
+        </PageWrapper>
+      );
+    };
+    return <Example />;
+  },
+  name: 'Conditional call to setVisible',
 };
