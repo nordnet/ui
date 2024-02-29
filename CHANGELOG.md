@@ -1,3 +1,10 @@
+## [16.9.1](https://github.com/nordnet/ui/compare/v16.9.0...v16.9.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* Remove re-export of PopperUpdate from src/common/PopOver/index.ts ([#1602](https://github.com/nordnet/ui/issues/1602)) ([81f8aca](https://github.com/nordnet/ui/commit/81f8aca770447d29cdd3e390012426dd82255c26))
+
 # [16.9.0](https://github.com/nordnet/ui/compare/v16.8.2...v16.9.0) (2024-02-28)
 
 
