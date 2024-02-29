@@ -12,7 +12,7 @@ const ToastMessages: React.FC<Props> = forwardRef(
 
     useImperativeHandle(ref, () => ({
       setVisible: () => {
-        setVisibility(!visible);
+        setVisibility(true);
       },
     }));
 
