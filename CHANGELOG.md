@@ -1,3 +1,10 @@
+## [16.9.2](https://github.com/nordnet/ui/compare/v16.9.1...v16.9.2) (2024-02-29)
+
+
+### Bug Fixes
+
+* **component:** fix:Toast message ref behavior on open or active ([#1603](https://github.com/nordnet/ui/issues/1603)) ([2afae02](https://github.com/nordnet/ui/commit/2afae024fd629c0ab10a21fa3aa696d530bda7d9))
+
 ## [16.9.1](https://github.com/nordnet/ui/compare/v16.9.0...v16.9.1) (2024-02-29)
 
 
