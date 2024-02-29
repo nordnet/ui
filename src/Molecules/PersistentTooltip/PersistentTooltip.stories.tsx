@@ -48,7 +48,7 @@ export const MovingTooltip = () => {
     <StoryWrapper>
       <AccordionItem
         key={123123}
-        title="I will expand after 1500ms"
+        title="I will expand after 1000ms"
         disableFocusOutline
         expanded={isAccordionExpanded}
         onClick={() => setIsAccordionExpanded(!isAccordionExpanded)}
