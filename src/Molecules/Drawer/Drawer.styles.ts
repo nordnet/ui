@@ -57,7 +57,6 @@ export const DragArea = styled.div`
   height: 100%;
   width: 0;
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    // replace the left padding in Content with same size drag area
     width: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
   }
 `;
