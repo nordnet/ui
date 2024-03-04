@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import FocusLock from 'react-focus-lock';
-import { AnimatePresence, motion, useAnimate, useAnimationControls } from 'framer-motion';
+import { AnimatePresence, PanInfo, motion, useDragControls } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import { Flexbox, Icon, Portal, theme, useMedia, useOnClickOutside } from '../..';
@@ -31,13 +31,9 @@ const BottomSheet: React.FC<Props> = ({
 }) => {
   const isControlled = isBoolean(isOpenExternal);
   const isMobile = useMedia((t) => t.media.lessThan(theme.breakpoints.sm)) || false;
+  const internalRef = useRef<HTMLDivElement>(null);
 
   const [isOpenInternal, setIsOpenInternal] = useState(true);
-  const [touchDrag, setTouchDrag] = useState<number | null>(null);
-  const controls = useAnimationControls();
-
-  const [internalRef, animate] = useAnimate();
-
   const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
   const onClose = useCallback(() => {
@@ -47,77 +43,39 @@ const BottomSheet: React.FC<Props> = ({
     }
   }, [onCloseExternal]);
 
-  const enterAnimation = useCallback(() => {
-    controls.start({
-      bottom: 0,
-      transition: {
-        type: 'ease',
-        duration: TRANSITION_DURATION,
-      },
-    });
-  }, [controls]);
+  const dragControls = useDragControls();
 
-  const exitAnimation = useCallback(
-    (bottom: number | string) => {
-      controls.start({
-        bottom,
-        transition: {
-          type: 'ease',
-          duration: TRANSITION_DURATION,
-        },
+  const startDrag = useCallback(
+    (event: any) => {
+      dragControls.start(event, {
+        snapToCursor: false,
       });
     },
-    [controls],
+    [dragControls],
+  );
+
+  const handleClose = useCallback(() => {
+    setIsOpenInternal(false);
+
+    if (onClose) {
+      onClose();
+    }
+  }, [onClose]);
+
+  const handleDragEnd = useCallback(
+    (event: TouchEvent, info: PanInfo) => {
+      if (info?.offset?.y > 100) {
+        handleClose();
+      }
+    },
+    [handleClose],
   );
 
   useOnClickOutside(internalRef, () => {
     if (closeOnClickOutside) {
-      exitAnimation('-100%');
       onClose();
     }
   });
-
-  useEffect(() => {
-    if (shouldRender) {
-      enterAnimation();
-    }
-  }, [shouldRender, enterAnimation]);
-
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchDrag(e?.touches?.[0]?.clientY);
-    e.stopPropagation();
-  };
-
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (touchDrag && shouldRender) {
-      const clientY = e?.touches?.[0]?.clientY;
-      const diff = touchDrag - (clientY || 0);
-
-      animate(
-        internalRef.current,
-        { bottom: diff, paddingBottom: diff },
-        {
-          type: 'keyframes',
-          duration: 0,
-        },
-      );
-    }
-    e.stopPropagation();
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (touchDrag) {
-      const touchEnd = e?.changedTouches?.[0]?.clientY;
-      if (touchEnd - (touchDrag || 0) > 160) {
-        exitAnimation(-800);
-        onClose();
-      } else {
-        enterAnimation();
-      }
-    }
-    setTouchDrag(null);
-    e.stopPropagation();
-  };
 
   return (
     <Portal>
@@ -138,25 +96,27 @@ const BottomSheet: React.FC<Props> = ({
               )}
               <StyledBottomSheet
                 key="bottomsheet"
+                ref={internalRef}
                 className={className}
-                animate={controls}
+                dragControls={dragControls}
+                dragConstraints={{ right: 0, left: 0, top: 0, bottom: 0 }}
+                dragListener={false}
+                drag="y"
+                onDragEnd={handleDragEnd}
                 $fullScreenMobile={fullScreenMobile}
                 height={height}
                 $invertedColors={invertedColors}
-                ref={internalRef}
                 initial={{
                   bottom: '-100%',
                   position: 'fixed',
                   zIndex: theme.zIndex.modal,
                 }}
+                animate={{ bottom: 0 }}
+                exit={{ bottom: '-100%' }}
                 transition={{ type: 'ease', duration: TRANSITION_DURATION }}
               >
                 <Flexbox container direction="column" gap={2}>
-                  <DragHandle
-                    onTouchEnd={handleTouchEnd}
-                    onTouchMove={handleTouchMove}
-                    onTouchStart={handleTouchStart}
-                  >
+                  <DragHandle onTouchStart={startDrag}>
                     <Flexbox container direction="column" width="100%">
                       {showSwipeHandle && (
                         <Flexbox item alignItems="center" alignSelf="center">
@@ -180,7 +140,6 @@ const BottomSheet: React.FC<Props> = ({
                   </DragHandle>
                 </Flexbox>
                 <Flexbox item>{children}</Flexbox>
-
                 <BottomDragArea />
               </StyledBottomSheet>
             </RemoveScroll>
