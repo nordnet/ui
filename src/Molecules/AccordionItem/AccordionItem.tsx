@@ -23,6 +23,7 @@ const Item = styled.div<ItemProps>`
   padding: ${theme.spacing.unit(pt || py || p || 0)}px ${theme.spacing.unit(pr || px || p || 0)}px
     ${theme.spacing.unit(pb || py || p || 0)}px ${theme.spacing.unit(pl || px || p || 0)}px;
   `}
+  margin-left: 1px;
 `;
 
 const Button = styled.button<{

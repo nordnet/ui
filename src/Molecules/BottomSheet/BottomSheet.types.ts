@@ -10,5 +10,6 @@ export type Props = {
   onClose?: () => void;
   open?: boolean;
   showBackdrop?: boolean;
+  showSwipeHandle?: boolean;
   title: React.ReactNode;
 };
