@@ -100,7 +100,7 @@ export const Handle = styled.div`
   background-color: ${({ theme }) => theme.colorTokens.neutral.icon_disabled};
   border-radius: ${({ theme }) => theme.borderRadius20};
   height: 4px;
-  margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(1)}px;
   width: 54px;
 `;
 
