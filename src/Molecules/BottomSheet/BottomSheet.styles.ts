@@ -111,8 +111,8 @@ export const DragHandle = styled.div`
 `;
 
 export const BottomDragArea = styled.div`
-  margin-left: ${(p) => p.theme.spacing.unit(-5)}px;
-  padding-right: ${(p) => p.theme.spacing.unit(10)}px;
+  margin-left: ${({ theme }) => theme.spacing.unit(-5)}px;
+  padding-right: ${({ theme }) => theme.spacing.unit(10)}px;
   background: ${({ theme }) => theme.colorTokens.neutral.background_default};
   width: 100%;
   height: 100dvh;
