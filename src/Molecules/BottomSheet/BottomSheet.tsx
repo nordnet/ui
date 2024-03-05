@@ -46,7 +46,7 @@ const BottomSheet: React.FC<Props> = ({
   const dragControls = useDragControls();
 
   const startDrag = useCallback(
-    (event: any) => {
+    (event: TouchEvent) => {
       dragControls.start(event, {
         snapToCursor: false,
       });
