@@ -23,7 +23,7 @@ const BottomSheet: React.FC<Props> = ({
   fullScreenMobile,
   height,
   invertedColors,
-  onClose: onCloseExternal,
+  onClose,
   open: isOpenExternal,
   showBackdrop = true,
   showSwipeHandle,
@@ -36,31 +36,23 @@ const BottomSheet: React.FC<Props> = ({
   const [isOpenInternal, setIsOpenInternal] = useState(true);
   const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
-  const onClose = useCallback(() => {
-    setIsOpenInternal(false);
-    if (typeof onCloseExternal === 'function') {
-      onCloseExternal();
-    }
-  }, [onCloseExternal]);
-
   const dragControls = useDragControls();
 
-  const startDrag = useCallback(
-    (event: TouchEvent) => {
+  const handleClose = useCallback(() => {
+    setIsOpenInternal(false);
+    if (typeof onClose === 'function') {
+      onClose();
+    }
+  }, [onClose]);
+
+  const handleDragStart = useCallback(
+    (event: React.PointerEvent) => {
       dragControls.start(event, {
         snapToCursor: false,
       });
     },
     [dragControls],
   );
-
-  const handleClose = useCallback(() => {
-    setIsOpenInternal(false);
-
-    if (onClose) {
-      onClose();
-    }
-  }, [onClose]);
 
   const handleDragEnd = useCallback(
     (event: TouchEvent, info: PanInfo) => {
@@ -73,7 +65,7 @@ const BottomSheet: React.FC<Props> = ({
 
   useOnClickOutside(internalRef, () => {
     if (closeOnClickOutside) {
-      onClose();
+      handleClose();
     }
   });
 
@@ -116,7 +108,7 @@ const BottomSheet: React.FC<Props> = ({
                 transition={{ type: 'ease', duration: TRANSITION_DURATION }}
               >
                 <Flexbox container direction="column" gap={2}>
-                  <DragHandle onTouchStart={startDrag}>
+                  <DragHandle onTouchStart={handleDragStart}>
                     <Flexbox container direction="column" width="100%">
                       {showSwipeHandle && (
                         <Flexbox item alignItems="center" alignSelf="center">
@@ -128,7 +120,7 @@ const BottomSheet: React.FC<Props> = ({
                         <Flexbox item>
                           <StyledIconButton
                             $invertedColors={invertedColors}
-                            onClick={onClose}
+                            onClick={handleClose}
                             size="s"
                             variant="primary"
                           >
