@@ -46,7 +46,7 @@ const BottomSheet: React.FC<Props> = ({
   }, [onClose]);
 
   const handleDragStart = useCallback(
-    (event: React.PointerEvent) => {
+    (event: any) => {
       dragControls.start(event, {
         snapToCursor: false,
       });
