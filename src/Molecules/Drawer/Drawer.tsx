@@ -1,98 +1,24 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
-import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
-import { AnimatePresence, motion, useDragControls } from 'framer-motion';
+import { AnimatePresence, PanInfo, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
+import { Flexbox, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
+import {
+  CloseButton,
+  Container,
+  Content,
+  DragArea,
+  Footer,
+  H2,
+  TitleWrapper,
+} from './Drawer.styles';
 
-const CROSS_SIZE = 5;
-const PADDING_MOBILE = 3;
-const PADDING_Y = 4;
-const PADDING_X = 5;
 const displayName = 'Drawer';
 const PREVENT_CLICK_OUTSIDE_ATTRIBUTE = 'drawerPreventClickOutside';
-
-const Container = styled(motion.div)`
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  background: ${({ theme }) => theme.color.card};
-  position: fixed;
-  z-index: ${({ theme }) => theme.zIndex.overlay};
-  right: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 -10px 16px 0 ${({ theme }) => theme.color.shadowModal};
-
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    width: ${({ theme }) => theme.spacing.unit(100)}px;
-  }
-
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.xl)} {
-    width: ${({ theme }) => theme.spacing.unit(120)}px;
-  }
-`;
-
-const CloseButton = styled(Button.Icon)`
-  position: absolute;
-  top: ${(p) => p.theme.spacing.unit(PADDING_Y)}px;
-  right: ${(p) => p.theme.spacing.unit(PADDING_X)}px;
-
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
-    right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
-  }
-`;
-
-const Content = styled.div`
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin-bottom: ${(p) => p.theme.spacing.unit(PADDING_Y)}px;
-  padding: 1px ${(p) => p.theme.spacing.unit(PADDING_X)}px;
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    padding: 1px ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
-  }
-`;
-
-const Footer = styled.div`
-  margin-top: auto;
-  padding: 0 ${(p) => p.theme.spacing.unit(PADDING_X)}px ${(p) => p.theme.spacing.unit(PADDING_Y)}px
-    ${(p) => p.theme.spacing.unit(PADDING_X)}px;
-
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    padding: 0 ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
-      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px
-      ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
-  }
-`;
-
-const H2 = styled.h2`
-  padding-right: ${(p) => p.theme.spacing.unit(4)}px;
-`;
-
-const TitleWrapper = styled.div`
-  padding: ${(p) =>
-    `${p.theme.spacing.unit(PADDING_Y)}px 
-     ${p.theme.spacing.unit(PADDING_X)}px 
-     0 
-     ${p.theme.spacing.unit(PADDING_X)}px`};
-
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    padding: ${(p) =>
-      `${p.theme.spacing.unit(PADDING_MOBILE)}px ${p.theme.spacing.unit(
-        PADDING_MOBILE,
-      )}px 0 ${p.theme.spacing.unit(PADDING_MOBILE)}px`};
-  }
-
-  margin-bottom: ${(p) => p.theme.spacing.unit(2)}px;
-  min-height: ${(p) => p.theme.spacing.unit(CROSS_SIZE)}px;
-  flex: 0 0 auto;
-`;
 
 const animationProps = {
   initial: {
@@ -120,7 +46,7 @@ const noInitialAnimationProps = {
   },
 };
 
-const components = {
+export const components = {
   CloseButton,
   Container,
   Content,
@@ -192,9 +118,14 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
       }
     }, [onClose]);
 
-    const handleDragEnd = useCallback(() => {
-      handleClose();
-    }, [handleClose]);
+    const handleDragEnd = useCallback(
+      (event: TouchEvent, info: PanInfo) => {
+        if (info?.offset?.x > 100) {
+          handleClose();
+        }
+      },
+      [handleClose],
+    );
 
     useOnClickOutside(drawerRef, (e) => {
       if (!closeOnClickOutside) return;
@@ -244,6 +175,7 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
                   dragListener={false}
                   drag="x"
                   onDragEnd={handleDragEnd}
+                  dragConstraints={{ right: 0, left: 0 }}
                   onAnimationComplete={onAnimationComplete}
                   {...rest}
                 >
@@ -253,7 +185,18 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
                       <Icon.Cross16 title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
-                  {disableContentStyle ? children : <Content>{children}</Content>}
+                  {disableContentStyle ? (
+                    children
+                  ) : (
+                    <Flexbox container height="100%">
+                      <Flexbox item>
+                        <DragArea onTouchStart={startDrag} />
+                      </Flexbox>
+                      <Flexbox item width="100%">
+                        <Content>{children}</Content>
+                      </Flexbox>
+                    </Flexbox>
+                  )}
                   {footer && <Footer>{footer}</Footer>}
                 </Container>
               </RemoveScroll>

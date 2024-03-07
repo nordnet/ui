@@ -1,10 +1,17 @@
-import React, { useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import FocusLock from 'react-focus-lock';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, PanInfo, motion, useDragControls } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import { Flexbox, Icon, Portal, theme, useMedia, useOnClickOutside } from '../..';
-import { Backdrop, StyledBottomSheet, StyledIconButton } from './BottomSheet.styles';
+import {
+  Backdrop,
+  BottomDragArea,
+  DragHandle,
+  Handle,
+  StyledBottomSheet,
+  StyledIconButton,
+} from './BottomSheet.styles';
 import { isBoolean } from '../../common/utils';
 import { Props } from './BottomSheet.types';
 import { TRANSITION_DURATION } from './constants';
@@ -16,32 +23,51 @@ const BottomSheet: React.FC<Props> = ({
   fullScreenMobile,
   height,
   invertedColors,
-  onClose: onCloseExternal,
+  onClose,
   open: isOpenExternal,
   showBackdrop = true,
+  showSwipeHandle,
   title,
 }) => {
-  const internalRef = useRef<HTMLDivElement>(null);
   const isControlled = isBoolean(isOpenExternal);
-  const [isOpenInternal, setIsOpenInternal] = useState(true);
-
   const isMobile = useMedia((t) => t.media.lessThan(theme.breakpoints.sm)) || false;
+  const internalRef = useRef<HTMLDivElement>(null);
 
-  const onClose = () => {
+  const [isOpenInternal, setIsOpenInternal] = useState(true);
+  const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
+
+  const dragControls = useDragControls();
+
+  const handleClose = useCallback(() => {
     setIsOpenInternal(false);
-
-    if (typeof onCloseExternal === 'function') {
-      onCloseExternal();
+    if (typeof onClose === 'function') {
+      onClose();
     }
-  };
+  }, [onClose]);
+
+  const handleDragStart = useCallback(
+    (event: any) => {
+      dragControls.start(event, {
+        snapToCursor: false,
+      });
+    },
+    [dragControls],
+  );
+
+  const handleDragEnd = useCallback(
+    (event: TouchEvent, info: PanInfo) => {
+      if (info?.offset?.y > 100) {
+        handleClose();
+      }
+    },
+    [handleClose],
+  );
 
   useOnClickOutside(internalRef, () => {
     if (closeOnClickOutside) {
-      onClose();
+      handleClose();
     }
   });
-
-  const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
   return (
     <Portal>
@@ -62,38 +88,51 @@ const BottomSheet: React.FC<Props> = ({
               )}
               <StyledBottomSheet
                 key="bottomsheet"
+                ref={internalRef}
+                className={className}
+                dragControls={dragControls}
+                dragConstraints={{ right: 0, left: 0, top: 0, bottom: 0 }}
+                dragListener={false}
+                drag="y"
+                onDragEnd={handleDragEnd}
+                $fullScreenMobile={fullScreenMobile}
+                height={height}
+                $invertedColors={invertedColors}
                 initial={{
                   bottom: '-100%',
                   position: 'fixed',
                   zIndex: theme.zIndex.modal,
                 }}
-                exit={{ bottom: '-100%' }}
                 animate={{ bottom: 0 }}
+                exit={{ bottom: '-100%' }}
                 transition={{ type: 'ease', duration: TRANSITION_DURATION }}
-                className={className}
-                $fullScreenMobile={fullScreenMobile}
-                height={height}
-                $invertedColors={invertedColors}
-                ref={internalRef}
               >
                 <Flexbox container direction="column" gap={2}>
-                  <Flexbox container item justifyContent="space-between" alignItems="center">
-                    <Flexbox item>{title}</Flexbox>
-                    {typeof onClose === 'function' && (
-                      <Flexbox item alignSelf="flex-start">
-                        <StyledIconButton
-                          variant="primary"
-                          onClick={onClose}
-                          size="s"
-                          $invertedColors={invertedColors}
-                        >
-                          <Icon.Cross16 />
-                        </StyledIconButton>
+                  <DragHandle onTouchStart={handleDragStart}>
+                    <Flexbox container direction="column" width="100%">
+                      {showSwipeHandle && (
+                        <Flexbox item alignItems="center" alignSelf="center">
+                          <Handle />
+                        </Flexbox>
+                      )}
+                      <Flexbox container justifyContent="space-between" alignItems="center">
+                        <Flexbox item>{title}</Flexbox>
+                        <Flexbox item>
+                          <StyledIconButton
+                            $invertedColors={invertedColors}
+                            onClick={handleClose}
+                            size="s"
+                            variant="primary"
+                          >
+                            <Icon.Cross16 />
+                          </StyledIconButton>
+                        </Flexbox>
                       </Flexbox>
-                    )}
-                  </Flexbox>
-                  <Flexbox item>{children}</Flexbox>
+                    </Flexbox>
+                  </DragHandle>
                 </Flexbox>
+                <Flexbox item>{children}</Flexbox>
+                <BottomDragArea />
               </StyledBottomSheet>
             </RemoveScroll>
           </FocusLock>

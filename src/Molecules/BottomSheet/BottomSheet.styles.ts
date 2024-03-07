@@ -88,8 +88,32 @@ export const StyledBottomSheet = styled(motion.div)<{
   ${(p) => getHeight(p.height, p.$fullScreenMobile)};
   transition: height ${TRANSITION_DURATION}s ease-out;
   left: 0;
-  padding: ${(p) => p.theme.spacing.unit(4)}px ${(p) => p.theme.spacing.unit(3)}px;
-  position: absolute;
+  padding: ${(p) => p.theme.spacing.unit(2)}px ${(p) => p.theme.spacing.unit(4)}px
+    ${(p) => p.theme.spacing.unit(3)}px;
+  position: fixed;
+  bottom: -100%;
   width: 100%;
   z-index: ${(p) => p.theme.zIndex.overlayInModal};
+`;
+
+export const Handle = styled.div`
+  background-color: ${({ theme }) => theme.colorTokens.neutral.icon_disabled};
+  border-radius: ${({ theme }) => theme.borderRadius20};
+  height: 4px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(1)}px;
+  width: 54px;
+`;
+
+export const DragHandle = styled.div`
+  display: flex;
+  justify-content: center;
+  touch-action: manipulation;
+`;
+
+export const BottomDragArea = styled.div`
+  margin-left: ${({ theme }) => theme.spacing.unit(-5)}px;
+  padding-right: ${({ theme }) => theme.spacing.unit(10)}px;
+  background: ${({ theme }) => theme.colorTokens.neutral.background_default};
+  width: 100%;
+  height: 100dvh;
 `;
