@@ -1,3 +1,10 @@
+# [16.10.0](https://github.com/nordnet/ui/compare/v16.9.2...v16.10.0) (2024-03-07)
+
+
+### Features
+
+* add swipe to bottomsheet and fix swipe for drawer ([#1604](https://github.com/nordnet/ui/issues/1604)) ([7e98b8d](https://github.com/nordnet/ui/commit/7e98b8dfa1f6f4bcc7949586c555f524eff82824))
+
 ## [16.9.2](https://github.com/nordnet/ui/compare/v16.9.1...v16.9.2) (2024-02-29)
 
 
