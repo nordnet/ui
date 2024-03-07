@@ -1,3 +1,10 @@
+## [16.10.2](https://github.com/nordnet/ui/compare/v16.10.1...v16.10.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* revert padding changes for drawer ([#1606](https://github.com/nordnet/ui/issues/1606)) ([d098325](https://github.com/nordnet/ui/commit/d098325b1740db8b221af3a5fc6176667eea5f37))
+
 ## [16.10.1](https://github.com/nordnet/ui/compare/v16.10.0...v16.10.1) (2024-03-07)
 
 
