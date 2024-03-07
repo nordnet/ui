@@ -31,6 +31,12 @@ export const Disabled: Story = {
   render: () => <Input.QuietText label="Label" placeholder="Placeholder" value="0" disabled />,
 };
 
+export const Required: Story = {
+  render: () => (
+    <Input.QuietText label="Label" placeholder="Placeholder" required visuallyEmphasiseRequired />
+  ),
+};
+
 export const Error: Story = {
   render: () => (
     <Input.QuietText
