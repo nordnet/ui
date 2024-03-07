@@ -1,3 +1,10 @@
+## [16.10.1](https://github.com/nordnet/ui/compare/v16.10.0...v16.10.1) (2024-03-07)
+
+
+### Bug Fixes
+
+* adjust drawer drag area to not push extra margin on content ([#1605](https://github.com/nordnet/ui/issues/1605)) ([bba656e](https://github.com/nordnet/ui/commit/bba656e6ea3341e5817692927bb68c21df4d4dc3))
+
 # [16.10.0](https://github.com/nordnet/ui/compare/v16.9.2...v16.10.0) (2024-03-07)
 
 
