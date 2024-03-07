@@ -1,0 +1,1 @@
+export { QuietText } from './QuietText';

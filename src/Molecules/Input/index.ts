@@ -6,7 +6,18 @@ import { FormattedNumber } from './FormattedNumber';
 import { Number } from './Number';
 import { Phone } from './Phone';
 import { Radio } from './Radio';
+import { QuietText } from './QuietText';
 
 // Stitch all inputs so
 // we can use e.g. Input.Text
-export default { Checkbox, Text, Textarea, FormattedNumber, Number, Select, Phone, Radio };
+export default {
+  Checkbox,
+  Text,
+  Textarea,
+  FormattedNumber,
+  Number,
+  Select,
+  Phone,
+  Radio,
+  QuietText,
+};
