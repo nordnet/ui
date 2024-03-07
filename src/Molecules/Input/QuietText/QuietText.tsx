@@ -1,86 +1,17 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Size } from './QuietText.types';
+import { Props } from './QuietText.types';
 import { Flexbox, FormField, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const height = css<Size>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
-
-const darkmodeAutocompleteStyles = css`
-  ${(p) =>
-    p.theme.isDarkMode
-      ? `
-        &:-webkit-autofill,
-        &:-webkit-autofill:hover,
-        &:-webkit-autofill:focus {
-          border: 1px solid ${p.theme.color.inputBorder};
-          -webkit-text-fill-color: ${p.theme.color.text};
-          -webkit-box-shadow: 0 0 0px 1000px ${p.theme.color.inputBackground} inset;
-        }`
-      : ''}
-`;
-
-const background = css<Pick<Props, 'disabled'>>`
-  background-color: ${(p) => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
-`;
-
-const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${(p) =>
-    p.disabled
-      ? ''
-      : `
-      &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
-      }
-`}
-`;
-
-const focusBorderStyles = css`
-  &:focus {
-    border-color: ${(p) => p.theme.color.borderActive};
-  }
-`;
-
-const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled'>>`
-  border: solid;
-  border-color: ${(p) => {
-    if (hasError(p.error)) return p.theme.color.inputBorderError;
-    if (p.success) return p.theme.color.inputBorderSuccess;
-    return p.theme.color.inputBorder;
-  }};
-  border-width: 0 0 2px 0;
-
-  &:focus {
-    border-width: 1px;
-  }
-
-  position: relative;
-  ${hoverBorderStyles}
-  ${focusBorderStyles}
-  ${(p) =>
-    p.disabled
-      ? `border-color: ${
-          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
-        };`
-      : ''}
-`;
-
-export const placeholderNormalization = css<Pick<Props, 'disabled'>>`
+export const placeholderNormalization = css`
   &::placeholder {
-    color: ${(p) => p.theme.color.buttonTextDisabled};
+    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
     line-height: inherit;
     opacity: 1;
-  }
-  &:focus::placeholder {
-    color: ${(p) => p.theme.color.disabledText};
-  }
-  &:disabled::placeholder {
-    color: ${(p) => p.theme.color.disabledText};
   }
 `;
 
@@ -88,26 +19,14 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   width: ${(p) => p.theme.spacing.unit(8)}px;
   top: 0;
   height: 100%;
-  padding-left: ${(p) => p.theme.spacing.unit(1)}px;
-  padding-right: ${(p) => p.theme.spacing.unit(1)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(1)}px;
   position: absolute;
   ${(p) => (p.position === 'left' ? 'left: 0;' : '')}
   ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
-  &:not(:focus) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  ${(p) =>
-    p.position === 'right'
-      ? `&:not(:focus) {
-          right: 0;
-        }`
-      : ''}
 `;
 
-const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<
-  Partial<Props>
->`
+const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<Props>`
+  ${placeholderNormalization}
   border: 0;
   width: 100%;
   padding: 0;
@@ -115,39 +34,40 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   line-height: inherit;
   box-sizing: border-box;
   border-radius: ${(p) => p.theme.borderRadius4};
-  ${height}
-  ${borderStyles}
-  ${background}
-  ${placeholderNormalization}
-  ${darkmodeAutocompleteStyles}
+  height: ${(p) => p.theme.spacing.unit(8)}px;
+  position: relative;
+  border-bottom: 2px solid
+    ${(p) => {
+      if (hasError(p.error)) return p.theme.colorTokens.error.border_default;
+      if (p.success) return p.theme.colorTokens.positive.border_default;
+      return p.theme.colorTokens.neutral.border_default;
+    }};
+
+  background-color: transparent;
+  color: ${(p) => p.theme.colorTokens.neutral.text_default};
   ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-  color: ${(p) => (p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack)};
-  &:disabled {
-    color: ${(p) => p.theme.color.disabledText};
-  }
   font-size: 28px;
   font-weight: bold;
+
+  &:hover {
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_hover};
+  }
+
   &:focus {
     border-width: 0 0 2px 0;
     outline: none;
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_active};
   }
 
-  ${(p) =>
-    p.type === 'search' &&
-    `
-    &[type="search"] {
-      -webkit-appearance: textfield;
-    }
-    `}
-  ${(p) =>
-    p.disabled &&
-    `
-      cursor: not-allowed;
-      `}
+  &:disabled {
+    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
+    border-color: ${(p) => p.theme.colorTokens.neutral.border_disabled};
+    cursor: not-allowed;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -186,7 +106,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     placeholder,
     required,
     rightAddon,
-    size,
     success,
     value,
     visuallyEmphasiseRequired,
@@ -215,7 +134,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
       )}
       required={visuallyEmphasiseRequired}
     >
-      <Typography type="secondary" color={(t) => t.color.text}>
+      <Typography type="secondary" color="inherit">
         <Wrapper>
           <Input
             {...{
@@ -240,7 +159,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               placeholder,
               required,
               rightAddon,
-              size,
               success,
               value,
               type,
