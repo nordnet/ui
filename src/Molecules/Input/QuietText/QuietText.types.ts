@@ -1,5 +1,3 @@
-export type Size = Pick<Props, 'size'>;
-
 export type Props = {
   className?: string;
   id?: string;
@@ -21,8 +19,6 @@ export type Props = {
   leftAddon?: React.ReactNode;
   disabled?: boolean;
   placeholder?: string;
-  fullWidth?: boolean;
-  size?: 's';
   pattern?: string;
   inputMode?: string;
   /**

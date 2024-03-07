@@ -20,11 +20,7 @@ export const Filled: Story = {
 };
 
 export const FullWidth: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" fullWidth />,
-};
-
-export const CustomWidth: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" width="75%" />,
+  render: () => <Input.QuietText label="Label" placeholder="Placeholder" width="100%" />,
 };
 
 export const Disabled: Story = {
