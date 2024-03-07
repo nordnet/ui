@@ -6,7 +6,7 @@ import { AnimatePresence, PanInfo, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Flexbox, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
+import { Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
 import {
   CloseButton,
   Container,
@@ -185,18 +185,8 @@ export const Drawer = React.forwardRef<HTMLDivElement, Props>(
                       <Icon.Cross16 title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
-                  {disableContentStyle ? (
-                    children
-                  ) : (
-                    <Flexbox container height="100%">
-                      <Flexbox item>
-                        <DragArea onTouchStart={startDrag} />
-                      </Flexbox>
-                      <Flexbox item width="100%">
-                        <Content>{children}</Content>
-                      </Flexbox>
-                    </Flexbox>
-                  )}
+                  <DragArea onTouchStart={startDrag} />
+                  {disableContentStyle ? children : <Content>{children}</Content>}
                   {footer && <Footer>{footer}</Footer>}
                 </Container>
               </RemoveScroll>
