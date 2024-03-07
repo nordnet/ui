@@ -52,12 +52,14 @@ export const Content = styled.div`
 `;
 
 export const DragArea = styled.div`
-  overflow-y: auto;
-  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 0;
-  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    width: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  width: 8px;
+  z-index: 2;
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+    display: none;
   }
 `;
 

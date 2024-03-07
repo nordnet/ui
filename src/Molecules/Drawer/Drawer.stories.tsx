@@ -193,6 +193,48 @@ export const WithNoTitle = {
   name: 'With no title',
 };
 
+export const WithDisableContentStyle = {
+  render: () => {
+    const Example = () => {
+      const [open, setOpen] = useState(true);
+
+      const toggle = () => {
+        setOpen(!open);
+      };
+
+      const onClose = () => {
+        setOpen(false);
+      };
+
+      return (
+        <>
+          <button type="button" onClick={toggle}>
+            Toggle drawer
+          </button>
+          <Drawer
+            title={
+              <Flexbox container gap={2} alignItems="center">
+                <OldIcon.Bank />
+                <Typography type="title2" as="h2">
+                  Custom title
+                </Typography>
+              </Flexbox>
+            }
+            onClose={onClose}
+            open={open}
+            disableContentStyle
+          >
+            {contentSmall}
+          </Drawer>
+        </>
+      );
+    };
+    return <Example />;
+  },
+
+  name: 'With disableContentStyle',
+};
+
 const WithCloseButtonTitleExample = () => {
   const [open, setOpen] = useState(true);
 
