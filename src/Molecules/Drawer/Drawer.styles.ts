@@ -56,7 +56,7 @@ export const DragArea = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  width: 8px;
+  width: 12px;
   z-index: 2;
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
     display: none;

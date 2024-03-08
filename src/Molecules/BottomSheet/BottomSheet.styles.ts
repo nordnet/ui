@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { Button, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
-import { TRANSITION_DURATION } from './constants';
+import { DRAG_BOTTOM_HEIGHT, TRANSITION_DURATION } from './constants';
 
 const getNeutralColor = (colorToken: string, theme: Theme, invertedColors?: boolean) => {
   if (invertedColors) {
@@ -64,13 +64,13 @@ export const Backdrop = styled(Flexbox)`
 
 const getHeight = (height?: number | string, fullScreenMobile?: boolean) => {
   if (fullScreenMobile) {
-    return 'height: 100%';
+    return `height: calc(100% + ${DRAG_BOTTOM_HEIGHT}px)`;
   }
   if (height && typeof height === 'number') {
-    return `height: ${height}px`;
+    return `height: ${height + DRAG_BOTTOM_HEIGHT}px`;
   }
   if (height && typeof height === 'string') {
-    return `height: ${height}`;
+    return `height: calc(${height} + ${DRAG_BOTTOM_HEIGHT}px)`;
   }
   return '';
 };
@@ -81,8 +81,10 @@ export const StyledBottomSheet = styled(motion.div)<{
   $invertedColors?: boolean;
 }>`
   background-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
-  border-color: ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
   border-radius: ${({ theme }) => `${theme.borderRadius20} ${theme.borderRadius20} 0 0`};
+  margin-bottom: -${DRAG_BOTTOM_HEIGHT}px;
+  border-bottom: ${DRAG_BOTTOM_HEIGHT}px solid
+    ${(p) => getNeutralColor('background_default', p.theme, p.$invertedColors)};
   box-sizing: border-box;
   color: ${(p) => getNeutralColor('text_default', p.theme, p.$invertedColors)};
   ${(p) => getHeight(p.height, p.$fullScreenMobile)};
@@ -108,12 +110,4 @@ export const DragHandle = styled.div`
   display: flex;
   justify-content: center;
   touch-action: manipulation;
-`;
-
-export const BottomDragArea = styled.div`
-  margin-left: ${({ theme }) => theme.spacing.unit(-5)}px;
-  padding-right: ${({ theme }) => theme.spacing.unit(10)}px;
-  background: ${({ theme }) => theme.colorTokens.neutral.background_default};
-  width: 100%;
-  height: 100dvh;
 `;
