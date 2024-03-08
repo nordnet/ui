@@ -1,8 +1,8 @@
-import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect, useEffect, isValidElement } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import { Props } from './QuietText.types';
-import { Flexbox, Typography } from '../../..';
+import { FormField, Flexbox, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const DEFAULT_WIDTH = 200;
@@ -117,6 +117,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     rightAddon,
     success,
     value,
+    visuallyEmphasiseRequired,
     type,
     readOnly,
     pattern,
@@ -145,60 +146,83 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
   }
 
   return (
-    <Typography type="title1" color="inherit">
-      <Root $error={!!error} $disabled={disabled} $success={success}>
-        {leftAddon && (
-          <AddonBox type="primary" $disabled={disabled}>
-            {leftAddon}
-          </AddonBox>
-        )}
-        <Input
-          {...{
-            autoComplete,
-            autoFocus,
-            defaultValue,
-            disabled,
-            error,
-            id,
-            leftAddon,
-            maxLength,
-            name,
-            onBlur,
-            onChange,
-            onClick,
-            onFocus,
-            onInput: handleOnInput,
-            onMouseEnter,
-            onMouseLeave,
-            onKeyDown,
-            onKeyPress,
-            onKeyUp,
-            placeholder,
-            required,
-            rightAddon,
-            success,
-            value,
-            type,
-            ref,
-            readOnly,
-            pattern,
-            inputMode,
-            $width: inputWidth,
-          }}
-          {...getAriaProps(props)}
-          {...getDataProps(props)}
-          {...(hasError(error) ? { 'aria-invalid': true } : {})}
-        />
-        {rightAddon && (
-          <AddonBox type="primary" $disabled={disabled}>
-            {rightAddon}
-          </AddonBox>
-        )}
-        <HiddenMeasuringSpan ref={hiddenMeasuringSpanRef} aria-hidden>
-          {inputValue}
-        </HiddenMeasuringSpan>
-      </Root>
-    </Typography>
+    <FormField
+      {...R.pick(
+        [
+          'error',
+          'extraInfo',
+          'hideLabel',
+          'label',
+          'labelTooltip',
+          'labelTooltipPosition',
+          'labelTooltipInModal',
+          'className',
+          'width',
+          'disabled',
+        ],
+        props,
+      )}
+      required={visuallyEmphasiseRequired}
+    >
+      <Typography type="title1" color="inherit">
+        <Root $error={!!error} $disabled={disabled} $success={success}>
+          {isValidElement(leftAddon)
+            ? leftAddon
+            : leftAddon && (
+                <AddonBox type="primary" $disabled={disabled}>
+                  {leftAddon}
+                </AddonBox>
+              )}
+          <Input
+            {...{
+              autoComplete,
+              autoFocus,
+              defaultValue,
+              disabled,
+              error,
+              id,
+              leftAddon,
+              maxLength,
+              name,
+              onBlur,
+              onChange,
+              onClick,
+              onFocus,
+              onInput: handleOnInput,
+              onMouseEnter,
+              onMouseLeave,
+              onKeyDown,
+              onKeyPress,
+              onKeyUp,
+              placeholder,
+              required,
+              rightAddon,
+              success,
+              value,
+              type,
+              ref,
+              readOnly,
+              pattern,
+              inputMode,
+              $width: inputWidth,
+            }}
+            {...getAriaProps(props)}
+            {...getDataProps(props)}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          />
+          {isValidElement(rightAddon)
+            ? rightAddon
+            : rightAddon && (
+                <AddonBox type="primary" $disabled={disabled}>
+                  {rightAddon}
+                </AddonBox>
+              )}
+          <HiddenMeasuringSpan ref={hiddenMeasuringSpanRef} aria-hidden>
+            {inputValue}
+          </HiddenMeasuringSpan>
+        </Root>
+      </Typography>
+    </FormField>
   );
 });
 

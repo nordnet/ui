@@ -19,6 +19,7 @@ export type Props = {
   leftAddon?: React.ReactNode;
   disabled?: boolean;
   placeholder?: string;
+  fullWidth?: boolean;
   pattern?: string;
   inputMode?: string;
   /**
@@ -34,6 +35,7 @@ export type Props = {
   defaultValue?: string;
   required?: boolean;
   maxLength?: number;
+  visuallyEmphasiseRequired?: boolean;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;

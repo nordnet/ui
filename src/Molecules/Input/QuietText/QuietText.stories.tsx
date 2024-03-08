@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Input, Flexbox } from '../../..';
+import { Input, Flexbox, Icon } from '../../..';
 
 const meta: Meta<typeof Input.QuietText> = {
   component: Input.QuietText,
@@ -11,12 +11,21 @@ export default meta;
 type Story = StoryObj<typeof Input.QuietText>;
 
 function ControlledExample() {
-  const [value, setValue] = useState('Filled state');
+  const defaultValue = 'My value';
+  const [value, setValue] = useState(defaultValue);
 
   return (
-    <Flexbox container gap={4}>
-      <input onChange={(e) => setValue(e.target.value)} />
-      <Input.QuietText label="Label" placeholder="Placeholder" value={value} rightAddon="%" />
+    <Flexbox container gap={4} direction="column">
+      <div>
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+        <label htmlFor="controlInput">Controlled value: </label>
+        <input
+          id="controlInput"
+          onChange={(e) => setValue(e.target.value)}
+          defaultValue={defaultValue}
+        />
+      </div>
+      <Input.QuietText label="Label" placeholder="Placeholder" value={value} />
     </Flexbox>
   );
 }
@@ -26,7 +35,7 @@ export const DefaultStory: Story = {
   name: 'Default',
 };
 
-export const Filled: Story = {
+export const Controlled: Story = {
   render: () => <ControlledExample />,
 };
 
@@ -35,7 +44,9 @@ export const FullWidth: Story = {
 };
 
 export const Disabled: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" value="0" disabled />,
+  render: () => (
+    <Input.QuietText label="Label" placeholder="Placeholder" value="0" disabled rightAddon="SEK" />
+  ),
 };
 
 export const Required: Story = {
@@ -67,5 +78,16 @@ export const LeftAddon: Story = {
 export const RightAndLeftAddons: Story = {
   render: () => (
     <Input.QuietText label="Label" placeholder="Placeholder" rightAddon="%" leftAddon="$" />
+  ),
+};
+
+export const CustomAddons: Story = {
+  render: () => (
+    <Input.QuietText
+      label="Label"
+      placeholder="Placeholder"
+      rightAddon={<Icon.DividendStock24 />}
+      leftAddon={<Icon.Gold24 />}
+    />
   ),
 };
