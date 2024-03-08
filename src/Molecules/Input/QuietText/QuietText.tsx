@@ -46,7 +46,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   }
 `;
 
-const Root = styled(Flexbox)<{ $error?: boolean; $success?: boolean; $disabled?: boolean }>`
+const Container = styled(Flexbox)<{ $error?: boolean; $success?: boolean; $disabled?: boolean }>`
   height: ${(p) => p.theme.spacing.unit(9)}px;
   min-width: ${DEFAULT_WIDTH}px;
   display: inline-flex;
@@ -85,6 +85,7 @@ const HiddenMeasuringSpan = styled.span`
 `;
 
 const components = {
+  Container,
   Input,
   AddonBox,
 };
@@ -92,7 +93,7 @@ const components = {
 const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
 const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
-const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
+const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     autoComplete,
     autoFocus,
@@ -165,7 +166,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
       required={visuallyEmphasiseRequired}
     >
       <Typography type="title1" color="inherit">
-        <Root $error={!!error} $disabled={disabled} $success={success}>
+        <Container $error={!!error} $disabled={disabled} $success={success}>
           {isValidElement(leftAddon)
             ? leftAddon
             : leftAddon && (
@@ -220,11 +221,12 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
           <HiddenMeasuringSpan ref={hiddenMeasuringSpanRef} aria-hidden>
             {inputValue}
           </HiddenMeasuringSpan>
-        </Root>
+        </Container>
       </Typography>
     </FormField>
   );
 });
 
-export const QuietText: typeof TextComponent & { components?: typeof components } = TextComponent;
+export const QuietText: typeof QuietTextComponent & { components?: typeof components } =
+  QuietTextComponent;
 QuietText.components = components;
