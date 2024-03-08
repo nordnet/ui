@@ -34,7 +34,6 @@ export type Props = {
   defaultValue?: string;
   required?: boolean;
   maxLength?: number;
-  visuallyEmphasiseRequired?: boolean;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;

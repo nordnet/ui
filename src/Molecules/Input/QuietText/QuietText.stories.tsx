@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Input } from '../../..';
+import { Input, Flexbox } from '../../..';
 
 const meta: Meta<typeof Input.QuietText> = {
   component: Input.QuietText,
@@ -10,13 +10,24 @@ const meta: Meta<typeof Input.QuietText> = {
 export default meta;
 type Story = StoryObj<typeof Input.QuietText>;
 
+function ControlledExample() {
+  const [value, setValue] = useState('Filled state');
+
+  return (
+    <Flexbox container gap={4}>
+      <input onChange={(e) => setValue(e.target.value)} />
+      <Input.QuietText label="Label" placeholder="Placeholder" value={value} rightAddon="%" />
+    </Flexbox>
+  );
+}
+
 export const DefaultStory: Story = {
   render: () => <Input.QuietText label="Label" placeholder="Placeholder" />,
   name: 'Default',
 };
 
 export const Filled: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" value="Fill State" />,
+  render: () => <ControlledExample />,
 };
 
 export const FullWidth: Story = {
@@ -28,9 +39,7 @@ export const Disabled: Story = {
 };
 
 export const Required: Story = {
-  render: () => (
-    <Input.QuietText label="Label" placeholder="Placeholder" required visuallyEmphasiseRequired />
-  ),
+  render: () => <Input.QuietText label="Label" placeholder="Placeholder" required />,
 };
 
 export const Error: Story = {

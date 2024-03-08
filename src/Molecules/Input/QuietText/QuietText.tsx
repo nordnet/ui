@@ -1,78 +1,87 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import styled from 'styled-components';
 import * as R from 'ramda';
 import { Props } from './QuietText.types';
-import { Flexbox, FormField, Typography } from '../../..';
+import { Flexbox, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
+
+const DEFAULT_WIDTH = 200;
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-export const placeholderNormalization = css`
+const AddonBox = styled(Typography)<{ $disabled?: boolean }>`
+  display: inline-block;
+  color: ${(p) =>
+    p.$disabled
+      ? p.theme.colorTokens.neutral.text_disabled
+      : p.theme.colorTokens.neutral.text_default};
+`;
+
+const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<{
+  $width: number;
+}>`
+  border: 0;
+  width: ${(p) => p.$width}px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  line-height: inherit;
+  box-sizing: border-box;
+  color: ${(p) => p.theme.colorTokens.neutral.text_default};
+  font-weight: bold;
+  font-size: 28px;
+
   &::placeholder {
     color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
     line-height: inherit;
     opacity: 1;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
+  }
 `;
 
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
-  width: ${(p) => p.theme.spacing.unit(8)}px;
-  top: 0;
-  height: 100%;
-  padding: 0 ${(p) => p.theme.spacing.unit(1)}px;
-  position: absolute;
-  ${(p) => (p.position === 'left' ? 'left: 0;' : '')}
-  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
-`;
-
-const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<Props>`
-  ${placeholderNormalization}
-  border: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  border-radius: ${(p) => p.theme.borderRadius4};
-  height: ${(p) => p.theme.spacing.unit(8)}px;
+const Root = styled(Flexbox)<{ $error?: boolean; $success?: boolean; $disabled?: boolean }>`
+  height: ${(p) => p.theme.spacing.unit(9)}px;
+  min-width: ${DEFAULT_WIDTH}px;
+  display: inline-flex;
+  gap: ${(p) => p.theme.spacing.unit(2)}px;
+  align-items: baseline;
   position: relative;
   border-bottom: 2px solid
     ${(p) => {
-      if (hasError(p.error)) return p.theme.colorTokens.error.border_default;
-      if (p.success) return p.theme.colorTokens.positive.border_default;
+      if (p.$error) return p.theme.colorTokens.error.border_default;
+      if (p.$success) return p.theme.colorTokens.positive.border_default;
       return p.theme.colorTokens.neutral.border_default;
     }};
-
-  background-color: transparent;
-  color: ${(p) => p.theme.colorTokens.neutral.text_default};
-  ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
-  ${(p) =>
-    p.rightAddon
-      ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
-      : ''}
-  font-size: 28px;
-  font-weight: bold;
 
   &:hover {
     border-color: ${(p) => p.theme.colorTokens.neutral.border_hover};
   }
 
-  &:focus {
-    border-width: 0 0 2px 0;
-    outline: none;
+  &:focus-within {
     border-color: ${(p) => p.theme.colorTokens.neutral.border_active};
   }
 
-  &:disabled {
-    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
-    border-color: ${(p) => p.theme.colorTokens.neutral.border_disabled};
-    cursor: not-allowed;
+  ${(p) =>
+    p.$disabled &&
+    `
+    border-color: ${p.theme.colorTokens.neutral.border_disabled};
+    cursor: not - allowed;
+    `};
   }
 `;
 
-const Wrapper = styled.div`
-  position: relative;
-  padding: ${(p) => p.theme.spacing.unit(1)}px 0;
+const HiddenMeasuringSpan = styled.span`
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  height: 0;
 `;
 
 const components = {
@@ -108,82 +117,88 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     rightAddon,
     success,
     value,
-    visuallyEmphasiseRequired,
     type,
     readOnly,
     pattern,
     inputMode,
   } = props;
+  const [inputValue, setInputValue] = useState(value || defaultValue || placeholder || '');
+  const [inputWidth, setInputWidth] = useState(DEFAULT_WIDTH);
+  const hiddenMeasuringSpanRef = useRef<HTMLSpanElement>(null);
+  const isControlled = value !== undefined;
+
+  useLayoutEffect(() => {
+    const spanWdith = hiddenMeasuringSpanRef.current?.offsetWidth;
+    setInputWidth(spanWdith || DEFAULT_WIDTH);
+  }, [inputValue]);
+
+  useEffect(() => {
+    if (isControlled) {
+      setInputValue(value);
+    }
+  }, [value, isControlled]);
+
+  function handleOnInput(e: React.ChangeEvent<HTMLInputElement>) {
+    if (!isControlled) {
+      setInputValue(e.target.value || placeholder || '');
+    }
+  }
 
   return (
-    <FormField
-      {...R.pick(
-        [
-          'error',
-          'extraInfo',
-          'hideLabel',
-          'label',
-          'labelTooltip',
-          'labelTooltipPosition',
-          'labelTooltipInModal',
-          'className',
-          'width',
-          'disabled',
-        ],
-        props,
-      )}
-      required={visuallyEmphasiseRequired}
-    >
-      <Typography type="secondary" color="inherit">
-        <Wrapper>
-          <Input
-            {...{
-              autoComplete,
-              autoFocus,
-              defaultValue,
-              disabled,
-              error,
-              id,
-              leftAddon,
-              maxLength,
-              name,
-              onBlur,
-              onChange,
-              onClick,
-              onFocus,
-              onMouseEnter,
-              onMouseLeave,
-              onKeyDown,
-              onKeyPress,
-              onKeyUp,
-              placeholder,
-              required,
-              rightAddon,
-              success,
-              value,
-              type,
-              ref,
-              readOnly,
-              pattern,
-              inputMode,
-            }}
-            {...getAriaProps(props)}
-            {...getDataProps(props)}
-            {...(hasError(error) ? { 'aria-invalid': true } : {})}
-          />
-          {leftAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="left">
-              {leftAddon}
-            </AddonBox>
-          )}
-          {rightAddon && (
-            <AddonBox container justifyContent="flex-end" alignItems="center" position="right">
-              {rightAddon}
-            </AddonBox>
-          )}
-        </Wrapper>
-      </Typography>
-    </FormField>
+    <Typography type="title1" color="inherit">
+      <Root $error={!!error} $disabled={disabled} $success={success}>
+        {leftAddon && (
+          <AddonBox type="primary" $disabled={disabled}>
+            {leftAddon}
+          </AddonBox>
+        )}
+        <Input
+          {...{
+            autoComplete,
+            autoFocus,
+            defaultValue,
+            disabled,
+            error,
+            id,
+            leftAddon,
+            maxLength,
+            name,
+            onBlur,
+            onChange,
+            onClick,
+            onFocus,
+            onInput: handleOnInput,
+            onMouseEnter,
+            onMouseLeave,
+            onKeyDown,
+            onKeyPress,
+            onKeyUp,
+            placeholder,
+            required,
+            rightAddon,
+            success,
+            value,
+            type,
+            ref,
+            readOnly,
+            pattern,
+            inputMode,
+            $width: inputWidth,
+          }}
+          {...getAriaProps(props)}
+          {...getDataProps(props)}
+          {...(hasError(error) ? { 'aria-invalid': true } : {})}
+        />
+        {rightAddon && (
+          <AddonBox type="primary" $disabled={disabled}>
+            {rightAddon}
+          </AddonBox>
+        )}
+        <HiddenMeasuringSpan ref={hiddenMeasuringSpanRef} aria-hidden>
+          {inputValue}
+        </HiddenMeasuringSpan>
+      </Root>
+    </Typography>
   );
 });
 
