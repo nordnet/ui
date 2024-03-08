@@ -68,7 +68,7 @@ export const Success: Story = {
 };
 
 export const RightAddon: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" rightAddon="%" />,
+  render: () => <Input.QuietText label="Label" placeholder="Placeholder" rightAddon="SEK" />,
 };
 
 export const LeftAddon: Story = {
@@ -77,7 +77,7 @@ export const LeftAddon: Story = {
 
 export const RightAndLeftAddons: Story = {
   render: () => (
-    <Input.QuietText label="Label" placeholder="Placeholder" rightAddon="%" leftAddon="$" />
+    <Input.QuietText label="Label" placeholder="Placeholder" rightAddon="SEK" leftAddon="$" />
   ),
 };
 

@@ -1,20 +1,23 @@
+import { BakedInFormFieldProps } from '../../FormField/FormField.types';
+
+type EventProps = {
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onClick?: React.MouseEventHandler<HTMLInputElement>;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onFocus?: React.FocusEventHandler<HTMLInputElement>;
+  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
+  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+};
+
 export type Props = {
-  className?: string;
   id?: string;
-  /** Label should always be presented - A11y */
-  label: string;
-  /** But you can hide it visually */
-  hideLabel?: boolean;
-  labelTooltip?: string;
-  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
-  labelTooltipInModal?: boolean;
   autoComplete?: string;
   autoFocus?: boolean;
   name?: string;
-  error?: string;
   success?: boolean;
-  /** TODO: is this needed? */
-  extraInfo?: string;
   rightAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
   disabled?: boolean;
@@ -34,16 +37,8 @@ export type Props = {
   value?: string;
   defaultValue?: string;
   required?: boolean;
-  maxLength?: number;
   visuallyEmphasiseRequired?: boolean;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
-  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  maxLength?: number;
   readOnly?: boolean;
-};
+} & EventProps &
+  BakedInFormFieldProps;

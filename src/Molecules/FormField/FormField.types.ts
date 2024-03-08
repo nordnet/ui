@@ -32,3 +32,16 @@ export type Props = {
    */
   width?: string | number;
 } & LabelAddonProp;
+
+export type BakedInFormFieldProps = {
+  className?: string;
+  /** Label should always be presented - A11y */
+  label: string;
+  /** But you can hide it visually */
+  hideLabel?: boolean;
+  labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  labelTooltipInModal?: boolean;
+  extraInfo?: string;
+  error?: string;
+};
