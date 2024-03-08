@@ -98,8 +98,6 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
     autoComplete,
     autoFocus,
     defaultValue,
-    disabled,
-    error,
     id,
     leftAddon,
     maxLength,
@@ -123,7 +121,32 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
     readOnly,
     pattern,
     inputMode,
+    // FormField props below
+    error,
+    extraInfo,
+    hideLabel,
+    label,
+    labelTooltip,
+    labelTooltipPosition,
+    labelTooltipInModal,
+    className,
+    width,
+    disabled,
   } = props;
+
+  const formFieldProps = {
+    error,
+    extraInfo,
+    hideLabel,
+    label,
+    labelTooltip,
+    labelTooltipPosition,
+    labelTooltipInModal,
+    className,
+    width,
+    disabled,
+  };
+
   const [inputValue, setInputValue] = useState(value || defaultValue || placeholder || '');
   const [inputWidth, setInputWidth] = useState(DEFAULT_WIDTH);
   const hiddenMeasuringSpanRef = useRef<HTMLSpanElement>(null);
@@ -147,24 +170,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
   }
 
   return (
-    <FormField
-      {...R.pick(
-        [
-          'error',
-          'extraInfo',
-          'hideLabel',
-          'label',
-          'labelTooltip',
-          'labelTooltipPosition',
-          'labelTooltipInModal',
-          'className',
-          'width',
-          'disabled',
-        ],
-        props,
-      )}
-      required={visuallyEmphasiseRequired}
-    >
+    <FormField {...formFieldProps} required={visuallyEmphasiseRequired}>
       <Typography type="title1" color="inherit">
         <Container $error={!!error} $disabled={disabled} $success={success}>
           {isValidElement(leftAddon)

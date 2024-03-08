@@ -50,7 +50,9 @@ export const Disabled: Story = {
 };
 
 export const Required: Story = {
-  render: () => <Input.QuietText label="Label" placeholder="Placeholder" required />,
+  render: () => (
+    <Input.QuietText label="Label" placeholder="Placeholder" required visuallyEmphasiseRequired />
+  ),
 };
 
 export const Error: Story = {
