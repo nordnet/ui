@@ -21,9 +21,9 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   $width: number;
 }>`
   border: 0;
-  width: ${(p) => p.$width}px;
   padding: 0;
   margin: 0;
+  width: ${(p) => p.$width}px;
   background-color: transparent;
   line-height: inherit;
   box-sizing: border-box;
