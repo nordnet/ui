@@ -1,7 +1,7 @@
 import { BakedInFormFieldProps } from '../../FormField/FormField.types';
 
-type BwakedInProps = BakedInFormFieldProps;
-
+type BakedInProps = BakedInFormFieldProps;
+// TODO: can the native props be found without react? Because storybook doesn't pick them up
 type NativeProps = Pick<
   React.InputHTMLAttributes<HTMLInputElement>,
   | 'autoComplete'
@@ -44,4 +44,4 @@ type OwnProps = {
   width?: string | number;
 };
 
-export type Props = OwnProps & EventProps & BwakedInProps & NativeProps;
+export type Props = OwnProps & EventProps & BakedInProps & NativeProps;
