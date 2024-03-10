@@ -1,44 +1,47 @@
 import { BakedInFormFieldProps } from '../../FormField/FormField.types';
 
-type EventProps = {
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
-  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
-};
+type BwakedInProps = BakedInFormFieldProps;
 
-export type Props = {
-  id?: string;
-  autoComplete?: string;
-  autoFocus?: boolean;
-  name?: string;
+type NativeProps = Pick<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  | 'autoComplete'
+  | 'autoFocus'
+  | 'className'
+  | 'defaultValue'
+  | 'disabled'
+  | 'id'
+  | 'inputMode'
+  | 'maxLength'
+  | 'name'
+  | 'pattern'
+  | 'placeholder'
+  | 'readOnly'
+  | 'required'
+  | 'type'
+  | 'value'
+>;
+
+type EventProps = Pick<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  | 'onBlur'
+  | 'onChange'
+  | 'onClick'
+  | 'onFocus'
+  | 'onMouseEnter'
+  | 'onMouseLeave'
+  | 'onKeyDown'
+  | 'onKeyPress'
+  | 'onKeyUp'
+>;
+
+type OwnProps = {
   success?: boolean;
   rightAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
-  disabled?: boolean;
-  placeholder?: string;
   fullWidth?: boolean;
-  pattern?: string;
-  inputMode?: string;
-  /**
-   * You need to specify width
-   * (better in pixels), because
-   * that will affect wrapping
-   * of the error/info text
-   * underneath
-   */
-  width?: string | number;
-  type?: string;
-  value?: string;
-  defaultValue?: string;
-  required?: boolean;
   visuallyEmphasiseRequired?: boolean;
-  maxLength?: number;
-  readOnly?: boolean;
-} & EventProps &
-  BakedInFormFieldProps;
+  /** number is treated as pixels */
+  width?: string | number;
+};
+
+export type Props = OwnProps & EventProps & BwakedInProps & NativeProps;

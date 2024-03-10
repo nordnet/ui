@@ -9,6 +9,20 @@ const DEFAULT_WIDTH = 200;
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
+function getComponentWidth(fullWidth: Props['fullWidth'], width: Props['width']) {
+  if (fullWidth) {
+    return '100%';
+  }
+  if (typeof width === 'number') {
+    return `${width}px`;
+  }
+  if (typeof width === 'string' && width !== '') {
+    return width;
+  }
+
+  return undefined;
+}
+
 const AddonBox = styled(Typography)<{ $disabled?: boolean }>`
   display: inline-block;
   color: ${(p) =>
@@ -18,12 +32,12 @@ const AddonBox = styled(Typography)<{ $disabled?: boolean }>`
 `;
 
 const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<{
-  $width: number;
+  $inputWidth: number;
 }>`
   border: 0;
   padding: 0;
   margin: 0;
-  width: ${(p) => p.$width}px;
+  width: ${(p) => p.$inputWidth}px;
   background-color: transparent;
   line-height: inherit;
   box-sizing: border-box;
@@ -46,7 +60,13 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   }
 `;
 
-const Container = styled(Flexbox)<{ $error?: boolean; $success?: boolean; $disabled?: boolean }>`
+const Container = styled(Flexbox)<{
+  $error?: boolean;
+  $success?: boolean;
+  $disabled?: boolean;
+  $width?: string;
+}>`
+  ${(p) => (p.$width ? `width: ${p.$width};` : '')}  
   height: ${(p) => p.theme.spacing.unit(9)}px;
   min-width: ${DEFAULT_WIDTH}px;
   display: inline-flex;
@@ -95,6 +115,7 @@ const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
 const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
+    fullWidth,
     autoComplete,
     autoFocus,
     defaultValue,
@@ -152,6 +173,8 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
   const hiddenMeasuringSpanRef = useRef<HTMLSpanElement>(null);
   const isControlled = value !== undefined;
 
+  const componentWidth = getComponentWidth(fullWidth, width);
+
   useLayoutEffect(() => {
     const spanWdith = hiddenMeasuringSpanRef.current?.offsetWidth;
     setInputWidth(spanWdith || DEFAULT_WIDTH);
@@ -172,7 +195,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
   return (
     <FormField {...formFieldProps} required={visuallyEmphasiseRequired}>
       <Typography type="title1" color="inherit">
-        <Container $error={!!error} $disabled={disabled} $success={success}>
+        <Container $error={!!error} $disabled={disabled} $success={success} $width={componentWidth}>
           {isValidElement(leftAddon)
             ? leftAddon
             : leftAddon && (
@@ -211,7 +234,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
               readOnly,
               pattern,
               inputMode,
-              $width: inputWidth,
+              $inputWidth: inputWidth,
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}
