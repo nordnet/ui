@@ -39,16 +39,15 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   margin: 0;
   width: ${(p) => p.$inputWidth}px;
   background-color: transparent;
-  line-height: inherit;
   box-sizing: border-box;
   color: ${(p) => p.theme.colorTokens.neutral.text_default};
-  font-weight: bold;
-  font-size: 28px;
+  font-weight: inherit;
+  line-height: inherit;
 
   &::placeholder {
-    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
     line-height: inherit;
     opacity: 1;
+    color: ${(p) => p.theme.colorTokens.neutral.text_disabled};
   }
 
   &:focus {
@@ -194,7 +193,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
 
   return (
     <FormField {...formFieldProps} required={visuallyEmphasiseRequired}>
-      <Typography type="title1" color="inherit">
+      <Typography type="title1" weight="bold" color="inherit">
         <Container $error={!!error} $disabled={disabled} $success={success} $width={componentWidth}>
           {isValidElement(leftAddon)
             ? leftAddon
