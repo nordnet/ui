@@ -12,7 +12,7 @@ const StyledRow = styled(Row)<{ $separatorColor: ColorFn; $hideSeparator: boolea
 export const FooterRow: FooterRowComponent = ({
   className,
   hideSeparator = false,
-  separatorColor = (theme) => theme.color.text,
+  separatorColor = (theme) => theme.colorTokens.neutral.border_weak,
   children,
   ...htmlProps
 }) => {
