@@ -96,7 +96,7 @@ const Row: RowComponent = ({
   hideSeparator = false,
   clickRowToExpand = false,
   rowType = 'content',
-  separatorColor = (theme) => theme.color.divider,
+  separatorColor = (theme) => theme.colorTokens.neutral.border_weak,
   onExpandToggle,
   expandChildren,
   expandItems,
