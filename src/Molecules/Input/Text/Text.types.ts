@@ -1,66 +1,55 @@
-import { BakedInFormFieldProps } from '../../FormField/FormField.types';
-import { Props as QuietTextProps } from '../QuietText/QuietText.types';
+export type Variant = 'normal' | 'quiet';
+export type Size = Pick<Props, 'size'>;
 
-type BakedInProps = BakedInFormFieldProps;
-
-type EventProps = {
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
-  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
-};
-
-type NativeProps = {
+export type Props = {
+  className?: string;
+  id?: string;
+  /** Label should always be presented - A11y */
+  label: string;
+  /** But you can hide it visually */
+  hideLabel?: boolean;
+  labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  labelTooltipInModal?: boolean;
   autoComplete?: string;
   autoFocus?: boolean;
-  defaultValue?: string;
-  disabled?: boolean;
-  id?: string;
-  inputMode?: string;
-  maxLength?: number;
   name?: string;
-  pattern?: string;
-  placeholder?: string;
-  readOnly?: boolean;
-  required?: boolean;
-  type?: string;
-  value?: string;
-};
-
-type OwnProps = {
-  fullWidth?: boolean;
-  leftAddon?: React.ReactNode;
-  rightAddon?: React.ReactNode;
-  size?: 's';
+  error?: string;
   success?: boolean;
-  // /** @default normal */
-  // variant?: 'normal' | 'quiet';
-  visuallyEmphasiseRequired?: boolean;
+  /** TODO: is this needed? */
+  extraInfo?: string;
+  rightAddon?: React.ReactNode;
+  leftAddon?: React.ReactNode;
+  disabled?: boolean;
+  placeholder?: string;
+  fullWidth?: boolean;
+  size?: 's';
+  /** @default normal */
+  variant?: Variant;
+  pattern?: string;
+  inputMode?: string;
   /**
-   * number is treated as pixels.
-   * Tip: you need to specify width
+   * You need to specify width
    * (better in pixels), because
    * that will affect wrapping
    * of the error/info text
    * underneath
    */
   width?: string | number;
+  type?: string;
+  value?: string;
+  defaultValue?: string;
+  required?: boolean;
+  maxLength?: number;
+  visuallyEmphasiseRequired?: boolean;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onClick?: React.MouseEventHandler<HTMLInputElement>;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onFocus?: React.FocusEventHandler<HTMLInputElement>;
+  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
+  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  readOnly?: boolean;
 };
-
-export type Props =
-  | ({
-      /** @default normal */
-      variant?: 'normal';
-    } & BakedInProps &
-      EventProps &
-      NativeProps &
-      OwnProps)
-  | ({
-      /** @deprecated use Input.QuietText instead */
-      variant: 'quiet';
-    } & QuietTextProps);
