@@ -65,7 +65,7 @@ const Container = styled(Flexbox)<{
   $disabled?: boolean;
   $width?: string;
 }>`
-  ${(p) => (p.$width ? `width: ${p.$width};` : '')}  
+  ${(p) => (p.$width ? `width: ${p.$width};` : '')}
   height: ${(p) => p.theme.spacing.unit(9)}px;
   min-width: ${DEFAULT_WIDTH}px;
   display: inline-flex;
@@ -92,8 +92,7 @@ const Container = styled(Flexbox)<{
     `
     border-color: ${p.theme.colorTokens.neutral.border_disabled};
     cursor: not - allowed;
-    `};
-  }
+    `}
 `;
 
 const HiddenMeasuringSpan = styled.span`
