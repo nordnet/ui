@@ -65,6 +65,12 @@ export const Error: Story = {
   ),
 };
 
+export const WithExtraInfo: Story = {
+  render: () => (
+    <Input.QuietText label="Label" placeholder="Placeholder" extraInfo="Extra information" />
+  ),
+};
+
 export const Success: Story = {
   render: () => <Input.QuietText label="Label" placeholder="Placeholder" success />,
 };

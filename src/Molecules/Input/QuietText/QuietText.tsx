@@ -113,11 +113,12 @@ const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
 const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
-    fullWidth,
     autoComplete,
     autoFocus,
     defaultValue,
+    fullWidth,
     id,
+    inputMode,
     leftAddon,
     maxLength,
     name,
@@ -125,45 +126,46 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
     onChange,
     onClick,
     onFocus,
-    onMouseEnter,
-    onMouseLeave,
     onKeyDown,
     onKeyPress,
     onKeyUp,
+    onMouseEnter,
+    onMouseLeave,
+    pattern,
     placeholder,
+    readOnly,
     required,
     rightAddon,
     success,
+    type,
     value,
     visuallyEmphasiseRequired,
-    type,
-    readOnly,
-    pattern,
-    inputMode,
     // FormField props below
+    className,
+    disabled,
     error,
     extraInfo,
     hideLabel,
     label,
     labelTooltip,
-    labelTooltipPosition,
     labelTooltipInModal,
-    className,
+    labelTooltipPosition,
     width,
-    disabled,
   } = props;
 
   const formFieldProps = {
+    className,
+    disabled,
     error,
     extraInfo,
+    fieldId: id,
     hideLabel,
     label,
     labelTooltip,
-    labelTooltipPosition,
     labelTooltipInModal,
-    className,
+    labelTooltipPosition,
+    required: visuallyEmphasiseRequired,
     width,
-    disabled,
   };
 
   const [inputValue, setInputValue] = useState(value || defaultValue || placeholder || '');
@@ -191,7 +193,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
   }
 
   return (
-    <FormField {...formFieldProps} required={visuallyEmphasiseRequired}>
+    <FormField {...formFieldProps}>
       <Typography type="title1" weight="bold" color="inherit">
         <Container $error={!!error} $disabled={disabled} $success={success} $width={componentWidth}>
           {isValidElement(leftAddon)
@@ -245,7 +247,11 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
                   {rightAddon}
                 </AddonBox>
               )}
-          <HiddenMeasuringSpan ref={hiddenMeasuringSpanRef} aria-hidden>
+          <HiddenMeasuringSpan
+            ref={hiddenMeasuringSpanRef}
+            aria-hidden
+            data-testId="quiettext-hidden-measurement"
+          >
             {inputValue}
           </HiddenMeasuringSpan>
         </Container>

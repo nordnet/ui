@@ -1,1 +1,3 @@
-export { QuietText } from './QuietText';
+import { QuietText } from './QuietText';
+
+export { QuietText };
