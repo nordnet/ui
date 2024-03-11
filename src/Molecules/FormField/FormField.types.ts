@@ -19,7 +19,7 @@ export type Props = {
   /** visually hide label */
   hideLabel?: boolean;
   /** Label should always be presented - A11y */
-  label: string;
+  label?: string;
   ref?: React.Ref<HTMLDivElement>;
   required?: boolean;
   /** @deprecated use required */
