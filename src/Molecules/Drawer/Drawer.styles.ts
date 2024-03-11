@@ -47,7 +47,7 @@ export const Content = styled.div`
   margin-bottom: ${(p) => p.theme.spacing.unit(PADDING_Y)}px;
   padding: 1px ${(p) => p.theme.spacing.unit(PADDING_X)}px;
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.sm)} {
-    padding: 1px ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px 1px 0;
+    padding: 1px ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
   }
 `;
 
@@ -56,7 +56,7 @@ export const DragArea = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  width: 8px;
+  width: 12px;
   z-index: 2;
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
     display: none;
