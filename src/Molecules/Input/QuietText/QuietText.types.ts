@@ -1,47 +1,52 @@
 import { BakedInFormFieldProps } from '../../FormField/FormField.types';
 
 type BakedInProps = BakedInFormFieldProps;
-// TODO: can the native props be found without react? Because storybook doesn't pick them up
-type NativeProps = Pick<
-  React.InputHTMLAttributes<HTMLInputElement>,
-  | 'autoComplete'
-  | 'autoFocus'
-  | 'className'
-  | 'defaultValue'
-  | 'disabled'
-  | 'id'
-  | 'inputMode'
-  | 'maxLength'
-  | 'name'
-  | 'pattern'
-  | 'placeholder'
-  | 'readOnly'
-  | 'required'
-  | 'type'
-  | 'value'
->;
 
-type EventProps = Pick<
-  React.InputHTMLAttributes<HTMLInputElement>,
-  | 'onBlur'
-  | 'onChange'
-  | 'onClick'
-  | 'onFocus'
-  | 'onMouseEnter'
-  | 'onMouseLeave'
-  | 'onKeyDown'
-  | 'onKeyPress'
-  | 'onKeyUp'
->;
+type EventProps = {
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onClick?: React.MouseEventHandler<HTMLInputElement>;
+  onFocus?: React.FocusEventHandler<HTMLInputElement>;
+  onKewyDown?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
+  onMouseLeave?: React.FocusEventHandler<HTMLInputElement>;
+};
+
+type NativeProps = {
+  autoComplete?: string;
+  autoFocus?: boolean;
+  className?: string;
+  defaultValue?: string;
+  disabled?: boolean;
+  id?: string;
+  inputMode?: string;
+  maxLength?: number;
+  name?: string;
+  pattern?: string;
+  placeholder?: string;
+  readOnly?: boolean;
+  required?: boolean;
+  type?: string;
+  value?: string;
+};
 
 type OwnProps = {
-  success?: boolean;
-  rightAddon?: React.ReactNode;
-  leftAddon?: React.ReactNode;
   fullWidth?: boolean;
+  leftAddon?: React.ReactNode;
+  rightAddon?: React.ReactNode;
+  success?: boolean;
   visuallyEmphasiseRequired?: boolean;
-  /** number is treated as pixels */
+  /**
+   * number is treated as pixels.
+   * Tip: you need to specify width
+   * (better in pixels), because
+   * that will affect wrapping
+   * of the error/info text
+   * underneath
+   */
   width?: string | number;
 };
 
-export type Props = OwnProps & EventProps & BakedInProps & NativeProps;
+export type Props = BakedInProps & EventProps & NativeProps & OwnProps;
