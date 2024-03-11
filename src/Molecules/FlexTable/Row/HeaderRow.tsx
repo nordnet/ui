@@ -67,7 +67,7 @@ const StyledHeaderRow = styled(Row)<StyledHeaderProps>`
 export const HeaderRow: HeaderRowComponent = ({
   className,
   hideSeparator = false,
-  separatorColor = (theme) => theme.color.text,
+  separatorColor = (theme) => theme.colorTokens.neutral.border_weak,
   children,
   stickyOffsetTop = 0,
   ...htmlProps

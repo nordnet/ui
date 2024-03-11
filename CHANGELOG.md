@@ -1,3 +1,10 @@
+## [16.10.4](https://github.com/nordnet/ui/compare/v16.10.3...v16.10.4) (2024-03-11)
+
+
+### Bug Fixes
+
+* default border color for flextable row ([#1608](https://github.com/nordnet/ui/issues/1608)) ([86159e7](https://github.com/nordnet/ui/commit/86159e732a175ea02dcd24f244c4751476e60902))
+
 ## [16.10.3](https://github.com/nordnet/ui/compare/v16.10.2...v16.10.3) (2024-03-08)
 
 
