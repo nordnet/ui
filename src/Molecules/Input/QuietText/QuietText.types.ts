@@ -2,21 +2,21 @@ import { Props as FormFieldProps } from '../../FormField/FormField.types';
 
 type BakedInProps = Pick<
   FormFieldProps,
-  | 'label'
   | 'hideLabel'
   | 'labelTooltip'
   | 'labelTooltipPosition'
   | 'labelTooltipInModal'
   | 'extraInfo'
   | 'error'
->;
+> &
+  Required<Pick<FormFieldProps, 'label'>>;
 
 type EventProps = {
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onKewyDown?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onMouseEnter?: React.FocusEventHandler<HTMLInputElement>;
