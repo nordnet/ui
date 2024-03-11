@@ -6,7 +6,6 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { Flexbox, Icon, Portal, theme, useMedia, useOnClickOutside } from '../..';
 import {
   Backdrop,
-  BottomDragArea,
   DragHandle,
   Handle,
   StyledBottomSheet,
@@ -56,7 +55,7 @@ const BottomSheet: React.FC<Props> = ({
 
   const handleDragEnd = useCallback(
     (event: TouchEvent, info: PanInfo) => {
-      if (info?.offset?.y > 100) {
+      if (info?.offset?.y > 80) {
         handleClose();
       }
     },
@@ -132,7 +131,6 @@ const BottomSheet: React.FC<Props> = ({
                   </DragHandle>
                 </Flexbox>
                 <Flexbox item>{children}</Flexbox>
-                <BottomDragArea />
               </StyledBottomSheet>
             </RemoveScroll>
           </FocusLock>

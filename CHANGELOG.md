@@ -1,3 +1,17 @@
+## [16.10.3](https://github.com/nordnet/ui/compare/v16.10.2...v16.10.3) (2024-03-08)
+
+
+### Bug Fixes
+
+* use another way of hiding the area below the drag element ([#1607](https://github.com/nordnet/ui/issues/1607)) ([4095ca1](https://github.com/nordnet/ui/commit/4095ca1a0194ef40368c880b5e89f3e98ae6f5c1))
+
+## [16.10.2](https://github.com/nordnet/ui/compare/v16.10.1...v16.10.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* revert padding changes for drawer ([#1606](https://github.com/nordnet/ui/issues/1606)) ([d098325](https://github.com/nordnet/ui/commit/d098325b1740db8b221af3a5fc6176667eea5f37))
+
 ## [16.10.1](https://github.com/nordnet/ui/compare/v16.10.0...v16.10.1) (2024-03-07)
 
 
