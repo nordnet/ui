@@ -1,28 +1,29 @@
 export type LabelAddonProp = {
-  labelTooltip?: string;
-  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
-  hideLabel?: boolean;
   children?: React.ReactNode;
+  hideLabel?: boolean;
+  labelTooltip?: string;
   labelTooltipInModal?: boolean;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
 };
 
 export type Props = {
-  label?: string;
-  hideLabel?: boolean;
   children: React.ReactNode;
   className?: string;
+  disabled?: boolean;
   error?: string;
   extraInfo?: string;
   fieldId?: string;
   /** @deprecated use fieldId */
   forId?: string;
   group?: boolean;
+  /** visually hide label */
+  hideLabel?: boolean;
+  /** Label should always be presented - A11y */
+  label: string;
   ref?: React.Ref<HTMLDivElement>;
   required?: boolean;
   /** @deprecated use required */
   showRequired?: boolean;
-  disabled?: boolean;
-
   /**
    * You need to specify width
    * (better in pixels), because
@@ -32,16 +33,3 @@ export type Props = {
    */
   width?: string | number;
 } & LabelAddonProp;
-
-export type BakedInFormFieldProps = {
-  className?: string;
-  /** Label should always be presented - A11y */
-  label: string;
-  /** But you can hide it visually */
-  hideLabel?: boolean;
-  labelTooltip?: string;
-  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
-  labelTooltipInModal?: boolean;
-  extraInfo?: string;
-  error?: string;
-};

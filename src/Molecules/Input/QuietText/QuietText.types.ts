@@ -1,6 +1,15 @@
-import { BakedInFormFieldProps } from '../../FormField/FormField.types';
+import { Props as FormFieldProps } from '../../FormField/FormField.types';
 
-type BakedInProps = BakedInFormFieldProps;
+type BakedInProps = Pick<
+  FormFieldProps,
+  | 'label'
+  | 'hideLabel'
+  | 'labelTooltip'
+  | 'labelTooltipPosition'
+  | 'labelTooltipInModal'
+  | 'extraInfo'
+  | 'error'
+>;
 
 type EventProps = {
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
