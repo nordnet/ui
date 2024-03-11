@@ -1,29 +1,28 @@
 export type LabelAddonProp = {
-  children?: React.ReactNode;
-  hideLabel?: boolean;
   labelTooltip?: string;
-  labelTooltipInModal?: boolean;
   labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
+  hideLabel?: boolean;
+  children?: React.ReactNode;
+  labelTooltipInModal?: boolean;
 };
 
 export type Props = {
+  label?: string;
+  hideLabel?: boolean;
   children: React.ReactNode;
   className?: string;
-  disabled?: boolean;
   error?: string;
   extraInfo?: string;
   fieldId?: string;
   /** @deprecated use fieldId */
   forId?: string;
   group?: boolean;
-  /** visually hide label */
-  hideLabel?: boolean;
-  /** Label should always be presented - A11y */
-  label?: string;
   ref?: React.Ref<HTMLDivElement>;
   required?: boolean;
   /** @deprecated use required */
   showRequired?: boolean;
+  disabled?: boolean;
+
   /**
    * You need to specify width
    * (better in pixels), because
