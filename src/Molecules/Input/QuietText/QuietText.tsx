@@ -95,6 +95,9 @@ const Container = styled(Flexbox)<{
     `}
 `;
 
+// HiddenMeasuringSpan is a hidden element used to measure the width of the input value.
+// This measurement is essential for ensuring the rightAddon (or suffix) remains adjacent to the text,
+// allowing it to effectively "hug" the entered content.
 const HiddenMeasuringSpan = styled.span`
   visibility: hidden;
   position: absolute;
