@@ -1,4 +1,4 @@
-export type BadgeSize = 'm' | 'l';
+export type BadgeSize = 'm' | 'l' | 'xl';
 
 export type NestedBadgeProps = {
   alt?: string;

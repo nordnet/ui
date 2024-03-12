@@ -28,7 +28,7 @@ export const NestedBadge: NestedBadgeComponent = ({
     ) : (
       <StyledFallback $badgeSize={badgeSize}>
         <Typography
-          type="secondary"
+          type={badgeSize === 'xl' ? 'primary' : 'secondary'}
           weight="bold"
           color={(t) => t.colorTokens.neutral.text_default}
         >

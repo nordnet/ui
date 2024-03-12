@@ -16,6 +16,17 @@ export const Showcase = {
       <Display
         items={[
           {
+            title: 'Extra large logo with flag (36x40 px)',
+            component: (
+              <Badge.Nested
+                badgeSize="xl"
+                fallback="Nordnet"
+                logoUrl="/logo/nordnet.png"
+                country="SE"
+              />
+            ),
+          },
+          {
             title: 'Large (default) logo with flag (28x32 px)',
             component: <Badge.Nested fallback="Nordnet" logoUrl="/logo/nordnet.png" country="SE" />,
           },
@@ -31,6 +42,12 @@ export const Showcase = {
             ),
           },
           {
+            title: 'Extra large logo',
+            component: (
+              <Badge.Nested badgeSize="xl" fallback="Nordnet" logoUrl="/logo/nordnet.png" />
+            ),
+          },
+          {
             title: 'Large (default) logo',
             component: <Badge.Nested fallback="Nordnet" logoUrl="/logo/nordnet.png" />,
           },
@@ -41,6 +58,10 @@ export const Showcase = {
             ),
           },
           {
+            title: 'Extra large fallback with flag',
+            component: <Badge.Nested badgeSize="xl" fallback="Nordnet" country="SE" />,
+          },
+          {
             title: 'Large fallback with flag',
             component: <Badge.Nested fallback="Nordnet" country="SE" />,
           },
@@ -49,12 +70,20 @@ export const Showcase = {
             component: <Badge.Nested badgeSize="m" fallback="Nordnet" country="SE" />,
           },
           {
+            title: 'Extra large fallback',
+            component: <Badge.Nested badgeSize="xl" fallback="Nordnet" />,
+          },
+          {
             title: 'Large fallback',
             component: <Badge.Nested fallback="Nordnet" />,
           },
           {
             title: 'Medium fallback',
             component: <Badge.Nested badgeSize="m" fallback="Nordnet" />,
+          },
+          {
+            title: 'Extra large without fallback',
+            component: <Badge.Nested badgeSize="xl" />,
           },
           {
             title: 'Large without fallback',
