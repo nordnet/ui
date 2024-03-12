@@ -30,7 +30,7 @@ const IMAGE_SIZE = {
 const IMAGE_MARGIN = {
   m: 2,
   l: 4,
-  xl: 6,
+  xl: 4,
 };
 
 export const StyledImg = styled.img<{ $badgeSize: BadgeSize }>`
@@ -65,7 +65,7 @@ const FLAG_LEFT = {
 const FLAG_TOP = {
   m: 12,
   l: 16,
-  xl: 26,
+  xl: 24,
 };
 
 export const StyledFlag = styled(Flag)<{ $badgeSize: BadgeSize }>`
