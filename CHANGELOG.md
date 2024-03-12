@@ -1,3 +1,10 @@
+# [16.11.0](https://github.com/nordnet/ui/compare/v16.10.4...v16.11.0) (2024-03-12)
+
+
+### Features
+
+* add nested badge extra large size ([#1610](https://github.com/nordnet/ui/issues/1610)) ([39ccbe8](https://github.com/nordnet/ui/commit/39ccbe82e482ac42c46a5394a15b06dfed64235b))
+
 ## [16.10.4](https://github.com/nordnet/ui/compare/v16.10.3...v16.10.4) (2024-03-11)
 
 
