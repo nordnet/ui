@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Size, Variant } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
+import { QuietText } from '../QuietText';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -214,6 +215,10 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     pattern,
     inputMode,
   } = props;
+
+  if (type === 'quiet') {
+    return <QuietText {...props} />;
+  }
 
   return (
     <FormField
