@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Size, Variant } from './Text.types';
+import { Props, Size } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
 import { QuietText } from '../QuietText';
 import NormalizedElements from '../../../common/NormalizedElements';
@@ -26,16 +26,8 @@ const darkmodeAutocompleteStyles = css`
       : ''}
 `;
 
-const background = css<Pick<Props, 'disabled' | 'variant'>>`
-  background-color: ${(p) => {
-    if (p.disabled && p.variant !== 'quiet') {
-      return p.theme.color.disabledBackground;
-    }
-    if (p.variant === 'quiet') {
-      return 'transparent';
-    }
-    return p.theme.color.inputBackground;
-  }};
+const background = css`
+  background-color: ${(p) => p.theme.color.inputBackground};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -55,14 +47,14 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled'>>`
   border: solid;
   border-color: ${(p) => {
     if (hasError(p.error)) return p.theme.color.inputBorderError;
     if (p.success) return p.theme.color.inputBorderSuccess;
     return p.theme.color.inputBorder;
   }};
-  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  border-width: 1px;
 
   &:focus {
     border-width: 1px;
@@ -71,30 +63,21 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
-  ${(p) =>
-    p.disabled && p.variant === 'quiet'
-      ? `border-color: ${
-          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
-        };`
-      : ''}
 `;
 
-export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
+export const placeholderNormalization = css<Pick<Props, 'disabled'>>`
   &::placeholder {
-    color: ${(p) =>
-      p.variant === 'quiet' ? p.theme.color.buttonTextDisabled : p.theme.color.label};
+    color: ${(p) => p.theme.color.label};
     line-height: inherit;
     opacity: 1;
   }
 
-  ${(p) =>
-    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
   &:disabled::placeholder {
     color: ${(p) => p.theme.color.disabledText};
   }
 `;
 
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   width: ${(p) => p.theme.spacing.unit(8)}px;
   top: 0;
   height: 100%;
@@ -103,19 +86,6 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Varian
   position: absolute;
   ${(p) => (p.position === 'left' ? 'left: 0;' : '')}
   ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
-  ${(p) =>
-    p.variant === 'quiet'
-      ? `&:not(:focus) {
-          padding-left: 0;
-          padding-right: 0;
-        }`
-      : ''}
-  ${(p) =>
-    p.variant === 'quiet' && p.position === 'right'
-      ? `&:not(:focus) {
-          right: 0;
-        }`
-      : ''}
 `;
 
 const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<
@@ -123,7 +93,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
 >`
   border: 0;
   width: 100%;
-  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
@@ -138,40 +108,27 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-  ${(p) =>
-    p.variant === 'quiet'
-      ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
-         &:disabled {
-           color: ${p.theme.color.disabledText};
-         }
-         font-size: 28px;
-         font-weight: bold;
-         &:focus {
-           border-width: 0 0 2px 0;
-           outline: none;
-          }`
-      : `color: ${p.theme.color.text};
-         &:disabled {
-           color: ${p.theme.color.disabledText};
-         }`}
+  color: ${(p) => p.theme.color.text};
+  &:disabled {
+    color: ${(p) => p.theme.color.disabledText};
+  }
 
-    ${(p) =>
+  ${(p) =>
     p.type === 'search' &&
     `
     &[type="search"] {
       -webkit-appearance: textfield;
     }
     `}
-    ${(p) =>
+  ${(p) =>
     p.disabled &&
     `
       cursor: not-allowed;
       `}
 `;
 
-const Wrapper = styled.div<{ variant?: Variant }>`
+const Wrapper = styled.div`
   position: relative;
-  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
 `;
 
 const components = {
@@ -216,7 +173,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     inputMode,
   } = props;
 
-  if (type === 'quiet') {
+  if (variant === 'quiet') {
     return <QuietText {...props} />;
   }
 
@@ -279,24 +236,12 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
-            <AddonBox
-              container
-              variant={variant}
-              justifyContent="center"
-              alignItems="center"
-              position="left"
-            >
+            <AddonBox container justifyContent="center" alignItems="center" position="left">
               {leftAddon}
             </AddonBox>
           )}
           {rightAddon && (
-            <AddonBox
-              container
-              variant={variant}
-              justifyContent={variant === 'quiet' ? 'flex-end' : 'center'}
-              alignItems="center"
-              position="right"
-            >
+            <AddonBox container justifyContent="center" alignItems="center" position="right">
               {rightAddon}
             </AddonBox>
           )}

@@ -1,4 +1,3 @@
-export type Variant = 'normal' | 'quiet';
 export type Size = Pick<Props, 'size'>;
 
 export type Props = {
@@ -24,8 +23,10 @@ export type Props = {
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';
-  /** @default normal */
-  variant?: Variant;
+  /** @default normal
+   * @deprecated 'quiet' use Input.QuietText instead
+   */
+  variant?: 'normal' | 'quiet';
   pattern?: string;
   inputMode?: string;
   /**
