@@ -7,6 +7,7 @@ export type Props = {
   error?: string;
   extraInfo?: string;
   fieldId?: string;
+  /** @deprecated use FormGroup component */
   group?: boolean;
   /** Label can be visually hidden */
   hideLabel?: boolean;
