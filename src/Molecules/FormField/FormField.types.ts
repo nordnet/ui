@@ -17,6 +17,7 @@ export type Props = {
   required?: boolean;
 
   /**
+   * Number is treated as pixels.
    * You need to specify width
    * (better in pixels), because
    * that will affect wrapping
