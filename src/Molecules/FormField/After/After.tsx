@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
+
 import { Props } from './After.types';
 import { Typography } from '../../..';
 

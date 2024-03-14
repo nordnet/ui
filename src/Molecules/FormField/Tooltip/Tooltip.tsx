@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Flexbox, OldIcon, Tooltip as UITooltip } from '../../..';
 import { Props } from './Tooltip.types';
 
