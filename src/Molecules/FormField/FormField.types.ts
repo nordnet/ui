@@ -14,6 +14,7 @@ export type Props = {
   /** Label should always be presented - A11y */
   label: string;
   ref?: React.Ref<HTMLDivElement>;
+  /** Decorative only. */
   required?: boolean;
 
   /**
