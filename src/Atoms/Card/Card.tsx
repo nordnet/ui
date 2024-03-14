@@ -50,11 +50,14 @@ const StyledCard = styled.div<Props>`
     theme.isFeatureEnabled('shadows') &&
     `
       background: ${theme.colorTokens.neutral.background_default};
-      box-shadow: ${
-        theme.media.greaterThan(theme.breakpoints.sm) ? theme.shadow.medium : theme.shadow.low
-      };
+      box-shadow: ${theme.shadow.low};
       border-radius: ${theme.borderRadius8};
-      padding: ${theme.media.greaterThan(theme.breakpoints.sm) ? '20px' : '12px'};
+      padding: ${theme.spacing.unit(3)}px;
+
+      ${theme.media.greaterThan(theme.breakpoints.sm)} {
+        box-shadow: ${theme.shadow.medium};
+        padding: 0px;
+      }
   `}
 `;
 
