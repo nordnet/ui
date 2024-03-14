@@ -44,7 +44,7 @@ export const StyledButton = styled(NormalizedElements.Button)<{ $active?: boolea
   padding: 0;
   cursor: pointer;
   font-weight: inherit;
-  color: ${(p) => (p.$active ? p.theme.color.tabTitleActive : p.theme.color.tabTitle)};
+  color: ${(p) => (p.$active ? p.theme.colorTokens.neutral.text_default : p.theme.colorTokens.neutral.text_weak)};
 `;
 
 // Reset browser styling for ul element
