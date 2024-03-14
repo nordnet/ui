@@ -31,9 +31,7 @@ export const NestedBadge: NestedBadgeComponent = ({
       </StyledFallback>
     )}
     {country && isValidCountry(country) && (
-      <>
-        <StyledFlag country={country} size="m" $badgeSize={badgeSize} />
-      </>
+      <StyledFlag country={country} size="m" $badgeSize={badgeSize} />
     )}
   </StyledNestedBadge>
 );
