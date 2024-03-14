@@ -27,7 +27,7 @@ const Inner = styled.div`
     theme.isFeatureEnabled('shadows') &&
     `
       ${theme.media.between(theme.breakpoints.xs, theme.breakpoints.sm)} {
-        margin: 0px ${theme.spacing.unit(2)}px;
+        margin: 0px ${theme.spacing.unit(4)}px;
       }
   `}
 
