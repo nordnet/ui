@@ -25,20 +25,6 @@ describe('FormGroup', () => {
     expect(label).toBeInTheDocument();
   });
 
-  test.skip('should have a hidden label', async () => {
-    render(
-      <FormGroup label="Label" hideLabel>
-        <input type="text" id="unique-id-1" />
-      </FormGroup>,
-      {
-        wrapper,
-      },
-    );
-    const extraInfo = screen.getByText('Label');
-    expect(extraInfo).toBeInTheDocument();
-    expect(extraInfo).not.toBeVisible();
-  });
-
   test('should have a error message', async () => {
     render(
       <FormGroup label="Label" error="Error message">
@@ -74,7 +60,7 @@ describe('FormGroup', () => {
         wrapper,
       },
     );
-    const extraInfo = screen.getByTestId('tooltip-svg');
+    const extraInfo = screen.getByTestId('FormField-Tooltip-svg');
     expect(extraInfo).toBeInTheDocument();
   });
 });

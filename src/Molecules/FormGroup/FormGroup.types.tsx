@@ -9,6 +9,8 @@ export type Props = {
   labelTooltip?: string;
   labelTooltipInModal?: boolean;
   labelTooltipPosition?: 'top' | 'bottom' | 'left' | 'right';
+  /** Decorative only. */
   required?: boolean;
+  /** Number is treated as pixels. */
   width?: string | number;
 };

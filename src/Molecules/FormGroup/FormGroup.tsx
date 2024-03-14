@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 
 import { Props } from './FormGroup.types';
-import { Fieldset, Legend } from '../../..';
+import { Fieldset, Legend, VisuallyHidden } from '../../..';
 import { Tooltip as FormFieldTooltip } from '../FormField/Tooltip';
 import { After as FormFieldAfter } from '../FormField/After';
 
@@ -20,26 +20,37 @@ export const FormGroup = forwardRef<HTMLDivElement, Props>(
       disabled,
       error,
       extraInfo,
+      hideLabel,
       label,
       labelTooltip,
       labelTooltipInModal,
       labelTooltipPosition,
+      required,
       width,
     },
     ref,
   ) => {
+    const labelText = label && `${label}${required ? ' *' : ''}`;
     const componentWidth = typeof width === 'number' ? `${width}px` : width;
 
     return (
       <Root className={className} $width={componentWidth} ref={ref}>
         <Fieldset>
-          <FormFieldTooltip
-            labelTooltip={labelTooltip}
-            labelTooltipInModal={labelTooltipInModal}
-            labelTooltipPosition={labelTooltipPosition}
-          >
-            {label && <Legend styleType="label">{label}</Legend>}
-          </FormFieldTooltip>
+          {label && (
+            <FormFieldTooltip
+              labelTooltip={hideLabel ? '' : labelTooltip}
+              labelTooltipInModal={labelTooltipInModal}
+              labelTooltipPosition={labelTooltipPosition}
+            >
+              {hideLabel ? (
+                <VisuallyHidden>
+                  <Legend styleType="label">{labelText}</Legend>
+                </VisuallyHidden>
+              ) : (
+                <Legend styleType="label">{labelText}</Legend>
+              )}
+            </FormFieldTooltip>
+          )}
           {children}
         </Fieldset>
         <FormFieldAfter error={error} extraInfo={extraInfo} disabled={disabled} />
