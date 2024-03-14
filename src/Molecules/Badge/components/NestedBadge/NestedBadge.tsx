@@ -1,13 +1,7 @@
 import React from 'react';
 import { Typography } from '../../../..';
 
-import {
-  StyledNestedBadge,
-  StyledFallback,
-  StyledFlag,
-  StyledImg,
-  StyledOverlay,
-} from './NestedBadge.styles';
+import { StyledNestedBadge, StyledFallback, StyledFlag, StyledImg } from './NestedBadge.styles';
 import { NestedBadgeComponent } from './NestedBadge.types';
 
 const isValidCountry = (country: string): boolean => {
@@ -39,7 +33,6 @@ export const NestedBadge: NestedBadgeComponent = ({
     {country && isValidCountry(country) && (
       <>
         <StyledFlag country={country} size="m" $badgeSize={badgeSize} />
-        <StyledOverlay $badgeSize={badgeSize} />
       </>
     )}
   </StyledNestedBadge>
