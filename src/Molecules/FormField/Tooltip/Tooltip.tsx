@@ -21,7 +21,7 @@ export function Tooltip({
         inModal={labelTooltipInModal}
         wrapChild={labelTooltipInModal}
       >
-        <OldIcon.Questionmark size={4} />
+        <OldIcon.Questionmark data-testid="tooltip-svg" size={4} />
       </UITooltip>
     </Flexbox>
   );
