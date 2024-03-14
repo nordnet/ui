@@ -12,7 +12,9 @@ const Root = styled.div<{ $width?: string | number }>`
   display: inline-block;
 `;
 
-export const FormField = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const components = { FormLabel };
+
+const FormFieldComponent = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     children,
     className,
@@ -39,20 +41,23 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
 
   return (
     <Root className={className} $width={componentWidth} ref={ref}>
-      <>
-        <FormLabel hideLabel={hideLabel} forId={fieldId} disabled={disabled}>
-          <Tooltip
-            labelTooltip={hideLabel ? '' : labelTooltip}
-            labelTooltipInModal={labelTooltipInModal}
-            labelTooltipPosition={labelTooltipPosition}
-          >
-            {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
-          </Tooltip>
-          {wrapLabelAroundInputs && children}
-        </FormLabel>
-        {!wrapLabelAroundInputs && children}
-      </>
+      <FormLabel hideLabel={hideLabel} forId={fieldId} disabled={disabled}>
+        <Tooltip
+          labelTooltip={hideLabel ? '' : labelTooltip}
+          labelTooltipInModal={labelTooltipInModal}
+          labelTooltipPosition={labelTooltipPosition}
+        >
+          {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
+        </Tooltip>
+        {wrapLabelAroundInputs && children}
+      </FormLabel>
+      {!wrapLabelAroundInputs && children}
       <After error={error} extraInfo={extraInfo} disabled={disabled} />
     </Root>
   );
 });
+
+export const FormField: typeof FormFieldComponent & { components?: typeof components } =
+  FormFieldComponent;
+
+FormField.components = components;
