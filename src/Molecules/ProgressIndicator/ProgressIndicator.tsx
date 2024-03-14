@@ -39,7 +39,7 @@ const ProgressIndicator: FC<Props> = ({
       pt={3}
       pb={2}
       md={{ p: 5 }}
-      backgroundColor={(t) => t.color.progressIndicatorBackground}
+      backgroundColor={(t) => t.colorTokens.neutral.background_default}
       $isMobile={!!isMobile}
       $borderBottomMobile={borderBottomMobile}
     >
