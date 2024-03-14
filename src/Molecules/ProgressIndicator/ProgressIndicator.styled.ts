@@ -8,7 +8,6 @@ export const StyledBox = styled(Box)<{ $isMobile?: boolean; $borderBottomMobile?
       p.$isMobile && p.$borderBottomMobile
         ? p.theme.colorTokens.neutral.border_medium
         : 'transparent'};
-
   box-shadow: ${(p) =>
     !p.$isMobile && p.theme.isFeatureEnabled('shadows') && p.theme.shadow.medium};
 `;
