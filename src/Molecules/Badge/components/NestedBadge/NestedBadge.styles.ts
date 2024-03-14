@@ -70,13 +70,14 @@ const FLAG_TOP = {
   xl: 24,
 };
 
+// With border-radius 50% there is a slight rendering issue showing a sliver of border...
 export const StyledFlag = styled(Flag)<{ $badgeSize: BadgeSize }>`
   position: absolute;
   left: ${(p) => FLAG_LEFT[p.$badgeSize]}px;
   top: ${(p) => FLAG_TOP[p.$badgeSize]}px;
   height: 16px;
   width: 16px;
-  border-radius: 49%; // with 50% there is a slight rendering issue showing a sliver of border
+  border-radius: 49%;
   outline: 2px solid ${(p) => p.theme.colorTokens.neutral.border_focus};
   outline-offset: -2px;
 `;
