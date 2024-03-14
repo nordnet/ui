@@ -31,6 +31,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
   } = props;
   const labelText = label && `${label}${required ? ' *' : ''}`;
   const componentWidth = typeof width === 'number' ? `${width}px` : width;
+  const wrapLabelAroundInputs = !fieldId;
 
   if (group) {
     return <FormGroup {...props} />;
@@ -38,33 +39,19 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
 
   return (
     <Root className={className} $width={componentWidth} ref={ref}>
-      {fieldId ? (
-        <>
-          <FormLabel hideLabel={hideLabel} forId={fieldId} disabled={disabled}>
-            <Tooltip
-              labelTooltip={hideLabel ? '' : labelTooltip}
-              labelTooltipInModal={labelTooltipInModal}
-              labelTooltipPosition={labelTooltipPosition}
-            >
-              {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
-            </Tooltip>
-          </FormLabel>
-          {children}
-        </>
-      ) : (
-        <>
-          <FormLabel disabled={disabled}>
-            <Tooltip
-              labelTooltip={hideLabel ? '' : labelTooltip}
-              labelTooltipInModal={labelTooltipInModal}
-              labelTooltipPosition={labelTooltipPosition}
-            >
-              {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
-            </Tooltip>
-            {children}
-          </FormLabel>
-        </>
-      )}
+      <>
+        <FormLabel hideLabel={hideLabel} forId={fieldId} disabled={disabled}>
+          <Tooltip
+            labelTooltip={hideLabel ? '' : labelTooltip}
+            labelTooltipInModal={labelTooltipInModal}
+            labelTooltipPosition={labelTooltipPosition}
+          >
+            {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
+          </Tooltip>
+          {wrapLabelAroundInputs && children}
+        </FormLabel>
+        {!wrapLabelAroundInputs && children}
+      </>
       <After error={error} extraInfo={extraInfo} disabled={disabled} />
     </Root>
   );
