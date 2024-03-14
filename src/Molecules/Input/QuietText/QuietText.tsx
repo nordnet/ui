@@ -253,7 +253,7 @@ const QuietTextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref
           <HiddenMeasuringSpan
             ref={hiddenMeasuringSpanRef}
             aria-hidden
-            data-testId="quiettext-hidden-measurement"
+            data-testid="quiettext-hidden-measurement"
           >
             {inputValue}
           </HiddenMeasuringSpan>
