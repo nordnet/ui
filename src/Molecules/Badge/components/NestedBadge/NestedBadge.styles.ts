@@ -38,6 +38,8 @@ export const StyledImg = styled.img<{ $badgeSize: BadgeSize }>`
   height: ${(p) => IMAGE_SIZE[p.$badgeSize]}px;
   width: ${(p) => IMAGE_SIZE[p.$badgeSize]}px;
   margin: ${(p) => IMAGE_MARGIN[p.$badgeSize]}px 0;
+  outline: 1px solid ${(p) => p.theme.colorTokens.neutral.border_brand};
+  outline-offset: -1px;
 `;
 
 export const StyledFallback = styled.div<{ $badgeSize: BadgeSize }>`
@@ -68,21 +70,14 @@ const FLAG_TOP = {
   xl: 24,
 };
 
+// With border-radius 50% there is a slight rendering issue showing a sliver of border...
 export const StyledFlag = styled(Flag)<{ $badgeSize: BadgeSize }>`
   position: absolute;
   left: ${(p) => FLAG_LEFT[p.$badgeSize]}px;
   top: ${(p) => FLAG_TOP[p.$badgeSize]}px;
   height: 16px;
   width: 16px;
-  border-radius: 50%;
-`;
-
-export const StyledOverlay = styled.div<{ $badgeSize: BadgeSize }>`
-  position: absolute;
-  left: ${(p) => FLAG_LEFT[p.$badgeSize]}px;
-  top: ${(p) => FLAG_TOP[p.$badgeSize]}px;
-  height: 12px;
-  width: 12px;
-  border: 2px solid ${(p) => p.theme.colorTokens.neutral.border_focus};
-  border-radius: 50%;
+  border-radius: 49%;
+  outline: 2px solid ${(p) => p.theme.colorTokens.neutral.border_focus};
+  outline-offset: -2px;
 `;
