@@ -17,8 +17,8 @@ export const Docs = () => (
 
 export const DefaultStory = {
   render: () => (
-    <FormField label="Label" fieldId="unique-id-1">
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    <FormField label="Label" fieldId="default-input-1">
+      <input type="text" id="default-input-1" />
     </FormField>
   ),
 
@@ -27,14 +27,14 @@ export const DefaultStory = {
 
 export const WithGroupOfItems = {
   render: () => (
-    <FormField label="Caption to a group of items" fieldId="unique-id-1" group>
+    <FormField label="Make a choice" group>
       <Flexbox container gap={5}>
-        <Flexbox item>
-          <div style={{ background: 'aqua' }}>Pass in any children you want</div>
-        </Flexbox>
-        <Flexbox item>
-          <div style={{ background: 'aqua' }}>Pass in any children you want</div>
-        </Flexbox>
+        <FormField label="Red pill" fieldId="group-red-1">
+          <input type="radio" id="group-red-1" name="red-or-blue" />
+        </FormField>
+        <FormField label="Blue pill" fieldId="group-blue-1">
+          <input type="radio" id="group-blue-1" name="red-or-blue" />
+        </FormField>
       </Flexbox>
     </FormField>
   ),
@@ -44,8 +44,8 @@ export const WithGroupOfItems = {
 
 export const RequiredStory = {
   render: () => (
-    <FormField label="Label" fieldId="unique-id-1" required>
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    <FormField label="Label" fieldId="required-id-1" required>
+      <input type="text" id="required-id-1" />
     </FormField>
   ),
 
@@ -54,8 +54,8 @@ export const RequiredStory = {
 
 export const ErrorStory = {
   render: () => (
-    <FormField label="Label" error="error" fieldId="unique-id-2">
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    <FormField label="Label" error="error" fieldId="error-id-1">
+      <input type="text" id="error-id-1" />
     </FormField>
   ),
 
@@ -64,8 +64,8 @@ export const ErrorStory = {
 
 export const ExtraInfoStory = {
   render: () => (
-    <FormField label="Label" extraInfo="Some extra info" fieldId="unique-id-2">
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    <FormField label="Label" extraInfo="Some extra info" fieldId="extra-id-1">
+      <input type="text" id="extra-id-1" />
     </FormField>
   ),
 
@@ -74,8 +74,8 @@ export const ExtraInfoStory = {
 
 export const WithLabelTooltip = {
   render: () => (
-    <FormField label="Label" labelTooltip="Tooltip content" fieldId="unique-id-1">
-      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    <FormField label="Label" labelTooltip="Tooltip content" fieldId="tooltip-id-1">
+      <input type="text" id="tooltip-id-1" />{' '}
     </FormField>
   ),
 
@@ -105,10 +105,10 @@ export const WithLabelTooltipInsideModal = {
               <FormField
                 label="Label"
                 labelTooltip="Tooltip content"
-                fieldId="unique-id-1"
+                fieldId="tooltip-modal-id-1"
                 labelTooltipInModal
               >
-                <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+                <input type="text" id="tooltip-modal-id-1" />{' '}
               </FormField>
             </Box>
           </Modal>
@@ -119,4 +119,12 @@ export const WithLabelTooltipInsideModal = {
   },
 
   name: 'With label tooltip inside modal',
+};
+
+export const WithHiddenLabel = {
+  render: () => (
+    <FormField label="Label" fieldId="hidden-id-1" hideLabel>
+      <input type="text" id="hidden-id-1" />{' '}
+    </FormField>
+  ),
 };

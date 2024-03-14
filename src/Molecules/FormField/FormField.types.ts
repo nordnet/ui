@@ -1,26 +1,18 @@
-export type LabelAddonProp = {
-  labelTooltip?: string;
-  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
-  hideLabel?: boolean;
-  children?: React.ReactNode;
-  labelTooltipInModal?: boolean;
-};
+import { Props as TooltipProps } from './Tooltip/Tooltip.types';
 
 export type Props = {
-  label?: string;
+  /** Label should always be presented - A11y */
+  label: string;
+  /** But you can hide it visually */
   hideLabel?: boolean;
   children: React.ReactNode;
   className?: string;
   error?: string;
   extraInfo?: string;
   fieldId?: string;
-  /** @deprecated use fieldId */
-  forId?: string;
   group?: boolean;
   ref?: React.Ref<HTMLDivElement>;
   required?: boolean;
-  /** @deprecated use required */
-  showRequired?: boolean;
   disabled?: boolean;
 
   /**
@@ -31,4 +23,4 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-} & LabelAddonProp;
+} & TooltipProps;
