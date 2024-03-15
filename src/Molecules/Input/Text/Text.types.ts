@@ -1,5 +1,3 @@
-export type Size = Pick<Props, 'size'>;
-
 export type Props = {
   className?: string;
   id?: string;
@@ -24,7 +22,7 @@ export type Props = {
   fullWidth?: boolean;
   size?: 's';
   /** @default normal
-   * @deprecated 'quiet' use Input.QuietText instead
+   * @deprecated use Input.QuietText instead
    */
   variant?: 'normal' | 'quiet';
   pattern?: string;

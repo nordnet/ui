@@ -1,16 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Size } from './Text.types';
+import { Props } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
 import { QuietText } from '../QuietText';
 import NormalizedElements from '../../../common/NormalizedElements';
-
-const hasError = (error?: Props['error']) => error && error !== '';
-
-const height = css<Size>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
 
 const darkmodeAutocompleteStyles = css`
   ${(p) =>
@@ -26,46 +20,7 @@ const darkmodeAutocompleteStyles = css`
       : ''}
 `;
 
-const background = css`
-  background-color: ${(p) => p.theme.color.inputBackground};
-`;
-
-const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${(p) =>
-    p.disabled
-      ? ''
-      : `
-      &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
-      }
-`}
-`;
-
-const focusBorderStyles = css`
-  &:focus {
-    border-color: ${(p) => p.theme.color.borderActive};
-  }
-`;
-
-const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled'>>`
-  border: solid;
-  border-color: ${(p) => {
-    if (hasError(p.error)) return p.theme.color.inputBorderError;
-    if (p.success) return p.theme.color.inputBorderSuccess;
-    return p.theme.color.inputBorder;
-  }};
-  border-width: 1px;
-
-  &:focus {
-    border-width: 1px;
-  }
-
-  position: relative;
-  ${hoverBorderStyles}
-  ${focusBorderStyles}
-`;
-
-export const placeholderNormalization = css<Pick<Props, 'disabled'>>`
+export const placeholderNormalization = css`
   &::placeholder {
     color: ${(p) => p.theme.color.label};
     line-height: inherit;
@@ -91,40 +46,50 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
 const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<
   Partial<Props>
 >`
-  border: 0;
+  ${placeholderNormalization}
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
   border-radius: ${(p) => p.theme.borderRadius4};
-  ${height}
-  ${borderStyles}
-  ${background}
-  ${placeholderNormalization}
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  border: 1px solid
+    ${(p) => {
+      if (p.error) return p.theme.color.inputBorderError;
+      if (p.success) return p.theme.color.inputBorderSuccess;
+      return p.theme.color.inputBorder;
+    }};
+  position: relative;
+  color: ${(p) => p.theme.color.text};
+  background-color: ${(p) => p.theme.color.inputBackground};
   ${darkmodeAutocompleteStyles}
   ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-  color: ${(p) => p.theme.color.text};
-  &:disabled {
-    color: ${(p) => p.theme.color.disabledText};
-  }
 
   ${(p) =>
-    p.type === 'search' &&
-    `
-    &[type="search"] {
-      -webkit-appearance: textfield;
+    p.disabled
+      ? `
+    color: ${p.theme.color.disabledText};
+    cursor: not-allowed;
+  `
+      : `
+    &:hover {
+      border-color: ${p.theme.color.inputBorderHover};
     }
-    `}
-  ${(p) =>
-    p.disabled &&
-    `
-      cursor: not-allowed;
-      `}
+  `}
+
+   &:focus {
+    border-color: ${(p) => p.theme.color.borderActive};
+    border-width: 1px;
+  }
+
+  &[type='search'] {
+    -webkit-appearance: textfield;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -233,7 +198,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}
-            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+            {...(error ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
             <AddonBox container justifyContent="center" alignItems="center" position="left">
