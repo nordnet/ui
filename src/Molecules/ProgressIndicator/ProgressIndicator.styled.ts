@@ -8,6 +8,12 @@ export const StyledBox = styled(Box)<{ $isMobile?: boolean; $borderBottomMobile?
       p.$isMobile && p.$borderBottomMobile
         ? p.theme.colorTokens.neutral.border_medium
         : 'transparent'};
+  ${(p) =>
+    !p.$isMobile &&
+    p.theme.isFeatureEnabled('shadows') &&
+    `
+    box-shadow: ${p.theme.shadow.medium}
+  `};
 `;
 
 export const CompletionBar = styled.div<{ completion: number; noButtons: boolean }>`
@@ -16,7 +22,7 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
   width: 100%;
   border-radius: 100px;
   overflow: hidden;
-  background: ${(p) => p.theme.color.progressIndicatorBarEmpty};
+  background: ${(p) => p.theme.colorTokens.neutral.background_strong};
   margin: ${(p) => (p.noButtons ? '7px' : 0)} auto; /* text height - bar height || 18 - 4 / 2 = 7  */
 
   &::after {
@@ -25,7 +31,7 @@ export const CompletionBar = styled.div<{ completion: number; noButtons: boolean
     top: 0;
     transition: transform 333ms;
     transform: scaleX(${(p) => p.completion});
-    background: ${(p) => p.theme.color.progressIndicatorBar};
+    background: ${(p) => p.theme.colorTokens.action.background_default};
     transform-origin: left;
     width: 100%;
     height: 100%;
@@ -44,7 +50,7 @@ export const StyledButton = styled(Button.Icon)<{
   display: ${(p) => (p.$hide ? 'none' : 'flex')};
   visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
   background-color: ${(p) =>
-    p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
+    p.$isMobile ? p.theme.colorTokens.neutral.background_strong : 'transparent'};
   min-height: ${(p) => !p.$isMobile && '16px'};
   width: ${(p) => !p.$isMobile && '16px'};
   height: ${(p) => !p.$isMobile && '16px'};
@@ -52,7 +58,7 @@ export const StyledButton = styled(Button.Icon)<{
 
   &:hover {
     background-color: ${(p) =>
-      p.$isMobile ? p.theme.color.pillButtonBackgroundTertiary : 'transparent'};
+      p.$isMobile ? p.theme.colorTokens.neutral.background_strong : 'transparent'};
   }
 `;
 

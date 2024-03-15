@@ -23,6 +23,14 @@ const Inner = styled.div`
   ${getBreakpointStyles('lg')};
   ${getBreakpointStyles('xl')};
 
+  ${({ theme }) =>
+    theme.isFeatureEnabled('shadows') &&
+    `
+      ${theme.media.lessThan(theme.breakpoints.sm)} {
+        margin: 0px ${theme.spacing.unit(4)}px;
+      }
+  `}
+
   @media print {
     max-width: none;
   }
