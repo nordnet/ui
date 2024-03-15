@@ -21,10 +21,6 @@ export type Props = {
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';
-  /** @default normal
-   * @deprecated use Input.QuietText instead
-   */
-  variant?: 'normal' | 'quiet';
   pattern?: string;
   inputMode?: string;
   /**

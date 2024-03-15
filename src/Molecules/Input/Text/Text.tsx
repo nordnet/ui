@@ -129,7 +129,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     placeholder,
     required,
     rightAddon,
-    variant = 'normal',
     size,
     success,
     value,
@@ -139,10 +138,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     pattern,
     inputMode,
   } = props;
-
-  if (variant === 'quiet') {
-    return <QuietText {...props} />;
-  }
 
   return (
     <FormField
@@ -188,7 +183,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               placeholder,
               required,
               rightAddon,
-              variant,
               size,
               success,
               value,
