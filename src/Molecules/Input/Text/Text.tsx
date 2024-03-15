@@ -89,6 +89,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   }
 
   &[type='search'] {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-appearance: textfield;
   }
 `;
