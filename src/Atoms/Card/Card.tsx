@@ -36,10 +36,7 @@ const barStyles = css<Props>`
 
 const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
-  box-shadow: ${({ theme }) =>
-    theme.isFeatureEnabled('shadows')
-      ? theme.shadow.medium
-      : `0 2px 2px 0  ${theme.color.shadowCard}`};
+  box-shadow: ${({ theme }) => `0 2px 2px 0  ${theme.color.shadowCard}`};
 
   ${(p) => (p.barColor ? barStyles : ``)};
   && {
@@ -48,6 +45,20 @@ const StyledCard = styled.div<Props>`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
     border-radius: ${({ theme }) => theme.borderRadius8};
   }
+
+  ${({ theme }) =>
+    theme.isFeatureEnabled('shadows') &&
+    `
+      background: ${theme.colorTokens.neutral.background_default};
+      box-shadow: ${theme.shadow.low};
+      border-radius: ${theme.borderRadius8};
+      padding: ${theme.spacing.unit(3)}px;
+
+      ${theme.media.greaterThan(theme.breakpoints.sm)} {
+        box-shadow: ${theme.shadow.medium};
+        padding: 0px;
+      }
+  `}
 `;
 
 export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(

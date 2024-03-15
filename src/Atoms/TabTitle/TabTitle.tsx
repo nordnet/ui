@@ -13,7 +13,7 @@ const StyledTitle = styled.span<Props>`
       return `
         &::after {
           content: '';
-          background-color: ${props.theme.color.cta};
+          background-color: ${props.theme.colorTokens.neutral.border_active};
           display: block;
           width: 100%;
           height: 2px;
@@ -28,12 +28,7 @@ const StyledTitle = styled.span<Props>`
   }}
 `;
 
-export const TabTitle: React.FC<Props> = ({
-  active = false,
-  height = 8,
-  children,
-  variant = 'normal',
-}) => {
+export const TabTitle = ({ active = false, height = 8, children, variant = 'normal' }: Props) => {
   return (
     <StyledTitle active={active} height={height} variant={variant}>
       {children}

@@ -1,3 +1,17 @@
+# [16.12.0](https://github.com/nordnet/ui/compare/v16.11.2...v16.12.0) (2024-03-15)
+
+
+### Features
+
+* update shadow styling and color for cards (UC-151) ([#1612](https://github.com/nordnet/ui/issues/1612)) ([a39fe71](https://github.com/nordnet/ui/commit/a39fe717f4c53754d2ee4b84483a6b9db6ac5905))
+
+## [16.11.2](https://github.com/nordnet/ui/compare/v16.11.1...v16.11.2) (2024-03-14)
+
+
+### Bug Fixes
+
+* add outline to logo image ([#1613](https://github.com/nordnet/ui/issues/1613)) ([04d8d94](https://github.com/nordnet/ui/commit/04d8d94c138ee5c91f405148bc635f04034a3272))
+
 ## [16.11.1](https://github.com/nordnet/ui/compare/v16.11.0...v16.11.1) (2024-03-12)
 
 
