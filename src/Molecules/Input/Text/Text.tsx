@@ -62,7 +62,8 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
     }};
   position: relative;
   color: ${(p) => p.theme.color.text};
-  background-color: ${(p) => p.theme.color.inputBackground};
+  background-color: ${(p) =>
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.inputBackground};
   ${darkmodeAutocompleteStyles}
   ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
