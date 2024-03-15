@@ -14,7 +14,7 @@ const DEFAULT_SCROLL_OPTIONS = {
   scrollFade: false,
 };
 
-export const Item: React.FC<ItemProps> = ({ children }) => {
+export const Item = ({ children }: ItemProps) => {
   return <>{children}</>;
 };
 (Item as any).displayName = 'Tabs.Content';
@@ -32,7 +32,7 @@ const Title: TitleComponent = ({
   const active = activeFromProps;
 
   return (
-    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
+    <Typography type="secondary" weight="bold">
       <StyledButton
         ref={setRef}
         type="button"
