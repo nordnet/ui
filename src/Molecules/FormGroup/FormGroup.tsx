@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 
 import { Props } from './FormGroup.types';
-import { Fieldset, Legend, VisuallyHidden } from '../../..';
+import { Fieldset, Legend, VisuallyHidden } from '../..';
 import { Tooltip as FormFieldTooltip } from '../FormField/Tooltip';
 import { After as FormFieldAfter } from '../FormField/After';
 

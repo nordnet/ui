@@ -11,8 +11,9 @@ export type Props = {
   group?: boolean;
   /** Label can be visually hidden */
   hideLabel?: boolean;
+  // TODO: make label required
   /** Label should always be presented - A11y */
-  label: string;
+  label?: string;
   ref?: React.Ref<HTMLDivElement>;
   /** Decorative only. */
   required?: boolean;
