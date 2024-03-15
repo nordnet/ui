@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
-import { QuietText } from '../QuietText';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const darkmodeAutocompleteStyles = css`
@@ -129,8 +128,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     placeholder,
     required,
     rightAddon,
-    size,
-    success,
     value,
     visuallyEmphasiseRequired,
     type,
