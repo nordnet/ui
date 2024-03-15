@@ -1,3 +1,10 @@
+# [16.13.0](https://github.com/nordnet/ui/compare/v16.12.0...v16.13.0) (2024-03-15)
+
+
+### Features
+
+* new component Input.QuietText ([#1609](https://github.com/nordnet/ui/issues/1609)) ([1673681](https://github.com/nordnet/ui/commit/1673681e614cf4ef310237691b6cf26a70794d3e))
+
 # [16.12.0](https://github.com/nordnet/ui/compare/v16.11.2...v16.12.0) (2024-03-15)
 
 
