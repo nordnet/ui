@@ -15,12 +15,12 @@ const DEFAULT_SCROLL_OPTIONS = {
   scrollFade: false,
 };
 
-export const Item: React.FC<ItemProps> = ({ children }) => {
+export const Item = ({ children }: ItemProps) => {
   return <div>{children}</div>;
 };
 (Item as any).displayName = 'TabsNav.Tab';
 
-const Link: React.FC<LinkProps> = (props) => {
+const Link = (props: LinkProps) => {
   const LinkComponent = useLink();
   return <LinkComponent {...props} />;
 };
@@ -51,7 +51,7 @@ const Title = React.forwardRef<HTMLSpanElement, TitleProps>(
   ({ active, children, setRef, to, onKeyDown, onClick, height, fullServerRedirect }, ref) => {
     return (
       // @ts-expect-error: Typography doesn't accept ref but is actually a React.ForwardRef
-      <Typography type="primary" weight={active ? 'bold' : 'regular'} ref={ref}>
+      <Typography type="primary" weight="bold" ref={ref} color={t => active ? t.colorTokens.neutral.text_default : t.colorTokens.neutral.text_weak}>
         <StyledLink
           to={to}
           innerRef={setRef}
