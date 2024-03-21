@@ -1,8 +1,4 @@
-import { Theme } from '../../theme/theme.types';
-
-export type ColorFn = (t: Theme) => Values<Theme['color']>;
-
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
+import { ColorFn } from '../../common/Types/sharedTypes';
 
 export type StyledIllustrationBaseProps = {
   $color?: string;
@@ -23,3 +19,5 @@ export type InternalProps = IllustrationProps & {
   width: number;
   height: number;
 };
+
+export { ColorFn };

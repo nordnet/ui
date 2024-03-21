@@ -1,9 +1,6 @@
-import { Theme } from '../../../../theme/theme.types';
+import { ColorFn } from '../../../../common/Types/sharedTypes';
 
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never;
 export type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color' | 'children'>;
-
-export type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type BaseBadgeProps = HtmlProps & {
   children?: React.ReactNode;
@@ -29,3 +26,4 @@ export type BaseBadgeComponent = React.ForwardRefExoticComponent<
   BaseBadgeProps & React.RefAttributes<HTMLSpanElement>
 >;
 export type WrapperComponent = React.FC<WrapperProps & { children?: React.ReactNode }>;
+export { ColorFn };
