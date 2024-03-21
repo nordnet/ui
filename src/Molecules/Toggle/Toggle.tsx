@@ -85,7 +85,7 @@ const Button = styled(NormalizedElements.Button)<{ $size: SizeProp }>`
     }
     ${Knob} {
       border: 1px solid transparent;
-      background-color: ${(p) => p.theme.colorTokens.neutral.background_medium}};
+      background-color: ${(p) => p.theme.colorTokens.neutral.background_medium};
     }
   }
 `;
