@@ -4,12 +4,18 @@ type FeatureToggles = {
   shadows?: boolean;
 };
 
+type SupportedThemes = 'light' | 'dark' | 'a11y';
+
 export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
+  /** @deprecated please use theme prop instead */
   a11yColors?: boolean;
+  /** @deprecated please use theme prop instead */
   darkColors?: boolean;
-  tokensTheme?: 'dark' | 'light' | 'a11y';
+  /** @deprecated please use theme prop instead */
+  tokensTheme?: SupportedThemes;
+  theme?: SupportedThemes;
   featureToggles?: FeatureToggles;
 };
 
@@ -173,7 +179,7 @@ export type RawColors = RawColor & {
   };
 };
 
-export type ThemeColorsVersion = 'default' | 'a11y' | 'dark';
+export type ThemeColorsVersion = 'default' | 'a11y';
 
 export type ThemeColors = {
   /**
@@ -958,7 +964,9 @@ export type Theme = {
   /** @deprecated use colorTokens instead */
   color: ThemeColors;
   colorTokens: LightTheme['color'] | DarkTheme['color'] | A11yTheme['color'];
+  /** @deprecated use colorTokens instead */
   lightColor: ThemeColors;
+  /** @deprecated use colorTokens instead */
   darkColor: ThemeColors;
   shadow: MassagedShadowTokens;
   spacing: {
@@ -1014,6 +1022,7 @@ export type Theme = {
   };
   isHighContrastMode: boolean;
   isDarkMode: boolean;
+  themeName: SupportedThemes;
   borderRadius: (x: BORDER_RADIUS) => string;
   borderRadius2: string;
   borderRadius4: string;
