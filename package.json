@@ -46,7 +46,7 @@
     "@popperjs/core": "^2.11.6",
     "@xstate/react": "^3.2.2",
     "color": "^4.0.1",
-    "date-fns": "^2.23.0",
+    "date-fns": "^3.0.0",
     "framer-motion": "^10.0.0",
     "ramda": "^0.29.0",
     "react-focus-lock": "^2.9.2",
