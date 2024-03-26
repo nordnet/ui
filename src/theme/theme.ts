@@ -5,7 +5,6 @@ import {
   BORDER_RADIUS,
   BreakpointDataOrNumber,
   Theme,
-  ThemeColorsVersion,
   ThemeConfig,
   ShadowTokens,
   MassagedShadowTokens,
@@ -59,6 +58,39 @@ const getTokens = (theme: ThemeConfig['tokensTheme']) => {
   return lightTheme;
 };
 
+const getColors = (theme: ThemeConfig['theme']) => {
+  if (theme === 'dark') {
+    return createDarkColors(getColorDarkScheme('default'));
+  }
+  if (theme === 'a11y') {
+    createLightColors(getColorLightScheme('a11y'));
+  }
+  // light theme colors
+  return createLightColors(getColorLightScheme('default'));
+};
+
+export function getChosenTheme({
+  a11yColors,
+  darkColors,
+  tokensTheme,
+  theme,
+}: {
+  a11yColors?: boolean;
+  darkColors?: boolean;
+  tokensTheme?: 'light' | 'dark' | 'a11y';
+  theme?: 'light' | 'dark' | 'a11y';
+}) {
+  if (theme === 'dark' || tokensTheme === 'dark' || darkColors) {
+    return 'dark';
+  }
+
+  if (theme === 'a11y' || tokensTheme === 'a11y' || a11yColors) {
+    return 'a11y';
+  }
+
+  return 'light';
+}
+
 const massageShadowTokens = (shadowTokens: ShadowTokens) => {
   const shadows = Object.entries(shadowTokens).reduce((acc, [key, value]) => {
     acc[key] = Object.values(value).join(', ');
@@ -71,17 +103,10 @@ const massageShadowTokens = (shadowTokens: ShadowTokens) => {
 const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
 
 export const createTheme = (config: ThemeConfig = {}): Theme => {
-  const {
-    a11yColors = false,
-    darkColors = false,
-    tokensTheme = 'light',
-    featureToggles = {},
-  } = config;
-  const type: ThemeColorsVersion = a11yColors ? 'a11y' : 'default';
-  const color = darkColors
-    ? createDarkColors(getColorDarkScheme(type))
-    : createLightColors(getColorLightScheme(type));
-  const tokens = getTokens(tokensTheme);
+  const { a11yColors, darkColors, tokensTheme, theme, featureToggles = {} } = config;
+  const chosenTheme = getChosenTheme({ a11yColors, darkColors, tokensTheme, theme });
+  const color = getColors(chosenTheme);
+  const tokens = getTokens(chosenTheme);
 
   const GUTTER = 5;
   const UNIT = 4;
@@ -115,11 +140,12 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     breakpoints,
     color,
     colorTokens: tokens.color,
-    lightColor: createLightColors(getColorLightScheme(type)),
-    darkColor: createDarkColors(getColorDarkScheme(type)),
+    lightColor: getColors('light'),
+    darkColor: getColors('dark'),
     shadow: massageShadowTokens(tokens.effect.shadow),
-    isHighContrastMode: a11yColors,
-    isDarkMode: darkColors,
+    isHighContrastMode: chosenTheme === 'a11y',
+    isDarkMode: chosenTheme === 'dark',
+    themeName: chosenTheme,
     media: {
       between: (s1, s2) => {
         const number1 = getBreakpointNumber(s1);
