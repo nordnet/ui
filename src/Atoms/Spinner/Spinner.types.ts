@@ -1,7 +1,5 @@
 import { Theme } from '../../theme/theme.types';
-
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
-export type ColorFn = (t: Theme) => Values<Theme['color']>;
+import { ColorFn } from '../../common/Types/sharedTypes';
 
 export type Props = {
   /** @default 4 units */
@@ -16,3 +14,5 @@ export type Props = {
 export type PropsWithTheme = Props & {
   theme: Theme;
 };
+
+export { ColorFn };

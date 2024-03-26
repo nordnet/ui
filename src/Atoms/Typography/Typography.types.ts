@@ -1,9 +1,6 @@
 import React from 'react';
 import { Property } from 'csstype';
-import { Theme } from '../../theme/theme.types';
-
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
-type ColorFn = (t: Theme) => Values<Theme['color']>;
+import { ColorFn } from '../../common/Types/sharedTypes';
 
 export type Types =
   | 'primary'
