@@ -1,3 +1,10 @@
+# [16.14.0](https://github.com/nordnet/ui/compare/v16.13.0...v16.14.0) (2024-03-26)
+
+
+### Features
+
+* add colorTokens to ColorFn function ([#1618](https://github.com/nordnet/ui/issues/1618)) ([01aa2d3](https://github.com/nordnet/ui/commit/01aa2d399e1df172b421241d75ababf6c9185abc))
+
 # [16.13.0](https://github.com/nordnet/ui/compare/v16.12.0...v16.13.0) (2024-03-15)
 
 
