@@ -1,3 +1,10 @@
+## [16.15.2](https://github.com/nordnet/ui/compare/v16.15.1...v16.15.2) (2024-03-26)
+
+
+### Bug Fixes
+
+* update color tokens ([#1622](https://github.com/nordnet/ui/issues/1622)) ([9b786f6](https://github.com/nordnet/ui/commit/9b786f671bbbb25aa9403a0fece49b0c02d10882))
+
 ## [16.15.1](https://github.com/nordnet/ui/compare/v16.15.0...v16.15.1) (2024-03-26)
 
 
