@@ -5,7 +5,7 @@ import {
   BORDER_RADIUS,
   BreakpointDataOrNumber,
   Theme,
-  ThemeConfig,
+  CreateThemeConfig,
   ShadowTokens,
   MassagedShadowTokens,
 } from './theme.types';
@@ -52,13 +52,13 @@ const zIndex: Theme['zIndex'] = {
   overlayInModal: 600,
 };
 
-const getTokens = (theme: ThemeConfig['tokensTheme']) => {
+const getTokens = (theme: CreateThemeConfig['tokensTheme']) => {
   if (theme === 'dark') return darkTheme;
   if (theme === 'a11y') return a11yTheme;
   return lightTheme;
 };
 
-const getColors = (theme: ThemeConfig['theme']) => {
+const getColors = (theme: CreateThemeConfig['theme']) => {
   if (theme === 'dark') {
     return createDarkColors(getColorDarkScheme('default'));
   }
@@ -102,7 +102,7 @@ const massageShadowTokens = (shadowTokens: ShadowTokens) => {
 
 const getBreakpointNumber = (s: BreakpointDataOrNumber) => (isNumber(s) ? s : s.size);
 
-export const createTheme = (config: ThemeConfig = {}): Theme => {
+export const createTheme = (config: CreateThemeConfig = {}): Theme => {
   const { a11yColors, darkColors, tokensTheme, theme, featureToggles = {} } = config;
   const chosenTheme = getChosenTheme({ a11yColors, darkColors, tokensTheme, theme });
   const color = getColors(chosenTheme);
