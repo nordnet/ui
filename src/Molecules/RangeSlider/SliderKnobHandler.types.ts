@@ -1,8 +1,6 @@
-import { Theme } from '../../theme/theme.types';
 import { KnobType } from './constants';
+import { ColorFn } from '../../common/Types/sharedTypes';
 
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
-export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small' | 'player';
 
 export type Props = {

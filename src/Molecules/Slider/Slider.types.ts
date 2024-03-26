@@ -1,7 +1,5 @@
-import { Theme } from '../../theme/theme.types';
+import { ColorFn } from '../../common/Types/sharedTypes';
 
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
-export type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Variant = 'big' | 'small' | 'player';
 
 export type InternalProps = {
@@ -28,3 +26,4 @@ export type Props = {
 };
 
 export type Component = React.FC<Props>;
+export { ColorFn };

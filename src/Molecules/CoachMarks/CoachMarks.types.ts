@@ -1,12 +1,9 @@
-import { Theme } from '../../theme/theme.types';
+import { ColorFn } from '../../common/Types/sharedTypes';
 
 export type Placement = 'top' | 'right' | 'bottom' | 'left' | 'auto';
 export type ColsTrimmerProps = {
   $hasIcon: boolean;
 };
-
-type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
-type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Step = {
   /** Replaces OldIcon, title and content props */
