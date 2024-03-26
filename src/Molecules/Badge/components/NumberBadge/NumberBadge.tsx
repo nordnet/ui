@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Typography } from '../../../..';
-import { ColorFn } from '../../../../common/Types';
 import { isElement, isFunction } from '../../../../common/utils';
 import {
   StyledBaseBadgeProps,
@@ -50,11 +49,12 @@ const NumberBadgeContent = ({
   if (isFunction(children)) return children();
   if (isElement(children)) return children;
 
-  // default textcolor to badgeTextColor
-  const textColor: ColorFn = (t) => (color ? color(t) : t.color.badgeTextColor);
-
   return (
-    <Typography type={typographyType} color={textColor} weight="bold">
+    <Typography
+      type={typographyType}
+      color={(t) => (color ? color(t) : t.color.badgeTextColor)}
+      weight="bold"
+    >
       {children}
     </Typography>
   );
