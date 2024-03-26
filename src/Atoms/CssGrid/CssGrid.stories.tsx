@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 import docs from './CssGrid.mdx';
 
-import { CssGrid as Grid } from '../..';
+import { Box, Flexbox, CssGrid as Grid, Typography } from '../..';
 
 const StyledContent = styled.div`
   box-sizing: border-box;
@@ -51,7 +51,7 @@ export const SimpleCssGrid = {
       <Grid.Item area="header">
         <Content>Header</Content>
       </Grid.Item>
-      <Grid.Item area="content">
+      <Grid.Item area="content" duration={3}>
         <Content>Content</Content>
       </Grid.Item>
       <Grid.Item area="menu">
@@ -67,6 +67,220 @@ export const SimpleCssGrid = {
   ),
 
   name: 'Simple CssGrid',
+};
+
+export const StaggeredGrid = {
+  render: () => (
+    <>
+      <Box my={4}>
+        <Flexbox container gap={1} direction="column">
+          <Typography type="title1">Animated grid</Typography>
+          <Typography type="tertiary">
+            You can now use motion variants to grid container or grid item.
+          </Typography>
+        </Flexbox>
+      </Box>
+      <Box my={2}>
+        <Flexbox container gap={1} direction="column">
+          <Typography type="title3">Staggered grid - row animation</Typography>
+          <Typography type="tertiary">
+            By setting the <code>staggeredChildren</code> prop, you can animate grid items
+            sequentially.
+          </Typography>
+          <Typography type="tertiary">
+            The animation proceeds from left to right, referencing the <code>areas</code> prop. The
+            order of <code>Grid.Item</code> children does not affect the order of the animation.
+          </Typography>
+        </Flexbox>
+      </Box>
+      <Grid.Container
+        // prettier-ignore
+        areas={[
+        ['header', 'header', 'header'],
+        ['menu', 'content', 'ads'],
+        ['footer', 'footer', 'footer'],
+      ]}
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['1fr', '1fr', '1fr']}
+        staggerChildren={0.8}
+        style={{
+          border: '1px solid black',
+          padding: '1rem',
+        }}
+      >
+        <Grid.Item area="header">
+          <Content>Header</Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>Content</Content>
+        </Grid.Item>
+        <Grid.Item area="menu">
+          <Content>Menu</Content>
+        </Grid.Item>
+        <Grid.Item area="ads">
+          <Content>Ads</Content>
+        </Grid.Item>
+        <Grid.Item area="footer">
+          <Content>Footer</Content>
+        </Grid.Item>
+      </Grid.Container>
+      <Box my={2}>
+        <Flexbox container gap={1} direction="column">
+          <Typography type="title3">Staggered grid - column animation</Typography>
+          <Typography type="tertiary">
+            By setting <code>staggerDirection=&quot;column&quot;</code> we now animate the grid
+            items from top to bottom.
+          </Typography>
+        </Flexbox>
+      </Box>
+      <Grid.Container
+        // prettier-ignore
+        areas={[
+          ['menu', 'header', 'ads'],
+          ['menu', 'header', 'ads'],
+          ['content', 'footer', 'ads'],
+      ]}
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['1fr', '1fr', '1fr']}
+        staggerChildren={0.8}
+        staggerDirection="column"
+        style={{
+          border: '1px solid black',
+          padding: '1rem',
+        }}
+      >
+        <Grid.Item area="header">
+          <Content>Header</Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>Content</Content>
+        </Grid.Item>
+        <Grid.Item area="menu">
+          <Content>Menu</Content>
+        </Grid.Item>
+        <Grid.Item area="ads">
+          <Content>Ads</Content>
+        </Grid.Item>
+        <Grid.Item area="footer">
+          <Content>Footer</Content>
+        </Grid.Item>
+      </Grid.Container>
+      <Box my={2}>
+        <Flexbox container gap={1} direction="column">
+          <Typography type="title3">Staggered grid - child durations</Typography>
+          <Typography type="tertiary">
+            Each child also has a duration prop that can be used to set the duration of the default
+            fade-in animation. The default duration is 0.2s.
+          </Typography>
+        </Flexbox>
+      </Box>
+      <Grid.Container
+        // prettier-ignore
+        areas={[
+          ['menu', 'header', 'ads'],
+          ['menu', 'header', 'ads'],
+          ['content', 'footer', 'ads'],
+      ]}
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['1fr', '1fr', '1fr']}
+        staggerChildren={0.8}
+        style={{
+          border: '1px solid black',
+          padding: '1rem',
+        }}
+      >
+        <Grid.Item area="header">
+          <Content>Header</Content>
+        </Grid.Item>
+        <Grid.Item area="content" duration={10}>
+          <Content>Content</Content>
+        </Grid.Item>
+        <Grid.Item area="menu" duration={10}>
+          <Content>Menu</Content>
+        </Grid.Item>
+        <Grid.Item area="ads" duration={10}>
+          <Content>Ads</Content>
+        </Grid.Item>
+        <Grid.Item area="footer">
+          <Content>Footer</Content>
+        </Grid.Item>
+      </Grid.Container>
+      <Box my={2}>
+        <Flexbox container gap={1} direction="column">
+          <Typography type="title3">Grid with Unique Animations</Typography>
+          <Typography type="tertiary">
+            Each grid item has a unique animation, defined by its own set of variants.
+          </Typography>
+        </Flexbox>
+      </Box>
+      <Grid.Container
+        // prettier-ignore
+        areas={[
+          ['menu', 'header', 'ads'],
+          ['menu', 'header', 'ads'],
+          ['content', 'footer', 'ads'],
+      ]}
+        templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['1fr', '1fr', '1fr']}
+        style={{
+          border: '1px solid black',
+          padding: '1rem',
+        }}
+      >
+        <Grid.Item
+          area="header"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, scale: 1.2, transition: { duration: 15 } },
+          }}
+        >
+          <Content>Header</Content>
+        </Grid.Item>
+        <Grid.Item
+          area="content"
+          animate="show"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { scale: 0.8, transition: { duration: 15 } },
+          }}
+        >
+          <Content>Content</Content>
+        </Grid.Item>
+        <Grid.Item
+          area="menu"
+          animate="show"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { scale: 1.2, rotateZ: -4, transition: { duration: 15 } },
+          }}
+        >
+          <Content>Menu</Content>
+        </Grid.Item>
+        <Grid.Item
+          area="ads"
+          animate="show"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { scale: 0.5, rotateX: 4, transition: { duration: 10 } },
+          }}
+        >
+          <Content>Ads</Content>
+        </Grid.Item>
+        <Grid.Item
+          area="footer"
+          animate="show"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { scale: 1.5, rotate: 2, transition: { duration: 10 } },
+          }}
+        >
+          <Content>Footer</Content>
+        </Grid.Item>
+      </Grid.Container>
+    </>
+  ),
+
+  name: 'CssGrid with animations',
 };
 
 export const CssGridWithCustomGutter = {
