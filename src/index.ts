@@ -113,7 +113,8 @@ import StatusModal from './Organisms/StatusModal';
 /** Hooks */
 import { useKeyPress, useOnClickOutside } from './common/Hooks';
 
-import theme, { createTheme, CreateThemeConfig } from './theme';
+import theme, { createTheme } from './theme';
+import type { CreateThemeConfig } from './theme';
 import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
