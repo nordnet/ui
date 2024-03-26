@@ -20,7 +20,7 @@ export const getColor: (
     }
     assert(
       ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
-      `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
+      `Incorrect string value for color, use t => t.colorTokens instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
         ', ',
       )}.`,
     );
