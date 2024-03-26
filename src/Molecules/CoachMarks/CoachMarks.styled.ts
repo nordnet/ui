@@ -58,6 +58,6 @@ export const StyledBubble = styled(Bubble)<{ feedbackWidgetMode?: boolean }>`
       bottom: 40px;
       right: 40px;
       z-index: 501;
-      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
+      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
     `}
 `;
