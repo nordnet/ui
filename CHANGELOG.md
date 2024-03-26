@@ -1,3 +1,10 @@
+## [16.15.1](https://github.com/nordnet/ui/compare/v16.15.0...v16.15.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* tokenize button component ([#1619](https://github.com/nordnet/ui/issues/1619)) ([23d62d0](https://github.com/nordnet/ui/commit/23d62d029e058e4c2ae25ba89edbf3ebe89212ba))
+
 # [16.15.0](https://github.com/nordnet/ui/compare/v16.14.0...v16.15.0) (2024-03-26)
 
 
