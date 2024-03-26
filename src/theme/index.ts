@@ -1,8 +1,8 @@
 import { createTheme } from './theme';
-import type { CreateThemeConfig } from './theme.types';
+import type { CreateThemeConfig, Theme } from './theme.types';
 
 const theme = createTheme();
 
 export default theme;
 export { createTheme };
-export type { CreateThemeConfig };
+export type { CreateThemeConfig, Theme };

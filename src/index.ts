@@ -114,7 +114,7 @@ import StatusModal from './Organisms/StatusModal';
 import { useKeyPress, useOnClickOutside } from './common/Hooks';
 
 import theme, { createTheme } from './theme';
-import type { CreateThemeConfig } from './theme';
+import type { CreateThemeConfig, Theme } from './theme';
 import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
@@ -142,6 +142,7 @@ export type {
   OnSort,
   SortOrder,
   CreateThemeConfig,
+  Theme,
 };
 
 /** Runtime code */
