@@ -15,6 +15,7 @@ const StyledHoverShowcase = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+
   :hover {
     cursor: pointer;
     background-color: ${({ theme }) => theme.colorTokens.neutral.background_hover};
