@@ -15,17 +15,17 @@ const Label = styled.label<{ $disabled?: boolean }>`
 `;
 
 const Knob = styled.span<{ $size: SizeProp; $disabled?: boolean }>`
-  background: ${(p) => p.theme.color.toggleKnobEnabledOffBg};
+  background: ${(p) => p.theme.colorTokens.neutral.background_brand_white};
   display: block;
   height: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size])}px;
   width: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size])}px;
   position: absolute;
   left: ${(p) => (p.$size === 'l' ? 0 : 2)}px;
-  border: 1px solid ${(p) => p.theme.color.inputBorder};
+  border: 1px solid ${(p) => p.theme.colorTokens.neutral.border_medium};
   margin-top: ${(p) => (p.$size === 'l' ? -4 : 2)}px;
   border-radius: ${(p) => p.theme.spacing.unit(KNOB_SIZE[p.$size] / 2)}px;
   box-sizing: border-box;
-  box-shadow: 0 1px 3px 1px ${(p) => p.theme.color.shadowSwitch};
+  box-shadow: ${(p) => (p.$size === 'l' ? p.theme.shadow.medium : 'none')};
   transition: transform 0.2s cubic-bezier(0.18, 0.9, 0.35, 1.15);
   cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'pointer')};
 `;
@@ -35,7 +35,7 @@ const Track = styled.span<{ $size: SizeProp; $disabled?: boolean }>`
   height: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size])}px;
   width: ${(p) => p.theme.spacing.unit(TRACK_WIDTH[p.$size])}px;
   margin: ${(p) => p.theme.spacing.unit((KNOB_SIZE[p.$size] - TRACK_HEIGHT[p.$size]) / 2)}px 0;
-  background-color: ${(p) => p.theme.color.toggleTrackEnabledOffBg};
+  background-color: ${(p) => p.theme.colorTokens.neutral.background_inactive};
   border-radius: ${(p) => p.theme.spacing.unit(TRACK_HEIGHT[p.$size] / 2)}px;
   transition: background-color 0.2s ease-out;
   cursor: ${(props) => (props.$disabled ? 'not-allowed' : 'pointer')};
@@ -53,7 +53,7 @@ const Button = styled(NormalizedElements.Button)<{ $size: SizeProp }>`
 
   &[aria-checked='true'] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.toggleTrackEnabledOnBg};
+      background-color: ${(p) => p.theme.colorTokens.action.background_default};
     }
 
     ${Knob} {
@@ -69,22 +69,23 @@ const Button = styled(NormalizedElements.Button)<{ $size: SizeProp }>`
   &[disabled],
   &[aria-readonly] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.toggleTrackDisabledOffBg};
+      background-color: ${(p) => p.theme.colorTokens.neutral.background_inactive};
     }
 
     ${Knob} {
-      border: 1px solid ${(p) => p.theme.color.disabledBackground};
-      background-color: ${(p) => p.theme.color.toggleKnobDisabledOffBg};
+      border: 1px solid transparent;
+      background-color: ${(p) => p.theme.colorTokens.neutral.background_medium};
     }
   }
 
-  &[aria-checked='true'][disabled] {
+  &[aria-checked='true'][disabled],
+  &[aria-checked='true'][aria-readonly] {
     ${Track} {
-      background-color: ${(p) => p.theme.color.toggleTrackDisabledOnBg};
+      background-color: ${(p) => p.theme.colorTokens.action.background_disabled};
     }
     ${Knob} {
-      border: 1px solid ${(p) => p.theme.color.disabledBackground};
-      background-color: ${(p) => p.theme.color.toggleKnobDisabledOnBg};
+      border: 1px solid transparent;
+      background-color: ${(p) => p.theme.colorTokens.neutral.background_medium};
     }
   }
 `;
