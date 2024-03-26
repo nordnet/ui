@@ -66,6 +66,7 @@ import FlexTable, {
   SortOrder,
 } from './Molecules/FlexTable';
 import FormField from './Molecules/FormField';
+import FormGroup from './Molecules/FormGroup';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
@@ -181,6 +182,7 @@ export {
   FlexTable,
   Flexbox,
   FormField,
+  FormGroup,
   FormLabel,
   Icon,
   Illustration,

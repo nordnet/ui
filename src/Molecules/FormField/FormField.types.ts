@@ -1,29 +1,25 @@
-export type LabelAddonProp = {
-  labelTooltip?: string;
-  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
-  hideLabel?: boolean;
-  children?: React.ReactNode;
-  labelTooltipInModal?: boolean;
-};
+import { Props as TooltipProps } from './Tooltip/Tooltip.types';
 
 export type Props = {
-  label?: string;
-  hideLabel?: boolean;
   children: React.ReactNode;
   className?: string;
+  disabled?: boolean;
   error?: string;
   extraInfo?: string;
   fieldId?: string;
-  /** @deprecated use fieldId */
-  forId?: string;
+  /** @deprecated use FormGroup component */
   group?: boolean;
+  /** Label can be visually hidden */
+  hideLabel?: boolean;
+  // TODO: make label required
+  /** Label should always be presented - A11y */
+  label?: string;
   ref?: React.Ref<HTMLDivElement>;
+  /** Decorative only. */
   required?: boolean;
-  /** @deprecated use required */
-  showRequired?: boolean;
-  disabled?: boolean;
 
   /**
+   * Number is treated as pixels.
    * You need to specify width
    * (better in pixels), because
    * that will affect wrapping
@@ -31,4 +27,4 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-} & LabelAddonProp;
+} & TooltipProps;
