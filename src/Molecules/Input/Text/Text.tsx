@@ -1,15 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Size, Variant } from './Text.types';
+import { Props } from './Text.types';
 import { Flexbox, FormField, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-
-const hasError = (error?: Props['error']) => error && error !== '';
-
-const height = css<Size>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
 
 const darkmodeAutocompleteStyles = css`
   ${(p) =>
@@ -25,75 +19,19 @@ const darkmodeAutocompleteStyles = css`
       : ''}
 `;
 
-const background = css<Pick<Props, 'disabled' | 'variant'>>`
-  background-color: ${(p) => {
-    if (p.disabled && p.variant !== 'quiet') {
-      return p.theme.color.disabledBackground;
-    }
-    if (p.variant === 'quiet') {
-      return 'transparent';
-    }
-    return p.theme.color.inputBackground;
-  }};
-`;
-
-const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${(p) =>
-    p.disabled
-      ? ''
-      : `
-      &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
-      }
-`}
-`;
-
-const focusBorderStyles = css`
-  &:focus {
-    border-color: ${(p) => p.theme.color.borderActive};
-  }
-`;
-
-const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
-  border: solid;
-  border-color: ${(p) => {
-    if (hasError(p.error)) return p.theme.color.inputBorderError;
-    if (p.success) return p.theme.color.inputBorderSuccess;
-    return p.theme.color.inputBorder;
-  }};
-  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
-
-  &:focus {
-    border-width: 1px;
-  }
-
-  position: relative;
-  ${hoverBorderStyles}
-  ${focusBorderStyles}
-  ${(p) =>
-    p.disabled && p.variant === 'quiet'
-      ? `border-color: ${
-          p.theme.isDarkMode ? p.theme.color.inputBorder : p.theme.color.buttonBackgroundDisabled
-        };`
-      : ''}
-`;
-
-export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
+export const placeholderNormalization = css`
   &::placeholder {
-    color: ${(p) =>
-      p.variant === 'quiet' ? p.theme.color.buttonTextDisabled : p.theme.color.label};
+    color: ${(p) => p.theme.color.label};
     line-height: inherit;
     opacity: 1;
   }
 
-  ${(p) =>
-    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
   &:disabled::placeholder {
     color: ${(p) => p.theme.color.disabledText};
   }
 `;
 
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   width: ${(p) => p.theme.spacing.unit(8)}px;
   top: 0;
   height: 100%;
@@ -102,75 +40,61 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Varian
   position: absolute;
   ${(p) => (p.position === 'left' ? 'left: 0;' : '')}
   ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
-  ${(p) =>
-    p.variant === 'quiet'
-      ? `&:not(:focus) {
-          padding-left: 0;
-          padding-right: 0;
-        }`
-      : ''}
-  ${(p) =>
-    p.variant === 'quiet' && p.position === 'right'
-      ? `&:not(:focus) {
-          right: 0;
-        }`
-      : ''}
 `;
 
 const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || 'text' }))<
   Partial<Props>
 >`
-  border: 0;
+  ${placeholderNormalization}
   width: 100%;
-  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: ${(p) => p.theme.spacing.unit(2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
   border-radius: ${(p) => p.theme.borderRadius4};
-  ${height}
-  ${borderStyles}
-  ${background}
-  ${placeholderNormalization}
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  border: 1px solid
+    ${(p) => {
+      if (p.error) return p.theme.color.inputBorderError;
+      if (p.success) return p.theme.color.inputBorderSuccess;
+      return p.theme.color.inputBorder;
+    }};
+  position: relative;
+  color: ${(p) => p.theme.color.text};
+  background-color: ${(p) =>
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.inputBackground};
   ${darkmodeAutocompleteStyles}
   ${(p) => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : '')}
   ${(p) =>
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-  ${(p) =>
-    p.variant === 'quiet'
-      ? `color: ${p.theme.isDarkMode ? p.theme.color.buttonText : p.theme.color.backgroundBlack};
-         &:disabled {
-           color: ${p.theme.color.disabledText};
-         }
-         font-size: 28px;
-         font-weight: bold;
-         &:focus {
-           border-width: 0 0 2px 0;
-           outline: none;
-          }`
-      : `color: ${p.theme.color.text};
-         &:disabled {
-           color: ${p.theme.color.disabledText};
-         }`}
 
-    ${(p) =>
-    p.type === 'search' &&
-    `
-    &[type="search"] {
-      -webkit-appearance: textfield;
+  ${(p) =>
+    p.disabled
+      ? `
+    color: ${p.theme.color.disabledText};
+    cursor: not-allowed;
+  `
+      : `
+    &:hover {
+      border-color: ${p.theme.color.inputBorderHover};
     }
-    `}
-    ${(p) =>
-    p.disabled &&
-    `
-      cursor: not-allowed;
-      `}
+  `}
+
+   &:focus {
+    border-color: ${(p) => p.theme.color.borderActive};
+    border-width: 1px;
+  }
+
+  &[type='search'] {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-appearance: textfield;
+  }
 `;
 
-const Wrapper = styled.div<{ variant?: Variant }>`
+const Wrapper = styled.div`
   position: relative;
-  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
 `;
 
 const components = {
@@ -204,9 +128,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     placeholder,
     required,
     rightAddon,
-    variant = 'normal',
-    size,
-    success,
     value,
     visuallyEmphasiseRequired,
     type,
@@ -258,10 +179,6 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               onKeyUp,
               placeholder,
               required,
-              rightAddon,
-              variant,
-              size,
-              success,
               value,
               type,
               ref,
@@ -271,27 +188,15 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
             }}
             {...getAriaProps(props)}
             {...getDataProps(props)}
-            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+            {...(error ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
-            <AddonBox
-              container
-              variant={variant}
-              justifyContent="center"
-              alignItems="center"
-              position="left"
-            >
+            <AddonBox container justifyContent="center" alignItems="center" position="left">
               {leftAddon}
             </AddonBox>
           )}
           {rightAddon && (
-            <AddonBox
-              container
-              variant={variant}
-              justifyContent={variant === 'quiet' ? 'flex-end' : 'center'}
-              alignItems="center"
-              position="right"
-            >
+            <AddonBox container justifyContent="center" alignItems="center" position="right">
               {rightAddon}
             </AddonBox>
           )}

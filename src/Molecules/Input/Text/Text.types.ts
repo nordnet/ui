@@ -1,6 +1,3 @@
-export type Variant = 'normal' | 'quiet';
-export type Size = Pick<Props, 'size'>;
-
 export type Props = {
   className?: string;
   id?: string;
@@ -24,8 +21,6 @@ export type Props = {
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';
-  /** @default normal */
-  variant?: Variant;
   pattern?: string;
   inputMode?: string;
   /**
