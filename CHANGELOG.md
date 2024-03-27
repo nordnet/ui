@@ -1,3 +1,10 @@
+## [16.15.4](https://github.com/nordnet/ui/compare/v16.15.3...v16.15.4) (2024-03-27)
+
+
+### Bug Fixes
+
+* expose CreateThemeConfig and Theme type ([#1625](https://github.com/nordnet/ui/issues/1625)) ([02e59c5](https://github.com/nordnet/ui/commit/02e59c5fe925cda665f52e14fb7afe33f1c246c7))
+
 ## [16.15.3](https://github.com/nordnet/ui/compare/v16.15.2...v16.15.3) (2024-03-27)
 
 
