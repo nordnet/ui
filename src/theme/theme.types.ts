@@ -8,7 +8,7 @@ type SupportedThemes = 'light' | 'dark' | 'a11y';
 
 export type MediaQuery = string;
 /** Number of pixels */
-export type ThemeConfig = {
+export type CreateThemeConfig = {
   /** @deprecated please use theme prop instead */
   a11yColors?: boolean;
   /** @deprecated please use theme prop instead */
