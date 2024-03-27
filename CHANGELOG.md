@@ -1,3 +1,10 @@
+## [16.15.3](https://github.com/nordnet/ui/compare/v16.15.2...v16.15.3) (2024-03-27)
+
+
+### Bug Fixes
+
+* add masks to nested badge for showing hover background ([#1624](https://github.com/nordnet/ui/issues/1624)) ([10edfbc](https://github.com/nordnet/ui/commit/10edfbc09fb48c8aa0fc6d9e12bd0de81000b3ec))
+
 ## [16.15.2](https://github.com/nordnet/ui/compare/v16.15.1...v16.15.2) (2024-03-26)
 
 
