@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Badge from '../..';
 import { Display } from '../../../../common/Display';
@@ -8,6 +9,33 @@ export default {
   parameters: {
     component: Badge.Nested,
   },
+};
+
+const StyledHoverShowcase = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  :hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colorTokens.neutral.background_hover};
+  }
+`;
+
+const HoverLogoShowcase = () => {
+  return (
+    <StyledHoverShowcase>
+      <Badge.Nested badgeSize="xl" logoUrl="/logo/nordnet.png" country="SE" />
+    </StyledHoverShowcase>
+  );
+};
+
+const HoverFallbackShowcase = () => {
+  return (
+    <StyledHoverShowcase>
+      <Badge.Nested badgeSize="xl" fallback="Nordnet" country="SE" />
+    </StyledHoverShowcase>
+  );
 };
 
 export const Showcase = {
@@ -92,6 +120,14 @@ export const Showcase = {
           {
             title: 'Medium without fallback',
             component: <Badge.Nested badgeSize="m" />,
+          },
+          {
+            title: 'Hover logo showcase',
+            component: <HoverLogoShowcase />,
+          },
+          {
+            title: 'Hover fallback showcase',
+            component: <HoverFallbackShowcase />,
           },
         ]}
       />

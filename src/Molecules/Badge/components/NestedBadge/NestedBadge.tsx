@@ -15,23 +15,31 @@ export const NestedBadge: NestedBadgeComponent = ({
   country,
   fallback,
   logoUrl,
-}) => (
-  <StyledNestedBadge $badgeSize={badgeSize} className={className}>
-    {logoUrl ? (
-      <StyledImg src={`${logoUrl}?w=48&q=90&fm=webp`} alt={alt} $badgeSize={badgeSize} />
-    ) : (
-      <StyledFallback $badgeSize={badgeSize}>
-        <Typography
-          type="secondary"
-          weight="bold"
-          color={(t) => t.colorTokens.neutral.text_default}
-        >
-          {fallback?.charAt(0).toUpperCase()}
-        </Typography>
-      </StyledFallback>
-    )}
+}) => {
+  const showFlag = country ? isValidCountry(country) : false;
+  return (
+    <StyledNestedBadge $badgeSize={badgeSize} className={className}>
+      {logoUrl ? (
+        <StyledImg
+          src={`${logoUrl}?w=48&q=90&fm=webp`}
+          alt={alt}
+          $badgeSize={badgeSize}
+          $showFlag={showFlag}
+        />
+      ) : (
+        <StyledFallback $badgeSize={badgeSize} $showFlag={showFlag}>
+          <Typography
+            type="secondary"
+            weight="bold"
+            color={(t) => t.colorTokens.neutral.text_default}
+          >
+            {fallback?.charAt(0).toUpperCase()}
+          </Typography>
+        </StyledFallback>
+      )}
     {country && isValidCountry(country) && (
       <StyledFlag country={country} size="m" $badgeSize={badgeSize} />
     )}
-  </StyledNestedBadge>
-);
+    </StyledNestedBadge>
+  );
+};
